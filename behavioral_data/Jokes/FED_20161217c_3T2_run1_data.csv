@@ -1,0 +1,135 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,1,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",<VisionEgg.WrappedText.WrappedText object at 0x103b5aaf0>
+8.0000,8.000,1,119,1,joke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly bent.",<VisionEgg.WrappedText.WrappedText object at 0x103b5ab90>
+16.0000,2.000,fix
+18.0000,8.000,1,101,1,joke,"I got a car for my wife, and I thought it was a good",trade,choice,"I got a car for my wife, and I thought it was a good trade.",<VisionEgg.WrappedText.WrappedText object at 0x103b5aa00>
+26.0000,8.000,1,34,1,nonjoke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough change.",<VisionEgg.WrappedText.WrappedText object at 0x103b5ab40>
+34.0000,8.000,1,141,1,joke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tourist.,<VisionEgg.WrappedText.WrappedText object at 0x103b5abe0>
+42.0000,8.000,1,138,1,nonjoke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into gasoline.,<VisionEgg.WrappedText.WrappedText object at 0x103b5acd0>
+50.0000,2.000,fix
+52.0000,8.000,1,120,1,nonjoke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and fame.,<VisionEgg.WrappedText.WrappedText object at 0x103b5ad20>
+60.0000,2.000,fix
+62.0000,8.000,1,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,<VisionEgg.WrappedText.WrappedText object at 0x103b5aaa0>
+70.0000,2.000,fix
+72.0000,8.000,1,37,1,joke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the bathtub.",<VisionEgg.WrappedText.WrappedText object at 0x103b5ac80>
+80.0000,2.000,fix
+82.0000,8.000,1,16,1,nonjoke,Many a man's idea of a vacation is to rest quietly in the shade of a ,blonde,palm,Many a man's idea of a vacation is to rest quietly in the shade of a palm.,<VisionEgg.WrappedText.WrappedText object at 0x103b5ac30>
+90.0000,8.000,1,98,1,nonjoke,"Nature has three ways of thinning the herd: drought, famine, and ",primaries,hunting,"Nature has three ways of thinning the herd: drought, famine, and hunting.",<VisionEgg.WrappedText.WrappedText object at 0x10b135140>
+98.0000,2.000,fix
+100.0000,8.000,1,82,1,nonjoke,"When it comes to keeping warm, nothing beats a thermal",brunette,parka,"When it comes to keeping warm, nothing beats a thermal parka.",<VisionEgg.WrappedText.WrappedText object at 0x10b1350f0>
+108.0000,8.000,1,55,1,joke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cash.,<VisionEgg.WrappedText.WrappedText object at 0x10b135050>
+116.0000,6.000,fix
+122.0000,8.000,1,146,1,nonjoke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called memories.",<VisionEgg.WrappedText.WrappedText object at 0x10b1350a0>
+130.0000,8.000,fix
+138.0000,8.000,1,94,1,nonjoke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are workers.",<VisionEgg.WrappedText.WrappedText object at 0x10b135190>
+146.0000,8.000,1,85,1,joke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while driving.",<VisionEgg.WrappedText.WrappedText object at 0x10b1351e0>
+154.0000,8.000,1,89,1,joke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are male.",<VisionEgg.WrappedText.WrappedText object at 0x10b135280>
+162.0000,6.000,fix
+168.0000,8.000,1,18,1,nonjoke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my collar.",<VisionEgg.WrappedText.WrappedText object at 0x10b135230>
+176.0000,8.000,1,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,<VisionEgg.WrappedText.WrappedText object at 0x10b1352d0>
+184.0000,8.000,1,123,1,joke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large stone.,<VisionEgg.WrappedText.WrappedText object at 0x10b135320>
+192.0000,2.000,fix
+194.0000,8.000,1,102,1,nonjoke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our town.,<VisionEgg.WrappedText.WrappedText object at 0x10b135370>
+202.0000,8.000,1,15,1,joke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his leg.",<VisionEgg.WrappedText.WrappedText object at 0x10b1353c0>
+210.0000,4.000,fix
+214.0000,8.000,1,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",<VisionEgg.WrappedText.WrappedText object at 0x10b135410>
+222.0000,8.000,1,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,<VisionEgg.WrappedText.WrappedText object at 0x10b135460>
+230.0000,4.000,fix
+234.0000,8.000,1,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,<VisionEgg.WrappedText.WrappedText object at 0x10b1354b0>
+242.0000,2.000,fix
+244.0000,8.000,1,62,1,nonjoke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on concrete.",<VisionEgg.WrappedText.WrappedText object at 0x10b135500>
+252.0000,6.000,fix
+258.0000,8.000,1,54,1,nonjoke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little sightseeing.,<VisionEgg.WrappedText.WrappedText object at 0x10b135550>
+266.0000,2.000,fix
+268.0000,8.000,1,148,1,nonjoke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a toaster.,<VisionEgg.WrappedText.WrappedText object at 0x10b1355a0>
+276.0000,8.000,1,10,1,nonjoke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than radiation.,<VisionEgg.WrappedText.WrappedText object at 0x10b1355f0>
+284.0000,22.000,fix
+306.0000,8.000,1,44,1,nonjoke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the bank.,<VisionEgg.WrappedText.WrappedText object at 0x10b135640>
+314.0000,8.000,1,12,1,nonjoke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the family .,<VisionEgg.WrappedText.WrappedText object at 0x10b135690>
+322.0000,8.000,1,151,1,joke,One good turn gets most of the,blanket,profit,One good turn gets most of the blanket.,<VisionEgg.WrappedText.WrappedText object at 0x10b1356e0>
+330.0000,2.000,fix
+332.0000,8.000,1,116,1,nonjoke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about somebody.,<VisionEgg.WrappedText.WrappedText object at 0x10b135780>
+340.0000,10.000,fix
+350.0000,8.000,1,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",<VisionEgg.WrappedText.WrappedText object at 0x10b135730>
+358.0000,6.000,fix
+364.0000,8.000,1,19,1,joke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my umbrella.",<VisionEgg.WrappedText.WrappedText object at 0x10b1357d0>
+372.0000,8.000,1,30,1,nonjoke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the syrup.,<VisionEgg.WrappedText.WrappedText object at 0x10b135820>
+380.0000,6.000,fix
+386.0000,8.000,1,152,1,nonjoke,"Many things run in families, especially",noses,strength,"Many things run in families, especially strength.",<VisionEgg.WrappedText.WrappedText object at 0x10b1358c0>
+394.0000,4.000,fix
+398.0000,8.000,1,21,1,joke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every century.",<VisionEgg.WrappedText.WrappedText object at 0x10b135870>
+406.0000,4.000,fix
+410.0000,8.000,1,42,1,nonjoke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cold.,<VisionEgg.WrappedText.WrappedText object at 0x10b135910>
+418.0000,4.000,fix
+422.0000,8.000,1,127,1,joke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying rich.,<VisionEgg.WrappedText.WrappedText object at 0x10b135960>
+430.0000,4.000,fix
+434.0000,8.000,1,52,1,nonjoke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no anesthetic.,<VisionEgg.WrappedText.WrappedText object at 0x10b1359b0>
+442.0000,8.000,1,155,1,joke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the singer.,<VisionEgg.WrappedText.WrappedText object at 0x10b135a00>
+450.0000,8.000,1,143,1,joke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're commuters.,<VisionEgg.WrappedText.WrappedText object at 0x10b135a50>
+458.0000,2.000,fix
+460.0000,8.000,1,125,1,joke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the attorney.,<VisionEgg.WrappedText.WrappedText object at 0x10b135af0>
+468.0000,8.000,1,96,1,nonjoke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the crate.",<VisionEgg.WrappedText.WrappedText object at 0x10b135b40>
+476.0000,2.000,fix
+478.0000,8.000,1,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,<VisionEgg.WrappedText.WrappedText object at 0x10b135aa0>
+486.0000,22.000,fix
+508.0000,8.000,1,39,1,joke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with scissors.,<VisionEgg.WrappedText.WrappedText object at 0x10b135b90>
+516.0000,8.000,1,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",<VisionEgg.WrappedText.WrappedText object at 0x10b135c30>
+524.0000,2.000,fix
+526.0000,8.000,1,65,1,joke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke gunpowder.,<VisionEgg.WrappedText.WrappedText object at 0x10b135be0>
+534.0000,8.000,1,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,<VisionEgg.WrappedText.WrappedText object at 0x10b135c80>
+542.0000,2.000,fix
+544.0000,8.000,1,109,1,joke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a dropout.,<VisionEgg.WrappedText.WrappedText object at 0x10b135d20>
+552.0000,10.000,fix
+562.0000,8.000,1,111,1,joke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count children.",<VisionEgg.WrappedText.WrappedText object at 0x10b135cd0>
+FED_20161217c_3T2,1,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",1,1.9002361297607422,6.00965690612793
+FED_20161217c_3T2,1,119,1,joke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly bent.",2,0.9501340389251709,14.010685920715332
+FED_20161217c_3T2,1,101,1,joke,"I got a car for my wife, and I thought it was a good",trade,choice,"I got a car for my wife, and I thought it was a good trade.",3,0.6834421157836914,24.011972904205322
+FED_20161217c_3T2,1,34,1,nonjoke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough change.",,,32.012999057769775
+FED_20161217c_3T2,1,141,1,joke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tourist.,2,1.9335319995880127,40.014089822769165
+FED_20161217c_3T2,1,138,1,nonjoke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into gasoline.,1,1.4834988117218018,48.0150580406189
+FED_20161217c_3T2,1,120,1,nonjoke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and fame.,2,1.3669049739837646,58.016319036483765
+FED_20161217c_3T2,1,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,1,1.316871166229248,68.00092387199402
+FED_20161217c_3T2,1,37,1,joke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the bathtub.",2,0.8835570812225342,78.00210285186768
+FED_20161217c_3T2,1,16,1,nonjoke,Many a man's idea of a vacation is to rest quietly in the shade of a ,blonde,palm,Many a man's idea of a vacation is to rest quietly in the shade of a palm.,1,0.9001479148864746,88.00344800949097
+FED_20161217c_3T2,1,98,1,nonjoke,"Nature has three ways of thinning the herd: drought, famine, and ",primaries,hunting,"Nature has three ways of thinning the herd: drought, famine, and hunting.",1,0.9167788028717041,96.00446105003357
+FED_20161217c_3T2,1,82,1,nonjoke,"When it comes to keeping warm, nothing beats a thermal",brunette,parka,"When it comes to keeping warm, nothing beats a thermal parka.",1,0.7667889595031738,106.00572800636292
+FED_20161217c_3T2,1,55,1,joke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cash.,2,0.9001419544219971,114.00674200057983
+FED_20161217c_3T2,1,146,1,nonjoke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called memories.",1,0.9333808422088623,128.00858402252197
+FED_20161217c_3T2,1,94,1,nonjoke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are workers.",2,1.0501000881195068,144.0106029510498
+FED_20161217c_3T2,1,85,1,joke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while driving.",3,0.7001068592071533,152.0115430355072
+FED_20161217c_3T2,1,89,1,joke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are male.",1,1.3668179512023926,160.01262092590332
+FED_20161217c_3T2,1,18,1,nonjoke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my collar.",1,0.8165969848632812,174.0144009590149
+FED_20161217c_3T2,1,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,2,0.8333830833435059,182.01541590690613
+FED_20161217c_3T2,1,123,1,joke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large stone.,1,1.9668371677398682,190.01642084121704
+FED_20161217c_3T2,1,102,1,nonjoke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our town.,,,200.00099897384644
+FED_20161217c_3T2,1,15,1,joke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his leg.",1,1.5334811210632324,208.00205087661743
+FED_20161217c_3T2,1,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",1,0.7501218318939209,220.00354099273682
+FED_20161217c_3T2,1,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,2,1.9168281555175781,228.00460386276245
+FED_20161217c_3T2,1,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,2,0.8001339435577393,240.00606989860535
+FED_20161217c_3T2,1,62,1,nonjoke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on concrete.",1,0.566756010055542,250.00733304023743
+FED_20161217c_3T2,1,54,1,nonjoke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little sightseeing.,1,1.0668509006500244,264.00909304618835
+FED_20161217c_3T2,1,148,1,nonjoke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a toaster.,1,0.7668099403381348,274.0103359222412
+FED_20161217c_3T2,1,10,1,nonjoke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than radiation.,1,0.5000729560852051,282.0113730430603
+FED_20161217c_3T2,1,44,1,nonjoke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the bank.,,,312.01517486572266
+FED_20161217c_3T2,1,12,1,nonjoke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the family .,1,0.6668121814727783,320.0161998271942
+FED_20161217c_3T2,1,151,1,joke,One good turn gets most of the,blanket,profit,One good turn gets most of the blanket.,2,0.6834218502044678,328.00053000450134
+FED_20161217c_3T2,1,116,1,nonjoke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about somebody.,,,338.0016758441925
+FED_20161217c_3T2,1,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",1,0.566694974899292,356.0041449069977
+FED_20161217c_3T2,1,19,1,joke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my umbrella.",2,1.050110101699829,370.00594091415405
+FED_20161217c_3T2,1,30,1,nonjoke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the syrup.,1,1.7836179733276367,378.0068769454956
+FED_20161217c_3T2,1,152,1,nonjoke,"Many things run in families, especially",noses,strength,"Many things run in families, especially strength.",1,1.3334698677062988,392.0087330341339
+FED_20161217c_3T2,1,21,1,joke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every century.",1,0.8999519348144531,404.0102310180664
+FED_20161217c_3T2,1,42,1,nonjoke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cold.,1,0.3500549793243408,416.0117619037628
+FED_20161217c_3T2,1,127,1,joke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying rich.,,,428.01331090927124
+FED_20161217c_3T2,1,52,1,nonjoke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no anesthetic.,1,0.5000209808349609,440.01481795310974
+FED_20161217c_3T2,1,155,1,joke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the singer.,2,1.2167811393737793,448.0158278942108
+FED_20161217c_3T2,1,143,1,joke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're commuters.,2,1.31681489944458,456.00017499923706
+FED_20161217c_3T2,1,125,1,joke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the attorney.,1,1.5835158824920654,466.00144600868225
+FED_20161217c_3T2,1,96,1,nonjoke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the crate.",1,0.9668209552764893,474.0024609565735
+FED_20161217c_3T2,1,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,,,484.0037729740143
+FED_20161217c_3T2,1,39,1,joke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with scissors.,2,0.4000709056854248,514.0075409412384
+FED_20161217c_3T2,1,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",2,1.9502339363098145,522.00856590271
+FED_20161217c_3T2,1,65,1,joke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke gunpowder.,3,0.5499110221862793,532.0098350048065
+FED_20161217c_3T2,1,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,2,0.6167199611663818,540.0107929706573
+FED_20161217c_3T2,1,109,1,joke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a dropout.,2,0.8167731761932373,550.012128829956
+FED_20161217c_3T2,1,111,1,joke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count children.",1,0.9835388660430908,568.0144209861755

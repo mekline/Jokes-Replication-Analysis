@@ -1,0 +1,136 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,3,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,<VisionEgg.WrappedText.WrappedText object at 0x1038c6c80>
+8.0000,18.000,fix
+26.0000,8.000,3,75,2,nonjoke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be capitalized.",<VisionEgg.WrappedText.WrappedText object at 0x1038c6d20>
+34.0000,8.000,3,95,2,nonjoke,He was teaching his girlfriend how to swim when the lifeguard made them move to the ,lake,shallows,He was teaching his girlfriend how to swim when the lifeguard made them move to the shallows.,<VisionEgg.WrappedText.WrappedText object at 0x1038c6d70>
+42.0000,8.000,3,32,2,joke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually dollars.",<VisionEgg.WrappedText.WrappedText object at 0x1038c6cd0>
+50.0000,2.000,fix
+52.0000,8.000,3,80,2,joke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel happy.,<VisionEgg.WrappedText.WrappedText object at 0x1038c6dc0>
+60.0000,8.000,3,81,2,nonjoke,Another thing that has developed by leaps and bounds is modern,dance,science,Another thing that has developed by leaps and bounds is modern science.,<VisionEgg.WrappedText.WrappedText object at 0x1038c6e10>
+68.0000,6.000,fix
+74.0000,8.000,3,138,2,joke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into movies.,<VisionEgg.WrappedText.WrappedText object at 0x1038c6e60>
+82.0000,2.000,fix
+84.0000,8.000,3,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",<VisionEgg.WrappedText.WrappedText object at 0x1038c6eb0>
+92.0000,2.000,fix
+94.0000,8.000,3,30,2,joke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the spoon.,<VisionEgg.WrappedText.WrappedText object at 0x1038c6f00>
+102.0000,8.000,3,27,2,nonjoke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight disease.",<VisionEgg.WrappedText.WrappedText object at 0x1038c6fa0>
+110.0000,8.000,3,141,2,nonjoke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tobacco.,<VisionEgg.WrappedText.WrappedText object at 0x1038c6f50>
+118.0000,14.000,fix
+132.0000,8.000,3,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",<VisionEgg.WrappedText.WrappedText object at 0x10aea60a0>
+140.0000,8.000,3,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",<VisionEgg.WrappedText.WrappedText object at 0x10aea60f0>
+148.0000,10.000,fix
+158.0000,8.000,3,41,2,nonjoke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a motorist.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6050>
+166.0000,4.000,fix
+170.0000,8.000,3,26,2,joke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three taxpayers.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6190>
+178.0000,8.000,3,31,2,nonjoke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the problem.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6140>
+186.0000,8.000,3,61,2,nonjoke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a freeway.",<VisionEgg.WrappedText.WrappedText object at 0x10aea61e0>
+194.0000,4.000,fix
+198.0000,8.000,3,118,2,joke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the patrons.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6230>
+206.0000,8.000,3,150,2,joke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a textbook.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6280>
+214.0000,8.000,3,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6320>
+222.0000,2.000,fix
+224.0000,8.000,3,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,<VisionEgg.WrappedText.WrappedText object at 0x10aea62d0>
+232.0000,2.000,fix
+234.0000,8.000,3,83,2,nonjoke,Nothing ages a woman faster than,identification,hardship,Nothing ages a woman faster than hardship.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6370>
+242.0000,4.000,fix
+246.0000,8.000,3,77,2,nonjoke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to friends.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6410>
+254.0000,8.000,3,117,2,nonjoke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to somewhere.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6460>
+262.0000,10.000,fix
+272.0000,8.000,3,91,2,nonjoke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its resources.",<VisionEgg.WrappedText.WrappedText object at 0x10aea63c0>
+280.0000,8.000,3,6,2,joke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and putt.,<VisionEgg.WrappedText.WrappedText object at 0x10aea64b0>
+288.0000,4.000,fix
+292.0000,8.000,3,148,2,joke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a grandma.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6500>
+300.0000,4.000,fix
+304.0000,8.000,3,110,2,joke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're everywhere.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6550>
+312.0000,8.000,3,11,2,nonjoke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a statement.",<VisionEgg.WrappedText.WrappedText object at 0x10aea65a0>
+320.0000,8.000,3,116,2,joke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about others.,<VisionEgg.WrappedText.WrappedText object at 0x10aea65f0>
+328.0000,4.000,fix
+332.0000,8.000,3,156,2,joke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are mosquitos.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6640>
+340.0000,4.000,fix
+344.0000,8.000,3,42,2,joke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cow.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6690>
+352.0000,4.000,fix
+356.0000,8.000,3,72,2,joke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a library.,<VisionEgg.WrappedText.WrappedText object at 0x10aea66e0>
+364.0000,8.000,3,45,2,nonjoke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her jacket.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6780>
+372.0000,2.000,fix
+374.0000,8.000,3,153,2,nonjoke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the snoop.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6730>
+382.0000,2.000,fix
+384.0000,8.000,3,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",<VisionEgg.WrappedText.WrappedText object at 0x10aea67d0>
+392.0000,8.000,3,96,2,joke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the register.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6820>
+400.0000,6.000,fix
+406.0000,8.000,3,99,2,nonjoke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good surprise.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6870>
+414.0000,8.000,3,112,2,joke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in Crayola.,<VisionEgg.WrappedText.WrappedText object at 0x10aea68c0>
+422.0000,6.000,fix
+428.0000,8.000,3,142,2,joke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her fianc_.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6910>
+436.0000,8.000,3,146,2,joke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called alimony.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6960>
+444.0000,6.000,fix
+450.0000,8.000,3,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",<VisionEgg.WrappedText.WrappedText object at 0x10aea69b0>
+458.0000,2.000,fix
+460.0000,8.000,3,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6a00>
+468.0000,6.000,fix
+474.0000,8.000,3,53,2,nonjoke,"By the time Mary had her fourteenth child, she'd run out of names to call her ",husband,offspring,"By the time Mary had her fourteenth child, she'd run out of names to call her offspring.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6a50>
+482.0000,4.000,fix
+486.0000,8.000,3,135,2,nonjoke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my clutch.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6aa0>
+494.0000,8.000,3,67,2,nonjoke,The most prevalent form of legalized gambling is,elections,betting,The most prevalent form of legalized gambling is betting.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6af0>
+502.0000,2.000,fix
+504.0000,8.000,3,44,2,joke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the cemetery.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6b40>
+512.0000,8.000,3,84,2,joke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and lawyers.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6b90>
+520.0000,8.000,3,17,2,nonjoke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes votes.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6be0>
+528.0000,6.000,fix
+534.0000,8.000,3,2,2,joke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two weeks.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6c80>
+542.0000,4.000,fix
+546.0000,8.000,3,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,<VisionEgg.WrappedText.WrappedText object at 0x10aea6c30>
+554.0000,4.000,fix
+558.0000,8.000,3,43,2,nonjoke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a journalist.",<VisionEgg.WrappedText.WrappedText object at 0x10aea6cd0>
+566.0000,4.000,fix
+FED_20170414c_3T2,3,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,,,6.009407043457031
+FED_20170414c_3T2,3,75,2,nonjoke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be capitalized.",1,0.4000701904296875,32.01269602775574
+FED_20170414c_3T2,3,95,2,nonjoke,He was teaching his girlfriend how to swim when the lifeguard made them move to the ,lake,shallows,He was teaching his girlfriend how to swim when the lifeguard made them move to the shallows.,2,0.7334389686584473,40.01373815536499
+FED_20170414c_3T2,3,32,2,joke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually dollars.",4,0.4500410556793213,48.014748096466064
+FED_20170414c_3T2,3,80,2,joke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel happy.,1,0.5167431831359863,58.016010999679565
+FED_20170414c_3T2,3,81,2,nonjoke,Another thing that has developed by leaps and bounds is modern,dance,science,Another thing that has developed by leaps and bounds is modern science.,1,0.4333779811859131,66.00037503242493
+FED_20170414c_3T2,3,138,2,joke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into movies.,4,0.38341403007507324,80.00215411186218
+FED_20170414c_3T2,3,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",3,0.3167111873626709,90.00343799591064
+FED_20170414c_3T2,3,30,2,joke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the spoon.,3,0.7500848770141602,100.00469613075256
+FED_20170414c_3T2,3,27,2,nonjoke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight disease.",1,0.5334241390228271,108.00568103790283
+FED_20170414c_3T2,3,141,2,nonjoke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tobacco.,2,0.550041913986206,116.00675511360168
+FED_20170414c_3T2,3,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",3,1.650230884552002,138.00952410697937
+FED_20170414c_3T2,3,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",1,0.45003294944763184,146.0105721950531
+FED_20170414c_3T2,3,41,2,nonjoke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a motorist.,1,0.45006704330444336,164.01283717155457
+FED_20170414c_3T2,3,26,2,joke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three taxpayers.",4,0.599984884262085,176.0143871307373
+FED_20170414c_3T2,3,31,2,nonjoke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the problem.",1,0.40006494522094727,184.01539206504822
+FED_20170414c_3T2,3,61,2,nonjoke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a freeway.",1,0.9334661960601807,192.01639199256897
+FED_20170414c_3T2,3,118,2,joke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the patrons.,1,0.5000839233398438,204.00123715400696
+FED_20170414c_3T2,3,150,2,joke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a textbook.,4,0.3333420753479004,212.00231504440308
+FED_20170414c_3T2,3,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,2,0.4167170524597168,220.00326108932495
+FED_20170414c_3T2,3,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,1,1.1168010234832764,230.00454807281494
+FED_20170414c_3T2,3,83,2,nonjoke,Nothing ages a woman faster than,identification,hardship,Nothing ages a woman faster than hardship.,1,0.3833940029144287,240.00581002235413
+FED_20170414c_3T2,3,77,2,nonjoke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to friends.,1,0.8000950813293457,252.00734400749207
+FED_20170414c_3T2,3,117,2,nonjoke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to somewhere.",1,0.4833991527557373,260.00836300849915
+FED_20170414c_3T2,3,91,2,nonjoke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its resources.",1,0.2833840847015381,278.01066398620605
+FED_20170414c_3T2,3,6,2,joke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and putt.,4,0.3667120933532715,286.0116751194
+FED_20170414c_3T2,3,148,2,joke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a grandma.,3,0.3500199317932129,298.0132751464844
+FED_20170414c_3T2,3,110,2,joke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're everywhere.,4,0.35005903244018555,310.0147521495819
+FED_20170414c_3T2,3,11,2,nonjoke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a statement.",1,0.8667709827423096,318.01572608947754
+FED_20170414c_3T2,3,116,2,joke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about others.,2,0.48337602615356445,326.00010800361633
+FED_20170414c_3T2,3,156,2,joke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are mosquitos.,3,0.2500450611114502,338.00161600112915
+FED_20170414c_3T2,3,42,2,joke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cow.,3,0.30004096031188965,350.00313806533813
+FED_20170414c_3T2,3,72,2,joke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a library.,1,0.36670589447021484,362.00467014312744
+FED_20170414c_3T2,3,45,2,nonjoke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her jacket.",1,1.8002140522003174,370.0056869983673
+FED_20170414c_3T2,3,153,2,nonjoke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the snoop.,1,0.31667113304138184,380.006982088089
+FED_20170414c_3T2,3,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",1,0.3500518798828125,390.00824213027954
+FED_20170414c_3T2,3,96,2,joke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the register.",3,0.36671876907348633,398.0092542171478
+FED_20170414c_3T2,3,99,2,nonjoke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good surprise.",1,0.4666299819946289,412.01112508773804
+FED_20170414c_3T2,3,112,2,joke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in Crayola.,1,0.43340301513671875,420.01208901405334
+FED_20170414c_3T2,3,142,2,joke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her fianc_.,,,434.0139501094818
+FED_20170414c_3T2,3,146,2,joke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called alimony.",2,0.41673898696899414,442.01493215560913
+FED_20170414c_3T2,3,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",3,0.600104808807373,456.0000522136688
+FED_20170414c_3T2,3,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,1,0.3000509738922119,466.00136518478394
+FED_20170414c_3T2,3,53,2,nonjoke,"By the time Mary had her fourteenth child, she'd run out of names to call her ",husband,offspring,"By the time Mary had her fourteenth child, she'd run out of names to call her offspring.",2,0.4000279903411865,480.0031909942627
+FED_20170414c_3T2,3,135,2,nonjoke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my clutch.",1,0.40006494522094727,492.0047080516815
+FED_20170414c_3T2,3,67,2,nonjoke,The most prevalent form of legalized gambling is,elections,betting,The most prevalent form of legalized gambling is betting.,1,0.3000469207763672,500.00573921203613
+FED_20170414c_3T2,3,44,2,joke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the cemetery.,3,0.2666161060333252,510.007071018219
+FED_20170414c_3T2,3,84,2,joke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and lawyers.",2,1.566890001296997,518.0080900192261
+FED_20170414c_3T2,3,17,2,nonjoke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes votes.,1,0.283444881439209,526.00901222229
+FED_20170414c_3T2,3,2,2,joke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two weeks.",3,0.3667459487915039,540.010908126831
+FED_20170414c_3T2,3,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,4,0.5667519569396973,552.0124981403351
+FED_20170414c_3T2,3,43,2,nonjoke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a journalist.",1,0.40006494522094727,564.0140490531921

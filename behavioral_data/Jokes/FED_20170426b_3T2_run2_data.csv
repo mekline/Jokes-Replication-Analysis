@@ -1,0 +1,136 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,2,119,1,joke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly bent.",<VisionEgg.WrappedText.WrappedText object at 0x1089b6c80>
+8.0000,18.000,fix
+26.0000,8.000,2,112,1,nonjoke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in charcoal.,<VisionEgg.WrappedText.WrappedText object at 0x1089b6d20>
+34.0000,8.000,2,8,1,nonjoke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the bird.,<VisionEgg.WrappedText.WrappedText object at 0x1089b6d70>
+42.0000,8.000,2,13,1,joke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a shin.,<VisionEgg.WrappedText.WrappedText object at 0x1089b6dc0>
+50.0000,2.000,fix
+52.0000,8.000,2,145,1,joke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a creditor.,<VisionEgg.WrappedText.WrappedText object at 0x1089b6e10>
+60.0000,8.000,2,102,1,nonjoke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our town.,<VisionEgg.WrappedText.WrappedText object at 0x1089b6eb0>
+68.0000,6.000,fix
+74.0000,8.000,2,47,1,joke,"Charged with statutory rape, he told the judge he didn't know she was a ",statue,teenager,"Charged with statutory rape, he told the judge he didn't know she was a statue.",<VisionEgg.WrappedText.WrappedText object at 0x1089b6e60>
+82.0000,2.000,fix
+84.0000,8.000,2,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,<VisionEgg.WrappedText.WrappedText object at 0x1089b6f50>
+92.0000,2.000,fix
+94.0000,8.000,2,77,1,joke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to doctors.,<VisionEgg.WrappedText.WrappedText object at 0x1089b6f00>
+102.0000,8.000,2,66,1,nonjoke,One good way to invest in the country is to buy a ,senator,business,One good way to invest in the country is to buy a business.,<VisionEgg.WrappedText.WrappedText object at 0x1089b6fa0>
+110.0000,8.000,2,30,1,nonjoke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the syrup.,<VisionEgg.WrappedText.WrappedText object at 0x10ff910f0>
+118.0000,14.000,fix
+132.0000,8.000,2,87,1,joke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your opinion.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91140>
+140.0000,8.000,2,78,1,nonjoke,My brother-in-law enjoys fixing things around the house so much he spent an hour last night just fixing our,drinks,stove,My brother-in-law enjoys fixing things around the house so much he spent an hour last night just fixing our stove.,<VisionEgg.WrappedText.WrappedText object at 0x10ff910a0>
+148.0000,10.000,fix
+158.0000,8.000,2,126,1,nonjoke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the tables.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91050>
+166.0000,4.000,fix
+170.0000,8.000,2,9,1,joke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a dress.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91190>
+178.0000,8.000,2,12,1,nonjoke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the family .,<VisionEgg.WrappedText.WrappedText object at 0x10ff911e0>
+186.0000,8.000,2,72,1,nonjoke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a hotel.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91230>
+194.0000,4.000,fix
+198.0000,8.000,2,43,1,joke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a boy.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91280>
+206.0000,8.000,2,127,1,joke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying rich.,<VisionEgg.WrappedText.WrappedText object at 0x10ff912d0>
+214.0000,8.000,2,56,1,nonjoke,"When you own an ice cream business, your favorite flavor is",aspirin,everything,"When you own an ice cream business, your favorite flavor is everything.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91320>
+222.0000,2.000,fix
+224.0000,8.000,2,21,1,joke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every century.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91370>
+232.0000,2.000,fix
+234.0000,8.000,2,64,1,nonjoke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its toes.,<VisionEgg.WrappedText.WrappedText object at 0x10ff913c0>
+242.0000,4.000,fix
+246.0000,8.000,2,68,1,nonjoke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date someone.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91410>
+254.0000,8.000,2,106,1,nonjoke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the fabric.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91460>
+262.0000,10.000,fix
+272.0000,8.000,2,152,1,nonjoke,"Many things run in families, especially",noses,strength,"Many things run in families, especially strength.",<VisionEgg.WrappedText.WrappedText object at 0x10ff914b0>
+280.0000,8.000,2,65,1,joke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke gunpowder.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91500>
+288.0000,4.000,fix
+292.0000,8.000,2,51,1,joke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the Renaissance.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91550>
+300.0000,4.000,fix
+304.0000,8.000,2,133,1,joke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the maid.,<VisionEgg.WrappedText.WrappedText object at 0x10ff915a0>
+312.0000,8.000,2,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",<VisionEgg.WrappedText.WrappedText object at 0x10ff915f0>
+320.0000,8.000,2,57,1,joke,"Congress taxes our income, our property, and our",patience,purchases,"Congress taxes our income, our property, and our patience.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91640>
+328.0000,4.000,fix
+332.0000,8.000,2,31,1,joke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the improvement.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91690>
+340.0000,4.000,fix
+344.0000,8.000,2,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,<VisionEgg.WrappedText.WrappedText object at 0x10ff916e0>
+352.0000,4.000,fix
+356.0000,8.000,2,25,1,joke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is poverty.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91780>
+364.0000,8.000,2,52,1,nonjoke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no anesthetic.,<VisionEgg.WrappedText.WrappedText object at 0x10ff917d0>
+372.0000,2.000,fix
+374.0000,8.000,2,48,1,nonjoke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""partner"".",<VisionEgg.WrappedText.WrappedText object at 0x10ff91730>
+382.0000,2.000,fix
+384.0000,8.000,2,44,1,nonjoke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the bank.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91870>
+392.0000,8.000,2,17,1,joke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes hours.,<VisionEgg.WrappedText.WrappedText object at 0x10ff918c0>
+400.0000,6.000,fix
+406.0000,8.000,2,54,1,nonjoke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little sightseeing.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91960>
+414.0000,8.000,2,61,1,joke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a cruise.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91910>
+422.0000,6.000,fix
+428.0000,8.000,2,1,1,joke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten inches.",<VisionEgg.WrappedText.WrappedText object at 0x10ff919b0>
+436.0000,8.000,2,111,1,joke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count children.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91a00>
+444.0000,6.000,fix
+450.0000,8.000,2,109,1,joke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a dropout.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91a50>
+458.0000,2.000,fix
+460.0000,8.000,2,132,1,nonjoke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in shock.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91aa0>
+468.0000,6.000,fix
+474.0000,8.000,2,120,1,nonjoke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and fame.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91af0>
+482.0000,4.000,fix
+486.0000,8.000,2,150,1,nonjoke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a cabinet.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91b40>
+494.0000,8.000,2,146,1,nonjoke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called memories.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91be0>
+502.0000,2.000,fix
+504.0000,8.000,2,103,1,joke,"I still miss my ex-wife, but I am improving my",aim,ego,"I still miss my ex-wife, but I am improving my aim.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91b90>
+512.0000,8.000,2,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91c30>
+520.0000,8.000,2,6,1,nonjoke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and rest.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91c80>
+528.0000,6.000,fix
+534.0000,8.000,2,11,1,joke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a quarter.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91cd0>
+542.0000,4.000,fix
+546.0000,8.000,2,26,1,nonjoke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three animals.",<VisionEgg.WrappedText.WrappedText object at 0x10ff91d20>
+554.0000,4.000,fix
+558.0000,8.000,2,42,1,nonjoke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cold.,<VisionEgg.WrappedText.WrappedText object at 0x10ff91d70>
+566.0000,4.000,fix
+FED_20170426b_3T2,2,119,1,joke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly bent.",1,1.7835450172424316,6.009413957595825
+FED_20170426b_3T2,2,112,1,nonjoke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in charcoal.,1,0.40007805824279785,32.01261281967163
+FED_20170426b_3T2,2,8,1,nonjoke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the bird.,1,0.3667309284210205,40.013619899749756
+FED_20170426b_3T2,2,13,1,joke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a shin.,3,1.1001050472259521,48.01463484764099
+FED_20170426b_3T2,2,145,1,joke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a creditor.,3,0.9667730331420898,58.01588582992554
+FED_20170426b_3T2,2,102,1,nonjoke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our town.,2,1.0334131717681885,66.00022387504578
+FED_20170426b_3T2,2,47,1,joke,"Charged with statutory rape, he told the judge he didn't know she was a ",statue,teenager,"Charged with statutory rape, he told the judge he didn't know she was a statue.",2,1.1835169792175293,80.0019109249115
+FED_20170426b_3T2,2,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,3,1.6168558597564697,90.00316596031189
+FED_20170426b_3T2,2,77,1,joke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to doctors.,3,1.6001927852630615,100.00442004203796
+FED_20170426b_3T2,2,66,1,nonjoke,One good way to invest in the country is to buy a ,senator,business,One good way to invest in the country is to buy a business.,1,0.5000782012939453,108.00543284416199
+FED_20170426b_3T2,2,30,1,nonjoke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the syrup.,1,0.2999699115753174,116.0064480304718
+FED_20170426b_3T2,2,87,1,joke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your opinion.",1,0.6834409236907959,138.00913500785828
+FED_20170426b_3T2,2,78,1,nonjoke,My brother-in-law enjoys fixing things around the house so much he spent an hour last night just fixing our,drinks,stove,My brother-in-law enjoys fixing things around the house so much he spent an hour last night just fixing our stove.,1,0.9001688957214355,146.01013898849487
+FED_20170426b_3T2,2,126,1,nonjoke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the tables.,1,0.4166688919067383,164.0124020576477
+FED_20170426b_3T2,2,9,1,joke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a dress.",1,0.6000950336456299,176.01384091377258
+FED_20170426b_3T2,2,12,1,nonjoke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the family .,1,0.43341803550720215,184.0148389339447
+FED_20170426b_3T2,2,72,1,nonjoke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a hotel.,1,0.6833629608154297,192.01585602760315
+FED_20170426b_3T2,2,43,1,joke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a boy.",2,1.116765022277832,204.00070095062256
+FED_20170426b_3T2,2,127,1,joke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying rich.,1,0.5000760555267334,212.0016279220581
+FED_20170426b_3T2,2,56,1,nonjoke,"When you own an ice cream business, your favorite flavor is",aspirin,everything,"When you own an ice cream business, your favorite flavor is everything.",1,0.7167849540710449,220.00262594223022
+FED_20170426b_3T2,2,21,1,joke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every century.",1,0.816802978515625,230.00388598442078
+FED_20170426b_3T2,2,64,1,nonjoke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its toes.,2,0.9000771045684814,240.00515484809875
+FED_20170426b_3T2,2,68,1,nonjoke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date someone.,1,0.6500148773193359,252.0066659450531
+FED_20170426b_3T2,2,106,1,nonjoke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the fabric.",1,0.4667391777038574,260.00759387016296
+FED_20170426b_3T2,2,152,1,nonjoke,"Many things run in families, especially",noses,strength,"Many things run in families, especially strength.",1,0.36670422554016113,278.0098798274994
+FED_20170426b_3T2,2,65,1,joke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke gunpowder.,1,0.8167281150817871,286.01085686683655
+FED_20170426b_3T2,2,51,1,joke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the Renaissance.,3,1.500157117843628,298.01237893104553
+FED_20170426b_3T2,2,133,1,joke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the maid.,2,1.5501728057861328,310.013818025589
+FED_20170426b_3T2,2,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",1,0.5834650993347168,318.0148239135742
+FED_20170426b_3T2,2,57,1,joke,"Congress taxes our income, our property, and our",patience,purchases,"Congress taxes our income, our property, and our patience.",3,0.8668031692504883,326.01582884788513
+FED_20170426b_3T2,2,31,1,joke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the improvement.",3,0.9834249019622803,338.00065898895264
+FED_20170426b_3T2,2,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,4,0.433290958404541,350.00210189819336
+FED_20170426b_3T2,2,25,1,joke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is poverty.,2,0.566727876663208,362.00360798835754
+FED_20170426b_3T2,2,52,1,nonjoke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no anesthetic.,1,0.3667261600494385,370.0046138763428
+FED_20170426b_3T2,2,48,1,nonjoke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""partner"".",1,0.6000981330871582,380.00586891174316
+FED_20170426b_3T2,2,44,1,nonjoke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the bank.,1,0.5500199794769287,390.00713086128235
+FED_20170426b_3T2,2,17,1,joke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes hours.,2,0.36672401428222656,398.0080599784851
+FED_20170426b_3T2,2,54,1,nonjoke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little sightseeing.,1,1.8668980598449707,412.0098249912262
+FED_20170426b_3T2,2,61,1,joke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a cruise.",1,0.45003294944763184,420.01083993911743
+FED_20170426b_3T2,2,1,1,joke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten inches.",2,1.550173044204712,434.0125868320465
+FED_20170426b_3T2,2,111,1,joke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count children.",2,0.5333468914031982,442.01359605789185
+FED_20170426b_3T2,2,109,1,joke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a dropout.,1,0.7668051719665527,456.015282869339
+FED_20170426b_3T2,2,132,1,nonjoke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in shock.,1,0.5167500972747803,466.01654291152954
+FED_20170426b_3T2,2,120,1,nonjoke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and fame.,1,0.5333437919616699,480.00164103507996
+FED_20170426b_3T2,2,150,1,nonjoke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a cabinet.,1,0.41669797897338867,492.0031099319458
+FED_20170426b_3T2,2,146,1,nonjoke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called memories.",1,0.5834639072418213,500.0039839744568
+FED_20170426b_3T2,2,103,1,joke,"I still miss my ex-wife, but I am improving my",aim,ego,"I still miss my ex-wife, but I am improving my aim.",3,0.4500718116760254,510.0053360462189
+FED_20170426b_3T2,2,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",2,1.9502379894256592,518.0063438415527
+FED_20170426b_3T2,2,6,1,nonjoke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and rest.,1,0.41672515869140625,526.007346868515
+FED_20170426b_3T2,2,11,1,joke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a quarter.",3,1.7502360343933105,540.0091049671173
+FED_20170426b_3T2,2,26,1,nonjoke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three animals.",1,0.5000839233398438,552.0105459690094
+FED_20170426b_3T2,2,42,1,nonjoke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cold.,1,0.6167662143707275,564.0120568275452

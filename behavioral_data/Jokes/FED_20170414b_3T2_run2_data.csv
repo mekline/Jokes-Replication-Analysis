@@ -1,0 +1,136 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,2,40,2,joke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the cashier.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26cd0>
+8.0000,18.000,fix
+26.0000,8.000,2,53,2,nonjoke,"By the time Mary had her fourteenth child, she'd run out of names to call her ",husband,offspring,"By the time Mary had her fourteenth child, she'd run out of names to call her offspring.",<VisionEgg.WrappedText.WrappedText object at 0x10ed26be0>
+34.0000,8.000,2,7,2,nonjoke,A replacement player hit a home run with my,girl,ball,A replacement player hit a home run with my ball.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26d20>
+42.0000,8.000,2,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26d70>
+50.0000,2.000,fix
+52.0000,8.000,2,120,2,joke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and money.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26dc0>
+60.0000,8.000,2,105,2,nonjoke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a guidebook.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26e10>
+68.0000,6.000,fix
+74.0000,8.000,2,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26e60>
+82.0000,2.000,fix
+84.0000,8.000,2,60,2,joke,Another thing a small boy is constantly outgrowing is his,allowance,underwear,Another thing a small boy is constantly outgrowing is his allowance.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26f00>
+92.0000,2.000,fix
+94.0000,8.000,2,58,2,joke,The woman who has her husband eating out of her hand must save a lot of,dishwashing,heartbreak,The woman who has her husband eating out of her hand must save a lot of dishwashing.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26eb0>
+102.0000,8.000,2,41,2,nonjoke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a motorist.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26f50>
+110.0000,8.000,2,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,<VisionEgg.WrappedText.WrappedText object at 0x10ed26fa0>
+118.0000,14.000,fix
+132.0000,8.000,2,8,2,joke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the kids.,<VisionEgg.WrappedText.WrappedText object at 0x116303050>
+140.0000,8.000,2,71,2,nonjoke,Save the whales; start a,collection,coalition,Save the whales; start a coalition.,<VisionEgg.WrappedText.WrappedText object at 0x116303140>
+148.0000,10.000,fix
+158.0000,8.000,2,61,2,nonjoke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a freeway.",<VisionEgg.WrappedText.WrappedText object at 0x1163030f0>
+166.0000,4.000,fix
+170.0000,8.000,2,34,2,joke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough room.",<VisionEgg.WrappedText.WrappedText object at 0x1163030a0>
+178.0000,8.000,2,121,2,nonjoke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a piston.",<VisionEgg.WrappedText.WrappedText object at 0x1163031e0>
+186.0000,8.000,2,107,2,nonjoke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice diction.,<VisionEgg.WrappedText.WrappedText object at 0x116303190>
+194.0000,4.000,fix
+198.0000,8.000,2,68,2,joke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date bachelors.,<VisionEgg.WrappedText.WrappedText object at 0x116303280>
+206.0000,8.000,2,42,2,joke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cow.,<VisionEgg.WrappedText.WrappedText object at 0x116303230>
+214.0000,8.000,2,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,<VisionEgg.WrappedText.WrappedText object at 0x1163032d0>
+222.0000,2.000,fix
+224.0000,8.000,2,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",<VisionEgg.WrappedText.WrappedText object at 0x116303320>
+232.0000,2.000,fix
+234.0000,8.000,2,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",<VisionEgg.WrappedText.WrappedText object at 0x116303370>
+242.0000,4.000,fix
+246.0000,8.000,2,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,<VisionEgg.WrappedText.WrappedText object at 0x1163033c0>
+254.0000,8.000,2,117,2,nonjoke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to somewhere.",<VisionEgg.WrappedText.WrappedText object at 0x116303410>
+262.0000,10.000,fix
+272.0000,8.000,2,51,2,nonjoke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the nighttime.,<VisionEgg.WrappedText.WrappedText object at 0x116303460>
+280.0000,8.000,2,62,2,joke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on alcohol.",<VisionEgg.WrappedText.WrappedText object at 0x1163034b0>
+288.0000,4.000,fix
+292.0000,8.000,2,92,2,joke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his wife.",<VisionEgg.WrappedText.WrappedText object at 0x116303500>
+300.0000,4.000,fix
+304.0000,8.000,2,132,2,joke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in surgery.,<VisionEgg.WrappedText.WrappedText object at 0x116303550>
+312.0000,8.000,2,79,2,nonjoke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her vanilla.,<VisionEgg.WrappedText.WrappedText object at 0x1163035a0>
+320.0000,8.000,2,112,2,joke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in Crayola.,<VisionEgg.WrappedText.WrappedText object at 0x1163035f0>
+328.0000,4.000,fix
+332.0000,8.000,2,48,2,joke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""accomplice"".",<VisionEgg.WrappedText.WrappedText object at 0x116303640>
+340.0000,4.000,fix
+344.0000,8.000,2,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",<VisionEgg.WrappedText.WrappedText object at 0x1163036e0>
+352.0000,4.000,fix
+356.0000,8.000,2,18,2,joke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my glasses.",<VisionEgg.WrappedText.WrappedText object at 0x116303730>
+364.0000,8.000,2,19,2,nonjoke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my pay.",<VisionEgg.WrappedText.WrappedText object at 0x116303780>
+372.0000,2.000,fix
+374.0000,8.000,2,133,2,nonjoke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the shelves.,<VisionEgg.WrappedText.WrappedText object at 0x1163037d0>
+382.0000,2.000,fix
+384.0000,8.000,2,127,2,nonjoke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying unloved.,<VisionEgg.WrappedText.WrappedText object at 0x116303820>
+392.0000,8.000,2,110,2,joke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're everywhere.,<VisionEgg.WrappedText.WrappedText object at 0x116303870>
+400.0000,6.000,fix
+406.0000,8.000,2,143,2,nonjoke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're candidates.,<VisionEgg.WrappedText.WrappedText object at 0x1163038c0>
+414.0000,8.000,2,14,2,joke,He got a medal for bravery on the beach when he rescued a girl from a ,lifeguard,shipwreck,He got a medal for bravery on the beach when he rescued a girl from a lifeguard.,<VisionEgg.WrappedText.WrappedText object at 0x116303910>
+422.0000,6.000,fix
+428.0000,8.000,2,144,2,joke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five beers.,<VisionEgg.WrappedText.WrappedText object at 0x1163039b0>
+436.0000,8.000,2,152,2,joke,"Many things run in families, especially",noses,strength,"Many things run in families, especially noses.",<VisionEgg.WrappedText.WrappedText object at 0x116303960>
+444.0000,6.000,fix
+450.0000,8.000,2,2,2,joke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two weeks.",<VisionEgg.WrappedText.WrappedText object at 0x116303a00>
+458.0000,2.000,fix
+460.0000,8.000,2,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",<VisionEgg.WrappedText.WrappedText object at 0x116303a50>
+468.0000,6.000,fix
+474.0000,8.000,2,67,2,nonjoke,The most prevalent form of legalized gambling is,elections,betting,The most prevalent form of legalized gambling is betting.,<VisionEgg.WrappedText.WrappedText object at 0x116303aa0>
+482.0000,4.000,fix
+486.0000,8.000,2,101,2,nonjoke,"I got a car for my wife, and I thought it was a good",trade,choice,"I got a car for my wife, and I thought it was a good choice.",<VisionEgg.WrappedText.WrappedText object at 0x116303af0>
+494.0000,8.000,2,135,2,nonjoke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my clutch.",<VisionEgg.WrappedText.WrappedText object at 0x116303b40>
+502.0000,2.000,fix
+504.0000,8.000,2,126,2,joke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the laundry.,<VisionEgg.WrappedText.WrappedText object at 0x116303b90>
+512.0000,8.000,2,26,2,joke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three taxpayers.",<VisionEgg.WrappedText.WrappedText object at 0x116303be0>
+520.0000,8.000,2,85,2,nonjoke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while relaxed.",<VisionEgg.WrappedText.WrappedText object at 0x116303c30>
+528.0000,6.000,fix
+534.0000,8.000,2,128,2,joke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the beaches.",<VisionEgg.WrappedText.WrappedText object at 0x116303cd0>
+542.0000,4.000,fix
+546.0000,8.000,2,11,2,nonjoke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a statement.",<VisionEgg.WrappedText.WrappedText object at 0x116303d20>
+554.0000,4.000,fix
+558.0000,8.000,2,9,2,nonjoke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a name.",<VisionEgg.WrappedText.WrappedText object at 0x116303c80>
+566.0000,4.000,fix
+FED_20170414b_3T2,2,40,2,joke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the cashier.,3,0.7167470455169678,6.009178161621094
+FED_20170414b_3T2,2,53,2,nonjoke,"By the time Mary had her fourteenth child, she'd run out of names to call her ",husband,offspring,"By the time Mary had her fourteenth child, she'd run out of names to call her offspring.",2,1.0334508419036865,32.012513160705566
+FED_20170414b_3T2,2,7,2,nonjoke,A replacement player hit a home run with my,girl,ball,A replacement player hit a home run with my ball.,1,0.7334060668945312,40.01351499557495
+FED_20170414b_3T2,2,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,1,0.5334157943725586,48.01451921463013
+FED_20170414b_3T2,2,120,2,joke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and money.,3,0.8167650699615479,58.01580500602722
+FED_20170414b_3T2,2,105,2,nonjoke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a guidebook.,1,0.40007996559143066,66.00012803077698
+FED_20170414b_3T2,2,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,2,0.9001340866088867,80.001953125
+FED_20170414b_3T2,2,60,2,joke,Another thing a small boy is constantly outgrowing is his,allowance,underwear,Another thing a small boy is constantly outgrowing is his allowance.,2,0.5167169570922852,90.00322818756104
+FED_20170414b_3T2,2,58,2,joke,The woman who has her husband eating out of her hand must save a lot of,dishwashing,heartbreak,The woman who has her husband eating out of her hand must save a lot of dishwashing.,3,1.0336368083953857,100.00434422492981
+FED_20170414b_3T2,2,41,2,nonjoke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a motorist.,1,1.8002550601959229,108.00547909736633
+FED_20170414b_3T2,2,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,2,0.4000229835510254,116.00651907920837
+FED_20170414b_3T2,2,8,2,joke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the kids.,2,0.700078010559082,138.00930619239807
+FED_20170414b_3T2,2,71,2,nonjoke,Save the whales; start a,collection,coalition,Save the whales; start a coalition.,2,1.0167961120605469,146.01030707359314
+FED_20170414b_3T2,2,61,2,nonjoke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a freeway.",1,1.2002220153808594,164.01254200935364
+FED_20170414b_3T2,2,34,2,joke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough room.",1,1.5835180282592773,176.01414799690247
+FED_20170414b_3T2,2,121,2,nonjoke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a piston.",1,0.483410120010376,184.01517009735107
+FED_20170414b_3T2,2,107,2,nonjoke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice diction.,1,0.6834421157836914,192.01620602607727
+FED_20170414b_3T2,2,68,2,joke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date bachelors.,1,1.0001349449157715,204.00100708007812
+FED_20170414b_3T2,2,42,2,joke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cow.,4,0.4500730037689209,212.00201201438904
+FED_20170414b_3T2,2,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,2,1.483483076095581,220.00306510925293
+FED_20170414b_3T2,2,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",3,0.850071907043457,230.00433111190796
+FED_20170414b_3T2,2,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",1,0.41669702529907227,240.00560402870178
+FED_20170414b_3T2,2,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,1,0.7001049518585205,252.00711107254028
+FED_20170414b_3T2,2,117,2,nonjoke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to somewhere.",1,1.016801118850708,260.008141040802
+FED_20170414b_3T2,2,51,2,nonjoke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the nighttime.,1,0.5833430290222168,278.0104880332947
+FED_20170414b_3T2,2,62,2,joke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on alcohol.",3,1.000110149383545,286.01148200035095
+FED_20170414b_3T2,2,92,2,joke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his wife.",2,0.7167010307312012,298.01302218437195
+FED_20170414b_3T2,2,132,2,joke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in surgery.,4,0.6000978946685791,310.0144741535187
+FED_20170414b_3T2,2,79,2,nonjoke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her vanilla.,1,1.03348708152771,318.01549005508423
+FED_20170414b_3T2,2,112,2,joke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in Crayola.,3,0.550076961517334,326.01649713516235
+FED_20170414b_3T2,2,48,2,joke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""accomplice"".",2,0.7667889595031738,338.00135111808777
+FED_20170414b_3T2,2,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",1,0.5334048271179199,350.0028991699219
+FED_20170414b_3T2,2,18,2,joke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my glasses.",1,0.700106143951416,362.0044050216675
+FED_20170414b_3T2,2,19,2,nonjoke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my pay.",1,0.9334070682525635,370.00543904304504
+FED_20170414b_3T2,2,133,2,nonjoke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the shelves.,1,0.4501149654388428,380.0066931247711
+FED_20170414b_3T2,2,127,2,nonjoke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying unloved.,1,0.6667540073394775,390.0079860687256
+FED_20170414b_3T2,2,110,2,joke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're everywhere.,3,0.5499098300933838,398.0090072154999
+FED_20170414b_3T2,2,143,2,nonjoke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're candidates.,1,0.4501011371612549,412.01070404052734
+FED_20170414b_3T2,2,14,2,joke,He got a medal for bravery on the beach when he rescued a girl from a ,lifeguard,shipwreck,He got a medal for bravery on the beach when he rescued a girl from a lifeguard.,3,0.7334439754486084,420.0117452144623
+FED_20170414b_3T2,2,144,2,joke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five beers.,2,0.5334069728851318,434.0135381221771
+FED_20170414b_3T2,2,152,2,joke,"Many things run in families, especially",noses,strength,"Many things run in families, especially noses.",2,0.5833849906921387,442.01457715034485
+FED_20170414b_3T2,2,2,2,joke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two weeks.",2,1.0001418590545654,456.0163161754608
+FED_20170414b_3T2,2,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",1,0.7334160804748535,466.00094509124756
+FED_20170414b_3T2,2,67,2,nonjoke,The most prevalent form of legalized gambling is,elections,betting,The most prevalent form of legalized gambling is betting.,2,1.3834600448608398,480.0027370452881
+FED_20170414b_3T2,2,101,2,nonjoke,"I got a car for my wife, and I thought it was a good",trade,choice,"I got a car for my wife, and I thought it was a good choice.",1,0.48340296745300293,492.0042600631714
+FED_20170414b_3T2,2,135,2,nonjoke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my clutch.",1,0.5334169864654541,500.0052590370178
+FED_20170414b_3T2,2,126,2,joke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the laundry.,1,0.8000919818878174,510.00645208358765
+FED_20170414b_3T2,2,26,2,joke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three taxpayers.",2,1.5835320949554443,518.0075500011444
+FED_20170414b_3T2,2,85,2,nonjoke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while relaxed.",2,0.6668140888214111,526.0085380077362
+FED_20170414b_3T2,2,128,2,joke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the beaches.",1,1.0334670543670654,540.0103189945221
+FED_20170414b_3T2,2,11,2,nonjoke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a statement.",1,0.4500250816345215,552.0118660926819
+FED_20170414b_3T2,2,9,2,nonjoke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a name.",1,0.36677098274230957,564.0133631229401

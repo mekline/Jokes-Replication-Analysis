@@ -1,0 +1,137 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,3,81,2,nonjoke,Another thing that has developed by leaps and bounds is modern,dance,science,Another thing that has developed by leaps and bounds is modern science.,<VisionEgg.WrappedText.WrappedText object at 0x103954be0>
+8.0000,2.000,fix
+10.0000,8.000,3,102,2,joke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our income.,<VisionEgg.WrappedText.WrappedText object at 0x103954c80>
+18.0000,2.000,fix
+20.0000,8.000,3,137,2,nonjoke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a zombie.,<VisionEgg.WrappedText.WrappedText object at 0x103954cd0>
+28.0000,2.000,fix
+30.0000,8.000,3,14,2,joke,He got a medal for bravery on the beach when he rescued a girl from a ,lifeguard,shipwreck,He got a medal for bravery on the beach when he rescued a girl from a lifeguard.,<VisionEgg.WrappedText.WrappedText object at 0x103954d20>
+38.0000,2.000,fix
+40.0000,8.000,3,142,2,joke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her fianc_.,<VisionEgg.WrappedText.WrappedText object at 0x103954dc0>
+48.0000,8.000,3,75,2,nonjoke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be capitalized.",<VisionEgg.WrappedText.WrappedText object at 0x103954d70>
+56.0000,8.000,3,52,2,joke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no makeup.,<VisionEgg.WrappedText.WrappedText object at 0x103954e60>
+64.0000,2.000,fix
+66.0000,8.000,3,152,2,joke,"Many things run in families, especially",noses,strength,"Many things run in families, especially noses.",<VisionEgg.WrappedText.WrappedText object at 0x103954eb0>
+74.0000,8.000,3,146,2,joke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called alimony.",<VisionEgg.WrappedText.WrappedText object at 0x103954e10>
+82.0000,8.000,3,11,2,nonjoke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a statement.",<VisionEgg.WrappedText.WrappedText object at 0x103954f00>
+90.0000,8.000,3,90,2,joke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two paychecks.,<VisionEgg.WrappedText.WrappedText object at 0x103954f50>
+98.0000,2.000,fix
+100.0000,8.000,3,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",<VisionEgg.WrappedText.WrappedText object at 0x103954fa0>
+108.0000,8.000,3,32,2,joke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually dollars.",<VisionEgg.WrappedText.WrappedText object at 0x10af320a0>
+116.0000,4.000,fix
+120.0000,8.000,3,49,2,nonjoke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my aunt.,<VisionEgg.WrappedText.WrappedText object at 0x10af32050>
+128.0000,8.000,3,34,2,joke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough room.",<VisionEgg.WrappedText.WrappedText object at 0x10af320f0>
+136.0000,2.000,fix
+138.0000,8.000,3,1,2,nonjoke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten seconds.",<VisionEgg.WrappedText.WrappedText object at 0x10af32190>
+146.0000,6.000,fix
+152.0000,8.000,3,19,2,nonjoke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my pay.",<VisionEgg.WrappedText.WrappedText object at 0x10af32140>
+160.0000,4.000,fix
+164.0000,8.000,3,77,2,nonjoke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to friends.,<VisionEgg.WrappedText.WrappedText object at 0x10af321e0>
+172.0000,8.000,fix
+180.0000,8.000,3,111,2,nonjoke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count salary.",<VisionEgg.WrappedText.WrappedText object at 0x10af32280>
+188.0000,2.000,fix
+190.0000,8.000,3,119,2,nonjoke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly off.",<VisionEgg.WrappedText.WrappedText object at 0x10af32230>
+198.0000,6.000,fix
+204.0000,8.000,3,82,2,joke,"When it comes to keeping warm, nothing beats a thermal",brunette,parka,"When it comes to keeping warm, nothing beats a thermal brunette.",<VisionEgg.WrappedText.WrappedText object at 0x10af32320>
+212.0000,6.000,fix
+218.0000,8.000,3,53,2,nonjoke,"By the time Mary had her fourteenth child, she'd run out of names to call her ",husband,offspring,"By the time Mary had her fourteenth child, she'd run out of names to call her offspring.",<VisionEgg.WrappedText.WrappedText object at 0x10af322d0>
+226.0000,8.000,3,13,2,nonjoke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a candle.,<VisionEgg.WrappedText.WrappedText object at 0x10af32370>
+234.0000,8.000,3,40,2,joke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the cashier.,<VisionEgg.WrappedText.WrappedText object at 0x10af323c0>
+242.0000,8.000,3,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,<VisionEgg.WrappedText.WrappedText object at 0x10af32410>
+250.0000,2.000,fix
+252.0000,8.000,3,57,2,nonjoke,"Congress taxes our income, our property, and our",patience,purchases,"Congress taxes our income, our property, and our purchases.",<VisionEgg.WrappedText.WrappedText object at 0x10af32460>
+260.0000,8.000,3,129,2,nonjoke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a salad.,<VisionEgg.WrappedText.WrappedText object at 0x10af324b0>
+268.0000,2.000,fix
+270.0000,8.000,3,5,2,nonjoke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the habit.,<VisionEgg.WrappedText.WrappedText object at 0x10af32500>
+278.0000,8.000,3,117,2,nonjoke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to somewhere.",<VisionEgg.WrappedText.WrappedText object at 0x10af32550>
+286.0000,8.000,3,135,2,nonjoke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my clutch.",<VisionEgg.WrappedText.WrappedText object at 0x10af325a0>
+294.0000,6.000,fix
+300.0000,8.000,3,104,2,joke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their slice.,<VisionEgg.WrappedText.WrappedText object at 0x10af325f0>
+308.0000,4.000,fix
+312.0000,8.000,3,114,2,joke,It's extraordinary what fine poker hand you get when you're playing,bridge,stud,It's extraordinary what fine poker hand you get when you're playing bridge.,<VisionEgg.WrappedText.WrappedText object at 0x10af32640>
+320.0000,8.000,3,12,2,joke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the press.,<VisionEgg.WrappedText.WrappedText object at 0x10af32690>
+328.0000,4.000,fix
+332.0000,8.000,3,72,2,joke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a library.,<VisionEgg.WrappedText.WrappedText object at 0x10af326e0>
+340.0000,8.000,fix
+348.0000,8.000,3,63,2,nonjoke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the country.",<VisionEgg.WrappedText.WrappedText object at 0x10af32780>
+356.0000,4.000,fix
+360.0000,8.000,3,103,2,nonjoke,"I still miss my ex-wife, but I am improving my",aim,ego,"I still miss my ex-wife, but I am improving my ego.",<VisionEgg.WrappedText.WrappedText object at 0x10af32730>
+368.0000,2.000,fix
+370.0000,8.000,3,110,2,joke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're everywhere.,<VisionEgg.WrappedText.WrappedText object at 0x10af327d0>
+378.0000,8.000,3,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,<VisionEgg.WrappedText.WrappedText object at 0x10af32820>
+386.0000,2.000,fix
+388.0000,8.000,3,144,2,joke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five beers.,<VisionEgg.WrappedText.WrappedText object at 0x10af328c0>
+396.0000,8.000,3,64,2,joke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its credit.,<VisionEgg.WrappedText.WrappedText object at 0x10af32870>
+404.0000,2.000,fix
+406.0000,8.000,3,155,2,nonjoke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the clowns.,<VisionEgg.WrappedText.WrappedText object at 0x10af32910>
+414.0000,4.000,fix
+418.0000,8.000,3,76,2,joke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of punishment.",<VisionEgg.WrappedText.WrappedText object at 0x10af32960>
+426.0000,8.000,3,121,2,nonjoke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a piston.",<VisionEgg.WrappedText.WrappedText object at 0x10af329b0>
+434.0000,18.000,fix
+452.0000,8.000,3,113,2,nonjoke,Some people's only culture is,bacteria,radio,Some people's only culture is radio.,<VisionEgg.WrappedText.WrappedText object at 0x10af32a00>
+460.0000,8.000,3,50,2,joke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in self- defense.,<VisionEgg.WrappedText.WrappedText object at 0x10af32aa0>
+468.0000,12.000,fix
+480.0000,8.000,3,84,2,joke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and lawyers.",<VisionEgg.WrappedText.WrappedText object at 0x10af32a50>
+488.0000,4.000,fix
+492.0000,8.000,3,148,2,joke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a grandma.,<VisionEgg.WrappedText.WrappedText object at 0x10af32af0>
+500.0000,8.000,3,86,2,joke,"I asked the florist what I should give to my girlfriend, and he suggested his",address,tulips,"I asked the florist what I should give to my girlfriend, and he suggested his address.",<VisionEgg.WrappedText.WrappedText object at 0x10af32b40>
+508.0000,6.000,fix
+514.0000,8.000,3,24,2,joke,"Where I'm from, the two most common elements are hydrogen and ",stupidity,nitrogen,"Where I'm from, the two most common elements are hydrogen and stupidity.",<VisionEgg.WrappedText.WrappedText object at 0x10af32b90>
+522.0000,12.000,fix
+534.0000,8.000,3,37,2,nonjoke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the admission.",<VisionEgg.WrappedText.WrappedText object at 0x10af32be0>
+542.0000,6.000,fix
+548.0000,8.000,3,29,2,nonjoke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a practitioner.,<VisionEgg.WrappedText.WrappedText object at 0x10af32c30>
+556.0000,8.000,3,15,2,nonjoke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his fingers.",<VisionEgg.WrappedText.WrappedText object at 0x10af32c80>
+564.0000,6.000,fix
+FED_20170426a_3T2,3,81,2,nonjoke,Another thing that has developed by leaps and bounds is modern,dance,science,Another thing that has developed by leaps and bounds is modern science.,1,0.6000301837921143,6.009493827819824
+FED_20170426a_3T2,3,102,2,joke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our income.,2,0.5834360122680664,16.01067280769348
+FED_20170426a_3T2,3,137,2,nonjoke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a zombie.,1,0.5834248065948486,26.011940002441406
+FED_20170426a_3T2,3,14,2,joke,He got a medal for bravery on the beach when he rescued a girl from a ,lifeguard,shipwreck,He got a medal for bravery on the beach when he rescued a girl from a lifeguard.,2,1.1501798629760742,36.01319193840027
+FED_20170426a_3T2,3,142,2,joke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her fianc_.,3,1.5669920444488525,46.030977964401245
+FED_20170426a_3T2,3,75,2,nonjoke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be capitalized.",2,1.333479881286621,54.01545596122742
+FED_20170426a_3T2,3,52,2,joke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no makeup.,2,0.4333970546722412,62.01646590232849
+FED_20170426a_3T2,3,152,2,joke,"Many things run in families, especially",noses,strength,"Many things run in families, especially noses.",1,0.4833660125732422,72.00105500221252
+FED_20170426a_3T2,3,146,2,joke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called alimony.",2,0.6833670139312744,80.00205397605896
+FED_20170426a_3T2,3,11,2,nonjoke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a statement.",1,1.0168359279632568,88.0029878616333
+FED_20170426a_3T2,3,90,2,joke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two paychecks.,2,1.0668418407440186,96.00399899482727
+FED_20170426a_3T2,3,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",1,1.5668449401855469,106.00526094436646
+FED_20170426a_3T2,3,32,2,joke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually dollars.",2,0.8334760665893555,114.00626182556152
+FED_20170426a_3T2,3,49,2,nonjoke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my aunt.,1,0.4334080219268799,126.00778794288635
+FED_20170426a_3T2,3,34,2,joke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough room.",2,1.0334320068359375,134.0087788105011
+FED_20170426a_3T2,3,1,2,nonjoke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten seconds.",1,0.5333430767059326,144.01003789901733
+FED_20170426a_3T2,3,19,2,nonjoke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my pay.",2,1.0834381580352783,158.01179885864258
+FED_20170426a_3T2,3,77,2,nonjoke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to friends.,1,0.8000528812408447,170.01323890686035
+FED_20170426a_3T2,3,111,2,nonjoke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count salary.",2,1.4168858528137207,186.01525592803955
+FED_20170426a_3T2,3,119,2,nonjoke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly off.",1,1.2168729305267334,196.0165069103241
+FED_20170426a_3T2,3,82,2,joke,"When it comes to keeping warm, nothing beats a thermal",brunette,parka,"When it comes to keeping warm, nothing beats a thermal brunette.",2,1.000162124633789,210.00160384178162
+FED_20170426a_3T2,3,53,2,nonjoke,"By the time Mary had her fourteenth child, she'd run out of names to call her ",husband,offspring,"By the time Mary had her fourteenth child, she'd run out of names to call her offspring.",1,1.03342604637146,224.0033597946167
+FED_20170426a_3T2,3,13,2,nonjoke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a candle.,1,0.45006299018859863,232.00438499450684
+FED_20170426a_3T2,3,40,2,joke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the cashier.,2,0.6833570003509521,240.00537586212158
+FED_20170426a_3T2,3,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,1,1.1167809963226318,248.00637984275818
+FED_20170426a_3T2,3,57,2,nonjoke,"Congress taxes our income, our property, and our",patience,purchases,"Congress taxes our income, our property, and our purchases.",1,0.7167990207672119,258.00755882263184
+FED_20170426a_3T2,3,129,2,nonjoke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a salad.,1,0.4334120750427246,266.0085678100586
+FED_20170426a_3T2,3,5,2,nonjoke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the habit.,1,0.583449125289917,276.00984287261963
+FED_20170426a_3T2,3,117,2,nonjoke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to somewhere.",1,0.9668130874633789,284.0108458995819
+FED_20170426a_3T2,3,135,2,nonjoke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my clutch.",2,0.9334831237792969,292.011846780777
+FED_20170426a_3T2,3,104,2,joke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their slice.,1,1.0000851154327393,306.0136148929596
+FED_20170426a_3T2,3,114,2,joke,It's extraordinary what fine poker hand you get when you're playing,bridge,stud,It's extraordinary what fine poker hand you get when you're playing bridge.,1,1.5501551628112793,318.01512479782104
+FED_20170426a_3T2,3,12,2,joke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the press.,2,0.8667318820953369,326.01612401008606
+FED_20170426a_3T2,3,72,2,joke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a library.,1,0.48334598541259766,338.00095796585083
+FED_20170426a_3T2,3,63,2,nonjoke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the country.",1,0.6500699520111084,354.002897977829
+FED_20170426a_3T2,3,103,2,nonjoke,"I still miss my ex-wife, but I am improving my",aim,ego,"I still miss my ex-wife, but I am improving my ego.",1,1.683579921722412,366.00436091423035
+FED_20170426a_3T2,3,110,2,joke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're everywhere.,3,1.2502710819244385,376.0055978298187
+FED_20170426a_3T2,3,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,1,1.1334898471832275,384.0066659450531
+FED_20170426a_3T2,3,144,2,joke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five beers.,3,0.8501410484313965,394.00792694091797
+FED_20170426a_3T2,3,64,2,joke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its credit.,2,0.9500830173492432,402.00893783569336
+FED_20170426a_3T2,3,155,2,nonjoke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the clowns.,1,0.41676902770996094,412.01020979881287
+FED_20170426a_3T2,3,76,2,joke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of punishment.",2,1.166903018951416,424.0116078853607
+FED_20170426a_3T2,3,121,2,nonjoke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a piston.",1,0.4166738986968994,432.01271295547485
+FED_20170426a_3T2,3,113,2,nonjoke,Some people's only culture is,bacteria,radio,Some people's only culture is radio.,1,0.916815996170044,458.0159158706665
+FED_20170426a_3T2,3,50,2,joke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in self- defense.,2,1.033506155014038,466.0002558231354
+FED_20170426a_3T2,3,84,2,joke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and lawyers.",1,1.0000929832458496,486.00276589393616
+FED_20170426a_3T2,3,148,2,joke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a grandma.,2,0.9501760005950928,498.00419783592224
+FED_20170426a_3T2,3,86,2,joke,"I asked the florist what I should give to my girlfriend, and he suggested his",address,tulips,"I asked the florist what I should give to my girlfriend, and he suggested his address.",2,0.9167361259460449,506.0052788257599
+FED_20170426a_3T2,3,24,2,joke,"Where I'm from, the two most common elements are hydrogen and ",stupidity,nitrogen,"Where I'm from, the two most common elements are hydrogen and stupidity.",2,0.6834549903869629,520.0069618225098
+FED_20170426a_3T2,3,37,2,nonjoke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the admission.",1,0.7834658622741699,540.0094850063324
+FED_20170426a_3T2,3,29,2,nonjoke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a practitioner.,1,0.6500952243804932,554.0112497806549
+FED_20170426a_3T2,3,15,2,nonjoke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his fingers.",1,0.899928092956543,562.012268781662

@@ -1,0 +1,135 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,1,136,1,nonjoke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the trout.,<VisionEgg.WrappedText.WrappedText object at 0x10f719c30>
+8.0000,8.000,1,107,1,joke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice nap.,<VisionEgg.WrappedText.WrappedText object at 0x10f719c80>
+16.0000,2.000,fix
+18.0000,8.000,1,73,1,joke,One thing that makes the world go round is,detours,greed,One thing that makes the world go round is detours.,<VisionEgg.WrappedText.WrappedText object at 0x10f719cd0>
+26.0000,8.000,1,4,1,nonjoke,I knew a streetwalker who was so exclusive she had an unlisted telephone,booth,line,I knew a streetwalker who was so exclusive she had an unlisted telephone line.,<VisionEgg.WrappedText.WrappedText object at 0x10f719d20>
+34.0000,8.000,1,17,1,joke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes hours.,<VisionEgg.WrappedText.WrappedText object at 0x10f719b90>
+42.0000,8.000,1,2,1,nonjoke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two ounces.",<VisionEgg.WrappedText.WrappedText object at 0x10f719aa0>
+50.0000,2.000,fix
+52.0000,8.000,1,78,1,nonjoke,My brother-in-law enjoys fixing things around the house so much he spent an hour last night just fixing our,drinks,stove,My brother-in-law enjoys fixing things around the house so much he spent an hour last night just fixing our stove.,<VisionEgg.WrappedText.WrappedText object at 0x10f719a00>
+60.0000,2.000,fix
+62.0000,8.000,1,90,1,nonjoke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two locations.,<VisionEgg.WrappedText.WrappedText object at 0x10f719af0>
+70.0000,2.000,fix
+72.0000,8.000,1,51,1,joke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the Renaissance.,<VisionEgg.WrappedText.WrappedText object at 0x10f719a50>
+80.0000,2.000,fix
+82.0000,8.000,1,22,1,nonjoke,Our son brought home a note from school saying they need a written excuse for his,presence,tardiness,Our son brought home a note from school saying they need a written excuse for his tardiness.,<VisionEgg.WrappedText.WrappedText object at 0x10f719be0>
+90.0000,8.000,1,110,1,nonjoke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're affordable.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5050>
+98.0000,2.000,fix
+100.0000,8.000,1,132,1,nonjoke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in shock.,<VisionEgg.WrappedText.WrappedText object at 0x116cf50a0>
+108.0000,8.000,1,55,1,joke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cash.,<VisionEgg.WrappedText.WrappedText object at 0x116cf50f0>
+116.0000,6.000,fix
+122.0000,8.000,1,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5140>
+130.0000,8.000,fix
+138.0000,8.000,1,6,1,nonjoke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and rest.,<VisionEgg.WrappedText.WrappedText object at 0x116cf51e0>
+146.0000,8.000,1,137,1,joke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a widower.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5190>
+154.0000,8.000,1,75,1,joke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be illegible.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5230>
+162.0000,6.000,fix
+168.0000,8.000,1,12,1,nonjoke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the family .,<VisionEgg.WrappedText.WrappedText object at 0x116cf5280>
+176.0000,8.000,1,39,1,joke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with scissors.,<VisionEgg.WrappedText.WrappedText object at 0x116cf52d0>
+184.0000,8.000,1,87,1,joke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your opinion.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5370>
+192.0000,2.000,fix
+194.0000,8.000,1,114,1,nonjoke,It's extraordinary what fine poker hand you get when you're playing,bridge,stud,It's extraordinary what fine poker hand you get when you're playing stud.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5320>
+202.0000,8.000,1,149,1,joke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the nude.",<VisionEgg.WrappedText.WrappedText object at 0x116cf53c0>
+210.0000,4.000,fix
+214.0000,8.000,1,104,1,nonjoke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their rewards.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5410>
+222.0000,8.000,1,77,1,joke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to doctors.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5460>
+230.0000,4.000,fix
+234.0000,8.000,1,141,1,joke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tourist.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5500>
+242.0000,2.000,fix
+244.0000,8.000,1,42,1,nonjoke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cold.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5550>
+252.0000,6.000,fix
+258.0000,8.000,1,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",<VisionEgg.WrappedText.WrappedText object at 0x116cf54b0>
+266.0000,2.000,fix
+268.0000,8.000,1,96,1,nonjoke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the crate.",<VisionEgg.WrappedText.WrappedText object at 0x116cf55a0>
+276.0000,8.000,1,62,1,nonjoke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on concrete.",<VisionEgg.WrappedText.WrappedText object at 0x116cf55f0>
+284.0000,22.000,fix
+306.0000,8.000,1,66,1,nonjoke,One good way to invest in the country is to buy a ,senator,business,One good way to invest in the country is to buy a business.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5640>
+314.0000,8.000,1,52,1,nonjoke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no anesthetic.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5690>
+322.0000,8.000,1,125,1,joke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the attorney.,<VisionEgg.WrappedText.WrappedText object at 0x116cf56e0>
+330.0000,2.000,fix
+332.0000,8.000,1,120,1,nonjoke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and fame.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5780>
+340.0000,10.000,fix
+350.0000,8.000,1,30,1,nonjoke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the syrup.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5730>
+358.0000,6.000,fix
+364.0000,8.000,1,15,1,joke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his leg.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5820>
+372.0000,8.000,1,46,1,nonjoke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent breakups.,<VisionEgg.WrappedText.WrappedText object at 0x116cf57d0>
+380.0000,6.000,fix
+386.0000,8.000,1,138,1,nonjoke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into gasoline.,<VisionEgg.WrappedText.WrappedText object at 0x116cf58c0>
+394.0000,4.000,fix
+398.0000,8.000,1,111,1,joke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count children.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5870>
+406.0000,4.000,fix
+410.0000,8.000,1,18,1,nonjoke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my collar.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5910>
+418.0000,4.000,fix
+422.0000,8.000,1,131,1,joke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly weddings.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5960>
+430.0000,4.000,fix
+434.0000,8.000,1,8,1,nonjoke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the bird.,<VisionEgg.WrappedText.WrappedText object at 0x116cf59b0>
+442.0000,8.000,1,139,1,joke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new drunks.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5a00>
+450.0000,8.000,1,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5aa0>
+458.0000,2.000,fix
+460.0000,8.000,1,115,1,joke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your opponent.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5af0>
+468.0000,8.000,1,58,1,nonjoke,The woman who has her husband eating out of her hand must save a lot of,dishwashing,heartbreak,The woman who has her husband eating out of her hand must save a lot of heartbreak.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5a50>
+476.0000,2.000,fix
+478.0000,8.000,1,57,1,joke,"Congress taxes our income, our property, and our",patience,purchases,"Congress taxes our income, our property, and our patience.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5b90>
+486.0000,22.000,fix
+508.0000,8.000,1,11,1,joke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a quarter.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5b40>
+516.0000,8.000,1,103,1,joke,"I still miss my ex-wife, but I am improving my",aim,ego,"I still miss my ex-wife, but I am improving my aim.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5be0>
+524.0000,2.000,fix
+526.0000,8.000,1,93,1,joke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the city.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5c30>
+534.0000,8.000,1,99,1,joke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good reputation.",<VisionEgg.WrappedText.WrappedText object at 0x116cf5c80>
+542.0000,2.000,fix
+544.0000,8.000,1,153,1,joke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the trapeze.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5d20>
+552.0000,10.000,fix
+562.0000,8.000,1,155,1,joke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the singer.,<VisionEgg.WrappedText.WrappedText object at 0x116cf5cd0>
+FED_20170412b_3T2,1,136,1,nonjoke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the trout.,,,6.009325981140137
+FED_20170412b_3T2,1,107,1,joke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice nap.,2,0.8000011444091797,14.010402917861938
+FED_20170412b_3T2,1,73,1,joke,One thing that makes the world go round is,detours,greed,One thing that makes the world go round is detours.,2,0.6000781059265137,24.011704921722412
+FED_20170412b_3T2,1,4,1,nonjoke,I knew a streetwalker who was so exclusive she had an unlisted telephone,booth,line,I knew a streetwalker who was so exclusive she had an unlisted telephone line.,1,0.8501238822937012,32.012787103652954
+FED_20170412b_3T2,1,17,1,joke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes hours.,1,0.7001261711120605,40.013882875442505
+FED_20170412b_3T2,1,2,1,nonjoke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two ounces.",1,0.8667969703674316,48.01496195793152
+FED_20170412b_3T2,1,78,1,nonjoke,My brother-in-law enjoys fixing things around the house so much he spent an hour last night just fixing our,drinks,stove,My brother-in-law enjoys fixing things around the house so much he spent an hour last night just fixing our stove.,1,1.1667869091033936,58.01631999015808
+FED_20170412b_3T2,1,90,1,nonjoke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two locations.,2,0.8500840663909912,68.00100302696228
+FED_20170412b_3T2,1,51,1,joke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the Renaissance.,3,0.6167709827423096,78.00229597091675
+FED_20170412b_3T2,1,22,1,nonjoke,Our son brought home a note from school saying they need a written excuse for his,presence,tardiness,Our son brought home a note from school saying they need a written excuse for his tardiness.,1,0.6667661666870117,88.00366187095642
+FED_20170412b_3T2,1,110,1,nonjoke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're affordable.,1,0.9000670909881592,96.00473594665527
+FED_20170412b_3T2,1,132,1,nonjoke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in shock.,1,1.1834890842437744,106.00606393814087
+FED_20170412b_3T2,1,55,1,joke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cash.,2,0.8834190368652344,114.007169008255
+FED_20170412b_3T2,1,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,3,1.0001780986785889,128.00899195671082
+FED_20170412b_3T2,1,6,1,nonjoke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and rest.,1,0.5501081943511963,144.01118087768555
+FED_20170412b_3T2,1,137,1,joke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a widower.,2,0.9167768955230713,152.0122730731964
+FED_20170412b_3T2,1,75,1,joke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be illegible.",3,0.9835078716278076,160.01330399513245
+FED_20170412b_3T2,1,12,1,nonjoke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the family .,1,0.6334328651428223,174.01519203186035
+FED_20170412b_3T2,1,39,1,joke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with scissors.,2,0.7000861167907715,182.01628994941711
+FED_20170412b_3T2,1,87,1,joke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your opinion.",2,1.6002089977264404,190.00069093704224
+FED_20170412b_3T2,1,114,1,nonjoke,It's extraordinary what fine poker hand you get when you're playing,bridge,stud,It's extraordinary what fine poker hand you get when you're playing stud.,2,0.8500819206237793,200.00204300880432
+FED_20170412b_3T2,1,149,1,joke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the nude.",3,0.5167491436004639,208.00307393074036
+FED_20170412b_3T2,1,104,1,nonjoke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their rewards.,1,0.9336118698120117,220.00457501411438
+FED_20170412b_3T2,1,77,1,joke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to doctors.,1,1.5502400398254395,228.00573992729187
+FED_20170412b_3T2,1,141,1,joke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tourist.,2,1.3000550270080566,240.007395029068
+FED_20170412b_3T2,1,42,1,nonjoke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cold.,1,0.6333918571472168,250.00875306129456
+FED_20170412b_3T2,1,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",1,0.5334081649780273,264.01061487197876
+FED_20170412b_3T2,1,96,1,nonjoke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the crate.",1,1.250148057937622,274.01196002960205
+FED_20170412b_3T2,1,62,1,nonjoke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on concrete.",2,0.5000989437103271,282.013041973114
+FED_20170412b_3T2,1,66,1,nonjoke,One good way to invest in the country is to buy a ,senator,business,One good way to invest in the country is to buy a business.,1,0.5167291164398193,312.0004069805145
+FED_20170412b_3T2,1,52,1,nonjoke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no anesthetic.,1,0.7501070499420166,320.00146889686584
+FED_20170412b_3T2,1,125,1,joke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the attorney.,2,0.950098991394043,328.0024149417877
+FED_20170412b_3T2,1,120,1,nonjoke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and fame.,1,0.6500558853149414,338.00387501716614
+FED_20170412b_3T2,1,30,1,nonjoke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the syrup.,1,1.1168010234832764,356.00628304481506
+FED_20170412b_3T2,1,15,1,joke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his leg.",1,0.916766881942749,370.00817799568176
+FED_20170412b_3T2,1,46,1,nonjoke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent breakups.,1,0.8334271907806396,378.00926089286804
+FED_20170412b_3T2,1,138,1,nonjoke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into gasoline.,1,0.7334551811218262,392.0111138820648
+FED_20170412b_3T2,1,111,1,joke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count children.",2,0.9666759967803955,404.01274394989014
+FED_20170412b_3T2,1,18,1,nonjoke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my collar.",1,1.2668108940124512,416.01437497138977
+FED_20170412b_3T2,1,131,1,joke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly weddings.",2,0.9668200016021729,428.01594400405884
+FED_20170412b_3T2,1,8,1,nonjoke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the bird.,1,0.8834559917449951,440.0009219646454
+FED_20170412b_3T2,1,139,1,joke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new drunks.,2,0.7667510509490967,448.0020248889923
+FED_20170412b_3T2,1,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,3,0.46685099601745605,456.00305795669556
+FED_20170412b_3T2,1,115,1,joke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your opponent.",2,0.7500660419464111,466.0044229030609
+FED_20170412b_3T2,1,58,1,nonjoke,The woman who has her husband eating out of her hand must save a lot of,dishwashing,heartbreak,The woman who has her husband eating out of her hand must save a lot of heartbreak.,1,0.8501360416412354,474.0054450035095
+FED_20170412b_3T2,1,57,1,joke,"Congress taxes our income, our property, and our",patience,purchases,"Congress taxes our income, our property, and our patience.",1,1.300163984298706,484.0067780017853
+FED_20170412b_3T2,1,11,1,joke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a quarter.",2,0.616736888885498,514.0108799934387
+FED_20170412b_3T2,1,103,1,joke,"I still miss my ex-wife, but I am improving my",aim,ego,"I still miss my ex-wife, but I am improving my aim.",3,0.6666140556335449,522.0119109153748
+FED_20170412b_3T2,1,93,1,joke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the city.",2,0.6667690277099609,532.0132620334625
+FED_20170412b_3T2,1,99,1,joke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good reputation.",2,0.983496904373169,540.0143539905548
+FED_20170412b_3T2,1,153,1,joke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the trapeze.,2,1.3001539707183838,550.015711069107
+FED_20170412b_3T2,1,155,1,joke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the singer.,2,0.9502007961273193,568.001424074173

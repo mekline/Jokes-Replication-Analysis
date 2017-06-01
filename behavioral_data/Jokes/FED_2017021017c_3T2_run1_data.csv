@@ -1,0 +1,135 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,1,71,2,nonjoke,Save the whales; start a,collection,coalition,Save the whales; start a coalition.,<VisionEgg.WrappedText.WrappedText object at 0x107707cd0>
+8.0000,8.000,1,102,2,joke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our income.,<VisionEgg.WrappedText.WrappedText object at 0x107707a00>
+16.0000,2.000,fix
+18.0000,8.000,1,56,2,joke,"When you own an ice cream business, your favorite flavor is",aspirin,everything,"When you own an ice cream business, your favorite flavor is aspirin.",<VisionEgg.WrappedText.WrappedText object at 0x107707be0>
+26.0000,8.000,1,49,2,nonjoke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my aunt.,<VisionEgg.WrappedText.WrappedText object at 0x107707c80>
+34.0000,8.000,1,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,<VisionEgg.WrappedText.WrappedText object at 0x107707c30>
+42.0000,8.000,1,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,<VisionEgg.WrappedText.WrappedText object at 0x107707b90>
+50.0000,2.000,fix
+52.0000,8.000,1,127,2,nonjoke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying unloved.,<VisionEgg.WrappedText.WrappedText object at 0x107707a50>
+60.0000,2.000,fix
+62.0000,8.000,1,125,2,nonjoke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the daughter.,<VisionEgg.WrappedText.WrappedText object at 0x107707aa0>
+70.0000,2.000,fix
+72.0000,8.000,1,24,2,joke,"Where I'm from, the two most common elements are hydrogen and ",stupidity,nitrogen,"Where I'm from, the two most common elements are hydrogen and stupidity.",<VisionEgg.WrappedText.WrappedText object at 0x107707b40>
+80.0000,2.000,fix
+82.0000,8.000,1,151,2,nonjoke,One good turn gets most of the,blanket,profit,One good turn gets most of the profit.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2050>
+90.0000,8.000,1,5,2,nonjoke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the habit.,<VisionEgg.WrappedText.WrappedText object at 0x10ece20f0>
+98.0000,2.000,fix
+100.0000,8.000,1,43,2,nonjoke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a journalist.",<VisionEgg.WrappedText.WrappedText object at 0x10ece20a0>
+108.0000,8.000,1,146,2,joke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called alimony.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2140>
+116.0000,6.000,fix
+122.0000,8.000,1,17,2,nonjoke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes votes.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2190>
+130.0000,8.000,fix
+138.0000,8.000,1,65,2,nonjoke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke heroin.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2230>
+146.0000,8.000,1,138,2,joke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into movies.,<VisionEgg.WrappedText.WrappedText object at 0x10ece21e0>
+154.0000,8.000,1,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2280>
+162.0000,6.000,fix
+168.0000,8.000,1,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",<VisionEgg.WrappedText.WrappedText object at 0x10ece22d0>
+176.0000,8.000,1,94,2,joke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are dead.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2320>
+184.0000,8.000,1,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2370>
+192.0000,2.000,fix
+194.0000,8.000,1,139,2,nonjoke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new wood.,<VisionEgg.WrappedText.WrappedText object at 0x10ece23c0>
+202.0000,8.000,1,12,2,joke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the press.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2460>
+210.0000,4.000,fix
+214.0000,8.000,1,77,2,nonjoke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to friends.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2410>
+222.0000,8.000,1,54,2,joke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little finding.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2500>
+230.0000,4.000,fix
+234.0000,8.000,1,150,2,joke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a textbook.,<VisionEgg.WrappedText.WrappedText object at 0x10ece24b0>
+242.0000,2.000,fix
+244.0000,8.000,1,47,2,nonjoke,"Charged with statutory rape, he told the judge he didn't know she was a ",statue,teenager,"Charged with statutory rape, he told the judge he didn't know she was a teenager.",<VisionEgg.WrappedText.WrappedText object at 0x10ece25a0>
+252.0000,6.000,fix
+258.0000,8.000,1,143,2,nonjoke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're candidates.,<VisionEgg.WrappedText.WrappedText object at 0x10ece25f0>
+266.0000,2.000,fix
+268.0000,8.000,1,23,2,nonjoke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge headache.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2550>
+276.0000,8.000,1,15,2,nonjoke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his fingers.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2640>
+284.0000,22.000,fix
+306.0000,8.000,1,27,2,nonjoke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight disease.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2690>
+314.0000,8.000,1,69,2,nonjoke,"When an irresistible force meets an immovable object, you get two very angry",women,entities,"When an irresistible force meets an immovable object, you get two very angry entities.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2730>
+322.0000,8.000,1,36,2,joke,A problem drinker is one who never,buys,quits,A problem drinker is one who never buys.,<VisionEgg.WrappedText.WrappedText object at 0x10ece26e0>
+330.0000,2.000,fix
+332.0000,8.000,1,133,2,nonjoke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the shelves.,<VisionEgg.WrappedText.WrappedText object at 0x10ece27d0>
+340.0000,10.000,fix
+350.0000,8.000,1,61,2,nonjoke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a freeway.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2780>
+358.0000,6.000,fix
+364.0000,8.000,1,140,2,joke,You can keep your kids in hot water with ,dishes,rules,You can keep your kids in hot water with dishes.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2820>
+372.0000,8.000,1,9,2,nonjoke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a name.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2870>
+380.0000,6.000,fix
+386.0000,8.000,1,113,2,nonjoke,Some people's only culture is,bacteria,radio,Some people's only culture is radio.,<VisionEgg.WrappedText.WrappedText object at 0x10ece28c0>
+394.0000,4.000,fix
+398.0000,8.000,1,48,2,joke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""accomplice"".",<VisionEgg.WrappedText.WrappedText object at 0x10ece2960>
+406.0000,4.000,fix
+410.0000,8.000,1,87,2,nonjoke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your parents.",<VisionEgg.WrappedText.WrappedText object at 0x10ece29b0>
+418.0000,4.000,fix
+422.0000,8.000,1,104,2,joke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their slice.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2a00>
+430.0000,4.000,fix
+434.0000,8.000,1,145,2,nonjoke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a spouse.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2a50>
+442.0000,8.000,1,62,2,joke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on alcohol.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2af0>
+450.0000,8.000,1,42,2,joke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cow.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2aa0>
+458.0000,2.000,fix
+460.0000,8.000,1,136,2,joke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the olive.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2b40>
+468.0000,8.000,1,35,2,nonjoke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their careers.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2b90>
+476.0000,2.000,fix
+478.0000,8.000,1,118,2,joke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the patrons.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2be0>
+486.0000,22.000,fix
+508.0000,8.000,1,28,2,joke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown beeper.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2c80>
+516.0000,8.000,1,2,2,joke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two weeks.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2c30>
+524.0000,2.000,fix
+526.0000,8.000,1,144,2,joke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five beers.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2cd0>
+534.0000,8.000,1,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2d20>
+542.0000,2.000,fix
+544.0000,8.000,1,122,2,joke,"If you're filthy rich, sending your kids to college is a wonderful", cleaner,luxury,"If you're filthy rich, sending your kids to college is a wonderful cleaner.",<VisionEgg.WrappedText.WrappedText object at 0x10ece2d70>
+552.0000,10.000,fix
+562.0000,8.000,1,8,2,joke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the kids.,<VisionEgg.WrappedText.WrappedText object at 0x10ece2dc0>
+FED_2017021017c_3T2,1,71,2,nonjoke,Save the whales; start a,collection,coalition,Save the whales; start a coalition.,2,0.13333702087402344,6.009363889694214
+FED_2017021017c_3T2,1,102,2,joke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our income.,2,1.6835441589355469,14.010397911071777
+FED_2017021017c_3T2,1,56,2,joke,"When you own an ice cream business, your favorite flavor is",aspirin,everything,"When you own an ice cream business, your favorite flavor is aspirin.",2,0.5334150791168213,24.01163601875305
+FED_2017021017c_3T2,1,49,2,nonjoke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my aunt.,,,32.01269507408142
+FED_2017021017c_3T2,1,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,3,0.4500100612640381,40.01370286941528
+FED_2017021017c_3T2,1,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,1,0.9501609802246094,48.014678955078125
+FED_2017021017c_3T2,1,127,2,nonjoke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying unloved.,1,1.133457899093628,58.01598000526428
+FED_2017021017c_3T2,1,125,2,nonjoke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the daughter.,1,1.5168418884277344,68.00054407119751
+FED_2017021017c_3T2,1,24,2,joke,"Where I'm from, the two most common elements are hydrogen and ",stupidity,nitrogen,"Where I'm from, the two most common elements are hydrogen and stupidity.",3,1.4168341159820557,78.00183987617493
+FED_2017021017c_3T2,1,151,2,nonjoke,One good turn gets most of the,blanket,profit,One good turn gets most of the profit.,1,0.9501438140869141,88.00309109687805
+FED_2017021017c_3T2,1,5,2,nonjoke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the habit.,1,1.5001871585845947,96.00411486625671
+FED_2017021017c_3T2,1,43,2,nonjoke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a journalist.",1,1.1667780876159668,106.00542497634888
+FED_2017021017c_3T2,1,146,2,joke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called alimony.",1,1.4668529033660889,114.00638604164124
+FED_2017021017c_3T2,1,17,2,nonjoke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes votes.,1,0.7500579357147217,128.00821208953857
+FED_2017021017c_3T2,1,65,2,nonjoke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke heroin.,2,1.033440113067627,144.01022791862488
+FED_2017021017c_3T2,1,138,2,joke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into movies.,2,0.6000339984893799,152.01126503944397
+FED_2017021017c_3T2,1,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",3,1.4501709938049316,160.01224207878113
+FED_2017021017c_3T2,1,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",1,0.6833789348602295,174.0140619277954
+FED_2017021017c_3T2,1,94,2,joke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are dead.",3,0.9835410118103027,182.0150430202484
+FED_2017021017c_3T2,1,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",,,190.01608109474182
+FED_2017021017c_3T2,1,139,2,nonjoke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new wood.,1,0.3333251476287842,200.00070691108704
+FED_2017021017c_3T2,1,12,2,joke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the press.,1,1.4668490886688232,208.00169396400452
+FED_2017021017c_3T2,1,77,2,nonjoke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to friends.,1,1.4168288707733154,220.0032570362091
+FED_2017021017c_3T2,1,54,2,joke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little finding.,1,1.9335789680480957,228.00423192977905
+FED_2017021017c_3T2,1,150,2,joke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a textbook.,2,0.733375072479248,240.00579190254211
+FED_2017021017c_3T2,1,47,2,nonjoke,"Charged with statutory rape, he told the judge he didn't know she was a ",statue,teenager,"Charged with statutory rape, he told the judge he didn't know she was a teenager.",1,0.6167750358581543,250.0070240497589
+FED_2017021017c_3T2,1,143,2,nonjoke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're candidates.,2,0.5333559513092041,264.0088520050049
+FED_2017021017c_3T2,1,23,2,nonjoke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge headache.,1,0.9668359756469727,274.01008701324463
+FED_2017021017c_3T2,1,15,2,nonjoke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his fingers.",1,1.2167890071868896,282.0111448764801
+FED_2017021017c_3T2,1,27,2,nonjoke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight disease.",1,0.6500599384307861,312.01497197151184
+FED_2017021017c_3T2,1,69,2,nonjoke,"When an irresistible force meets an immovable object, you get two very angry",women,entities,"When an irresistible force meets an immovable object, you get two very angry entities.",2,0.7834699153900146,320.0159480571747
+FED_2017021017c_3T2,1,36,2,joke,A problem drinker is one who never,buys,quits,A problem drinker is one who never buys.,3,1.450165033340454,328.0003299713135
+FED_2017021017c_3T2,1,133,2,nonjoke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the shelves.,1,0.5500509738922119,338.0016050338745
+FED_2017021017c_3T2,1,61,2,nonjoke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a freeway.",1,1.800227165222168,356.0039129257202
+FED_2017021017c_3T2,1,140,2,joke,You can keep your kids in hot water with ,dishes,rules,You can keep your kids in hot water with dishes.,1,1.550187110900879,370.005676984787
+FED_2017021017c_3T2,1,9,2,nonjoke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a name.",1,0.766726016998291,378.00672006607056
+FED_2017021017c_3T2,1,113,2,nonjoke,Some people's only culture is,bacteria,radio,Some people's only culture is radio.,1,1.0335030555725098,392.00848293304443
+FED_2017021017c_3T2,1,48,2,joke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""accomplice"".",3,1.583517074584961,404.0100510120392
+FED_2017021017c_3T2,1,87,2,nonjoke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your parents.",2,1.1834697723388672,416.0115520954132
+FED_2017021017c_3T2,1,104,2,joke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their slice.,1,0.7333879470825195,428.01311206817627
+FED_2017021017c_3T2,1,145,2,nonjoke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a spouse.,1,0.8501870632171631,440.0145699977875
+FED_2017021017c_3T2,1,62,2,joke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on alcohol.",4,0.5833110809326172,448.01570892333984
+FED_2017021017c_3T2,1,42,2,joke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cow.,2,0.5166959762573242,456.0166919231415
+FED_2017021017c_3T2,1,136,2,joke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the olive.,2,0.7500369548797607,466.0012810230255
+FED_2017021017c_3T2,1,35,2,nonjoke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their careers.",1,0.4166679382324219,474.0023069381714
+FED_2017021017c_3T2,1,118,2,joke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the patrons.,2,1.1667890548706055,484.00353598594666
+FED_2017021017c_3T2,1,28,2,joke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown beeper.,1,1.450179100036621,514.0073759555817
+FED_2017021017c_3T2,1,2,2,joke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two weeks.",3,1.2335400581359863,522.0083429813385
+FED_2017021017c_3T2,1,144,2,joke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five beers.,2,1.6335279941558838,532.0096530914307
+FED_2017021017c_3T2,1,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,1,0.6667039394378662,540.0107080936432
+FED_2017021017c_3T2,1,122,2,joke,"If you're filthy rich, sending your kids to college is a wonderful", cleaner,luxury,"If you're filthy rich, sending your kids to college is a wonderful cleaner.",2,1.4501748085021973,550.0119230747223
+FED_2017021017c_3T2,1,8,2,joke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the kids.,1,0.5667312145233154,568.0142328739166

@@ -1,0 +1,140 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,3,34,1,nonjoke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough change.",<VisionEgg.WrappedText.WrappedText object at 0x108e5dc80>
+8.0000,2.000,fix
+10.0000,8.000,3,96,1,nonjoke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the crate.",<VisionEgg.WrappedText.WrappedText object at 0x108e5dcd0>
+18.0000,8.000,3,55,1,joke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cash.,<VisionEgg.WrappedText.WrappedText object at 0x108e5dd20>
+26.0000,2.000,fix
+28.0000,8.000,3,14,1,nonjoke,He got a medal for bravery on the beach when he rescued a girl from a ,lifeguard,shipwreck,He got a medal for bravery on the beach when he rescued a girl from a shipwreck.,<VisionEgg.WrappedText.WrappedText object at 0x108e5dd70>
+36.0000,2.000,fix
+38.0000,8.000,3,5,1,joke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the reading.,<VisionEgg.WrappedText.WrappedText object at 0x108e5de10>
+46.0000,2.000,fix
+48.0000,8.000,3,116,1,nonjoke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about somebody.,<VisionEgg.WrappedText.WrappedText object at 0x108e5ddc0>
+56.0000,2.000,fix
+58.0000,8.000,3,28,1,nonjoke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown eyelash.,<VisionEgg.WrappedText.WrappedText object at 0x108e5de60>
+66.0000,8.000,3,45,1,joke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her mind.",<VisionEgg.WrappedText.WrappedText object at 0x108e5deb0>
+74.0000,14.000,fix
+88.0000,8.000,3,149,1,joke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the nude.",<VisionEgg.WrappedText.WrappedText object at 0x108e5df00>
+96.0000,2.000,fix
+98.0000,8.000,3,108,1,nonjoke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little platform.,<VisionEgg.WrappedText.WrappedText object at 0x108e5df50>
+106.0000,2.000,fix
+108.0000,8.000,3,46,1,nonjoke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent breakups.,<VisionEgg.WrappedText.WrappedText object at 0x108e5dfa0>
+116.0000,8.000,3,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",<VisionEgg.WrappedText.WrappedText object at 0x11043b050>
+124.0000,12.000,fix
+136.0000,8.000,3,69,1,joke,"When an irresistible force meets an immovable object, you get two very angry",women,entities,"When an irresistible force meets an immovable object, you get two very angry women.",<VisionEgg.WrappedText.WrappedText object at 0x11043b0a0>
+144.0000,6.000,fix
+150.0000,8.000,3,7,1,joke,A replacement player hit a home run with my,girl,ball,A replacement player hit a home run with my girl.,<VisionEgg.WrappedText.WrappedText object at 0x11043b0f0>
+158.0000,4.000,fix
+162.0000,8.000,3,153,1,joke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the trapeze.,<VisionEgg.WrappedText.WrappedText object at 0x11043b140>
+170.0000,4.000,fix
+174.0000,8.000,3,37,1,joke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the bathtub.",<VisionEgg.WrappedText.WrappedText object at 0x11043b190>
+182.0000,2.000,fix
+184.0000,8.000,3,33,1,joke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to divorce.,<VisionEgg.WrappedText.WrappedText object at 0x11043b1e0>
+192.0000,8.000,3,92,1,nonjoke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his daiquiri.",<VisionEgg.WrappedText.WrappedText object at 0x11043b230>
+200.0000,8.000,3,131,1,joke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly weddings.",<VisionEgg.WrappedText.WrappedText object at 0x11043b280>
+208.0000,4.000,fix
+212.0000,8.000,3,110,1,nonjoke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're affordable.,<VisionEgg.WrappedText.WrappedText object at 0x11043b2d0>
+220.0000,6.000,fix
+226.0000,8.000,3,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,<VisionEgg.WrappedText.WrappedText object at 0x11043b320>
+234.0000,8.000,3,136,1,nonjoke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the trout.,<VisionEgg.WrappedText.WrappedText object at 0x11043b3c0>
+242.0000,8.000,3,135,1,joke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my horn.",<VisionEgg.WrappedText.WrappedText object at 0x11043b370>
+250.0000,8.000,3,15,1,joke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his leg.",<VisionEgg.WrappedText.WrappedText object at 0x11043b410>
+258.0000,12.000,fix
+270.0000,8.000,3,140,1,nonjoke,You can keep your kids in hot water with ,dishes,rules,You can keep your kids in hot water with rules.,<VisionEgg.WrappedText.WrappedText object at 0x11043b460>
+278.0000,8.000,3,19,1,joke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my umbrella.",<VisionEgg.WrappedText.WrappedText object at 0x11043b4b0>
+286.0000,2.000,fix
+288.0000,8.000,3,95,1,joke,He was teaching his girlfriend how to swim when the lifeguard made them move to the ,lake,shallows,He was teaching his girlfriend how to swim when the lifeguard made them move to the lake.,<VisionEgg.WrappedText.WrappedText object at 0x11043b500>
+296.0000,14.000,fix
+310.0000,8.000,3,86,1,nonjoke,"I asked the florist what I should give to my girlfriend, and he suggested his",address,tulips,"I asked the florist what I should give to my girlfriend, and he suggested his tulips.",<VisionEgg.WrappedText.WrappedText object at 0x11043b550>
+318.0000,4.000,fix
+322.0000,8.000,3,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,<VisionEgg.WrappedText.WrappedText object at 0x11043b5f0>
+330.0000,2.000,fix
+332.0000,8.000,3,98,1,nonjoke,"Nature has three ways of thinning the herd: drought, famine, and ",primaries,hunting,"Nature has three ways of thinning the herd: drought, famine, and hunting.",<VisionEgg.WrappedText.WrappedText object at 0x11043b5a0>
+340.0000,2.000,fix
+342.0000,8.000,3,79,1,joke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her ankles.,<VisionEgg.WrappedText.WrappedText object at 0x11043b640>
+350.0000,4.000,fix
+354.0000,8.000,3,88,1,nonjoke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three streetlights.,<VisionEgg.WrappedText.WrappedText object at 0x11043b690>
+362.0000,2.000,fix
+364.0000,8.000,3,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,<VisionEgg.WrappedText.WrappedText object at 0x11043b6e0>
+372.0000,2.000,fix
+374.0000,8.000,3,151,1,joke,One good turn gets most of the,blanket,profit,One good turn gets most of the blanket.,<VisionEgg.WrappedText.WrappedText object at 0x11043b730>
+382.0000,4.000,fix
+386.0000,8.000,3,137,1,joke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a widower.,<VisionEgg.WrappedText.WrappedText object at 0x11043b7d0>
+394.0000,8.000,3,155,1,joke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the singer.,<VisionEgg.WrappedText.WrappedText object at 0x11043b780>
+402.0000,8.000,3,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",<VisionEgg.WrappedText.WrappedText object at 0x11043b820>
+410.0000,8.000,fix
+418.0000,8.000,3,144,1,nonjoke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five degrees.,<VisionEgg.WrappedText.WrappedText object at 0x11043b870>
+426.0000,6.000,fix
+432.0000,8.000,3,62,1,nonjoke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on concrete.",<VisionEgg.WrappedText.WrappedText object at 0x11043b8c0>
+440.0000,4.000,fix
+444.0000,8.000,3,115,1,joke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your opponent.",<VisionEgg.WrappedText.WrappedText object at 0x11043b910>
+452.0000,8.000,3,118,1,nonjoke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the setting.,<VisionEgg.WrappedText.WrappedText object at 0x11043b960>
+460.0000,8.000,3,97,1,joke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the dressmaker.",<VisionEgg.WrappedText.WrappedText object at 0x11043b9b0>
+468.0000,8.000,3,16,1,nonjoke,Many a man's idea of a vacation is to rest quietly in the shade of a ,blonde,palm,Many a man's idea of a vacation is to rest quietly in the shade of a palm.,<VisionEgg.WrappedText.WrappedText object at 0x11043ba00>
+476.0000,2.000,fix
+478.0000,8.000,3,130,1,nonjoke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly upgrades.",<VisionEgg.WrappedText.WrappedText object at 0x11043baa0>
+486.0000,8.000,3,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,<VisionEgg.WrappedText.WrappedText object at 0x11043ba50>
+494.0000,4.000,fix
+498.0000,8.000,3,117,1,joke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to profanity.",<VisionEgg.WrappedText.WrappedText object at 0x11043baf0>
+506.0000,8.000,3,90,1,nonjoke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two locations.,<VisionEgg.WrappedText.WrappedText object at 0x11043bb40>
+514.0000,2.000,fix
+516.0000,8.000,3,18,1,nonjoke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my collar.",<VisionEgg.WrappedText.WrappedText object at 0x11043bb90>
+524.0000,2.000,fix
+526.0000,8.000,3,142,1,nonjoke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her father.,<VisionEgg.WrappedText.WrappedText object at 0x11043bbe0>
+534.0000,8.000,3,50,1,nonjoke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in discipline.,<VisionEgg.WrappedText.WrappedText object at 0x11043bc30>
+542.0000,2.000,fix
+544.0000,8.000,3,3,1,joke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from fishing.,<VisionEgg.WrappedText.WrappedText object at 0x11043bcd0>
+552.0000,2.000,fix
+554.0000,8.000,3,63,1,joke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the morning.",<VisionEgg.WrappedText.WrappedText object at 0x11043bc80>
+562.0000,8.000,fix
+FED_20170426b_3T2,3,34,1,nonjoke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough change.",1,0.5333218574523926,6.009522199630737
+FED_20170426b_3T2,3,96,1,nonjoke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the crate.",1,0.41664910316467285,16.010765075683594
+FED_20170426b_3T2,3,55,1,joke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cash.,3,0.3000218868255615,24.011719226837158
+FED_20170426b_3T2,3,14,1,nonjoke,He got a medal for bravery on the beach when he rescued a girl from a ,lifeguard,shipwreck,He got a medal for bravery on the beach when he rescued a girl from a shipwreck.,1,0.4000661373138428,34.01294708251953
+FED_20170426b_3T2,3,5,1,joke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the reading.,3,0.38340210914611816,44.01419806480408
+FED_20170426b_3T2,3,116,1,nonjoke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about somebody.,1,0.40007591247558594,54.01544523239136
+FED_20170426b_3T2,3,28,1,nonjoke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown eyelash.,1,0.34997105598449707,64.00005412101746
+FED_20170426b_3T2,3,45,1,joke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her mind.",1,0.3667409420013428,72.00096821784973
+FED_20170426b_3T2,3,149,1,joke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the nude.",2,0.40006017684936523,94.003751039505
+FED_20170426b_3T2,3,108,1,nonjoke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little platform.,1,0.3499770164489746,104.00501608848572
+FED_20170426b_3T2,3,46,1,nonjoke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent breakups.,1,0.36671996116638184,114.00619220733643
+FED_20170426b_3T2,3,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",1,0.7833948135375977,122.02387118339539
+FED_20170426b_3T2,3,69,1,joke,"When an irresistible force meets an immovable object, you get two very angry",women,entities,"When an irresistible force meets an immovable object, you get two very angry women.",3,0.7167730331420898,142.0097131729126
+FED_20170426b_3T2,3,7,1,joke,A replacement player hit a home run with my,girl,ball,A replacement player hit a home run with my girl.,1,0.41666603088378906,156.0114710330963
+FED_20170426b_3T2,3,153,1,joke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the trapeze.,1,0.7500770092010498,168.0129110813141
+FED_20170426b_3T2,3,37,1,joke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the bathtub.",2,1.3001399040222168,180.01442313194275
+FED_20170426b_3T2,3,33,1,joke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to divorce.,1,0.3500480651855469,190.01568412780762
+FED_20170426b_3T2,3,92,1,nonjoke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his daiquiri.",1,0.41667699813842773,198.0000171661377
+FED_20170426b_3T2,3,131,1,joke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly weddings.",3,0.6500318050384521,206.00102019309998
+FED_20170426b_3T2,3,110,1,nonjoke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're affordable.,1,0.5667569637298584,218.00245213508606
+FED_20170426b_3T2,3,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,1,0.5000820159912109,232.0042200088501
+FED_20170426b_3T2,3,136,1,nonjoke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the trout.,1,0.36672401428222656,240.00523114204407
+FED_20170426b_3T2,3,135,1,joke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my horn.",1,0.3166389465332031,248.00623512268066
+FED_20170426b_3T2,3,15,1,joke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his leg.",1,1.6169319152832031,256.00716614723206
+FED_20170426b_3T2,3,140,1,nonjoke,You can keep your kids in hot water with ,dishes,rules,You can keep your kids in hot water with rules.,1,0.3833949565887451,276.009681224823
+FED_20170426b_3T2,3,19,1,joke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my umbrella.",2,0.5334179401397705,284.01069617271423
+FED_20170426b_3T2,3,95,1,joke,He was teaching his girlfriend how to swim when the lifeguard made them move to the ,lake,shallows,He was teaching his girlfriend how to swim when the lifeguard made them move to the lake.,1,0.7000279426574707,294.01194620132446
+FED_20170426b_3T2,3,86,1,nonjoke,"I asked the florist what I should give to my girlfriend, and he suggested his",address,tulips,"I asked the florist what I should give to my girlfriend, and he suggested his tulips.",1,0.36663103103637695,316.0146391391754
+FED_20170426b_3T2,3,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,1,0.7500531673431396,328.0161499977112
+FED_20170426b_3T2,3,98,1,nonjoke,"Nature has three ways of thinning the herd: drought, famine, and ",primaries,hunting,"Nature has three ways of thinning the herd: drought, famine, and hunting.",2,0.9834370613098145,338.00072407722473
+FED_20170426b_3T2,3,79,1,joke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her ankles.,,,348.00192308425903
+FED_20170426b_3T2,3,88,1,nonjoke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three streetlights.,1,0.6501131057739258,360.0034210681915
+FED_20170426b_3T2,3,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,1,0.4500730037689209,370.0046911239624
+FED_20170426b_3T2,3,151,1,joke,One good turn gets most of the,blanket,profit,One good turn gets most of the blanket.,1,0.5666859149932861,380.00595021247864
+FED_20170426b_3T2,3,137,1,joke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a widower.,1,1.7169079780578613,392.00741815567017
+FED_20170426b_3T2,3,155,1,joke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the singer.,1,0.4667830467224121,400.0083861351013
+FED_20170426b_3T2,3,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",1,0.5000770092010498,408.00940203666687
+FED_20170426b_3T2,3,144,1,nonjoke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five degrees.,1,0.3834249973297119,424.0114052295685
+FED_20170426b_3T2,3,62,1,nonjoke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on concrete.",1,0.35004687309265137,438.0131001472473
+FED_20170426b_3T2,3,115,1,joke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your opponent.",1,0.33338093757629395,450.01460909843445
+FED_20170426b_3T2,3,118,1,nonjoke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the setting.,1,0.3667171001434326,458.0156190395355
+FED_20170426b_3T2,3,97,1,joke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the dressmaker.",2,1.43351411819458,466.0166230201721
+FED_20170426b_3T2,3,16,1,nonjoke,Many a man's idea of a vacation is to rest quietly in the shade of a ,blonde,palm,Many a man's idea of a vacation is to rest quietly in the shade of a palm.,1,0.6166949272155762,474.00096011161804
+FED_20170426b_3T2,3,130,1,nonjoke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly upgrades.",1,0.39995884895324707,484.00222420692444
+FED_20170426b_3T2,3,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,1,0.583406925201416,492.00317120552063
+FED_20170426b_3T2,3,117,1,joke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to profanity.",1,0.3833920955657959,504.0046601295471
+FED_20170426b_3T2,3,90,1,nonjoke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two locations.,1,0.40005993843078613,512.0056681632996
+FED_20170426b_3T2,3,18,1,nonjoke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my collar.",1,0.4500730037689209,522.0069251060486
+FED_20170426b_3T2,3,142,1,nonjoke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her father.,1,0.4166600704193115,532.0081870555878
+FED_20170426b_3T2,3,50,1,nonjoke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in discipline.,1,0.7334339618682861,540.0091230869293
+FED_20170426b_3T2,3,3,1,joke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from fishing.,1,0.3833909034729004,550.0103831291199
+FED_20170426b_3T2,3,63,1,joke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the morning.",3,0.45006608963012695,560.011636018753

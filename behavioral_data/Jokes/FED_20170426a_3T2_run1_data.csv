@@ -1,0 +1,140 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,1,79,2,nonjoke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her vanilla.,<VisionEgg.WrappedText.WrappedText object at 0x109f59b90>
+8.0000,2.000,fix
+10.0000,8.000,1,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",<VisionEgg.WrappedText.WrappedText object at 0x109f59a00>
+18.0000,8.000,1,136,2,joke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the olive.,<VisionEgg.WrappedText.WrappedText object at 0x109f59a50>
+26.0000,2.000,fix
+28.0000,8.000,1,83,2,nonjoke,Nothing ages a woman faster than,identification,hardship,Nothing ages a woman faster than hardship.,<VisionEgg.WrappedText.WrappedText object at 0x109f59af0>
+36.0000,2.000,fix
+38.0000,8.000,1,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",<VisionEgg.WrappedText.WrappedText object at 0x109f59d20>
+46.0000,2.000,fix
+48.0000,8.000,1,93,2,nonjoke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the competition.",<VisionEgg.WrappedText.WrappedText object at 0x109f59cd0>
+56.0000,2.000,fix
+58.0000,8.000,1,125,2,nonjoke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the daughter.,<VisionEgg.WrappedText.WrappedText object at 0x109f59c80>
+66.0000,8.000,1,140,2,joke,You can keep your kids in hot water with ,dishes,rules,You can keep your kids in hot water with dishes.,<VisionEgg.WrappedText.WrappedText object at 0x109f59aa0>
+74.0000,14.000,fix
+88.0000,8.000,1,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",<VisionEgg.WrappedText.WrappedText object at 0x1115b6050>
+96.0000,2.000,fix
+98.0000,8.000,1,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",<VisionEgg.WrappedText.WrappedText object at 0x1115b60a0>
+106.0000,2.000,fix
+108.0000,8.000,1,47,2,nonjoke,"Charged with statutory rape, he told the judge he didn't know she was a ",statue,teenager,"Charged with statutory rape, he told the judge he didn't know she was a teenager.",<VisionEgg.WrappedText.WrappedText object at 0x1115b60f0>
+116.0000,8.000,1,27,2,nonjoke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight disease.",<VisionEgg.WrappedText.WrappedText object at 0x1115b6190>
+124.0000,12.000,fix
+136.0000,8.000,1,118,2,joke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the patrons.,<VisionEgg.WrappedText.WrappedText object at 0x1115b61e0>
+144.0000,6.000,fix
+150.0000,8.000,1,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6140>
+158.0000,4.000,fix
+162.0000,8.000,1,6,2,joke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and putt.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6230>
+170.0000,4.000,fix
+174.0000,8.000,1,92,2,joke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his wife.",<VisionEgg.WrappedText.WrappedText object at 0x1115b6280>
+182.0000,2.000,fix
+184.0000,8.000,1,128,2,joke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the beaches.",<VisionEgg.WrappedText.WrappedText object at 0x1115b62d0>
+192.0000,8.000,1,45,2,nonjoke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her jacket.",<VisionEgg.WrappedText.WrappedText object at 0x1115b6370>
+200.0000,8.000,1,68,2,joke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date bachelors.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6320>
+208.0000,4.000,fix
+212.0000,8.000,1,85,2,nonjoke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while relaxed.",<VisionEgg.WrappedText.WrappedText object at 0x1115b63c0>
+220.0000,6.000,fix
+226.0000,8.000,1,9,2,nonjoke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a name.",<VisionEgg.WrappedText.WrappedText object at 0x1115b6460>
+234.0000,8.000,1,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6410>
+242.0000,8.000,1,48,2,joke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""accomplice"".",<VisionEgg.WrappedText.WrappedText object at 0x1115b64b0>
+250.0000,8.000,1,116,2,joke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about others.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6550>
+258.0000,12.000,fix
+270.0000,8.000,1,141,2,nonjoke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tobacco.,<VisionEgg.WrappedText.WrappedText object at 0x1115b65a0>
+278.0000,8.000,1,36,2,joke,A problem drinker is one who never,buys,quits,A problem drinker is one who never buys.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6640>
+286.0000,2.000,fix
+288.0000,8.000,1,80,2,joke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel happy.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6690>
+296.0000,14.000,fix
+310.0000,8.000,1,87,2,nonjoke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your parents.",<VisionEgg.WrappedText.WrappedText object at 0x1115b65f0>
+318.0000,4.000,fix
+322.0000,8.000,1,108,2,joke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little water.,<VisionEgg.WrappedText.WrappedText object at 0x1115b66e0>
+330.0000,2.000,fix
+332.0000,8.000,1,139,2,nonjoke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new wood.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6730>
+340.0000,2.000,fix
+342.0000,8.000,1,132,2,joke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in surgery.,<VisionEgg.WrappedText.WrappedText object at 0x1115b67d0>
+350.0000,4.000,fix
+354.0000,8.000,1,65,2,nonjoke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke heroin.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6780>
+362.0000,2.000,fix
+364.0000,8.000,1,46,2,joke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent marriage.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6820>
+372.0000,2.000,fix
+374.0000,8.000,1,16,2,joke,Many a man's idea of a vacation is to rest quietly in the shade of a ,blonde,palm,Many a man's idea of a vacation is to rest quietly in the shade of a blonde.,<VisionEgg.WrappedText.WrappedText object at 0x1115b68c0>
+382.0000,4.000,fix
+386.0000,8.000,1,126,2,joke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the laundry.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6910>
+394.0000,8.000,1,30,2,joke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the spoon.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6870>
+402.0000,8.000,1,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,<VisionEgg.WrappedText.WrappedText object at 0x1115b69b0>
+410.0000,8.000,fix
+418.0000,8.000,1,91,2,nonjoke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its resources.",<VisionEgg.WrappedText.WrappedText object at 0x1115b6960>
+426.0000,6.000,fix
+432.0000,8.000,1,105,2,nonjoke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a guidebook.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6a00>
+440.0000,4.000,fix
+444.0000,8.000,1,134,2,joke,My church welcomes all denominations but prefers,twenties,Mormons,My church welcomes all denominations but prefers twenties.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6a50>
+452.0000,8.000,1,145,2,nonjoke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a spouse.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6aa0>
+460.0000,8.000,1,106,2,joke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the springs.",<VisionEgg.WrappedText.WrappedText object at 0x1115b6b40>
+468.0000,8.000,1,67,2,nonjoke,The most prevalent form of legalized gambling is,elections,betting,The most prevalent form of legalized gambling is betting.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6af0>
+476.0000,2.000,fix
+478.0000,8.000,1,71,2,nonjoke,Save the whales; start a,collection,coalition,Save the whales; start a coalition.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6b90>
+486.0000,8.000,1,138,2,joke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into movies.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6be0>
+494.0000,4.000,fix
+498.0000,8.000,1,156,2,joke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are mosquitos.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6c30>
+506.0000,8.000,1,33,2,nonjoke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to romance.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6c80>
+514.0000,2.000,fix
+516.0000,8.000,1,153,2,nonjoke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the snoop.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6d20>
+524.0000,2.000,fix
+526.0000,8.000,1,151,2,nonjoke,One good turn gets most of the,blanket,profit,One good turn gets most of the profit.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6cd0>
+534.0000,8.000,1,23,2,nonjoke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge headache.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6dc0>
+542.0000,2.000,fix
+544.0000,8.000,1,4,2,joke,I knew a streetwalker who was so exclusive she had an unlisted telephone,booth,line,I knew a streetwalker who was so exclusive she had an unlisted telephone booth.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6d70>
+552.0000,2.000,fix
+554.0000,8.000,1,10,2,joke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than gossip.,<VisionEgg.WrappedText.WrappedText object at 0x1115b6e10>
+562.0000,8.000,fix
+FED_20170426a_3T2,1,79,2,nonjoke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her vanilla.,1,1.3168599605560303,6.009433031082153
+FED_20170426a_3T2,1,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",2,0.9502120018005371,16.010645151138306
+FED_20170426a_3T2,1,136,2,joke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the olive.,3,0.7501330375671387,24.0116970539093
+FED_20170426a_3T2,1,83,2,nonjoke,Nothing ages a woman faster than,identification,hardship,Nothing ages a woman faster than hardship.,1,0.4500761032104492,34.012959003448486
+FED_20170426a_3T2,1,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",3,0.4999430179595947,44.030884981155396
+FED_20170426a_3T2,1,93,2,nonjoke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the competition.",1,0.5000131130218506,54.015480041503906
+FED_20170426a_3T2,1,125,2,nonjoke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the daughter.,2,1.166855812072754,64.01666617393494
+FED_20170426a_3T2,1,140,2,joke,You can keep your kids in hot water with ,dishes,rules,You can keep your kids in hot water with dishes.,3,1.3835577964782715,72.00100016593933
+FED_20170426a_3T2,1,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",1,0.5334579944610596,94.00373315811157
+FED_20170426a_3T2,1,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",1,0.6500999927520752,104.00502800941467
+FED_20170426a_3T2,1,47,2,nonjoke,"Charged with statutory rape, he told the judge he didn't know she was a ",statue,teenager,"Charged with statutory rape, he told the judge he didn't know she was a teenager.",1,1.2167589664459229,114.00630712509155
+FED_20170426a_3T2,1,27,2,nonjoke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight disease.",1,0.8500421047210693,122.00730895996094
+FED_20170426a_3T2,1,118,2,joke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the patrons.,2,1.2835361957550049,142.00974297523499
+FED_20170426a_3T2,1,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,1,0.5500869750976562,156.01149797439575
+FED_20170426a_3T2,1,6,2,joke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and putt.,4,1.1335620880126953,168.01296997070312
+FED_20170426a_3T2,1,92,2,joke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his wife.",2,0.8668019771575928,180.01451706886292
+FED_20170426a_3T2,1,128,2,joke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the beaches.",2,1.366806983947754,190.01577806472778
+FED_20170426a_3T2,1,45,2,nonjoke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her jacket.",1,0.716702938079834,198.00011801719666
+FED_20170426a_3T2,1,68,2,joke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date bachelors.,1,0.7834169864654541,206.0011169910431
+FED_20170426a_3T2,1,85,2,nonjoke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while relaxed.",1,1.2168500423431396,218.00256299972534
+FED_20170426a_3T2,1,9,2,nonjoke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a name.",1,0.5667779445648193,232.00428414344788
+FED_20170426a_3T2,1,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,2,0.9333741664886475,240.00531697273254
+FED_20170426a_3T2,1,48,2,joke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""accomplice"".",1,0.6334450244903564,248.00631499290466
+FED_20170426a_3T2,1,116,2,joke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about others.,,,256.00734210014343
+FED_20170426a_3T2,1,141,2,nonjoke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tobacco.,2,0.7333788871765137,276.00984716415405
+FED_20170426a_3T2,1,36,2,joke,A problem drinker is one who never,buys,quits,A problem drinker is one who never buys.,1,0.6666619777679443,284.01085114479065
+FED_20170426a_3T2,1,80,2,joke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel happy.,2,0.8667359352111816,294.01211404800415
+FED_20170426a_3T2,1,87,2,nonjoke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your parents.",1,1.1001660823822021,316.0148160457611
+FED_20170426a_3T2,1,108,2,joke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little water.,2,0.5667500495910645,328.01632595062256
+FED_20170426a_3T2,1,139,2,nonjoke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new wood.,1,0.5167551040649414,338.0009069442749
+FED_20170426a_3T2,1,132,2,joke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in surgery.,3,0.5167410373687744,348.00218200683594
+FED_20170426a_3T2,1,65,2,nonjoke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke heroin.,1,1.3668160438537598,360.0036771297455
+FED_20170426a_3T2,1,46,2,joke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent marriage.,3,0.9834191799163818,370.00493597984314
+FED_20170426a_3T2,1,16,2,joke,Many a man's idea of a vacation is to rest quietly in the shade of a ,blonde,palm,Many a man's idea of a vacation is to rest quietly in the shade of a blonde.,4,0.7500388622283936,380.00619411468506
+FED_20170426a_3T2,1,126,2,joke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the laundry.,1,0.7334611415863037,392.0076279640198
+FED_20170426a_3T2,1,30,2,joke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the spoon.,2,0.9668121337890625,400.0086359977722
+FED_20170426a_3T2,1,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,1,0.45006394386291504,408.00963711738586
+FED_20170426a_3T2,1,91,2,nonjoke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its resources.",1,0.4999699592590332,424.0116550922394
+FED_20170426a_3T2,1,105,2,nonjoke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a guidebook.,1,0.6334419250488281,438.01340913772583
+FED_20170426a_3T2,1,134,2,joke,My church welcomes all denominations but prefers,twenties,Mormons,My church welcomes all denominations but prefers twenties.,3,0.4667329788208008,450.0149300098419
+FED_20170426a_3T2,1,145,2,nonjoke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a spouse.,1,0.5833530426025391,458.01593112945557
+FED_20170426a_3T2,1,106,2,joke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the springs.",3,1.3501498699188232,466.0002660751343
+FED_20170426a_3T2,1,67,2,nonjoke,The most prevalent form of legalized gambling is,elections,betting,The most prevalent form of legalized gambling is betting.,1,0.6667449474334717,474.00120306015015
+FED_20170426a_3T2,1,71,2,nonjoke,Save the whales; start a,collection,coalition,Save the whales; start a coalition.,1,0.4834918975830078,484.0023820400238
+FED_20170426a_3T2,1,138,2,joke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into movies.,3,0.4666428565979004,492.0034601688385
+FED_20170426a_3T2,1,156,2,joke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are mosquitos.,3,0.5000431537628174,504.00500297546387
+FED_20170426a_3T2,1,33,2,nonjoke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to romance.,1,0.6334309577941895,512.0059840679169
+FED_20170426a_3T2,1,153,2,nonjoke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the snoop.,1,0.516758918762207,522.0072350502014
+FED_20170426a_3T2,1,151,2,nonjoke,One good turn gets most of the,blanket,profit,One good turn gets most of the profit.,1,0.45000696182250977,532.0084991455078
+FED_20170426a_3T2,1,23,2,nonjoke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge headache.,1,0.48334383964538574,540.0095081329346
+FED_20170426a_3T2,1,4,2,joke,I knew a streetwalker who was so exclusive she had an unlisted telephone,booth,line,I knew a streetwalker who was so exclusive she had an unlisted telephone booth.,2,1.1335151195526123,550.0106949806213
+FED_20170426a_3T2,1,10,2,joke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than gossip.,2,0.6000990867614746,560.0119459629059

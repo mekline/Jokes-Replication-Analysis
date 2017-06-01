@@ -1,0 +1,140 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,3,70,1,nonjoke,The best gift for the man who has everything is,penicillin,neckties,The best gift for the man who has everything is neckties.,<VisionEgg.WrappedText.WrappedText object at 0x103f25c30>
+8.0000,2.000,fix
+10.0000,8.000,3,144,1,nonjoke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five degrees.,<VisionEgg.WrappedText.WrappedText object at 0x103f25c80>
+18.0000,8.000,3,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,<VisionEgg.WrappedText.WrappedText object at 0x103f25cd0>
+26.0000,2.000,fix
+28.0000,8.000,3,60,1,nonjoke,Another thing a small boy is constantly outgrowing is his,allowance,underwear,Another thing a small boy is constantly outgrowing is his underwear.,<VisionEgg.WrappedText.WrappedText object at 0x103f25d20>
+36.0000,2.000,fix
+38.0000,8.000,3,97,1,joke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the dressmaker.",<VisionEgg.WrappedText.WrappedText object at 0x103f25d70>
+46.0000,2.000,fix
+48.0000,8.000,3,28,1,nonjoke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown eyelash.,<VisionEgg.WrappedText.WrappedText object at 0x103f25dc0>
+56.0000,2.000,fix
+58.0000,8.000,3,146,1,nonjoke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called memories.",<VisionEgg.WrappedText.WrappedText object at 0x103f25e10>
+66.0000,8.000,3,121,1,joke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a girlfriend.",<VisionEgg.WrappedText.WrappedText object at 0x103f25e60>
+74.0000,14.000,fix
+88.0000,8.000,3,137,1,joke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a widower.,<VisionEgg.WrappedText.WrappedText object at 0x103f25eb0>
+96.0000,2.000,fix
+98.0000,8.000,3,128,1,nonjoke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the page.",<VisionEgg.WrappedText.WrappedText object at 0x103f25f00>
+106.0000,2.000,fix
+108.0000,8.000,3,12,1,nonjoke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the family .,<VisionEgg.WrappedText.WrappedText object at 0x103f25fa0>
+116.0000,8.000,3,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",<VisionEgg.WrappedText.WrappedText object at 0x103f25f50>
+124.0000,12.000,fix
+136.0000,8.000,3,107,1,joke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice nap.,<VisionEgg.WrappedText.WrappedText object at 0x10b585050>
+144.0000,6.000,fix
+150.0000,8.000,3,93,1,joke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the city.",<VisionEgg.WrappedText.WrappedText object at 0x10b5850a0>
+158.0000,4.000,fix
+162.0000,8.000,3,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,<VisionEgg.WrappedText.WrappedText object at 0x10b5850f0>
+170.0000,4.000,fix
+174.0000,8.000,3,1,1,joke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten inches.",<VisionEgg.WrappedText.WrappedText object at 0x10b585140>
+182.0000,2.000,fix
+184.0000,8.000,3,89,1,joke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are male.",<VisionEgg.WrappedText.WrappedText object at 0x10b585190>
+192.0000,8.000,3,2,1,nonjoke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two ounces.",<VisionEgg.WrappedText.WrappedText object at 0x10b5851e0>
+200.0000,8.000,3,35,1,joke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their nuptials.",<VisionEgg.WrappedText.WrappedText object at 0x10b585230>
+208.0000,4.000,fix
+212.0000,8.000,3,122,1,nonjoke,"If you're filthy rich, sending your kids to college is a wonderful", cleaner,luxury,"If you're filthy rich, sending your kids to college is a wonderful luxury.",<VisionEgg.WrappedText.WrappedText object at 0x10b585280>
+220.0000,6.000,fix
+226.0000,8.000,3,96,1,nonjoke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the crate.",<VisionEgg.WrappedText.WrappedText object at 0x10b5852d0>
+234.0000,8.000,3,64,1,nonjoke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its toes.,<VisionEgg.WrappedText.WrappedText object at 0x10b585320>
+242.0000,8.000,3,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,<VisionEgg.WrappedText.WrappedText object at 0x10b585370>
+250.0000,8.000,3,21,1,joke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every century.",<VisionEgg.WrappedText.WrappedText object at 0x10b5853c0>
+258.0000,12.000,fix
+270.0000,8.000,3,112,1,nonjoke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in charcoal.,<VisionEgg.WrappedText.WrappedText object at 0x10b585410>
+278.0000,8.000,3,37,1,joke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the bathtub.",<VisionEgg.WrappedText.WrappedText object at 0x10b585460>
+286.0000,2.000,fix
+288.0000,8.000,3,95,1,joke,He was teaching his girlfriend how to swim when the lifeguard made them move to the ,lake,shallows,He was teaching his girlfriend how to swim when the lifeguard made them move to the lake.,<VisionEgg.WrappedText.WrappedText object at 0x10b5854b0>
+296.0000,14.000,fix
+310.0000,8.000,3,156,1,nonjoke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are losers.,<VisionEgg.WrappedText.WrappedText object at 0x10b585550>
+318.0000,4.000,fix
+322.0000,8.000,3,25,1,joke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is poverty.,<VisionEgg.WrappedText.WrappedText object at 0x10b585500>
+330.0000,2.000,fix
+332.0000,8.000,3,74,1,nonjoke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his sailboat.,<VisionEgg.WrappedText.WrappedText object at 0x10b5855f0>
+340.0000,2.000,fix
+342.0000,8.000,3,115,1,joke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your opponent.",<VisionEgg.WrappedText.WrappedText object at 0x10b5855a0>
+350.0000,4.000,fix
+354.0000,8.000,3,116,1,nonjoke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about somebody.,<VisionEgg.WrappedText.WrappedText object at 0x10b585640>
+362.0000,2.000,fix
+364.0000,8.000,3,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,<VisionEgg.WrappedText.WrappedText object at 0x10b585690>
+372.0000,2.000,fix
+374.0000,8.000,3,153,1,joke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the trapeze.,<VisionEgg.WrappedText.WrappedText object at 0x10b5856e0>
+382.0000,4.000,fix
+386.0000,8.000,3,85,1,joke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while driving.",<VisionEgg.WrappedText.WrappedText object at 0x10b585730>
+394.0000,8.000,3,31,1,joke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the improvement.",<VisionEgg.WrappedText.WrappedText object at 0x10b5857d0>
+402.0000,8.000,3,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,<VisionEgg.WrappedText.WrappedText object at 0x10b585780>
+410.0000,8.000,fix
+418.0000,8.000,3,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",<VisionEgg.WrappedText.WrappedText object at 0x10b585870>
+426.0000,6.000,fix
+432.0000,8.000,3,26,1,nonjoke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three animals.",<VisionEgg.WrappedText.WrappedText object at 0x10b585820>
+440.0000,4.000,fix
+444.0000,8.000,3,79,1,joke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her ankles.,<VisionEgg.WrappedText.WrappedText object at 0x10b5858c0>
+452.0000,8.000,3,10,1,nonjoke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than radiation.,<VisionEgg.WrappedText.WrappedText object at 0x10b585910>
+460.0000,8.000,3,43,1,joke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a boy.",<VisionEgg.WrappedText.WrappedText object at 0x10b585960>
+468.0000,8.000,3,130,1,nonjoke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly upgrades.",<VisionEgg.WrappedText.WrappedText object at 0x10b5859b0>
+476.0000,2.000,fix
+478.0000,8.000,3,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",<VisionEgg.WrappedText.WrappedText object at 0x10b585a00>
+486.0000,8.000,3,149,1,joke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the nude.",<VisionEgg.WrappedText.WrappedText object at 0x10b585a50>
+494.0000,4.000,fix
+498.0000,8.000,3,9,1,joke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a dress.",<VisionEgg.WrappedText.WrappedText object at 0x10b585aa0>
+506.0000,8.000,3,80,1,nonjoke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel sad.,<VisionEgg.WrappedText.WrappedText object at 0x10b585af0>
+514.0000,2.000,fix
+516.0000,8.000,3,110,1,nonjoke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're affordable.,<VisionEgg.WrappedText.WrappedText object at 0x10b585b40>
+524.0000,2.000,fix
+526.0000,8.000,3,40,1,nonjoke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the outside.,<VisionEgg.WrappedText.WrappedText object at 0x10b585b90>
+534.0000,8.000,3,76,1,nonjoke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of diversion.",<VisionEgg.WrappedText.WrappedText object at 0x10b585be0>
+542.0000,2.000,fix
+544.0000,8.000,3,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,<VisionEgg.WrappedText.WrappedText object at 0x10b585c30>
+552.0000,2.000,fix
+554.0000,8.000,3,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",<VisionEgg.WrappedText.WrappedText object at 0x10b585cd0>
+562.0000,8.000,fix
+FED_20161217b_3T2,3,70,1,nonjoke,The best gift for the man who has everything is,penicillin,neckties,The best gift for the man who has everything is neckties.,1,0.6501069068908691,6.009138107299805
+FED_20161217b_3T2,3,144,1,nonjoke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five degrees.,4,1.2835171222686768,16.010345935821533
+FED_20161217b_3T2,3,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,3,1.0667729377746582,24.011438131332397
+FED_20161217b_3T2,3,60,1,nonjoke,Another thing a small boy is constantly outgrowing is his,allowance,underwear,Another thing a small boy is constantly outgrowing is his underwear.,2,0.7001099586486816,34.01272106170654
+FED_20161217b_3T2,3,97,1,joke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the dressmaker.",3,1.366821050643921,44.01399898529053
+FED_20161217b_3T2,3,28,1,nonjoke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown eyelash.,1,0.9335930347442627,54.01518702507019
+FED_20161217b_3T2,3,146,1,nonjoke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called memories.",1,0.5167341232299805,64.01655197143555
+FED_20161217b_3T2,3,121,1,joke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a girlfriend.",4,0.41668105125427246,72.00097393989563
+FED_20161217b_3T2,3,137,1,joke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a widower.,3,0.5834290981292725,94.00373792648315
+FED_20161217b_3T2,3,128,1,nonjoke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the page.",1,0.3000621795654297,104.00501894950867
+FED_20161217b_3T2,3,12,1,nonjoke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the family .,1,0.8501260280609131,114.0063099861145
+FED_20161217b_3T2,3,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",1,0.7667920589447021,122.00732707977295
+FED_20161217b_3T2,3,107,1,joke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice nap.,2,0.7334599494934082,142.00989413261414
+FED_20161217b_3T2,3,93,1,joke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the city.",2,0.3500978946685791,156.01169514656067
+FED_20161217b_3T2,3,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,3,0.43340182304382324,168.0132350921631
+FED_20161217b_3T2,3,1,1,joke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten inches.",3,0.9168269634246826,180.01476502418518
+FED_20161217b_3T2,3,89,1,joke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are male.",2,0.7001471519470215,190.01602792739868
+FED_20161217b_3T2,3,2,1,nonjoke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two ounces.",1,0.7501168251037598,198.00042009353638
+FED_20161217b_3T2,3,35,1,joke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their nuptials.",1,0.8334701061248779,206.0014419555664
+FED_20161217b_3T2,3,122,1,nonjoke,"If you're filthy rich, sending your kids to college is a wonderful", cleaner,luxury,"If you're filthy rich, sending your kids to college is a wonderful luxury.",2,0.433398962020874,218.0029900074005
+FED_20161217b_3T2,3,96,1,nonjoke,"When the kid came into the store and asked for empty boxes, the owner gave him the",register,crate,"When the kid came into the store and asked for empty boxes, the owner gave him the crate.",1,0.6167199611663818,232.00470304489136
+FED_20161217b_3T2,3,64,1,nonjoke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its toes.,1,0.8335840702056885,240.0056929588318
+FED_20161217b_3T2,3,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,2,1.4169960021972656,248.00675106048584
+FED_20161217b_3T2,3,21,1,joke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every century.",1,0.41673803329467773,256.0078730583191
+FED_20161217b_3T2,3,112,1,nonjoke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in charcoal.,1,0.4500889778137207,276.0104410648346
+FED_20161217b_3T2,3,37,1,joke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the bathtub.",3,0.3500840663909912,284.01147508621216
+FED_20161217b_3T2,3,95,1,joke,He was teaching his girlfriend how to swim when the lifeguard made them move to the ,lake,shallows,He was teaching his girlfriend how to swim when the lifeguard made them move to the lake.,1,0.8501501083374023,294.01275300979614
+FED_20161217b_3T2,3,156,1,nonjoke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are losers.,1,0.4167029857635498,316.0156309604645
+FED_20161217b_3T2,3,25,1,joke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is poverty.,4,0.36665916442871094,328.0005419254303
+FED_20161217b_3T2,3,74,1,nonjoke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his sailboat.,1,0.43332791328430176,338.0018310546875
+FED_20161217b_3T2,3,115,1,joke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your opponent.",4,0.8167548179626465,348.003121137619
+FED_20161217b_3T2,3,116,1,nonjoke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about somebody.,2,1.1834490299224854,360.0046670436859
+FED_20161217b_3T2,3,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,2,0.5500168800354004,370.0059630870819
+FED_20161217b_3T2,3,153,1,joke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the trapeze.,3,0.4666280746459961,380.0072910785675
+FED_20161217b_3T2,3,85,1,joke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while driving.",3,0.4166738986968994,392.00880312919617
+FED_20161217b_3T2,3,31,1,joke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the improvement.",2,1.4668490886688232,400.00981998443604
+FED_20161217b_3T2,3,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,3,0.6500318050384521,408.01086711883545
+FED_20161217b_3T2,3,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",1,0.3333878517150879,424.0129210948944
+FED_20161217b_3T2,3,26,1,nonjoke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three animals.",1,0.4000551700592041,438.01473093032837
+FED_20161217b_3T2,3,79,1,joke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her ankles.,4,0.8834071159362793,450.0162830352783
+FED_20161217b_3T2,3,10,1,nonjoke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than radiation.,1,0.4500880241394043,458.00063610076904
+FED_20161217b_3T2,3,43,1,joke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a boy.",3,0.3500649929046631,466.0016760826111
+FED_20161217b_3T2,3,130,1,nonjoke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly upgrades.",1,0.36672186851501465,474.00271010398865
+FED_20161217b_3T2,3,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",1,0.35005712509155273,484.0039999485016
+FED_20161217b_3T2,3,149,1,joke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the nude.",4,0.38335585594177246,492.00508308410645
+FED_20161217b_3T2,3,9,1,joke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a dress.",1,0.8834002017974854,504.0065939426422
+FED_20161217b_3T2,3,80,1,nonjoke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel sad.,1,0.5000760555267334,512.0076270103455
+FED_20161217b_3T2,3,110,1,nonjoke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're affordable.,3,0.8834240436553955,522.0089099407196
+FED_20161217b_3T2,3,40,1,nonjoke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the outside.,3,0.36663198471069336,532.0102090835571
+FED_20161217b_3T2,3,76,1,nonjoke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of diversion.",1,0.43340301513671875,540.011246919632
+FED_20161217b_3T2,3,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,4,0.46674609184265137,550.012542963028
+FED_20161217b_3T2,3,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",4,0.383450984954834,560.0138339996338

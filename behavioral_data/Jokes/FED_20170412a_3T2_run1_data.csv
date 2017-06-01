@@ -1,0 +1,98 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,1,153,1,joke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the trapeze.,<VisionEgg.WrappedText.WrappedText object at 0x102f6eb40>
+8.0000,18.000,fix
+26.0000,8.000,1,18,1,nonjoke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my collar.",<VisionEgg.WrappedText.WrappedText object at 0x102f6ed20>
+34.0000,8.000,1,72,1,nonjoke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a hotel.,<VisionEgg.WrappedText.WrappedText object at 0x102f6ec30>
+42.0000,8.000,1,151,1,joke,One good turn gets most of the,blanket,profit,One good turn gets most of the blanket.,<VisionEgg.WrappedText.WrappedText object at 0x102f6ec80>
+50.0000,2.000,fix
+52.0000,8.000,1,39,1,joke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with scissors.,<VisionEgg.WrappedText.WrappedText object at 0x102f6eaf0>
+60.0000,8.000,1,28,1,nonjoke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown eyelash.,<VisionEgg.WrappedText.WrappedText object at 0x102f6ea00>
+68.0000,6.000,fix
+74.0000,8.000,1,87,1,joke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your opinion.",<VisionEgg.WrappedText.WrappedText object at 0x102f6ebe0>
+82.0000,2.000,fix
+84.0000,8.000,1,17,1,joke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes hours.,<VisionEgg.WrappedText.WrappedText object at 0x102f6ecd0>
+92.0000,2.000,fix
+94.0000,8.000,1,99,1,joke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good reputation.",<VisionEgg.WrappedText.WrappedText object at 0x102f6eaa0>
+102.0000,8.000,1,128,1,nonjoke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the page.",<VisionEgg.WrappedText.WrappedText object at 0x102f6eb90>
+110.0000,8.000,1,104,1,nonjoke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their rewards.,<VisionEgg.WrappedText.WrappedText object at 0x102f6ea50>
+118.0000,14.000,fix
+132.0000,8.000,1,51,1,joke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the Renaissance.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d050>
+140.0000,8.000,1,106,1,nonjoke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the fabric.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d0a0>
+148.0000,10.000,fix
+158.0000,8.000,1,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d0f0>
+166.0000,4.000,fix
+170.0000,8.000,1,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d190>
+178.0000,8.000,1,52,1,nonjoke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no anesthetic.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d140>
+186.0000,8.000,1,88,1,nonjoke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three streetlights.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d1e0>
+194.0000,4.000,fix
+198.0000,8.000,1,5,1,joke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the reading.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d230>
+206.0000,8.000,1,127,1,joke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying rich.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d280>
+214.0000,8.000,1,130,1,nonjoke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly upgrades.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d2d0>
+222.0000,2.000,fix
+224.0000,8.000,1,35,1,joke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their nuptials.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d320>
+232.0000,2.000,fix
+234.0000,8.000,1,140,1,nonjoke,You can keep your kids in hot water with ,dishes,rules,You can keep your kids in hot water with rules.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d370>
+242.0000,4.000,fix
+246.0000,8.000,1,24,1,nonjoke,"Where I'm from, the two most common elements are hydrogen and ",stupidity,nitrogen,"Where I'm from, the two most common elements are hydrogen and nitrogen.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d410>
+254.0000,8.000,1,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d3c0>
+262.0000,10.000,fix
+272.0000,8.000,1,154,1,nonjoke,"This new computer works so quickly, it comes complete with",ulcers,games,"This new computer works so quickly, it comes complete with games.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d460>
+280.0000,8.000,1,37,1,joke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the bathtub.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d4b0>
+288.0000,4.000,fix
+292.0000,8.000,1,145,1,joke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a creditor.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d500>
+300.0000,4.000,fix
+304.0000,8.000,1,85,1,joke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while driving.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d550>
+312.0000,8.000,1,68,1,nonjoke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date someone.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d5f0>
+320.0000,8.000,1,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d5a0>
+328.0000,4.000,fix
+332.0000,8.000,1,3,1,joke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from fishing.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d640>
+340.0000,4.000,fix
+344.0000,8.000,1,7,1,joke,A replacement player hit a home run with my,girl,ball,A replacement player hit a home run with my girl.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d690>
+352.0000,4.000,fix
+356.0000,8.000,1,43,1,joke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a boy.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d6e0>
+364.0000,8.000,1,116,1,nonjoke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about somebody.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d730>
+372.0000,2.000,fix
+374.0000,8.000,1,142,1,nonjoke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her father.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d780>
+382.0000,2.000,fix
+384.0000,8.000,1,148,1,nonjoke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a toaster.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d7d0>
+392.0000,8.000,1,33,1,joke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to divorce.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d820>
+400.0000,6.000,fix
+406.0000,8.000,1,26,1,nonjoke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three animals.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d8c0>
+414.0000,8.000,1,141,1,joke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tourist.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d870>
+422.0000,6.000,fix
+428.0000,8.000,1,61,1,joke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a cruise.",<VisionEgg.WrappedText.WrappedText object at 0x10a54d960>
+436.0000,8.000,1,77,1,joke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to doctors.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d910>
+444.0000,6.000,fix
+450.0000,8.000,1,133,1,joke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the maid.,<VisionEgg.WrappedText.WrappedText object at 0x10a54da00>
+458.0000,2.000,fix
+460.0000,8.000,1,58,1,nonjoke,The woman who has her husband eating out of her hand must save a lot of,dishwashing,heartbreak,The woman who has her husband eating out of her hand must save a lot of heartbreak.,<VisionEgg.WrappedText.WrappedText object at 0x10a54d9b0>
+468.0000,6.000,fix
+474.0000,8.000,1,42,1,nonjoke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cold.,<VisionEgg.WrappedText.WrappedText object at 0x10a54daa0>
+482.0000,4.000,fix
+486.0000,8.000,1,48,1,nonjoke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""partner"".",<VisionEgg.WrappedText.WrappedText object at 0x10a54da50>
+494.0000,8.000,1,34,1,nonjoke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough change.",<VisionEgg.WrappedText.WrappedText object at 0x10a54db40>
+502.0000,2.000,fix
+504.0000,8.000,1,101,1,joke,"I got a car for my wife, and I thought it was a good",trade,choice,"I got a car for my wife, and I thought it was a good trade.",<VisionEgg.WrappedText.WrappedText object at 0x10a54db90>
+512.0000,8.000,1,83,1,joke,Nothing ages a woman faster than,identification,hardship,Nothing ages a woman faster than identification.,<VisionEgg.WrappedText.WrappedText object at 0x10a54dbe0>
+520.0000,8.000,1,74,1,nonjoke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his sailboat.,<VisionEgg.WrappedText.WrappedText object at 0x10a54dc30>
+528.0000,6.000,fix
+534.0000,8.000,1,105,1,joke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a checkbook.,<VisionEgg.WrappedText.WrappedText object at 0x10a54dc80>
+542.0000,4.000,fix
+546.0000,8.000,1,66,1,nonjoke,One good way to invest in the country is to buy a ,senator,business,One good way to invest in the country is to buy a business.,<VisionEgg.WrappedText.WrappedText object at 0x10a54dcd0>
+554.0000,4.000,fix
+558.0000,8.000,1,80,1,nonjoke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel sad.,<VisionEgg.WrappedText.WrappedText object at 0x10a54dd20>
+566.0000,4.000,fix
+FED_20170412a_3T2,1,153,1,joke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the trapeze.,,,6.009376049041748
+FED_20170412a_3T2,1,18,1,nonjoke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my collar.",4,3.4671568870544434,32.0130090713501
+FED_20170412a_3T2,1,72,1,nonjoke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a hotel.,1,2.3003249168395996,40.01412892341614
+FED_20170412a_3T2,1,151,1,joke,One good turn gets most of the,blanket,profit,One good turn gets most of the blanket.,4,1.0667920112609863,48.01524496078491
+FED_20170412a_3T2,1,39,1,joke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with scissors.,4,0.966804027557373,58.01663899421692
+FED_20170412a_3T2,1,28,1,nonjoke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown eyelash.,1,1.1501660346984863,66.00107502937317
+FED_20170412a_3T2,1,87,1,joke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your opinion.",1,0.966702938079834,80.0031189918518
+FED_20170412a_3T2,1,17,1,joke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes hours.,2,1.3334360122680664,90.00450587272644
+FED_20170412a_3T2,1,99,1,joke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good reputation.",,,100.00588798522949
+FED_20170412a_3T2,1,128,1,nonjoke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the page.",1,0.7334458827972412,108.00695300102234
+FED_20170412a_3T2,1,104,1,nonjoke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their rewards.,1,1.166806936264038,116.00807499885559
+FED_20170412a_3T2,1,51,1,joke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the Renaissance.,4,1.4668550491333008,138.01114988327026
+FED_20170412a_3T2,1,106,1,nonjoke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the fabric.",1,0.9501059055328369,146.01231908798218
+FED_20170412a_3T2,1,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,,,164.0147740840912

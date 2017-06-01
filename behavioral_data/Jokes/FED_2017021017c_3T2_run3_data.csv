@@ -1,0 +1,140 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,3,121,2,nonjoke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a piston.",<VisionEgg.WrappedText.WrappedText object at 0x107e05be0>
+8.0000,2.000,fix
+10.0000,8.000,3,33,2,nonjoke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to romance.,<VisionEgg.WrappedText.WrappedText object at 0x107e05c30>
+18.0000,8.000,3,4,2,joke,I knew a streetwalker who was so exclusive she had an unlisted telephone,booth,line,I knew a streetwalker who was so exclusive she had an unlisted telephone booth.,<VisionEgg.WrappedText.WrappedText object at 0x107e05cd0>
+26.0000,2.000,fix
+28.0000,8.000,3,85,2,nonjoke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while relaxed.",<VisionEgg.WrappedText.WrappedText object at 0x107e05c80>
+36.0000,2.000,fix
+38.0000,8.000,3,58,2,joke,The woman who has her husband eating out of her hand must save a lot of,dishwashing,heartbreak,The woman who has her husband eating out of her hand must save a lot of dishwashing.,<VisionEgg.WrappedText.WrappedText object at 0x107e05d70>
+46.0000,2.000,fix
+48.0000,8.000,3,93,2,nonjoke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the competition.",<VisionEgg.WrappedText.WrappedText object at 0x107e05d20>
+56.0000,2.000,fix
+58.0000,8.000,3,131,2,nonjoke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly blackjack.",<VisionEgg.WrappedText.WrappedText object at 0x107e05dc0>
+66.0000,8.000,3,30,2,joke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the spoon.,<VisionEgg.WrappedText.WrappedText object at 0x107e05e10>
+74.0000,14.000,fix
+88.0000,8.000,3,34,2,joke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough room.",<VisionEgg.WrappedText.WrappedText object at 0x107e05eb0>
+96.0000,2.000,fix
+98.0000,8.000,3,117,2,nonjoke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to somewhere.",<VisionEgg.WrappedText.WrappedText object at 0x107e05f00>
+106.0000,2.000,fix
+108.0000,8.000,3,45,2,nonjoke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her jacket.",<VisionEgg.WrappedText.WrappedText object at 0x107e05e60>
+116.0000,8.000,3,129,2,nonjoke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a salad.,<VisionEgg.WrappedText.WrappedText object at 0x107e05f50>
+124.0000,12.000,fix
+136.0000,8.000,3,128,2,joke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the beaches.",<VisionEgg.WrappedText.WrappedText object at 0x107e05fa0>
+144.0000,6.000,fix
+150.0000,8.000,3,90,2,joke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two paychecks.,<VisionEgg.WrappedText.WrappedText object at 0x10f467050>
+158.0000,4.000,fix
+162.0000,8.000,3,46,2,joke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent marriage.,<VisionEgg.WrappedText.WrappedText object at 0x10f4670f0>
+170.0000,4.000,fix
+174.0000,8.000,3,80,2,joke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel happy.,<VisionEgg.WrappedText.WrappedText object at 0x10f467140>
+182.0000,2.000,fix
+184.0000,8.000,3,98,2,joke,"Nature has three ways of thinning the herd: drought, famine, and ",primaries,hunting,"Nature has three ways of thinning the herd: drought, famine, and primaries.",<VisionEgg.WrappedText.WrappedText object at 0x10f4670a0>
+192.0000,8.000,3,89,2,nonjoke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are weak.",<VisionEgg.WrappedText.WrappedText object at 0x10f467190>
+200.0000,8.000,3,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",<VisionEgg.WrappedText.WrappedText object at 0x10f4671e0>
+208.0000,4.000,fix
+212.0000,8.000,3,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",<VisionEgg.WrappedText.WrappedText object at 0x10f467280>
+220.0000,6.000,fix
+226.0000,8.000,3,99,2,nonjoke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good surprise.",<VisionEgg.WrappedText.WrappedText object at 0x10f467230>
+234.0000,8.000,3,107,2,nonjoke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice diction.,<VisionEgg.WrappedText.WrappedText object at 0x10f4672d0>
+242.0000,8.000,3,72,2,joke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a library.,<VisionEgg.WrappedText.WrappedText object at 0x10f467370>
+250.0000,8.000,3,38,2,joke,This fall two things are turning yellow: trees and,investors,bushes,This fall two things are turning yellow: trees and investors.,<VisionEgg.WrappedText.WrappedText object at 0x10f4673c0>
+258.0000,12.000,fix
+270.0000,8.000,3,155,2,nonjoke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the clowns.,<VisionEgg.WrappedText.WrappedText object at 0x10f467320>
+278.0000,8.000,3,18,2,joke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my glasses.",<VisionEgg.WrappedText.WrappedText object at 0x10f467410>
+286.0000,2.000,fix
+288.0000,8.000,3,76,2,joke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of punishment.",<VisionEgg.WrappedText.WrappedText object at 0x10f467460>
+296.0000,14.000,fix
+310.0000,8.000,3,39,2,nonjoke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with detergent.,<VisionEgg.WrappedText.WrappedText object at 0x10f4674b0>
+318.0000,4.000,fix
+322.0000,8.000,3,32,2,joke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually dollars.",<VisionEgg.WrappedText.WrappedText object at 0x10f467550>
+330.0000,2.000,fix
+332.0000,8.000,3,37,2,nonjoke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the admission.",<VisionEgg.WrappedText.WrappedText object at 0x10f467500>
+340.0000,2.000,fix
+342.0000,8.000,3,148,2,joke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a grandma.,<VisionEgg.WrappedText.WrappedText object at 0x10f4675a0>
+350.0000,4.000,fix
+354.0000,8.000,3,63,2,nonjoke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the country.",<VisionEgg.WrappedText.WrappedText object at 0x10f4675f0>
+362.0000,2.000,fix
+364.0000,8.000,3,142,2,joke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her fianc_.,<VisionEgg.WrappedText.WrappedText object at 0x10f467640>
+372.0000,2.000,fix
+374.0000,8.000,3,40,2,joke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the cashier.,<VisionEgg.WrappedText.WrappedText object at 0x10f467690>
+382.0000,4.000,fix
+386.0000,8.000,3,120,2,joke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and money.,<VisionEgg.WrappedText.WrappedText object at 0x10f4676e0>
+394.0000,8.000,3,106,2,joke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the springs.",<VisionEgg.WrappedText.WrappedText object at 0x10f467730>
+402.0000,8.000,3,13,2,nonjoke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a candle.,<VisionEgg.WrappedText.WrappedText object at 0x10f467780>
+410.0000,8.000,fix
+418.0000,8.000,3,3,2,nonjoke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from working.,<VisionEgg.WrappedText.WrappedText object at 0x10f4677d0>
+426.0000,6.000,fix
+432.0000,8.000,3,73,2,nonjoke,One thing that makes the world go round is,detours,greed,One thing that makes the world go round is greed.,<VisionEgg.WrappedText.WrappedText object at 0x10f467820>
+440.0000,4.000,fix
+444.0000,8.000,3,108,2,joke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little water.,<VisionEgg.WrappedText.WrappedText object at 0x10f467870>
+452.0000,8.000,3,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,<VisionEgg.WrappedText.WrappedText object at 0x10f4678c0>
+460.0000,8.000,3,156,2,joke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are mosquitos.,<VisionEgg.WrappedText.WrappedText object at 0x10f467910>
+468.0000,8.000,3,59,2,nonjoke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot scantier.",<VisionEgg.WrappedText.WrappedText object at 0x10f467960>
+476.0000,2.000,fix
+478.0000,8.000,3,141,2,nonjoke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tobacco.,<VisionEgg.WrappedText.WrappedText object at 0x10f4679b0>
+486.0000,8.000,3,132,2,joke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in surgery.,<VisionEgg.WrappedText.WrappedText object at 0x10f467a50>
+494.0000,4.000,fix
+498.0000,8.000,3,68,2,joke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date bachelors.,<VisionEgg.WrappedText.WrappedText object at 0x10f467a00>
+506.0000,8.000,3,109,2,nonjoke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a member.,<VisionEgg.WrappedText.WrappedText object at 0x10f467aa0>
+514.0000,2.000,fix
+516.0000,8.000,3,83,2,nonjoke,Nothing ages a woman faster than,identification,hardship,Nothing ages a woman faster than hardship.,<VisionEgg.WrappedText.WrappedText object at 0x10f467af0>
+524.0000,2.000,fix
+526.0000,8.000,3,1,2,nonjoke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten seconds.",<VisionEgg.WrappedText.WrappedText object at 0x10f467b90>
+534.0000,8.000,3,115,2,nonjoke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your drives.",<VisionEgg.WrappedText.WrappedText object at 0x10f467b40>
+542.0000,2.000,fix
+544.0000,8.000,3,124,2,joke,"I've got Parkinson's disease, and he's got", mine,gout,"I've got Parkinson's disease, and he's got mine.",<VisionEgg.WrappedText.WrappedText object at 0x10f467be0>
+552.0000,2.000,fix
+554.0000,8.000,3,50,2,joke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in self- defense.,<VisionEgg.WrappedText.WrappedText object at 0x10f467c30>
+562.0000,8.000,fix
+FED_2017021017c_3T2,3,121,2,nonjoke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a piston.",1,1.3834810256958008,6.009407997131348
+FED_2017021017c_3T2,3,33,2,nonjoke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to romance.,1,0.6667430400848389,16.010685920715332
+FED_2017021017c_3T2,3,4,2,joke,I knew a streetwalker who was so exclusive she had an unlisted telephone,booth,line,I knew a streetwalker who was so exclusive she had an unlisted telephone booth.,1,1.2835900783538818,24.01165795326233
+FED_2017021017c_3T2,3,85,2,nonjoke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while relaxed.",1,1.5001840591430664,34.01299595832825
+FED_2017021017c_3T2,3,58,2,joke,The woman who has her husband eating out of her hand must save a lot of,dishwashing,heartbreak,The woman who has her husband eating out of her hand must save a lot of dishwashing.,1,0.8001089096069336,44.01424503326416
+FED_2017021017c_3T2,3,93,2,nonjoke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the competition.",2,1.9669129848480225,54.015554904937744
+FED_2017021017c_3T2,3,131,2,nonjoke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly blackjack.",1,0.7001080513000488,64.0001289844513
+FED_2017021017c_3T2,3,30,2,joke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the spoon.,2,1.6001942157745361,72.00117588043213
+FED_2017021017c_3T2,3,34,2,joke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough room.",2,1.0168471336364746,94.00397491455078
+FED_2017021017c_3T2,3,117,2,nonjoke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to somewhere.",2,1.3001930713653564,104.00524401664734
+FED_2017021017c_3T2,3,45,2,nonjoke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her jacket.",1,0.7667889595031738,114.00653910636902
+FED_2017021017c_3T2,3,129,2,nonjoke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a salad.,,,122.00758695602417
+FED_2017021017c_3T2,3,128,2,joke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the beaches.",2,0.5833919048309326,142.01014399528503
+FED_2017021017c_3T2,3,90,2,joke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two paychecks.,2,0.5334289073944092,156.01189804077148
+FED_2017021017c_3T2,3,46,2,joke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent marriage.,1,1.9002511501312256,168.01347994804382
+FED_2017021017c_3T2,3,80,2,joke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel happy.,1,0.8001351356506348,180.0149838924408
+FED_2017021017c_3T2,3,98,2,joke,"Nature has three ways of thinning the herd: drought, famine, and ",primaries,hunting,"Nature has three ways of thinning the herd: drought, famine, and primaries.",2,0.850067138671875,190.01630091667175
+FED_2017021017c_3T2,3,89,2,nonjoke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are weak.",1,0.8334100246429443,198.00066304206848
+FED_2017021017c_3T2,3,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",2,0.6501162052154541,206.0016438961029
+FED_2017021017c_3T2,3,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",1,1.4001638889312744,218.0032250881195
+FED_2017021017c_3T2,3,99,2,nonjoke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good surprise.",2,0.7501211166381836,232.00499391555786
+FED_2017021017c_3T2,3,107,2,nonjoke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice diction.,1,0.8833789825439453,240.00603890419006
+FED_2017021017c_3T2,3,72,2,joke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a library.,1,0.5167479515075684,248.00702595710754
+FED_2017021017c_3T2,3,38,2,joke,This fall two things are turning yellow: trees and,investors,bushes,This fall two things are turning yellow: trees and investors.,1,0.7334661483764648,256.00805592536926
+FED_2017021017c_3T2,3,155,2,nonjoke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the clowns.,1,0.5834369659423828,276.010617017746
+FED_2017021017c_3T2,3,18,2,joke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my glasses.",2,1.4834880828857422,284.0116798877716
+FED_2017021017c_3T2,3,76,2,joke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of punishment.",2,0.41672492027282715,294.0128951072693
+FED_2017021017c_3T2,3,39,2,nonjoke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with detergent.,1,0.4000668525695801,316.01568603515625
+FED_2017021017c_3T2,3,32,2,joke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually dollars.",2,1.6001911163330078,328.0005769729614
+FED_2017021017c_3T2,3,37,2,nonjoke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the admission.",1,0.6500849723815918,338.001825094223
+FED_2017021017c_3T2,3,148,2,joke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a grandma.,2,0.6668329238891602,348.0030469894409
+FED_2017021017c_3T2,3,63,2,nonjoke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the country.",1,0.5667610168457031,360.004597902298
+FED_2017021017c_3T2,3,142,2,joke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her fianc_.,,,370.0058720111847
+FED_2017021017c_3T2,3,40,2,joke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the cashier.,1,1.666883945465088,380.00718903541565
+FED_2017021017c_3T2,3,120,2,joke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and money.,2,2.000174045562744,392.00868797302246
+FED_2017021017c_3T2,3,106,2,joke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the springs.",3,1.5335118770599365,400.00973200798035
+FED_2017021017c_3T2,3,13,2,nonjoke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a candle.,1,0.3833951950073242,408.0107069015503
+FED_2017021017c_3T2,3,3,2,nonjoke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from working.,1,1.4669060707092285,424.012717962265
+FED_2017021017c_3T2,3,73,2,nonjoke,One thing that makes the world go round is,detours,greed,One thing that makes the world go round is greed.,1,0.6834900379180908,438.01455092430115
+FED_2017021017c_3T2,3,108,2,joke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little water.,2,0.5000889301300049,450.01603507995605
+FED_2017021017c_3T2,3,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,1,1.3168039321899414,458.00041103363037
+FED_2017021017c_3T2,3,156,2,joke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are mosquitos.,2,0.31679391860961914,466.00131702423096
+FED_2017021017c_3T2,3,59,2,nonjoke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot scantier.",1,0.6000878810882568,474.0024240016937
+FED_2017021017c_3T2,3,141,2,nonjoke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tobacco.,1,1.2002029418945312,484.0036599636078
+FED_2017021017c_3T2,3,132,2,joke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in surgery.,3,1.9002540111541748,492.0047559738159
+FED_2017021017c_3T2,3,68,2,joke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date bachelors.,1,0.46674394607543945,504.0062630176544
+FED_2017021017c_3T2,3,109,2,nonjoke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a member.,1,0.650050163269043,512.0073039531708
+FED_2017021017c_3T2,3,83,2,nonjoke,Nothing ages a woman faster than,identification,hardship,Nothing ages a woman faster than hardship.,1,0.7335140705108643,522.0085299015045
+FED_2017021017c_3T2,3,1,2,nonjoke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten seconds.",3,1.100113868713379,532.0098390579224
+FED_2017021017c_3T2,3,115,2,nonjoke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your drives.",1,0.3667118549346924,540.0108330249786
+FED_2017021017c_3T2,3,124,2,joke,"I've got Parkinson's disease, and he's got", mine,gout,"I've got Parkinson's disease, and he's got mine.",2,1.4168391227722168,550.012120962143
+FED_2017021017c_3T2,3,50,2,joke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in self- defense.,2,0.4166700839996338,560.0134289264679

@@ -1,0 +1,135 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,2,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,<VisionEgg.WrappedText.WrappedText object at 0x111c94c30>
+8.0000,8.000,2,114,1,nonjoke,It's extraordinary what fine poker hand you get when you're playing,bridge,stud,It's extraordinary what fine poker hand you get when you're playing stud.,<VisionEgg.WrappedText.WrappedText object at 0x111c94c80>
+16.0000,4.000,fix
+20.0000,8.000,2,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,<VisionEgg.WrappedText.WrappedText object at 0x111c94cd0>
+28.0000,4.000,fix
+32.0000,8.000,2,25,1,joke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is poverty.,<VisionEgg.WrappedText.WrappedText object at 0x111c94d20>
+40.0000,8.000,2,62,1,nonjoke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on concrete.",<VisionEgg.WrappedText.WrappedText object at 0x111c94dc0>
+48.0000,2.000,fix
+50.0000,8.000,2,125,1,joke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the attorney.,<VisionEgg.WrappedText.WrappedText object at 0x111c94d70>
+58.0000,4.000,fix
+62.0000,8.000,2,143,1,joke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're commuters.,<VisionEgg.WrappedText.WrappedText object at 0x111c94e60>
+70.0000,8.000,2,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,<VisionEgg.WrappedText.WrappedText object at 0x111c94eb0>
+78.0000,8.000,2,128,1,nonjoke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the page.",<VisionEgg.WrappedText.WrappedText object at 0x111c94e10>
+86.0000,2.000,fix
+88.0000,8.000,2,102,1,nonjoke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our town.,<VisionEgg.WrappedText.WrappedText object at 0x111c94f50>
+96.0000,8.000,2,27,1,joke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight gambling.",<VisionEgg.WrappedText.WrappedText object at 0x111c94f00>
+104.0000,2.000,fix
+106.0000,8.000,2,34,1,nonjoke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough change.",<VisionEgg.WrappedText.WrappedText object at 0x111c94fa0>
+114.0000,8.000,2,22,1,nonjoke,Our son brought home a note from school saying they need a written excuse for his,presence,tardiness,Our son brought home a note from school saying they need a written excuse for his tardiness.,<VisionEgg.WrappedText.WrappedText object at 0x1192720a0>
+122.0000,8.000,2,97,1,joke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the dressmaker.",<VisionEgg.WrappedText.WrappedText object at 0x119272140>
+130.0000,8.000,2,58,1,nonjoke,The woman who has her husband eating out of her hand must save a lot of,dishwashing,heartbreak,The woman who has her husband eating out of her hand must save a lot of heartbreak.,<VisionEgg.WrappedText.WrappedText object at 0x119272050>
+138.0000,8.000,2,71,1,joke,Save the whales; start a,collection,coalition,Save the whales; start a collection.,<VisionEgg.WrappedText.WrappedText object at 0x119272190>
+146.0000,2.000,fix
+148.0000,8.000,2,117,1,joke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to profanity.",<VisionEgg.WrappedText.WrappedText object at 0x1192721e0>
+156.0000,6.000,fix
+162.0000,8.000,2,73,1,joke,One thing that makes the world go round is,detours,greed,One thing that makes the world go round is detours.,<VisionEgg.WrappedText.WrappedText object at 0x1192720f0>
+170.0000,8.000,2,39,1,joke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with scissors.,<VisionEgg.WrappedText.WrappedText object at 0x119272230>
+178.0000,8.000,2,8,1,nonjoke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the bird.,<VisionEgg.WrappedText.WrappedText object at 0x1192722d0>
+186.0000,8.000,2,54,1,nonjoke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little sightseeing.,<VisionEgg.WrappedText.WrappedText object at 0x119272280>
+194.0000,8.000,2,149,1,joke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the nude.",<VisionEgg.WrappedText.WrappedText object at 0x119272320>
+202.0000,8.000,fix
+210.0000,8.000,2,132,1,nonjoke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in shock.,<VisionEgg.WrappedText.WrappedText object at 0x119272370>
+218.0000,8.000,2,3,1,joke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from fishing.,<VisionEgg.WrappedText.WrappedText object at 0x1192723c0>
+226.0000,2.000,fix
+228.0000,8.000,2,74,1,nonjoke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his sailboat.,<VisionEgg.WrappedText.WrappedText object at 0x119272410>
+236.0000,12.000,fix
+248.0000,8.000,2,106,1,nonjoke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the fabric.",<VisionEgg.WrappedText.WrappedText object at 0x119272460>
+256.0000,2.000,fix
+258.0000,8.000,2,127,1,joke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying rich.,<VisionEgg.WrappedText.WrappedText object at 0x1192724b0>
+266.0000,8.000,fix
+274.0000,8.000,2,94,1,nonjoke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are workers.",<VisionEgg.WrappedText.WrappedText object at 0x119272500>
+282.0000,20.000,fix
+302.0000,8.000,2,61,1,joke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a cruise.",<VisionEgg.WrappedText.WrappedText object at 0x119272550>
+310.0000,2.000,fix
+312.0000,8.000,2,9,1,joke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a dress.",<VisionEgg.WrappedText.WrappedText object at 0x1192725a0>
+320.0000,8.000,2,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",<VisionEgg.WrappedText.WrappedText object at 0x1192725f0>
+328.0000,4.000,fix
+332.0000,8.000,2,70,1,nonjoke,The best gift for the man who has everything is,penicillin,neckties,The best gift for the man who has everything is neckties.,<VisionEgg.WrappedText.WrappedText object at 0x119272640>
+340.0000,2.000,fix
+342.0000,8.000,2,91,1,joke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its bookkeepers.",<VisionEgg.WrappedText.WrappedText object at 0x119272690>
+350.0000,8.000,2,28,1,nonjoke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown eyelash.,<VisionEgg.WrappedText.WrappedText object at 0x1192726e0>
+358.0000,2.000,fix
+360.0000,8.000,2,1,1,joke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten inches.",<VisionEgg.WrappedText.WrappedText object at 0x119272730>
+368.0000,8.000,fix
+376.0000,8.000,2,79,1,joke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her ankles.,<VisionEgg.WrappedText.WrappedText object at 0x119272780>
+384.0000,12.000,fix
+396.0000,8.000,2,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,<VisionEgg.WrappedText.WrappedText object at 0x1192727d0>
+404.0000,20.000,fix
+424.0000,8.000,2,90,1,nonjoke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two locations.,<VisionEgg.WrappedText.WrappedText object at 0x119272870>
+432.0000,8.000,2,38,1,nonjoke,This fall two things are turning yellow: trees and,investors,bushes,This fall two things are turning yellow: trees and bushes.,<VisionEgg.WrappedText.WrappedText object at 0x119272820>
+440.0000,8.000,2,139,1,joke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new drunks.,<VisionEgg.WrappedText.WrappedText object at 0x1192728c0>
+448.0000,2.000,fix
+450.0000,8.000,2,141,1,joke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tourist.,<VisionEgg.WrappedText.WrappedText object at 0x119272960>
+458.0000,4.000,fix
+462.0000,8.000,2,75,1,joke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be illegible.",<VisionEgg.WrappedText.WrappedText object at 0x1192729b0>
+470.0000,2.000,fix
+472.0000,8.000,2,134,1,nonjoke,My church welcomes all denominations but prefers,twenties,Mormons,My church welcomes all denominations but prefers Mormons.,<VisionEgg.WrappedText.WrappedText object at 0x119272910>
+480.0000,6.000,fix
+486.0000,8.000,2,26,1,nonjoke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three animals.",<VisionEgg.WrappedText.WrappedText object at 0x119272a00>
+494.0000,8.000,2,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",<VisionEgg.WrappedText.WrappedText object at 0x119272a50>
+502.0000,2.000,fix
+504.0000,8.000,2,24,1,nonjoke,"Where I'm from, the two most common elements are hydrogen and ",stupidity,nitrogen,"Where I'm from, the two most common elements are hydrogen and nitrogen.",<VisionEgg.WrappedText.WrappedText object at 0x119272aa0>
+512.0000,8.000,2,122,1,nonjoke,"If you're filthy rich, sending your kids to college is a wonderful", cleaner,luxury,"If you're filthy rich, sending your kids to college is a wonderful luxury.",<VisionEgg.WrappedText.WrappedText object at 0x119272af0>
+520.0000,8.000,2,10,1,nonjoke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than radiation.,<VisionEgg.WrappedText.WrappedText object at 0x119272b90>
+528.0000,2.000,fix
+530.0000,8.000,2,121,1,joke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a girlfriend.",<VisionEgg.WrappedText.WrappedText object at 0x119272b40>
+538.0000,4.000,fix
+542.0000,8.000,2,142,1,nonjoke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her father.,<VisionEgg.WrappedText.WrappedText object at 0x119272be0>
+550.0000,8.000,2,44,1,nonjoke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the bank.,<VisionEgg.WrappedText.WrappedText object at 0x119272c30>
+558.0000,2.000,fix
+560.0000,8.000,2,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,<VisionEgg.WrappedText.WrappedText object at 0x119272c80>
+568.0000,2.000,fix
+FED_2017021017,2,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,1,0.33338499069213867,6.009536981582642
+FED_2017021017,2,114,1,nonjoke,It's extraordinary what fine poker hand you get when you're playing,bridge,stud,It's extraordinary what fine poker hand you get when you're playing stud.,1,1.066781997680664,14.010581970214844
+FED_2017021017,2,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,2,0.5500929355621338,26.01207208633423
+FED_2017021017,2,25,1,joke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is poverty.,2,0.7667210102081299,38.013643980026245
+FED_2017021017,2,62,1,nonjoke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on concrete.",1,1.2168550491333008,46.014626026153564
+FED_2017021017,2,125,1,joke,I know one couple who got divorced and had to leave the house to the,attorney,daughter,I know one couple who got divorced and had to leave the house to the attorney.,1,0.8334169387817383,56.01590895652771
+FED_2017021017,2,143,1,joke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're commuters.,2,0.4000709056854248,68.00075101852417
+FED_2017021017,2,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,2,0.4501030445098877,76.00178289413452
+FED_2017021017,2,128,1,nonjoke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the page.",3,0.43334102630615234,84.00283694267273
+FED_2017021017,2,102,1,nonjoke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our town.,1,0.4333970546722412,94.00407385826111
+FED_2017021017,2,27,1,joke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight gambling.",2,0.6500420570373535,102.00512290000916
+FED_2017021017,2,34,1,nonjoke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough change.",1,0.9001450538635254,112.00635600090027
+FED_2017021017,2,22,1,nonjoke,Our son brought home a note from school saying they need a written excuse for his,presence,tardiness,Our son brought home a note from school saying they need a written excuse for his tardiness.,1,0.8000609874725342,120.00740599632263
+FED_2017021017,2,97,1,joke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the dressmaker.",1,0.700098991394043,128.00838899612427
+FED_2017021017,2,58,1,nonjoke,The woman who has her husband eating out of her hand must save a lot of,dishwashing,heartbreak,The woman who has her husband eating out of her hand must save a lot of heartbreak.,1,0.8501298427581787,136.009437084198
+FED_2017021017,2,71,1,joke,Save the whales; start a,collection,coalition,Save the whales; start a collection.,1,0.6333510875701904,144.01048398017883
+FED_2017021017,2,117,1,joke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to profanity.",1,0.6333861351013184,154.0117359161377
+FED_2017021017,2,73,1,joke,One thing that makes the world go round is,detours,greed,One thing that makes the world go round is detours.,2,0.6834571361541748,168.01346492767334
+FED_2017021017,2,39,1,joke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with scissors.,3,0.583441972732544,176.01450896263123
+FED_2017021017,2,8,1,nonjoke,Last Thanksgiving my wife spent all morning in the kitchen stuffing the,kids,bird,Last Thanksgiving my wife spent all morning in the kitchen stuffing the bird.,1,0.38339900970458984,184.01556301116943
+FED_2017021017,2,54,1,nonjoke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little sightseeing.,1,0.6167690753936768,192.01654291152954
+FED_2017021017,2,149,1,joke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the nude.",2,0.8500678539276123,200.00092005729675
+FED_2017021017,2,132,1,nonjoke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in shock.,1,0.4333689212799072,216.00296998023987
+FED_2017021017,2,3,1,joke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from fishing.,1,0.7000207901000977,224.00402808189392
+FED_2017021017,2,74,1,nonjoke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his sailboat.,1,0.5000841617584229,234.0052409172058
+FED_2017021017,2,106,1,nonjoke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the fabric.",1,0.6834530830383301,254.00777387619019
+FED_2017021017,2,127,1,joke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying rich.,1,1.1667580604553223,264.00913286209106
+FED_2017021017,2,94,1,nonjoke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are workers.",1,0.4500749111175537,280.01111102104187
+FED_2017021017,2,61,1,joke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a cruise.",1,0.6333749294281006,308.01471495628357
+FED_2017021017,2,9,1,joke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a dress.",1,1.1501810550689697,318.01596188545227
+FED_2017021017,2,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",2,1.9002399444580078,326.00033807754517
+FED_2017021017,2,70,1,nonjoke,The best gift for the man who has everything is,penicillin,neckties,The best gift for the man who has everything is neckties.,1,0.7500910758972168,338.0018038749695
+FED_2017021017,2,91,1,joke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its bookkeepers.",1,0.6332869529724121,348.00312900543213
+FED_2017021017,2,28,1,nonjoke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown eyelash.,1,0.9502029418945312,356.00410509109497
+FED_2017021017,2,1,1,joke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten inches.",1,0.8834249973297119,366.0053949356079
+FED_2017021017,2,79,1,joke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her ankles.,2,0.9167711734771729,382.0074088573456
+FED_2017021017,2,36,1,nonjoke,A problem drinker is one who never,buys,quits,A problem drinker is one who never quits.,1,0.3833949565887451,402.0099449157715
+FED_2017021017,2,90,1,nonjoke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two locations.,1,0.8668191432952881,430.01349687576294
+FED_2017021017,2,38,1,nonjoke,This fall two things are turning yellow: trees and,investors,bushes,This fall two things are turning yellow: trees and bushes.,1,0.6834421157836914,438.0145049095154
+FED_2017021017,2,139,1,joke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new drunks.,2,0.5499958992004395,446.0155460834503
+FED_2017021017,2,141,1,joke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tourist.,2,0.41672396659851074,456.01677894592285
+FED_2017021017,2,75,1,joke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be illegible.",1,1.1501410007476807,468.0016598701477
+FED_2017021017,2,134,1,nonjoke,My church welcomes all denominations but prefers,twenties,Mormons,My church welcomes all denominations but prefers Mormons.,1,0.4834301471710205,478.00287890434265
+FED_2017021017,2,26,1,nonjoke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three animals.",1,0.7000510692596436,492.004714012146
+FED_2017021017,2,32,1,nonjoke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually Vienna.",1,0.5833837985992432,500.0057520866394
+FED_2017021017,2,24,1,nonjoke,"Where I'm from, the two most common elements are hydrogen and ",stupidity,nitrogen,"Where I'm from, the two most common elements are hydrogen and nitrogen.",1,0.9501540660858154,510.0069320201874
+FED_2017021017,2,122,1,nonjoke,"If you're filthy rich, sending your kids to college is a wonderful", cleaner,luxury,"If you're filthy rich, sending your kids to college is a wonderful luxury.",1,0.5500900745391846,518.0079839229584
+FED_2017021017,2,10,1,nonjoke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than radiation.,1,0.5166800022125244,526.0090298652649
+FED_2017021017,2,121,1,joke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a girlfriend.",1,0.9835021495819092,536.0102548599243
+FED_2017021017,2,142,1,nonjoke,She's happy because she finally has a boyfriend who gets along with her,fianc_,father,She's happy because she finally has a boyfriend who gets along with her father.,1,0.4500000476837158,548.0118310451508
+FED_2017021017,2,44,1,nonjoke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the bank.,1,0.9168059825897217,556.0128030776978
+FED_2017021017,2,113,1,joke,Some people's only culture is,bacteria,radio,Some people's only culture is bacteria.,2,0.41673803329467773,566.0141060352325

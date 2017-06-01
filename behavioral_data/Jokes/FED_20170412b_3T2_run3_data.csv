@@ -1,0 +1,140 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,3,128,1,nonjoke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the page.",<VisionEgg.WrappedText.WrappedText object at 0x10c7c6c80>
+8.0000,2.000,fix
+10.0000,8.000,3,38,1,nonjoke,This fall two things are turning yellow: trees and,investors,bushes,This fall two things are turning yellow: trees and bushes.,<VisionEgg.WrappedText.WrappedText object at 0x10c7c6d20>
+18.0000,8.000,3,19,1,joke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my umbrella.",<VisionEgg.WrappedText.WrappedText object at 0x10c7c6cd0>
+26.0000,2.000,fix
+28.0000,8.000,3,74,1,nonjoke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his sailboat.,<VisionEgg.WrappedText.WrappedText object at 0x10c7c6d70>
+36.0000,2.000,fix
+38.0000,8.000,3,105,1,joke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a checkbook.,<VisionEgg.WrappedText.WrappedText object at 0x10c7c6dc0>
+46.0000,2.000,fix
+48.0000,8.000,3,44,1,nonjoke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the bank.,<VisionEgg.WrappedText.WrappedText object at 0x10c7c6e10>
+56.0000,2.000,fix
+58.0000,8.000,3,54,1,nonjoke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little sightseeing.,<VisionEgg.WrappedText.WrappedText object at 0x10c7c6e60>
+66.0000,8.000,3,117,1,joke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to profanity.",<VisionEgg.WrappedText.WrappedText object at 0x10c7c6eb0>
+74.0000,14.000,fix
+88.0000,8.000,3,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,<VisionEgg.WrappedText.WrappedText object at 0x10c7c6f00>
+96.0000,2.000,fix
+98.0000,8.000,3,20,1,nonjoke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a truck.",<VisionEgg.WrappedText.WrappedText object at 0x10c7c6f50>
+106.0000,2.000,fix
+108.0000,8.000,3,88,1,nonjoke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three streetlights.,<VisionEgg.WrappedText.WrappedText object at 0x10c7c6fa0>
+116.0000,8.000,3,56,1,nonjoke,"When you own an ice cream business, your favorite flavor is",aspirin,everything,"When you own an ice cream business, your favorite flavor is everything.",<VisionEgg.WrappedText.WrappedText object at 0x113da4050>
+124.0000,12.000,fix
+136.0000,8.000,3,123,1,joke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large stone.,<VisionEgg.WrappedText.WrappedText object at 0x113da40a0>
+144.0000,6.000,fix
+150.0000,8.000,3,135,1,joke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my horn.",<VisionEgg.WrappedText.WrappedText object at 0x113da40f0>
+158.0000,4.000,fix
+162.0000,8.000,3,89,1,joke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are male.",<VisionEgg.WrappedText.WrappedText object at 0x113da4140>
+170.0000,4.000,fix
+174.0000,8.000,3,61,1,joke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a cruise.",<VisionEgg.WrappedText.WrappedText object at 0x113da4190>
+182.0000,2.000,fix
+184.0000,8.000,3,35,1,joke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their nuptials.",<VisionEgg.WrappedText.WrappedText object at 0x113da41e0>
+192.0000,8.000,3,86,1,nonjoke,"I asked the florist what I should give to my girlfriend, and he suggested his",address,tulips,"I asked the florist what I should give to my girlfriend, and he suggested his tulips.",<VisionEgg.WrappedText.WrappedText object at 0x113da4230>
+200.0000,8.000,3,85,1,joke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while driving.",<VisionEgg.WrappedText.WrappedText object at 0x113da4280>
+208.0000,4.000,fix
+212.0000,8.000,3,10,1,nonjoke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than radiation.,<VisionEgg.WrappedText.WrappedText object at 0x113da4320>
+220.0000,6.000,fix
+226.0000,8.000,3,130,1,nonjoke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly upgrades.",<VisionEgg.WrappedText.WrappedText object at 0x113da42d0>
+234.0000,8.000,3,108,1,nonjoke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little platform.,<VisionEgg.WrappedText.WrappedText object at 0x113da4370>
+242.0000,8.000,3,91,1,joke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its bookkeepers.",<VisionEgg.WrappedText.WrappedText object at 0x113da4410>
+250.0000,8.000,3,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",<VisionEgg.WrappedText.WrappedText object at 0x113da43c0>
+258.0000,12.000,fix
+270.0000,8.000,3,146,1,nonjoke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called memories.",<VisionEgg.WrappedText.WrappedText object at 0x113da4460>
+278.0000,8.000,3,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,<VisionEgg.WrappedText.WrappedText object at 0x113da44b0>
+286.0000,2.000,fix
+288.0000,8.000,3,119,1,joke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly bent.",<VisionEgg.WrappedText.WrappedText object at 0x113da4500>
+296.0000,14.000,fix
+310.0000,8.000,3,50,1,nonjoke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in discipline.,<VisionEgg.WrappedText.WrappedText object at 0x113da4550>
+318.0000,4.000,fix
+322.0000,8.000,3,31,1,joke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the improvement.",<VisionEgg.WrappedText.WrappedText object at 0x113da45f0>
+330.0000,2.000,fix
+332.0000,8.000,3,14,1,nonjoke,He got a medal for bravery on the beach when he rescued a girl from a ,lifeguard,shipwreck,He got a medal for bravery on the beach when he rescued a girl from a shipwreck.,<VisionEgg.WrappedText.WrappedText object at 0x113da45a0>
+340.0000,2.000,fix
+342.0000,8.000,3,109,1,joke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a dropout.,<VisionEgg.WrappedText.WrappedText object at 0x113da4690>
+350.0000,4.000,fix
+354.0000,8.000,3,134,1,nonjoke,My church welcomes all denominations but prefers,twenties,Mormons,My church welcomes all denominations but prefers Mormons.,<VisionEgg.WrappedText.WrappedText object at 0x113da4640>
+362.0000,2.000,fix
+364.0000,8.000,3,3,1,joke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from fishing.,<VisionEgg.WrappedText.WrappedText object at 0x113da46e0>
+372.0000,2.000,fix
+374.0000,8.000,3,81,1,joke,Another thing that has developed by leaps and bounds is modern,dance,science,Another thing that has developed by leaps and bounds is modern dance.,<VisionEgg.WrappedText.WrappedText object at 0x113da4730>
+382.0000,4.000,fix
+386.0000,8.000,3,97,1,joke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the dressmaker.",<VisionEgg.WrappedText.WrappedText object at 0x113da4780>
+394.0000,8.000,3,43,1,joke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a boy.",<VisionEgg.WrappedText.WrappedText object at 0x113da47d0>
+402.0000,8.000,3,124,1,nonjoke,"I've got Parkinson's disease, and he's got", mine,gout,"I've got Parkinson's disease, and he's got gout.",<VisionEgg.WrappedText.WrappedText object at 0x113da4820>
+410.0000,8.000,fix
+418.0000,8.000,3,152,1,nonjoke,"Many things run in families, especially",noses,strength,"Many things run in families, especially strength.",<VisionEgg.WrappedText.WrappedText object at 0x113da4870>
+426.0000,6.000,fix
+432.0000,8.000,3,76,1,nonjoke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of diversion.",<VisionEgg.WrappedText.WrappedText object at 0x113da48c0>
+440.0000,4.000,fix
+444.0000,8.000,3,143,1,joke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're commuters.,<VisionEgg.WrappedText.WrappedText object at 0x113da4910>
+452.0000,8.000,3,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",<VisionEgg.WrappedText.WrappedText object at 0x113da49b0>
+460.0000,8.000,3,101,1,joke,"I got a car for my wife, and I thought it was a good",trade,choice,"I got a car for my wife, and I thought it was a good trade.",<VisionEgg.WrappedText.WrappedText object at 0x113da4960>
+468.0000,8.000,3,102,1,nonjoke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our town.,<VisionEgg.WrappedText.WrappedText object at 0x113da4a00>
+476.0000,2.000,fix
+478.0000,8.000,3,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",<VisionEgg.WrappedText.WrappedText object at 0x113da4a50>
+486.0000,8.000,3,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,<VisionEgg.WrappedText.WrappedText object at 0x113da4aa0>
+494.0000,4.000,fix
+498.0000,8.000,3,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,<VisionEgg.WrappedText.WrappedText object at 0x113da4af0>
+506.0000,8.000,3,94,1,nonjoke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are workers.",<VisionEgg.WrappedText.WrappedText object at 0x113da4b40>
+514.0000,2.000,fix
+516.0000,8.000,3,64,1,nonjoke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its toes.,<VisionEgg.WrappedText.WrappedText object at 0x113da4b90>
+524.0000,2.000,fix
+526.0000,8.000,3,40,1,nonjoke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the outside.,<VisionEgg.WrappedText.WrappedText object at 0x113da4be0>
+534.0000,8.000,3,72,1,nonjoke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a hotel.,<VisionEgg.WrappedText.WrappedText object at 0x113da4c30>
+542.0000,2.000,fix
+544.0000,8.000,3,71,1,joke,Save the whales; start a,collection,coalition,Save the whales; start a collection.,<VisionEgg.WrappedText.WrappedText object at 0x113da4c80>
+552.0000,2.000,fix
+554.0000,8.000,3,23,1,joke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge bar tab.,<VisionEgg.WrappedText.WrappedText object at 0x113da4d20>
+562.0000,8.000,fix
+FED_20170412b_3T2,3,128,1,nonjoke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the page.",2,1.0168159008026123,6.008810043334961
+FED_20170412b_3T2,3,38,1,nonjoke,This fall two things are turning yellow: trees and,investors,bushes,This fall two things are turning yellow: trees and bushes.,1,0.7169070243835449,16.010042905807495
+FED_20170412b_3T2,3,19,1,joke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my umbrella.",2,0.7167248725891113,24.011255979537964
+FED_20170412b_3T2,3,74,1,nonjoke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his sailboat.,1,0.6834280490875244,34.012614011764526
+FED_20170412b_3T2,3,105,1,joke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a checkbook.,2,1.6002161502838135,44.01397490501404
+FED_20170412b_3T2,3,44,1,nonjoke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the bank.,2,1.6170220375061035,54.01520085334778
+FED_20170412b_3T2,3,54,1,nonjoke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little sightseeing.,1,1.4668080806732178,64.01670289039612
+FED_20170412b_3T2,3,117,1,joke,"All roads lead to Rome, and all detours lead to",profanity,somewhere,"All roads lead to Rome, and all detours lead to profanity.",1,0.9501180648803711,72.00107598304749
+FED_20170412b_3T2,3,129,1,joke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a steak.,2,0.9335300922393799,94.00403094291687
+FED_20170412b_3T2,3,20,1,nonjoke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a truck.",,,104.00538396835327
+FED_20170412b_3T2,3,88,1,nonjoke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three streetlights.,1,0.6667501926422119,114.00674986839294
+FED_20170412b_3T2,3,56,1,nonjoke,"When you own an ice cream business, your favorite flavor is",aspirin,everything,"When you own an ice cream business, your favorite flavor is everything.",2,1.183316946029663,122.00785803794861
+FED_20170412b_3T2,3,123,1,joke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large stone.,2,0.716864824295044,142.01043105125427
+FED_20170412b_3T2,3,135,1,joke,"My mechanic couldn't fix my brakes, so he fixed my",horn,clutch,"My mechanic couldn't fix my brakes, so he fixed my horn.",3,0.633476972579956,156.0123689174652
+FED_20170412b_3T2,3,89,1,joke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are male.",2,0.6834378242492676,168.01405501365662
+FED_20170412b_3T2,3,61,1,joke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a cruise.",2,1.233555793762207,180.01560807228088
+FED_20170412b_3T2,3,35,1,joke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their nuptials.",2,1.2002019882202148,190.00033497810364
+FED_20170412b_3T2,3,86,1,nonjoke,"I asked the florist what I should give to my girlfriend, and he suggested his",address,tulips,"I asked the florist what I should give to my girlfriend, and he suggested his tulips.",1,0.7501111030578613,198.00142884254456
+FED_20170412b_3T2,3,85,1,joke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while driving.",3,1.0834569931030273,206.00251698493958
+FED_20170412b_3T2,3,10,1,nonjoke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than radiation.,1,0.6666920185089111,218.00415992736816
+FED_20170412b_3T2,3,130,1,nonjoke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly upgrades.",1,0.7501158714294434,232.00601601600647
+FED_20170412b_3T2,3,108,1,nonjoke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little platform.,1,1.0167009830474854,240.0071029663086
+FED_20170412b_3T2,3,91,1,joke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its bookkeepers.",2,1.133462905883789,248.00819301605225
+FED_20170412b_3T2,3,59,1,joke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot faster.",2,1.2168090343475342,256.00928592681885
+FED_20170412b_3T2,3,146,1,nonjoke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called memories.",2,1.2503330707550049,276.0118319988251
+FED_20170412b_3T2,3,41,1,joke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a steamroller.,1,1.5502369403839111,284.0130400657654
+FED_20170412b_3T2,3,119,1,joke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly bent.",2,0.5000660419464111,294.01445603370667
+FED_20170412b_3T2,3,50,1,nonjoke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in discipline.,1,0.8334128856658936,316.00075101852417
+FED_20170412b_3T2,3,31,1,joke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the improvement.",2,1.2001910209655762,328.0023310184479
+FED_20170412b_3T2,3,14,1,nonjoke,He got a medal for bravery on the beach when he rescued a girl from a ,lifeguard,shipwreck,He got a medal for bravery on the beach when he rescued a girl from a shipwreck.,1,0.8667809963226318,338.0037200450897
+FED_20170412b_3T2,3,109,1,joke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a dropout.,1,1.516861915588379,348.00505805015564
+FED_20170412b_3T2,3,134,1,nonjoke,My church welcomes all denominations but prefers,twenties,Mormons,My church welcomes all denominations but prefers Mormons.,1,0.2499840259552002,360.00669503211975
+FED_20170412b_3T2,3,3,1,joke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from fishing.,2,1.0501739978790283,370.00800704956055
+FED_20170412b_3T2,3,81,1,joke,Another thing that has developed by leaps and bounds is modern,dance,science,Another thing that has developed by leaps and bounds is modern dance.,2,0.8001320362091064,380.0093729496002
+FED_20170412b_3T2,3,97,1,joke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the dressmaker.",3,0.983447790145874,392.0110070705414
+FED_20170412b_3T2,3,43,1,joke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a boy.",2,0.8167839050292969,400.0120630264282
+FED_20170412b_3T2,3,124,1,nonjoke,"I've got Parkinson's disease, and he's got", mine,gout,"I've got Parkinson's disease, and he's got gout.",1,0.5334808826446533,408.01307106018066
+FED_20170412b_3T2,3,152,1,nonjoke,"Many things run in families, especially",noses,strength,"Many things run in families, especially strength.",1,0.9001469612121582,424.01531505584717
+FED_20170412b_3T2,3,76,1,nonjoke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of diversion.",2,0.9334261417388916,438.0005638599396
+FED_20170412b_3T2,3,143,1,joke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're commuters.,2,0.7167279720306396,450.00220489501953
+FED_20170412b_3T2,3,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",1,0.9834859371185303,458.00324606895447
+FED_20170412b_3T2,3,101,1,joke,"I got a car for my wife, and I thought it was a good",trade,choice,"I got a car for my wife, and I thought it was a good trade.",2,0.7167809009552002,466.00433707237244
+FED_20170412b_3T2,3,102,1,nonjoke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our town.,1,0.8501448631286621,474.0054249763489
+FED_20170412b_3T2,3,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",1,0.7167270183563232,484.00679993629456
+FED_20170412b_3T2,3,49,1,joke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my editor.,1,1.2334740161895752,492.0078809261322
+FED_20170412b_3T2,3,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,2,1.350221872329712,504.0094699859619
+FED_20170412b_3T2,3,94,1,nonjoke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are workers.",1,1.3168230056762695,512.0105628967285
+FED_20170412b_3T2,3,64,1,nonjoke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its toes.,2,1.0001318454742432,522.0119290351868
+FED_20170412b_3T2,3,40,1,nonjoke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the outside.,1,0.7833540439605713,532.0133550167084
+FED_20170412b_3T2,3,72,1,nonjoke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a hotel.,1,0.8000919818878174,540.0143959522247
+FED_20170412b_3T2,3,71,1,joke,Save the whales; start a,collection,coalition,Save the whales; start a collection.,2,0.8835091590881348,550.0156848430634
+FED_20170412b_3T2,3,23,1,joke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge bar tab.,1,1.1168339252471924,560.0003979206085

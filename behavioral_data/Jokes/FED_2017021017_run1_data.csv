@@ -1,0 +1,137 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,1,64,1,nonjoke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its toes.,<VisionEgg.WrappedText.WrappedText object at 0x105bfcdc0>
+8.0000,2.000,fix
+10.0000,8.000,1,151,1,joke,One good turn gets most of the,blanket,profit,One good turn gets most of the blanket.,<VisionEgg.WrappedText.WrappedText object at 0x105bfceb0>
+18.0000,2.000,fix
+20.0000,8.000,1,112,1,nonjoke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in charcoal.,<VisionEgg.WrappedText.WrappedText object at 0x105bfcd70>
+28.0000,2.000,fix
+30.0000,8.000,1,93,1,joke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the city.",<VisionEgg.WrappedText.WrappedText object at 0x105bfcf00>
+38.0000,2.000,fix
+40.0000,8.000,1,111,1,joke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count children.",<VisionEgg.WrappedText.WrappedText object at 0x105bfcbe0>
+48.0000,8.000,1,30,1,nonjoke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the syrup.,<VisionEgg.WrappedText.WrappedText object at 0x105bfcc30>
+56.0000,8.000,1,13,1,joke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a shin.,<VisionEgg.WrappedText.WrappedText object at 0x105bfc9b0>
+64.0000,2.000,fix
+66.0000,8.000,1,63,1,joke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the morning.",<VisionEgg.WrappedText.WrappedText object at 0x105bfcb40>
+74.0000,8.000,1,107,1,joke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice nap.,<VisionEgg.WrappedText.WrappedText object at 0x105bfcb90>
+82.0000,8.000,1,42,1,nonjoke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cold.,<VisionEgg.WrappedText.WrappedText object at 0x105bfcc80>
+90.0000,8.000,1,31,1,joke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the improvement.",<VisionEgg.WrappedText.WrappedText object at 0x105bfcaf0>
+98.0000,2.000,fix
+100.0000,8.000,1,23,1,joke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge bar tab.,<VisionEgg.WrappedText.WrappedText object at 0x105bfca00>
+108.0000,8.000,1,123,1,joke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large stone.,<VisionEgg.WrappedText.WrappedText object at 0x105bfccd0>
+116.0000,4.000,fix
+120.0000,8.000,1,138,1,nonjoke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into gasoline.,<VisionEgg.WrappedText.WrappedText object at 0x105bfca50>
+128.0000,8.000,1,21,1,joke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every century.",<VisionEgg.WrappedText.WrappedText object at 0x105bfcaa0>
+136.0000,2.000,fix
+138.0000,8.000,1,66,1,nonjoke,One good way to invest in the country is to buy a ,senator,business,One good way to invest in the country is to buy a business.,<VisionEgg.WrappedText.WrappedText object at 0x10d263050>
+146.0000,6.000,fix
+152.0000,8.000,1,56,1,nonjoke,"When you own an ice cream business, your favorite flavor is",aspirin,everything,"When you own an ice cream business, your favorite flavor is everything.",<VisionEgg.WrappedText.WrappedText object at 0x10d2630a0>
+160.0000,4.000,fix
+164.0000,8.000,1,52,1,nonjoke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no anesthetic.,<VisionEgg.WrappedText.WrappedText object at 0x10d2630f0>
+172.0000,8.000,fix
+180.0000,8.000,1,50,1,nonjoke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in discipline.,<VisionEgg.WrappedText.WrappedText object at 0x10d263140>
+188.0000,2.000,fix
+190.0000,8.000,1,118,1,nonjoke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the setting.,<VisionEgg.WrappedText.WrappedText object at 0x10d2631e0>
+198.0000,6.000,fix
+204.0000,8.000,1,5,1,joke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the reading.,<VisionEgg.WrappedText.WrappedText object at 0x10d263190>
+212.0000,6.000,fix
+218.0000,8.000,1,152,1,nonjoke,"Many things run in families, especially",noses,strength,"Many things run in families, especially strength.",<VisionEgg.WrappedText.WrappedText object at 0x10d263230>
+226.0000,8.000,1,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",<VisionEgg.WrappedText.WrappedText object at 0x10d263280>
+234.0000,8.000,1,99,1,joke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good reputation.",<VisionEgg.WrappedText.WrappedText object at 0x10d2632d0>
+242.0000,8.000,1,144,1,nonjoke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five degrees.,<VisionEgg.WrappedText.WrappedText object at 0x10d263370>
+250.0000,2.000,fix
+252.0000,8.000,1,20,1,nonjoke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a truck.",<VisionEgg.WrappedText.WrappedText object at 0x10d263320>
+260.0000,8.000,1,98,1,nonjoke,"Nature has three ways of thinning the herd: drought, famine, and ",primaries,hunting,"Nature has three ways of thinning the herd: drought, famine, and hunting.",<VisionEgg.WrappedText.WrappedText object at 0x10d2633c0>
+268.0000,2.000,fix
+270.0000,8.000,1,76,1,nonjoke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of diversion.",<VisionEgg.WrappedText.WrappedText object at 0x10d263410>
+278.0000,8.000,1,92,1,nonjoke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his daiquiri.",<VisionEgg.WrappedText.WrappedText object at 0x10d263460>
+286.0000,8.000,1,150,1,nonjoke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a cabinet.,<VisionEgg.WrappedText.WrappedText object at 0x10d2634b0>
+294.0000,6.000,fix
+300.0000,8.000,1,109,1,joke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a dropout.,<VisionEgg.WrappedText.WrappedText object at 0x10d263550>
+308.0000,4.000,fix
+312.0000,8.000,1,69,1,joke,"When an irresistible force meets an immovable object, you get two very angry",women,entities,"When an irresistible force meets an immovable object, you get two very angry women.",<VisionEgg.WrappedText.WrappedText object at 0x10d263500>
+320.0000,8.000,1,115,1,joke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your opponent.",<VisionEgg.WrappedText.WrappedText object at 0x10d2635a0>
+328.0000,4.000,fix
+332.0000,8.000,1,131,1,joke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly weddings.",<VisionEgg.WrappedText.WrappedText object at 0x10d2635f0>
+340.0000,8.000,fix
+348.0000,8.000,1,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",<VisionEgg.WrappedText.WrappedText object at 0x10d263640>
+356.0000,4.000,fix
+360.0000,8.000,1,80,1,nonjoke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel sad.,<VisionEgg.WrappedText.WrappedText object at 0x10d263690>
+368.0000,2.000,fix
+370.0000,8.000,1,137,1,joke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a widower.,<VisionEgg.WrappedText.WrappedText object at 0x10d2636e0>
+378.0000,8.000,1,95,1,joke,He was teaching his girlfriend how to swim when the lifeguard made them move to the ,lake,shallows,He was teaching his girlfriend how to swim when the lifeguard made them move to the lake.,<VisionEgg.WrappedText.WrappedText object at 0x10d263730>
+386.0000,2.000,fix
+388.0000,8.000,1,17,1,joke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes hours.,<VisionEgg.WrappedText.WrappedText object at 0x10d263780>
+396.0000,8.000,1,35,1,joke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their nuptials.",<VisionEgg.WrappedText.WrappedText object at 0x10d263820>
+404.0000,2.000,fix
+406.0000,8.000,1,82,1,nonjoke,"When it comes to keeping warm, nothing beats a thermal",brunette,parka,"When it comes to keeping warm, nothing beats a thermal parka.",<VisionEgg.WrappedText.WrappedText object at 0x10d2637d0>
+414.0000,4.000,fix
+418.0000,8.000,1,15,1,joke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his leg.",<VisionEgg.WrappedText.WrappedText object at 0x10d2638c0>
+426.0000,8.000,1,110,1,nonjoke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're affordable.,<VisionEgg.WrappedText.WrappedText object at 0x10d263870>
+434.0000,18.000,fix
+452.0000,8.000,1,116,1,nonjoke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about somebody.,<VisionEgg.WrappedText.WrappedText object at 0x10d263910>
+460.0000,8.000,1,11,1,joke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a quarter.",<VisionEgg.WrappedText.WrappedText object at 0x10d263960>
+468.0000,12.000,fix
+480.0000,8.000,1,105,1,joke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a checkbook.,<VisionEgg.WrappedText.WrappedText object at 0x10d2639b0>
+488.0000,4.000,fix
+492.0000,8.000,1,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,<VisionEgg.WrappedText.WrappedText object at 0x10d263a00>
+500.0000,8.000,1,133,1,joke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the maid.,<VisionEgg.WrappedText.WrappedText object at 0x10d263a50>
+508.0000,6.000,fix
+514.0000,8.000,1,89,1,joke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are male.",<VisionEgg.WrappedText.WrappedText object at 0x10d263aa0>
+522.0000,12.000,fix
+534.0000,8.000,1,88,1,nonjoke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three streetlights.,<VisionEgg.WrappedText.WrappedText object at 0x10d263af0>
+542.0000,6.000,fix
+548.0000,8.000,1,126,1,nonjoke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the tables.,<VisionEgg.WrappedText.WrappedText object at 0x10d263b40>
+556.0000,8.000,1,148,1,nonjoke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a toaster.,<VisionEgg.WrappedText.WrappedText object at 0x10d263b90>
+564.0000,6.000,fix
+FED_2017021017,1,64,1,nonjoke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its toes.,1,1.4835100173950195,6.009136915206909
+FED_2017021017,1,151,1,joke,One good turn gets most of the,blanket,profit,One good turn gets most of the blanket.,1,1.1667590141296387,16.01044011116028
+FED_2017021017,1,112,1,nonjoke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in charcoal.,2,0.8501489162445068,26.011667013168335
+FED_2017021017,1,93,1,joke,"He is probably the best boxer in the country, but he always loses in the ",city,competition,"He is probably the best boxer in the country, but he always loses in the city.",3,1.516779899597168,36.0129771232605
+FED_2017021017,1,111,1,joke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count children.",1,0.4000208377838135,46.0142080783844
+FED_2017021017,1,30,1,nonjoke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the syrup.,1,1.0834369659423828,54.01524209976196
+FED_2017021017,1,13,1,joke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a shin.,4,0.6667709350585938,62.01622200012207
+FED_2017021017,1,63,1,joke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the morning.",2,0.8834171295166016,72.00084590911865
+FED_2017021017,1,107,1,joke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice nap.,2,0.8834779262542725,80.00182700157166
+FED_2017021017,1,42,1,nonjoke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cold.,1,0.3833940029144287,88.00286912918091
+FED_2017021017,1,31,1,joke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the improvement.",2,1.116776943206787,96.00390911102295
+FED_2017021017,1,23,1,joke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge bar tab.,2,0.33338499069213867,106.00514698028564
+FED_2017021017,1,123,1,joke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large stone.,1,0.38339710235595703,114.00618290901184
+FED_2017021017,1,138,1,nonjoke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into gasoline.,1,0.36672401428222656,126.00768494606018
+FED_2017021017,1,21,1,joke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every century.",2,1.0500950813293457,134.00872993469238
+FED_2017021017,1,66,1,nonjoke,One good way to invest in the country is to buy a ,senator,business,One good way to invest in the country is to buy a business.,1,0.36671900749206543,144.00995802879333
+FED_2017021017,1,56,1,nonjoke,"When you own an ice cream business, your favorite flavor is",aspirin,everything,"When you own an ice cream business, your favorite flavor is everything.",1,0.26670217514038086,158.01179194450378
+FED_2017021017,1,52,1,nonjoke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no anesthetic.,1,1.1668450832366943,170.01328992843628
+FED_2017021017,1,50,1,nonjoke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in discipline.,1,0.96681809425354,186.01530694961548
+FED_2017021017,1,118,1,nonjoke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the setting.,1,1.4834949970245361,196.01661205291748
+FED_2017021017,1,5,1,joke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the reading.,3,1.716975212097168,210.00169491767883
+FED_2017021017,1,152,1,nonjoke,"Many things run in families, especially",noses,strength,"Many things run in families, especially strength.",1,1.100121021270752,224.0035150051117
+FED_2017021017,1,84,1,nonjoke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and crack.",1,0.4834170341491699,232.0044960975647
+FED_2017021017,1,99,1,joke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good reputation.",1,0.35005998611450195,240.00553798675537
+FED_2017021017,1,144,1,nonjoke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five degrees.,1,0.3332970142364502,248.0066111087799
+FED_2017021017,1,20,1,nonjoke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a truck.",1,0.983428955078125,258.0078239440918
+FED_2017021017,1,98,1,nonjoke,"Nature has three ways of thinning the herd: drought, famine, and ",primaries,hunting,"Nature has three ways of thinning the herd: drought, famine, and hunting.",1,0.34999608993530273,266.008868932724
+FED_2017021017,1,76,1,nonjoke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of diversion.",1,0.3667118549346924,276.0101110935211
+FED_2017021017,1,92,1,nonjoke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his daiquiri.",1,0.400068998336792,284.011155128479
+FED_2017021017,1,150,1,nonjoke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a cabinet.,1,0.33339595794677734,292.0121259689331
+FED_2017021017,1,109,1,joke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a dropout.,1,1.2334671020507812,306.0139570236206
+FED_2017021017,1,69,1,joke,"When an irresistible force meets an immovable object, you get two very angry",women,entities,"When an irresistible force meets an immovable object, you get two very angry women.",1,1.5001730918884277,318.0155029296875
+FED_2017021017,1,115,1,joke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your opponent.",1,0.5000100135803223,326.0164659023285
+FED_2017021017,1,131,1,joke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly weddings.",2,0.38338494300842285,338.0013370513916
+FED_2017021017,1,100,1,nonjoke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a delay.",1,0.3999931812286377,354.00335693359375
+FED_2017021017,1,80,1,nonjoke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel sad.,1,0.38338613510131836,366.004930973053
+FED_2017021017,1,137,1,joke,A man who has lost ninety percent of his brain is called a,widower,zombie,A man who has lost ninety percent of his brain is called a widower.,1,0.6167678833007812,376.00616812705994
+FED_2017021017,1,95,1,joke,He was teaching his girlfriend how to swim when the lifeguard made them move to the ,lake,shallows,He was teaching his girlfriend how to swim when the lifeguard made them move to the lake.,1,0.4167289733886719,384.00722002983093
+FED_2017021017,1,17,1,joke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes hours.,1,0.33332109451293945,394.0085229873657
+FED_2017021017,1,35,1,joke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their nuptials.",2,0.46674299240112305,402.0095000267029
+FED_2017021017,1,82,1,nonjoke,"When it comes to keeping warm, nothing beats a thermal",brunette,parka,"When it comes to keeping warm, nothing beats a thermal parka.",1,0.3666651248931885,412.01080799102783
+FED_2017021017,1,15,1,joke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his leg.",2,1.483510971069336,424.0123109817505
+FED_2017021017,1,110,1,nonjoke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're affordable.,1,0.9167129993438721,432.0133979320526
+FED_2017021017,1,116,1,nonjoke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about somebody.,1,0.5500340461730957,458.0000150203705
+FED_2017021017,1,11,1,joke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a quarter.",2,0.5334150791168213,466.0010099411011
+FED_2017021017,1,105,1,joke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a checkbook.,3,0.4834129810333252,486.0035560131073
+FED_2017021017,1,29,1,joke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a millionaire.,1,1.5834310054779053,498.00512194633484
+FED_2017021017,1,133,1,joke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the maid.,1,0.733443021774292,506.0061089992523
+FED_2017021017,1,89,1,joke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are male.",3,0.6167190074920654,520.0079350471497
+FED_2017021017,1,88,1,nonjoke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three streetlights.,1,0.5666980743408203,540.0104930400848
+FED_2017021017,1,126,1,nonjoke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the tables.,1,0.45007801055908203,554.0122609138489
+FED_2017021017,1,148,1,nonjoke,The best bargain I ever got was when I went to a family garage sale and bought a ,grandma,toaster,The best bargain I ever got was when I went to a family garage sale and bought a toaster.,1,0.36666202545166016,562.0133059024811
