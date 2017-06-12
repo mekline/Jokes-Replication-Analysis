@@ -7,7 +7,7 @@
 %mk addition! Add the version of spm that you intend to use right here, possibly
 addpath('/users/evelina9/fMRI_PROJECTS/spm_ss_vE/') %The usual one
 
-notename = '_prevsess'; %file suffix
+notename = '_prevsess_Jokes2'; %file suffix
 
 experiments(1)=struct(...
     'name','langlocSN',...% localizer 

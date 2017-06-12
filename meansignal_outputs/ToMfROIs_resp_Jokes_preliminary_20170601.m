@@ -30,8 +30,10 @@
 %SET ALL FILEPATHS AND EXP INFO HERE 
 
 MyDataFolder = '/mindhive'; % path to the data directory
-MyPath = '/mindhive/evlab/u/mekline/Desktop/Jokes/Jokes_Repo/New_ToolboxAnalyses/NewToMfROIsrespNonlitJokes_20160310_results'; %Where should the results wind up? For testing this script, this is all u need to change and it should just work! Note: usually the scripts are good about this but this one actually does break if you put a slash at the end of your dir name.
-MyOutputFolder = [MyPath 'ToMfROIS_resp_Jokes_preliminary_20170601'];
+MyOutputPath = '/mindhive/evlab/u/mekline/Documents/Projects/Jokes_Study2/Jokes_Replication_Repo/meansignal_outputs/'; %Where should the results wind up? For testing this script, this is all u need to change and it should just work! Note: usually the scripts are good about this but this one actually does break if you put a slash at the end of your dir name.
+MyOutputName = [MyPath 'ToMfROIS_resp_Jokes_preliminary_20170601']; %Change to match this analysis!!
+
+Notename =  
 
 %Make sure participants are in the same order for loc and crit!!!!!!
 loc_sessions = {{'152_KAN_RHnonlit_01',...
