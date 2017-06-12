@@ -4,12 +4,14 @@
 #If I knew more about the mat file produced you could probably get all of this stuff out of
 #there too.  But anyway this gets the mROI_data.csv file, sorts out its structure
 #and reorganizes the data into proper longform. Take your analysis from there or save the result in a csv.
+#Here, the csvs get saved back to the mean_signal folder for tidyness
 
 ####
 #Stuff to change!
-myResultsFolder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Analysis Repository/Analyses_paper/Toolbox results - resp Jokes/NewToMfROIsrespNonlitJokesCustom_20161007_results'
-myOutputFolder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Analysis Repository/Analyses_paper/'
-myFilename = 'NewToMfROIsrespNonlitJokesCustom_20161007.csv'
+myResultsPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/meansignal_outputs/'
+myOutputPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/meansignal_outputs/'
+
+whichResults = 'ToMfROIS_resp_ToM_preliminary_20170612'; #Change this to the set of results to analyse!
 toSave = 1
 
 ####
@@ -19,7 +21,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 
-setwd(myResultsFolder)
+setwd(paste(myResultsPath,whichResults, sep=""))
 
 #Open the weirdly formatted files and get just the table we want. 
 myfile  = read.csv('spm_ss_mROI_data.csv',sep=',', skip=1)
@@ -49,8 +51,9 @@ myfile <- myfile %>%
 
 #Optional: print back out a nice file with a more informative name.
 if(toSave){
-  setwd(myOutputFolder)
-  zz <- file(myFilename, "w")
+  setwd(myOutputPath)
+  myFileName = paste(whichResults,'.csv', sep="")
+  zz <- file(myFileName, "w")
   write.csv(myfile, zz, row.names=FALSE)
   close(zz)
 }

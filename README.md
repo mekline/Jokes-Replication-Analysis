@@ -1,12 +1,14 @@
 # Jokes-Replication-Analysis
 
-This is the repo that contains all analysis of the 'Jokes' replication reported in **PAPER TITLE**, which is a preregistered replication of this experiment (link to repo and preprint.) Read the preprint for details, but essentially this experiment is identical except that we use a sample size calculated from the previous round of results (see LINK for these calculations), and add an additional, exploratory Theory-of-Mind localizer designed to test how/whether joke-specific activation in ToM regions is dependent on the particular localizer task used. 
+This is the repo that contains all analysis of the 'Jokes' replication reported in **PAPER TITLE**, which is a preregistered replication of this experiment (link to repo and preprint.) Read the preprint for details, but essentially this experiment is identical except that we use a sample size based on power analysis from the previous round of results (see LINK for these calculations), and add an additional, exploratory Theory-of-Mind localizer designed to test how/whether joke-specific activation in ToM regions is dependent on the particular localizer task used. 
 
 ## Repository Contents
 
 * participant_summary.csv - contains basic info one each participant, including basic demographics (age, gender, handedness, langauge background), any oddities about the critical testing session, and information on localizers, including whether localizer data was collected for that participant on another day, & any exclusions from analyses & reasons for doing so.  All participants who participated in testing sessions for the Jokes study are included in this doc.
 
-## (More interesting folders etc. up here.)
+## Folder: Analysis pipeline
+
+Running the scripts in this folder in order should produce all statistics and figures reported in the paper. (And definitely do so, on Melissa's laptop.) It's a packrat project, which means it should be friendly for running/finding the relevant libraries...
 
 ### Folder: spcorr_outputs/
 
