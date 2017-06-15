@@ -1,0 +1,135 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,1,49,2,nonjoke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my aunt.,<VisionEgg.WrappedText.WrappedText object at 0x1040c45a0>
+8.0000,8.000,1,38,2,joke,This fall two things are turning yellow: trees and,investors,bushes,This fall two things are turning yellow: trees and investors.,<VisionEgg.WrappedText.WrappedText object at 0x1040c46e0>
+16.0000,2.000,fix
+18.0000,8.000,1,124,2,joke,"I've got Parkinson's disease, and he's got", mine,gout,"I've got Parkinson's disease, and he's got mine.",<VisionEgg.WrappedText.WrappedText object at 0x1040c4820>
+26.0000,8.000,1,73,2,nonjoke,One thing that makes the world go round is,detours,greed,One thing that makes the world go round is greed.,<VisionEgg.WrappedText.WrappedText object at 0x1040c4730>
+34.0000,8.000,1,76,2,joke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of punishment.",<VisionEgg.WrappedText.WrappedText object at 0x1040c47d0>
+42.0000,8.000,1,145,2,nonjoke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a spouse.,<VisionEgg.WrappedText.WrappedText object at 0x1040c4690>
+50.0000,2.000,fix
+52.0000,8.000,1,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",<VisionEgg.WrappedText.WrappedText object at 0x1040c4d20>
+60.0000,2.000,fix
+62.0000,8.000,1,41,2,nonjoke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a motorist.,<VisionEgg.WrappedText.WrappedText object at 0x1040c4dc0>
+70.0000,2.000,fix
+72.0000,8.000,1,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",<VisionEgg.WrappedText.WrappedText object at 0x1040c4e10>
+80.0000,2.000,fix
+82.0000,8.000,1,65,2,nonjoke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke heroin.,<VisionEgg.WrappedText.WrappedText object at 0x1040c4f50>
+90.0000,8.000,1,1,2,nonjoke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten seconds.",<VisionEgg.WrappedText.WrappedText object at 0x1040e6050>
+98.0000,2.000,fix
+100.0000,8.000,1,131,2,nonjoke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly blackjack.",<VisionEgg.WrappedText.WrappedText object at 0x1040e6140>
+108.0000,8.000,1,120,2,joke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and money.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6230>
+116.0000,6.000,fix
+122.0000,8.000,1,19,2,nonjoke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my pay.",<VisionEgg.WrappedText.WrappedText object at 0x1040e62d0>
+130.0000,8.000,fix
+138.0000,8.000,1,7,2,nonjoke,A replacement player hit a home run with my,girl,ball,A replacement player hit a home run with my ball.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6370>
+146.0000,8.000,1,60,2,joke,Another thing a small boy is constantly outgrowing is his,allowance,underwear,Another thing a small boy is constantly outgrowing is his allowance.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6410>
+154.0000,8.000,1,84,2,joke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and lawyers.",<VisionEgg.WrappedText.WrappedText object at 0x1040e64b0>
+162.0000,6.000,fix
+168.0000,8.000,1,67,2,nonjoke,The most prevalent form of legalized gambling is,elections,betting,The most prevalent form of legalized gambling is betting.,<VisionEgg.WrappedText.WrappedText object at 0x1040e65a0>
+176.0000,8.000,1,110,2,joke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're everywhere.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6640>
+184.0000,8.000,1,108,2,joke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little water.,<VisionEgg.WrappedText.WrappedText object at 0x1040e66e0>
+192.0000,2.000,fix
+194.0000,8.000,1,13,2,nonjoke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a candle.,<VisionEgg.WrappedText.WrappedText object at 0x1040e67d0>
+202.0000,8.000,1,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6820>
+210.0000,4.000,fix
+214.0000,8.000,1,29,2,nonjoke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a practitioner.,<VisionEgg.WrappedText.WrappedText object at 0x1040e68c0>
+222.0000,8.000,1,106,2,joke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the springs.",<VisionEgg.WrappedText.WrappedText object at 0x1040e6910>
+230.0000,4.000,fix
+234.0000,8.000,1,104,2,joke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their slice.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6a00>
+242.0000,2.000,fix
+244.0000,8.000,1,133,2,nonjoke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the shelves.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6aa0>
+252.0000,6.000,fix
+258.0000,8.000,1,81,2,nonjoke,Another thing that has developed by leaps and bounds is modern,dance,science,Another thing that has developed by leaps and bounds is modern science.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6b40>
+266.0000,2.000,fix
+268.0000,8.000,1,59,2,nonjoke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot scantier.",<VisionEgg.WrappedText.WrappedText object at 0x1040e6be0>
+276.0000,8.000,1,17,2,nonjoke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes votes.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6c80>
+284.0000,22.000,fix
+306.0000,8.000,1,15,2,nonjoke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his fingers.",<VisionEgg.WrappedText.WrappedText object at 0x1040e6d20>
+314.0000,8.000,1,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6dc0>
+322.0000,8.000,1,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",<VisionEgg.WrappedText.WrappedText object at 0x1040e6e60>
+330.0000,2.000,fix
+332.0000,8.000,1,143,2,nonjoke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're candidates.,<VisionEgg.WrappedText.WrappedText object at 0x1040e6eb0>
+340.0000,10.000,fix
+350.0000,8.000,1,119,2,nonjoke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly off.",<VisionEgg.WrappedText.WrappedText object at 0x10c187050>
+358.0000,6.000,fix
+364.0000,8.000,1,64,2,joke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its credit.,<VisionEgg.WrappedText.WrappedText object at 0x10c1870a0>
+372.0000,8.000,1,35,2,nonjoke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their careers.",<VisionEgg.WrappedText.WrappedText object at 0x10c187190>
+380.0000,6.000,fix
+386.0000,8.000,1,85,2,nonjoke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while relaxed.",<VisionEgg.WrappedText.WrappedText object at 0x10c1872d0>
+394.0000,4.000,fix
+398.0000,8.000,1,86,2,joke,"I asked the florist what I should give to my girlfriend, and he suggested his",address,tulips,"I asked the florist what I should give to my girlfriend, and he suggested his address.",<VisionEgg.WrappedText.WrappedText object at 0x10c187370>
+406.0000,4.000,fix
+410.0000,8.000,1,109,2,nonjoke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a member.,<VisionEgg.WrappedText.WrappedText object at 0x10c187410>
+418.0000,4.000,fix
+422.0000,8.000,1,10,2,joke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than gossip.,<VisionEgg.WrappedText.WrappedText object at 0x10c1874b0>
+430.0000,4.000,fix
+434.0000,8.000,1,3,2,nonjoke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from working.,<VisionEgg.WrappedText.WrappedText object at 0x10c187550>
+442.0000,8.000,1,92,2,joke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his wife.",<VisionEgg.WrappedText.WrappedText object at 0x10c1875f0>
+450.0000,8.000,1,6,2,joke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and putt.,<VisionEgg.WrappedText.WrappedText object at 0x10c187640>
+458.0000,2.000,fix
+460.0000,8.000,1,32,2,joke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually dollars.",<VisionEgg.WrappedText.WrappedText object at 0x10c187780>
+468.0000,8.000,1,153,2,nonjoke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the snoop.,<VisionEgg.WrappedText.WrappedText object at 0x10c1877d0>
+476.0000,2.000,fix
+478.0000,8.000,1,116,2,joke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about others.,<VisionEgg.WrappedText.WrappedText object at 0x10c187910>
+486.0000,22.000,fix
+508.0000,8.000,1,34,2,joke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough room.",<VisionEgg.WrappedText.WrappedText object at 0x10c1879b0>
+516.0000,8.000,1,22,2,joke,Our son brought home a note from school saying they need a written excuse for his,presence,tardiness,Our son brought home a note from school saying they need a written excuse for his presence.,<VisionEgg.WrappedText.WrappedText object at 0x10c187a50>
+524.0000,2.000,fix
+526.0000,8.000,1,112,2,joke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in Crayola.,<VisionEgg.WrappedText.WrappedText object at 0x10c187b90>
+534.0000,8.000,1,144,2,joke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five beers.,<VisionEgg.WrappedText.WrappedText object at 0x10c187c30>
+542.0000,2.000,fix
+544.0000,8.000,1,156,2,joke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are mosquitos.,<VisionEgg.WrappedText.WrappedText object at 0x10c187cd0>
+552.0000,10.000,fix
+562.0000,8.000,1,50,2,joke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in self- defense.,<VisionEgg.WrappedText.WrappedText object at 0x10c187d70>
+FED_20161208a_3T2,1,49,2,nonjoke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my aunt.,,,6.000885009765625
+FED_20161208a_3T2,1,38,2,joke,This fall two things are turning yellow: trees and,investors,bushes,This fall two things are turning yellow: trees and investors.,2,1.3393011093139648,14.00301194190979
+FED_20161208a_3T2,1,124,2,joke,"I've got Parkinson's disease, and he's got", mine,gout,"I've got Parkinson's disease, and he's got mine.",1,1.9920799732208252,24.013992071151733
+FED_20161208a_3T2,1,73,2,nonjoke,One thing that makes the world go round is,detours,greed,One thing that makes the world go round is greed.,,,32.00003409385681
+FED_20161208a_3T2,1,76,2,joke,"Parents support clubs for teenagers, especially when they lack other forms of",punishment,diversion,"Parents support clubs for teenagers, especially when they lack other forms of punishment.",2,1.1887609958648682,40.00107407569885
+FED_20161208a_3T2,1,145,2,nonjoke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a spouse.,1,1.4902081489562988,48.00294899940491
+FED_20161208a_3T2,1,97,2,nonjoke,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the",dressmaker,mistress,"When I found out how much my wife spent on dresses last year, I dumped her and proposed to the mistress.",1,1.2220120429992676,58.01416993141174
+FED_20161208a_3T2,1,41,2,nonjoke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a motorist.,1,1.0379540920257568,68.00823497772217
+FED_20161208a_3T2,1,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",2,1.188520908355713,78.00228905677795
+FED_20161208a_3T2,1,65,2,nonjoke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke heroin.,2,1.0714359283447266,88.01313710212708
+FED_20161208a_3T2,1,1,2,nonjoke,"When I asked how long he should cook the noodles, I said at least ten",inches,seconds,"When I asked how long he should cook the noodles, I said at least ten seconds.",,,96.01521301269531
+FED_20161208a_3T2,1,131,2,nonjoke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly blackjack.",1,0.5022239685058594,106.00935101509094
+FED_20161208a_3T2,1,120,2,joke,Two things are essential for success: wealth and,money,fame,Two things are essential for success: wealth and money.,1,0.602506160736084,114.01148796081543
+FED_20161208a_3T2,1,19,2,nonjoke,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my",umbrella,pay,"I decided to start saving for a rainy day, so I went to a savings and loan and deposited my pay.",1,1.1883327960968018,128.006667137146
+FED_20161208a_3T2,1,7,2,nonjoke,A replacement player hit a home run with my,girl,ball,A replacement player hit a home run with my ball.,2,1.6071670055389404,144.01031613349915
+FED_20161208a_3T2,1,60,2,joke,Another thing a small boy is constantly outgrowing is his,allowance,underwear,Another thing a small boy is constantly outgrowing is his allowance.,2,1.590203046798706,152.02915406227112
+FED_20161208a_3T2,1,84,2,joke,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and ",lawyers,crack,"The convict told his cellmate how he'd blown all the money he stole on wine, women, and lawyers.",1,0.6528921127319336,160.0144100189209
+FED_20161208a_3T2,1,67,2,nonjoke,The most prevalent form of legalized gambling is,elections,betting,The most prevalent form of legalized gambling is betting.,1,0.6864011287689209,174.00948691368103
+FED_20161208a_3T2,1,110,2,joke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're everywhere.,2,1.3392560482025146,182.01137709617615
+FED_20161208a_3T2,1,108,2,joke,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little,water,platform,Everyone had so much fun diving from the tree into the swimming pool we decided to put in a little water.,1,1.7244491577148438,190.01338696479797
+FED_20161208a_3T2,1,13,2,nonjoke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a candle.,1,1.3221070766448975,200.00789594650269
+FED_20161208a_3T2,1,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,1,1.8755431175231934,208.0096309185028
+FED_20161208a_3T2,1,29,2,nonjoke,My doctor has never violated his oath: the oath he took years ago to become a,millionaire,practitioner,My doctor has never violated his oath: the oath he took years ago to become a practitioner.,1,0.8202099800109863,220.0125811100006
+FED_20161208a_3T2,1,106,2,joke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the springs.",2,1.741062879562378,228.0144600868225
+FED_20161208a_3T2,1,104,2,joke,Politicians who are as American as apple pie still want their,slice,rewards,Politicians who are as American as apple pie still want their slice.,1,1.3727500438690186,240.00064396858215
+FED_20161208a_3T2,1,133,2,nonjoke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the shelves.,1,1.037705898284912,250.0116651058197
+FED_20161208a_3T2,1,81,2,nonjoke,Another thing that has developed by leaps and bounds is modern,dance,science,Another thing that has developed by leaps and bounds is modern science.,1,0.6364450454711914,264.0065550804138
+FED_20161208a_3T2,1,59,2,nonjoke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot scantier.",1,1.2556591033935547,274.0007469654083
+FED_20161208a_3T2,1,17,2,nonjoke,A committee keeps minutes and takes,hours,votes,A committee keeps minutes and takes votes.,1,0.6362409591674805,282.00284910202026
+FED_20161208a_3T2,1,15,2,nonjoke,"When John bought a bulldog, it was no time at all before he had that dog eating out of his",leg,fingers,"When John bought a bulldog, it was no time at all before he had that dog eating out of his fingers.",,,312.0019690990448
+FED_20161208a_3T2,1,55,2,nonjoke,His wife sued for divorce and asked for custody of the,cash,cat,His wife sued for divorce and asked for custody of the cat.,2,0.6361839771270752,320.00398898124695
+FED_20161208a_3T2,1,100,2,joke,"I hope this train stops at Grand Central because if it doesn't, there will be a ",crash,delay,"I hope this train stops at Grand Central because if it doesn't, there will be a crash.",1,0.6863160133361816,328.0059480667114
+FED_20161208a_3T2,1,143,2,nonjoke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're candidates.,1,0.8202118873596191,338.0168631076813
+FED_20161208a_3T2,1,119,2,nonjoke,"He told me he's not broke, just badly",bent,off,"He told me he's not broke, just badly off.",2,0.7199199199676514,356.0129120349884
+FED_20161208a_3T2,1,64,2,joke,The best way to stop an elephant from charging is to cut off its,credit,toes,The best way to stop an elephant from charging is to cut off its credit.,2,1.2728159427642822,370.00798511505127
+FED_20161208a_3T2,1,35,2,nonjoke,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their",nuptials,careers,"Now that the Hollywood couple has ironed out the divorce settlement, they can finally go ahead with their careers.",1,1.405980110168457,378.01008892059326
+FED_20161208a_3T2,1,85,2,nonjoke,"Frequent naps prevent old age, especially when taken while",driving,relaxed,"Frequent naps prevent old age, especially when taken while relaxed.",1,0.6864161491394043,392.00515699386597
+FED_20161208a_3T2,1,86,2,joke,"I asked the florist what I should give to my girlfriend, and he suggested his",address,tulips,"I asked the florist what I should give to my girlfriend, and he suggested his address.",2,0.803455114364624,404.0081889629364
+FED_20161208a_3T2,1,109,2,nonjoke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a member.,1,1.1378631591796875,416.01166796684265
+FED_20161208a_3T2,1,10,2,joke,Nothing in the known universe travels faster than,gossip,radiation,Nothing in the known universe travels faster than gossip.,2,1.0379209518432617,428.0141010284424
+FED_20161208a_3T2,1,3,2,nonjoke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from working.,1,0.6530330181121826,440.00028109550476
+FED_20161208a_3T2,1,92,2,joke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his wife.",1,1.3223960399627686,448.00230503082275
+FED_20161208a_3T2,1,6,2,joke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and putt.,1,1.4564409255981445,456.0043590068817
+FED_20161208a_3T2,1,32,2,joke,"Though most people think it's Rome, the world's most beloved capital is actually",dollars,Vienna,"Though most people think it's Rome, the world's most beloved capital is actually dollars.",2,0.6695659160614014,466.0152690410614
+FED_20161208a_3T2,1,153,2,nonjoke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the snoop.,1,0.7200398445129395,474.00026512145996
+FED_20161208a_3T2,1,116,2,joke,Autobiography is an unrivaled vehicle for telling the truth about,others,somebody,Autobiography is an unrivaled vehicle for telling the truth about others.,1,0.7534220218658447,484.01127791404724
+FED_20161208a_3T2,1,34,2,joke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough room.",1,1.9256479740142822,514.0104689598083
+FED_20161208a_3T2,1,22,2,joke,Our son brought home a note from school saying they need a written excuse for his,presence,tardiness,Our son brought home a note from school saying they need a written excuse for his presence.,3,0.9539861679077148,522.0124759674072
+FED_20161208a_3T2,1,112,2,joke,The art museum just acquired an early Rembrandt; it's done in ,Crayola,charcoal,The art museum just acquired an early Rembrandt; it's done in Crayola.,2,0.9542980194091797,532.0064990520477
+FED_20161208a_3T2,1,144,2,joke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five beers.,2,0.5026509761810303,540.0252339839935
+FED_20161208a_3T2,1,156,2,joke,The only ones who want me for my body are,mosquitos,losers,The only ones who want me for my body are mosquitos.,3,0.6194620132446289,550.0026199817657
+FED_20161208a_3T2,1,50,2,joke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in self- defense.,1,1.2389721870422363,568.0153019428253

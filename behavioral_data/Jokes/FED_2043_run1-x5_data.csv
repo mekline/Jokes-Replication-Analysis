@@ -1,0 +1,83 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,1,69,2,nonjoke,"When an irresistible force meets an immovable object, you get two very angry",women,entities,"When an irresistible force meets an immovable object, you get two very angry entities.",<VisionEgg.WrappedText.WrappedText object at 0x1106bf640>
+8.0000,8.000,1,110,2,joke,It's not hard to meet expenses; they're ,everywhere,affordable,It's not hard to meet expenses; they're everywhere.,<VisionEgg.WrappedText.WrappedText object at 0x1106bf550>
+16.0000,2.000,fix
+18.0000,8.000,1,70,2,joke,The best gift for the man who has everything is,penicillin,neckties,The best gift for the man who has everything is penicillin.,<VisionEgg.WrappedText.WrappedText object at 0x1106bf690>
+26.0000,8.000,1,103,2,nonjoke,"I still miss my ex-wife, but I am improving my",aim,ego,"I still miss my ex-wife, but I am improving my ego.",<VisionEgg.WrappedText.WrappedText object at 0x1106bf5a0>
+34.0000,8.000,1,146,2,joke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called alimony.",<VisionEgg.WrappedText.WrappedText object at 0x1106bf460>
+42.0000,8.000,1,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,<VisionEgg.WrappedText.WrappedText object at 0x1106bf500>
+50.0000,2.000,fix
+52.0000,8.000,1,41,2,nonjoke,His doctor recommended he stay flat on his back ever since he was hit by a ,steamroller,motorist,His doctor recommended he stay flat on his back ever since he was hit by a motorist.,<VisionEgg.WrappedText.WrappedText object at 0x1106bfb40>
+60.0000,2.000,fix
+62.0000,8.000,1,9,2,nonjoke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a name.",<VisionEgg.WrappedText.WrappedText object at 0x1106bfb90>
+70.0000,2.000,fix
+72.0000,8.000,1,92,2,joke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his wife.",<VisionEgg.WrappedText.WrappedText object at 0x1106bfcd0>
+80.0000,2.000,fix
+82.0000,8.000,1,107,2,nonjoke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice diction.,<VisionEgg.WrappedText.WrappedText object at 0x1106bfd20>
+90.0000,8.000,1,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,<VisionEgg.WrappedText.WrappedText object at 0x1106bfeb0>
+98.0000,2.000,fix
+100.0000,8.000,1,13,2,nonjoke,A device for finding furniture in the dark is a ,shin,candle,A device for finding furniture in the dark is a candle.,<VisionEgg.WrappedText.WrappedText object at 0x1106bff00>
+108.0000,8.000,1,80,2,joke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel happy.,<VisionEgg.WrappedText.WrappedText object at 0x1106bff50>
+116.0000,6.000,fix
+122.0000,8.000,1,121,2,nonjoke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a piston.",<VisionEgg.WrappedText.WrappedText object at 0x1106e5050>
+130.0000,8.000,fix
+138.0000,8.000,1,79,2,nonjoke,She puts something behind her ears to attract men; lately she's been using her,ankles,vanilla,She puts something behind her ears to attract men; lately she's been using her vanilla.,<VisionEgg.WrappedText.WrappedText object at 0x1106e50f0>
+146.0000,8.000,1,6,2,joke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and putt.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5190>
+154.0000,8.000,1,44,2,joke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the cemetery.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5280>
+162.0000,6.000,fix
+168.0000,8.000,1,153,2,nonjoke,The husband who catches his wife in the act is probably on the,trapeze,snoop,The husband who catches his wife in the act is probably on the snoop.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5370>
+176.0000,8.000,1,82,2,joke,"When it comes to keeping warm, nothing beats a thermal",brunette,parka,"When it comes to keeping warm, nothing beats a thermal brunette.",<VisionEgg.WrappedText.WrappedText object at 0x1106e5410>
+184.0000,8.000,1,124,2,joke,"I've got Parkinson's disease, and he's got", mine,gout,"I've got Parkinson's disease, and he's got mine.",<VisionEgg.WrappedText.WrappedText object at 0x1106e54b0>
+192.0000,2.000,fix
+194.0000,8.000,1,111,2,nonjoke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count salary.",<VisionEgg.WrappedText.WrappedText object at 0x1106e5550>
+202.0000,8.000,1,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",<VisionEgg.WrappedText.WrappedText object at 0x1106e55f0>
+210.0000,4.000,fix
+214.0000,8.000,1,155,2,nonjoke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the clowns.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5690>
+222.0000,8.000,1,48,2,joke,"The new tax forms are more realistic: where your wife signs, it says","""accomplice""","""partner""","The new tax forms are more realistic: where your wife signs, it says ""accomplice"".",<VisionEgg.WrappedText.WrappedText object at 0x1106e5730>
+230.0000,4.000,fix
+234.0000,8.000,1,68,2,joke,She always told girls not to look for a husband but just to date,bachelors,someone,She always told girls not to look for a husband but just to date bachelors.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5820>
+242.0000,2.000,fix
+244.0000,8.000,1,87,2,nonjoke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your parents.",<VisionEgg.WrappedText.WrappedText object at 0x1106e57d0>
+252.0000,6.000,fix
+258.0000,8.000,1,143,2,nonjoke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're candidates.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5910>
+266.0000,2.000,fix
+268.0000,8.000,1,45,2,nonjoke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her jacket.",<VisionEgg.WrappedText.WrappedText object at 0x1106e5a00>
+276.0000,8.000,1,139,2,nonjoke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new wood.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5aa0>
+284.0000,22.000,fix
+306.0000,8.000,1,99,2,nonjoke,"He's never given a girl a present, but he did give a few a pretty good",reputation,surprise,"He's never given a girl a present, but he did give a few a pretty good surprise.",<VisionEgg.WrappedText.WrappedText object at 0x1106e5af0>
+314.0000,8.000,1,151,2,nonjoke,One good turn gets most of the,blanket,profit,One good turn gets most of the profit.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5c30>
+322.0000,8.000,1,30,2,joke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the spoon.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5c80>
+330.0000,2.000,fix
+332.0000,8.000,1,109,2,nonjoke,Many a freshman helps the college of his choice by becoming a ,dropout,member,Many a freshman helps the college of his choice by becoming a member.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5d20>
+340.0000,10.000,fix
+350.0000,8.000,1,49,2,nonjoke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my aunt.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5e10>
+358.0000,6.000,fix
+364.0000,8.000,1,52,2,joke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no makeup.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5eb0>
+372.0000,8.000,1,65,2,nonjoke,A good way to blow your mind is to smoke ,gunpowder,heroin,A good way to blow your mind is to smoke heroin.,<VisionEgg.WrappedText.WrappedText object at 0x1106e5f00>
+380.0000,6.000,fix
+386.0000,8.000,1,23,2,nonjoke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge headache.,<VisionEgg.WrappedText.WrappedText object at 0x1185bf050>
+394.0000,4.000,fix
+398.0000,8.000,1,22,2,joke,Our son brought home a note from school saying they need a written excuse for his,presence,tardiness,Our son brought home a note from school saying they need a written excuse for his presence.,<VisionEgg.WrappedText.WrappedText object at 0x1185bf0a0>
+406.0000,4.000,fix
+410.0000,8.000,1,115,2,nonjoke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your drives.",<VisionEgg.WrappedText.WrappedText object at 0x1185bf190>
+418.0000,4.000,fix
+422.0000,8.000,1,36,2,joke,A problem drinker is one who never,buys,quits,A problem drinker is one who never buys.,<VisionEgg.WrappedText.WrappedText object at 0x1185bf230>
+430.0000,4.000,fix
+434.0000,8.000,1,127,2,nonjoke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying unloved.,<VisionEgg.WrappedText.WrappedText object at 0x1185bf280>
+442.0000,8.000,1,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",<VisionEgg.WrappedText.WrappedText object at 0x1185bf370>
+450.0000,8.000,1,14,2,joke,He got a medal for bravery on the beach when he rescued a girl from a ,lifeguard,shipwreck,He got a medal for bravery on the beach when he rescued a girl from a lifeguard.,<VisionEgg.WrappedText.WrappedText object at 0x1185bf460>
+458.0000,2.000,fix
+460.0000,8.000,1,62,2,joke,"I can walk on water, but I stagger on ",alcohol,concrete,"I can walk on water, but I stagger on alcohol.",<VisionEgg.WrappedText.WrappedText object at 0x1185bf4b0>
+468.0000,8.000,1,113,2,nonjoke,Some people's only culture is,bacteria,radio,Some people's only culture is radio.,<VisionEgg.WrappedText.WrappedText object at 0x1185bf5f0>
+476.0000,2.000,fix
+478.0000,8.000,1,2,2,joke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two weeks.",<VisionEgg.WrappedText.WrappedText object at 0x1185bf640>
+486.0000,22.000,fix
+508.0000,8.000,1,94,2,joke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are dead.",<VisionEgg.WrappedText.WrappedText object at 0x1185bf730>
+516.0000,8.000,1,132,2,joke,The last time a guy in a mask took all my money I was in,surgery,shock,The last time a guy in a mask took all my money I was in surgery.,<VisionEgg.WrappedText.WrappedText object at 0x1185bf7d0>
+524.0000,2.000,fix
+526.0000,8.000,1,12,2,joke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the press.,<VisionEgg.WrappedText.WrappedText object at 0x1185bf870>
+534.0000,8.000,1,34,2,joke,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough",room,change,"He asked if I'd join him in a bowl of soup, but I told him we didn't have enough room.",<VisionEgg.WrappedText.WrappedText object at 0x1185bf910>
+542.0000,2.000,fix
+544.0000,8.000,1,16,2,joke,Many a man's idea of a vacation is to rest quietly in the shade of a ,blonde,palm,Many a man's idea of a vacation is to rest quietly in the shade of a blonde.,<VisionEgg.WrappedText.WrappedText object at 0x1185bf9b0>
+552.0000,10.000,fix
+562.0000,8.000,1,26,2,joke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three taxpayers.",<VisionEgg.WrappedText.WrappedText object at 0x1185bfa50>

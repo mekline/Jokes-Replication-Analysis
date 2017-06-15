@@ -1,0 +1,83 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,1,87,2,nonjoke,"It's always nicer to give than to receive, especially when its your",opinion,parents,"It's always nicer to give than to receive, especially when its your parents.",<VisionEgg.WrappedText.WrappedText object at 0x1090b2aa0>
+8.0000,8.000,1,140,2,joke,You can keep your kids in hot water with ,dishes,rules,You can keep your kids in hot water with dishes.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2960>
+16.0000,2.000,fix
+18.0000,8.000,1,2,2,joke,"She went on a fourteen day diet, but she only lost two",weeks,ounces,"She went on a fourteen day diet, but she only lost two weeks.",<VisionEgg.WrappedText.WrappedText object at 0x1090b2a00>
+26.0000,8.000,1,33,2,nonjoke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to romance.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2a50>
+34.0000,8.000,1,52,2,joke,My wife did natural childbirth: no,makeup,anesthetic,My wife did natural childbirth: no makeup.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2550>
+42.0000,8.000,1,91,2,nonjoke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its resources.",<VisionEgg.WrappedText.WrappedText object at 0x1090b26e0>
+50.0000,2.000,fix
+52.0000,8.000,1,131,2,nonjoke,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly",weddings, blackjack,"Statistics indicate that Americans spend eighty million a year on games of chance, mostly blackjack.",<VisionEgg.WrappedText.WrappedText object at 0x1090b2500>
+60.0000,2.000,fix
+62.0000,8.000,1,49,2,nonjoke,One person who sure makes a long story short is my,editor,aunt,One person who sure makes a long story short is my aunt.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2730>
+70.0000,2.000,fix
+72.0000,8.000,1,138,2,joke,Modern science is amazing: garbage is now being made into,movies,gasoline,Modern science is amazing: garbage is now being made into movies.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2780>
+80.0000,2.000,fix
+82.0000,8.000,1,5,2,nonjoke,She read so much about the bad effects of cigarettes she decided to give up the,reading,habit,She read so much about the bad effects of cigarettes she decided to give up the habit.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2640>
+90.0000,8.000,1,59,2,nonjoke,"Women don't dress to please men; if they did, they'd dress a lot",faster,scantier,"Women don't dress to please men; if they did, they'd dress a lot scantier.",<VisionEgg.WrappedText.WrappedText object at 0x1090b27d0>
+98.0000,2.000,fix
+100.0000,8.000,1,115,2,nonjoke,"In the game of golf, nothing counts as much as your",opponent,drives,"In the game of golf, nothing counts as much as your drives.",<VisionEgg.WrappedText.WrappedText object at 0x1090b2690>
+108.0000,8.000,1,90,2,joke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two paychecks.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2460>
+116.0000,6.000,fix
+122.0000,8.000,1,127,2,nonjoke,The penalty for dishonesty is the disgrace of dying,rich,unloved,The penalty for dishonesty is the disgrace of dying unloved.,<VisionEgg.WrappedText.WrappedText object at 0x1090b25f0>
+130.0000,8.000,fix
+138.0000,8.000,1,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",<VisionEgg.WrappedText.WrappedText object at 0x1090b25a0>
+146.0000,8.000,1,4,2,joke,I knew a streetwalker who was so exclusive she had an unlisted telephone,booth,line,I knew a streetwalker who was so exclusive she had an unlisted telephone booth.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2b40>
+154.0000,8.000,1,56,2,joke,"When you own an ice cream business, your favorite flavor is",aspirin,everything,"When you own an ice cream business, your favorite flavor is aspirin.",<VisionEgg.WrappedText.WrappedText object at 0x1090b2b90>
+162.0000,6.000,fix
+168.0000,8.000,1,51,2,nonjoke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the nighttime.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2be0>
+176.0000,8.000,1,50,2,joke,The only time my father ever raised a hand to his children was in ,self- defense,discipline,The only time my father ever raised a hand to his children was in self- defense.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2c30>
+184.0000,8.000,1,128,2,joke,"Figures don't lie, except on the",beaches,page,"Figures don't lie, except on the beaches.",<VisionEgg.WrappedText.WrappedText object at 0x1090b2c80>
+192.0000,2.000,fix
+194.0000,8.000,1,77,2,nonjoke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to friends.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2d20>
+202.0000,8.000,1,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2d70>
+210.0000,4.000,fix
+214.0000,8.000,1,121,2,nonjoke,"Diamonds are produced by great pressure, usually provided by a ",girlfriend,piston,"Diamonds are produced by great pressure, usually provided by a piston.",<VisionEgg.WrappedText.WrappedText object at 0x1090b2dc0>
+222.0000,8.000,1,88,2,joke,The wind was so strong it blew out three,fuses,streetlights,The wind was so strong it blew out three fuses.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2cd0>
+230.0000,4.000,fix
+234.0000,8.000,1,40,2,joke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the cashier.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2e10>
+242.0000,2.000,fix
+244.0000,8.000,1,39,2,nonjoke,The best way to remove coffee stains from a white blouse is with,scissors,detergent,The best way to remove coffee stains from a white blouse is with detergent.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2e60>
+252.0000,6.000,fix
+258.0000,8.000,1,11,2,nonjoke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a statement.",<VisionEgg.WrappedText.WrappedText object at 0x1090b2f00>
+266.0000,2.000,fix
+268.0000,8.000,1,111,2,nonjoke,"Some husbands are good providers, but only if you count",children,salary,"Some husbands are good providers, but only if you count salary.",<VisionEgg.WrappedText.WrappedText object at 0x1090b2eb0>
+276.0000,8.000,1,129,2,nonjoke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a salad.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2f50>
+284.0000,22.000,fix
+306.0000,8.000,1,133,2,nonjoke,He likes to make things around the house; this week it's the,maid,shelves,He likes to make things around the house; this week it's the shelves.,<VisionEgg.WrappedText.WrappedText object at 0x1090b2fa0>
+314.0000,8.000,1,105,2,nonjoke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a guidebook.,<VisionEgg.WrappedText.WrappedText object at 0x110883050>
+322.0000,8.000,1,94,2,joke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are dead.",<VisionEgg.WrappedText.WrappedText object at 0x1108830f0>
+330.0000,2.000,fix
+332.0000,8.000,1,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,<VisionEgg.WrappedText.WrappedText object at 0x1108830a0>
+340.0000,10.000,fix
+350.0000,8.000,1,103,2,nonjoke,"I still miss my ex-wife, but I am improving my",aim,ego,"I still miss my ex-wife, but I am improving my ego.",<VisionEgg.WrappedText.WrappedText object at 0x110883140>
+358.0000,6.000,fix
+364.0000,8.000,1,28,2,joke,Her press agent was operated on for an ingrown,beeper,eyelash,Her press agent was operated on for an ingrown beeper.,<VisionEgg.WrappedText.WrappedText object at 0x110883190>
+372.0000,8.000,1,141,2,nonjoke,The only crop that is grown in America and harvested abroad is the American,tourist,tobacco,The only crop that is grown in America and harvested abroad is the American tobacco.,<VisionEgg.WrappedText.WrappedText object at 0x1108831e0>
+380.0000,6.000,fix
+386.0000,8.000,1,3,2,nonjoke,A thoughtful wife has pork chops ready when her husband comes home from,fishing,working,A thoughtful wife has pork chops ready when her husband comes home from working.,<VisionEgg.WrappedText.WrappedText object at 0x110883280>
+394.0000,4.000,fix
+398.0000,8.000,1,144,2,joke,The difference between a dog and fox is about five,beers,degrees,The difference between a dog and fox is about five beers.,<VisionEgg.WrappedText.WrappedText object at 0x110883230>
+406.0000,4.000,fix
+410.0000,8.000,1,145,2,nonjoke,The only person who sticks closer to you in adversity than a friend is a,creditor,spouse,The only person who sticks closer to you in adversity than a friend is a spouse.,<VisionEgg.WrappedText.WrappedText object at 0x1108832d0>
+418.0000,4.000,fix
+422.0000,8.000,1,152,2,joke,"Many things run in families, especially",noses,strength,"Many things run in families, especially noses.",<VisionEgg.WrappedText.WrappedText object at 0x110883370>
+430.0000,4.000,fix
+434.0000,8.000,1,149,2,nonjoke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the East.",<VisionEgg.WrappedText.WrappedText object at 0x110883320>
+442.0000,8.000,1,22,2,joke,Our son brought home a note from school saying they need a written excuse for his,presence,tardiness,Our son brought home a note from school saying they need a written excuse for his presence.,<VisionEgg.WrappedText.WrappedText object at 0x1108833c0>
+450.0000,8.000,1,92,2,joke,"When I asked the bartender for something cold and full of rum, he recommended his",wife,daiquiri,"When I asked the bartender for something cold and full of rum, he recommended his wife.",<VisionEgg.WrappedText.WrappedText object at 0x110883410>
+458.0000,2.000,fix
+460.0000,8.000,1,18,2,joke,"When we watch a sexy movie, my wife leans over and breathes on my",glasses,collar,"When we watch a sexy movie, my wife leans over and breathes on my glasses.",<VisionEgg.WrappedText.WrappedText object at 0x110883460>
+468.0000,8.000,1,143,2,nonjoke,Most of the people running for office are not politicians; they're,commuters,candidates,Most of the people running for office are not politicians; they're candidates.,<VisionEgg.WrappedText.WrappedText object at 0x1108834b0>
+476.0000,2.000,fix
+478.0000,8.000,1,6,2,joke,Sunday is the day we bow our heads and,putt,rest,Sunday is the day we bow our heads and putt.,<VisionEgg.WrappedText.WrappedText object at 0x110883500>
+486.0000,22.000,fix
+508.0000,8.000,1,30,2,joke,Nothing you put in a banana split is as potentially fattening as the,spoon,syrup,Nothing you put in a banana split is as potentially fattening as the spoon.,<VisionEgg.WrappedText.WrappedText object at 0x110883550>
+516.0000,8.000,1,106,2,joke,"Every time I wear my spring coat in the rain, it damages the",springs,fabric,"Every time I wear my spring coat in the rain, it damages the springs.",<VisionEgg.WrappedText.WrappedText object at 0x1108835f0>
+524.0000,2.000,fix
+526.0000,8.000,1,20,2,joke,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a",balloon,truck,"He told me he just bought a set of balloon tires, and I told him I didn't even know he owned a balloon.",<VisionEgg.WrappedText.WrappedText object at 0x1108835a0>
+534.0000,8.000,1,154,2,joke,"This new computer works so quickly, it comes complete with",ulcers,games,"This new computer works so quickly, it comes complete with ulcers.",<VisionEgg.WrappedText.WrappedText object at 0x110883640>
+542.0000,2.000,fix
+544.0000,8.000,1,66,2,joke,One good way to invest in the country is to buy a ,senator,business,One good way to invest in the country is to buy a senator.,<VisionEgg.WrappedText.WrappedText object at 0x110883690>
+552.0000,10.000,fix
+562.0000,8.000,1,122,2,joke,"If you're filthy rich, sending your kids to college is a wonderful", cleaner,luxury,"If you're filthy rich, sending your kids to college is a wonderful cleaner.",<VisionEgg.WrappedText.WrappedText object at 0x1108836e0>

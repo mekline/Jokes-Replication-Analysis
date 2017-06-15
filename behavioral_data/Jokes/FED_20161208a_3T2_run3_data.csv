@@ -1,0 +1,129 @@
+subj,run,item,list,category,sentence,joke ending,nonjoke ending,displayed,response,RT,question onset
+0.0000,8.000,3,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,<VisionEgg.WrappedText.WrappedText object at 0x111b0b690>
+8.0000,8.000,3,27,2,nonjoke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight disease.",<VisionEgg.WrappedText.WrappedText object at 0x111b0b640>
+16.0000,4.000,fix
+20.0000,8.000,3,152,2,joke,"Many things run in families, especially",noses,strength,"Many things run in families, especially noses.",<VisionEgg.WrappedText.WrappedText object at 0x111b0b780>
+28.0000,4.000,fix
+32.0000,8.000,3,72,2,joke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a library.,<VisionEgg.WrappedText.WrappedText object at 0x111b0b8c0>
+40.0000,8.000,3,107,2,nonjoke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice diction.,<VisionEgg.WrappedText.WrappedText object at 0x111b0b9b0>
+48.0000,2.000,fix
+50.0000,8.000,3,90,2,joke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two paychecks.,<VisionEgg.WrappedText.WrappedText object at 0x111b0baa0>
+58.0000,4.000,fix
+62.0000,8.000,3,94,2,joke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are dead.",<VisionEgg.WrappedText.WrappedText object at 0x111b0baf0>
+70.0000,8.000,3,24,2,joke,"Where I'm from, the two most common elements are hydrogen and ",stupidity,nitrogen,"Where I'm from, the two most common elements are hydrogen and stupidity.",<VisionEgg.WrappedText.WrappedText object at 0x111b0bb90>
+78.0000,8.000,3,77,2,nonjoke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to friends.,<VisionEgg.WrappedText.WrappedText object at 0x111b0bc30>
+86.0000,2.000,fix
+88.0000,8.000,3,9,2,nonjoke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a name.",<VisionEgg.WrappedText.WrappedText object at 0x111b0bc80>
+96.0000,8.000,3,42,2,joke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cow.,<VisionEgg.WrappedText.WrappedText object at 0x111b0be10>
+104.0000,2.000,fix
+106.0000,8.000,3,43,2,nonjoke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a journalist.",<VisionEgg.WrappedText.WrappedText object at 0x111b0beb0>
+114.0000,8.000,3,155,2,nonjoke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the clowns.,<VisionEgg.WrappedText.WrappedText object at 0x111b0bfa0>
+122.0000,8.000,3,80,2,joke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel happy.,<VisionEgg.WrappedText.WrappedText object at 0x111b310a0>
+130.0000,8.000,3,75,2,nonjoke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be capitalized.",<VisionEgg.WrappedText.WrappedText object at 0x111b31140>
+138.0000,8.000,3,54,2,joke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little finding.,<VisionEgg.WrappedText.WrappedText object at 0x111b31230>
+146.0000,2.000,fix
+148.0000,8.000,3,46,2,joke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent marriage.,<VisionEgg.WrappedText.WrappedText object at 0x111b31320>
+156.0000,6.000,fix
+162.0000,8.000,3,26,2,joke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three taxpayers.",<VisionEgg.WrappedText.WrappedText object at 0x111b31410>
+170.0000,8.000,3,16,2,joke,Many a man's idea of a vacation is to rest quietly in the shade of a ,blonde,palm,Many a man's idea of a vacation is to rest quietly in the shade of a blonde.,<VisionEgg.WrappedText.WrappedText object at 0x111b31500>
+178.0000,8.000,3,33,2,nonjoke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to romance.,<VisionEgg.WrappedText.WrappedText object at 0x111b31550>
+186.0000,8.000,3,139,2,nonjoke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new wood.,<VisionEgg.WrappedText.WrappedText object at 0x111b315f0>
+194.0000,8.000,3,134,2,joke,My church welcomes all denominations but prefers,twenties,Mormons,My church welcomes all denominations but prefers twenties.,<VisionEgg.WrappedText.WrappedText object at 0x111b316e0>
+202.0000,8.000,fix
+210.0000,8.000,3,69,2,nonjoke,"When an irresistible force meets an immovable object, you get two very angry",women,entities,"When an irresistible force meets an immovable object, you get two very angry entities.",<VisionEgg.WrappedText.WrappedText object at 0x111b317d0>
+218.0000,8.000,3,118,2,joke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the patrons.,<VisionEgg.WrappedText.WrappedText object at 0x111b31870>
+226.0000,2.000,fix
+228.0000,8.000,3,91,2,nonjoke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its resources.",<VisionEgg.WrappedText.WrappedText object at 0x111b31910>
+236.0000,12.000,fix
+248.0000,8.000,3,105,2,nonjoke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a guidebook.,<VisionEgg.WrappedText.WrappedText object at 0x111b31960>
+256.0000,2.000,fix
+258.0000,8.000,3,146,2,joke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called alimony.",<VisionEgg.WrappedText.WrappedText object at 0x111b319b0>
+266.0000,8.000,fix
+274.0000,8.000,3,61,2,nonjoke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a freeway.",<VisionEgg.WrappedText.WrappedText object at 0x111b31aa0>
+282.0000,20.000,fix
+302.0000,8.000,3,122,2,joke,"If you're filthy rich, sending your kids to college is a wonderful", cleaner,luxury,"If you're filthy rich, sending your kids to college is a wonderful cleaner.",<VisionEgg.WrappedText.WrappedText object at 0x111b31af0>
+310.0000,2.000,fix
+312.0000,8.000,3,126,2,joke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the laundry.,<VisionEgg.WrappedText.WrappedText object at 0x111b31b90>
+320.0000,8.000,3,150,2,joke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a textbook.,<VisionEgg.WrappedText.WrappedText object at 0x111b31c30>
+328.0000,4.000,fix
+332.0000,8.000,3,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,<VisionEgg.WrappedText.WrappedText object at 0x111b31c80>
+340.0000,2.000,fix
+342.0000,8.000,3,136,2,joke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the olive.,<VisionEgg.WrappedText.WrappedText object at 0x111b31dc0>
+350.0000,8.000,3,129,2,nonjoke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a salad.,<VisionEgg.WrappedText.WrappedText object at 0x111b31e60>
+358.0000,2.000,fix
+360.0000,8.000,3,44,2,joke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the cemetery.,<VisionEgg.WrappedText.WrappedText object at 0x111b31f00>
+368.0000,8.000,fix
+376.0000,8.000,3,40,2,joke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the cashier.,<VisionEgg.WrappedText.WrappedText object at 0x1197d7050>
+384.0000,12.000,fix
+396.0000,8.000,3,63,2,nonjoke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the country.",<VisionEgg.WrappedText.WrappedText object at 0x1197d7140>
+404.0000,20.000,fix
+424.0000,8.000,3,89,2,nonjoke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are weak.",<VisionEgg.WrappedText.WrappedText object at 0x1197d71e0>
+432.0000,8.000,3,11,2,nonjoke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a statement.",<VisionEgg.WrappedText.WrappedText object at 0x1197d7280>
+440.0000,8.000,3,154,2,joke,"This new computer works so quickly, it comes complete with",ulcers,games,"This new computer works so quickly, it comes complete with ulcers.",<VisionEgg.WrappedText.WrappedText object at 0x1197d7320>
+448.0000,2.000,fix
+450.0000,8.000,3,12,2,joke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the press.,<VisionEgg.WrappedText.WrappedText object at 0x1197d73c0>
+458.0000,4.000,fix
+462.0000,8.000,3,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",<VisionEgg.WrappedText.WrappedText object at 0x1197d7460>
+470.0000,2.000,fix
+472.0000,8.000,3,31,2,nonjoke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the problem.",<VisionEgg.WrappedText.WrappedText object at 0x1197d7500>
+480.0000,6.000,fix
+486.0000,8.000,3,37,2,nonjoke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the admission.",<VisionEgg.WrappedText.WrappedText object at 0x1197d75a0>
+494.0000,8.000,3,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",<VisionEgg.WrappedText.WrappedText object at 0x1197d76e0>
+502.0000,2.000,fix
+504.0000,8.000,3,149,2,nonjoke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the East.",<VisionEgg.WrappedText.WrappedText object at 0x1197d7780>
+512.0000,8.000,3,23,2,nonjoke,The curse of heavy drinking is that afterwards you get a huge,bar tab,headache,The curse of heavy drinking is that afterwards you get a huge headache.,<VisionEgg.WrappedText.WrappedText object at 0x1197d7820>
+520.0000,8.000,3,51,2,nonjoke,I went to a place that serves breakfast any time and ordered French toast in the,Renaissance,nighttime,I went to a place that serves breakfast any time and ordered French toast in the nighttime.,<VisionEgg.WrappedText.WrappedText object at 0x1197d7870>
+528.0000,2.000,fix
+530.0000,8.000,3,36,2,joke,A problem drinker is one who never,buys,quits,A problem drinker is one who never buys.,<VisionEgg.WrappedText.WrappedText object at 0x1197d7960>
+538.0000,4.000,fix
+542.0000,8.000,3,25,2,nonjoke,The only thing money can't buy is,poverty,generosity,The only thing money can't buy is generosity.,<VisionEgg.WrappedText.WrappedText object at 0x1197d79b0>
+550.0000,8.000,3,45,2,nonjoke,"She is so modest, she pulls down the shade to change her", mind,jacket,"She is so modest, she pulls down the shade to change her jacket.",<VisionEgg.WrappedText.WrappedText object at 0x1197d7a50>
+558.0000,2.000,fix
+560.0000,8.000,3,102,2,joke,We live in a lovely suburb; it's just two miles beyond our,income,town,We live in a lovely suburb; it's just two miles beyond our income.,<VisionEgg.WrappedText.WrappedText object at 0x1197d7af0>
+568.0000,2.000,fix
+FED_20161208a_3T2,3,74,2,joke,He's planning an extended vacation; he hopes to spend three weeks on his,couch,sailboat,He's planning an extended vacation; he hopes to spend three weeks on his couch.,2,0.7866151332855225,6.001236915588379
+FED_20161208a_3T2,3,27,2,nonjoke,"Once a week they hold a bingo game, and all the proceeds go to fight",gambling,disease,"Once a week they hold a bingo game, and all the proceeds go to fight disease.",1,0.6864049434661865,14.019935131072998
+FED_20161208a_3T2,3,152,2,joke,"Many things run in families, especially",noses,strength,"Many things run in families, especially noses.",1,1.5239942073822021,26.006053924560547
+FED_20161208a_3T2,3,72,2,joke,The first two hundred story building opened in Chicago; it was a ,library,hotel,The first two hundred story building opened in Chicago; it was a library.,1,1.2221319675445557,38.0091769695282
+FED_20161208a_3T2,3,107,2,nonjoke,The difference between a good speaker and a bad one is often a nice,nap,diction,The difference between a good speaker and a bad one is often a nice diction.,1,0.7701389789581299,46.01121711730957
+FED_20161208a_3T2,3,90,2,joke,A vacation is the shortest distance between two,paychecks,locations,A vacation is the shortest distance between two paychecks.,2,0.9711370468139648,56.00515294075012
+FED_20161208a_3T2,3,94,2,joke,"To get something done, a committee should consist of no more than three people, two of whom are",dead,workers,"To get something done, a committee should consist of no more than three people, two of whom are dead.",2,0.5521140098571777,68.00862503051758
+FED_20161208a_3T2,3,24,2,joke,"Where I'm from, the two most common elements are hydrogen and ",stupidity,nitrogen,"Where I'm from, the two most common elements are hydrogen and stupidity.",1,0.719886064529419,76.01026892662048
+FED_20161208a_3T2,3,77,2,nonjoke,He is at the age when all the numbers in his little black book belong to,doctors,friends,He is at the age when all the numbers in his little black book belong to friends.,2,1.556926965713501,84.01224994659424
+FED_20161208a_3T2,3,9,2,nonjoke,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a ",dress,name,"I asked the woman at the party if she remembered me from last year, and she said she never forgets a name.",1,0.7364439964294434,94.0064070224762
+FED_20161208a_3T2,3,42,2,joke,The best way to keep the milk from turning sour is to keep it in the,cow,cold,The best way to keep the milk from turning sour is to keep it in the cow.,2,0.6529941558837891,102.00831294059753
+FED_20161208a_3T2,3,43,2,nonjoke,"I asked him if he started out as an editor, and he said that years ago he used to be a ",boy,journalist,"I asked him if he started out as an editor, and he said that years ago he used to be a journalist.",1,0.9709508419036865,112.0023341178894
+FED_20161208a_3T2,3,155,2,nonjoke,The show had one act that was really offbeat: the,singer,clowns,The show had one act that was really offbeat: the clowns.,2,1.3226158618927002,120.02114009857178
+FED_20161208a_3T2,3,80,2,joke,He says he doesn't like to drink because it makes him feel,happy,sad,He says he doesn't like to drink because it makes him feel happy.,2,1.54036283493042,128.00646710395813
+FED_20161208a_3T2,3,75,2,nonjoke,"When reviewing your notes for a test, the most important ones will be",illegible,capitalized,"When reviewing your notes for a test, the most important ones will be capitalized.",1,1.4062459468841553,136.00848197937012
+FED_20161208a_3T2,3,54,2,joke,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little,finding,sightseeing,The tourist bureau told the visitors there was plenty of hunting in this part of the country but very little finding.,2,0.8704860210418701,144.01051211357117
+FED_20161208a_3T2,3,46,2,joke,Arguments between couples are healthy; sometimes they even prevent,marriage,breakups,Arguments between couples are healthy; sometimes they even prevent marriage.,3,1.4559369087219238,154.0049901008606
+FED_20161208a_3T2,3,26,2,joke,"To clothe one soldier, it takes the wool from two sheep and the hides from three",taxpayers,animals,"To clothe one soldier, it takes the wool from two sheep and the hides from three taxpayers.",3,1.3387680053710938,168.00012612342834
+FED_20161208a_3T2,3,16,2,joke,Many a man's idea of a vacation is to rest quietly in the shade of a ,blonde,palm,Many a man's idea of a vacation is to rest quietly in the shade of a blonde.,1,0.6193108558654785,176.00173711776733
+FED_20161208a_3T2,3,33,2,nonjoke,Some people think courtship is the first in a series of steps leading to ,divorce,romance,Some people think courtship is the first in a series of steps leading to romance.,1,0.7530779838562012,184.00367999076843
+FED_20161208a_3T2,3,139,2,nonjoke,They redecorated the bar with new,drunks,wood,They redecorated the bar with new wood.,2,1.925225019454956,192.02236199378967
+FED_20161208a_3T2,3,134,2,joke,My church welcomes all denominations but prefers,twenties,Mormons,My church welcomes all denominations but prefers twenties.,2,0.5858471393585205,200.00763392448425
+FED_20161208a_3T2,3,69,2,nonjoke,"When an irresistible force meets an immovable object, you get two very angry",women,entities,"When an irresistible force meets an immovable object, you get two very angry entities.",1,1.1383159160614014,216.0116491317749
+FED_20161208a_3T2,3,118,2,joke,Cocktails lounges are usually half lit to match the,patrons,setting,Cocktails lounges are usually half lit to match the patrons.,2,0.7198610305786133,224.01353406906128
+FED_20161208a_3T2,3,91,2,nonjoke,"If there's one thing that counts in business, its",bookkeepers,resources,"If there's one thing that counts in business, its resources.",1,1.171724796295166,234.00767612457275
+FED_20161208a_3T2,3,105,2,nonjoke,The book that tells you where you can go on vacation is called a,checkbook,guidebook,The book that tells you where you can go on vacation is called a guidebook.,1,0.9375371932983398,254.01268792152405
+FED_20161208a_3T2,3,146,2,joke,"Love has its benefits, and they are usually called",alimony,memories,"Love has its benefits, and they are usually called alimony.",2,0.7868640422821045,264.02351999282837
+FED_20161208a_3T2,3,61,2,nonjoke,"For great vacation, put the kids in the back seat, and take a ",cruise,freeway,"For great vacation, put the kids in the back seat, and take a freeway.",2,1.423022985458374,280.01078510284424
+FED_20161208a_3T2,3,122,2,joke,"If you're filthy rich, sending your kids to college is a wonderful", cleaner,luxury,"If you're filthy rich, sending your kids to college is a wonderful cleaner.",2,1.0212202072143555,308.0009799003601
+FED_20161208a_3T2,3,126,2,joke,My husband took the money we were saving to buy a new car and blew it all at the,laundry,tables,My husband took the money we were saving to buy a new car and blew it all at the laundry.,3,1.3056409358978271,318.0118980407715
+FED_20161208a_3T2,3,150,2,joke,One way to keep pornography away from teenagers is to put it in a,textbook,cabinet,One way to keep pornography away from teenagers is to put it in a textbook.,2,0.5355820655822754,326.01389598846436
+FED_20161208a_3T2,3,123,2,nonjoke,Too many girls believe that the chief foundation for true love is a large,stone,fortune,Too many girls believe that the chief foundation for true love is a large fortune.,1,0.5357298851013184,338.0001120567322
+FED_20161208a_3T2,3,136,2,joke,The only fishing through the ice that some men ever do is for the ,olive,trout,The only fishing through the ice that some men ever do is for the olive.,2,0.9541070461273193,348.0109930038452
+FED_20161208a_3T2,3,129,2,nonjoke,The perfect companion to a vegetarian dinner is a ,steak,salad,The perfect companion to a vegetarian dinner is a salad.,1,1.138037919998169,356.01332211494446
+FED_20161208a_3T2,3,44,2,joke,The only place where you can find people who spend all their time minding their own business is the ,cemetery,bank,The only place where you can find people who spend all their time minding their own business is the cemetery.,1,0.5363619327545166,366.00697207450867
+FED_20161208a_3T2,3,40,2,joke,No patient should leave the hospital until he's strong enough to face the,cashier,outside,No patient should leave the hospital until he's strong enough to face the cashier.,3,0.9373400211334229,382.0110590457916
+FED_20161208a_3T2,3,63,2,nonjoke,"It's hard to raise a family nowadays, especially in the ",morning,country,"It's hard to raise a family nowadays, especially in the country.",1,0.6864578723907471,402.01596307754517
+FED_20161208a_3T2,3,89,2,nonjoke,"Some babies are born to rule, while others are",male,weak,"Some babies are born to rule, while others are weak.",1,1.1718628406524658,430.00623512268066
+FED_20161208a_3T2,3,11,2,nonjoke,"He owns stock in a company that pays quarterly dividends, so every three months they send him a",quarter,statement,"He owns stock in a company that pays quarterly dividends, so every three months they send him a statement.",1,1.623548984527588,438.0082950592041
+FED_20161208a_3T2,3,154,2,joke,"This new computer works so quickly, it comes complete with",ulcers,games,"This new computer works so quickly, it comes complete with ulcers.",1,1.3727738857269287,446.0102391242981
+FED_20161208a_3T2,3,12,2,joke,In some marriages the bride is given away by the ,press,family ,In some marriages the bride is given away by the press.,2,1.840972900390625,456.0048370361328
+FED_20161208a_3T2,3,130,2,joke,"This house comes with lots of extras, mostly",termites,upgrades,"This house comes with lots of extras, mostly termites.",2,0.4018588066101074,468.00729513168335
+FED_20161208a_3T2,3,31,2,nonjoke,"He told her he wasn't himself, and she said she'd noticed the",improvement,problem,"He told her he wasn't himself, and she said she'd noticed the problem.",1,1.1048879623413086,478.00142312049866
+FED_20161208a_3T2,3,37,2,nonjoke,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the",bathtub,admission,"The cops claimed that the prisoner just decided to come clean, but most people think he was forced into the admission.",1,1.0720438957214355,492.01332807540894
+FED_20161208a_3T2,3,21,2,nonjoke,"She told him he looked like a million, and she meant every",century,syllable,"She told him he looked like a million, and she meant every syllable.",2,1.1044330596923828,500.0156099796295
+FED_20161208a_3T2,3,149,2,nonjoke,"She asked what state he was born in, and he said in the ",nude,East,"She asked what state he was born in, and he said in the East.",2,1.3057639598846436,510.0093879699707
