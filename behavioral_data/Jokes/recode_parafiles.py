@@ -6,7 +6,7 @@ import pandas as pd
 df = pd.read_csv('/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/participant_summary.csv')
 
 print df.column
-print df.loc['KlineID']
+print df.loc['KlineID'] #this doesn't work yet
 
 
 # Open files
