@@ -70,9 +70,7 @@ for participant in df_psum['Full_SessionID']:
 
     try:
         beh_code = this_row['Jokes_behavioral_code'].tolist()[0]
-    except IndexError:
-            print 'empty line'
-            print len(this_row)
+    except IndexError: #found empty line
             continue
     # (that's all we need from the participant summary df anymore!)
 
@@ -106,6 +104,8 @@ for participant in df_psum['Full_SessionID']:
         print participant + ' files merged well'
     else:
         print participant
+        print nRuns
+        print len(this_full_runddata)
         print 'check data files!'
         continue
 
@@ -134,16 +134,6 @@ for participant in df_psum['Full_SessionID']:
         this_full_runddata['run'])  & (
         this_full_runddata['run'] ==
         this_full_runddata['Run number'])
-
-    #print this_full_runddata[['listcheck', 'list_x']].to_string() #these are the 'empirical' ones recorded in the thing
-    #print this_full_runddata[['runcheck', 'runno']].to_string()
-
-    # Fascinating hypothesis! Maybe the script used the same materials once the subj code existed? the list no is always matching whatever was for run 1
-    # Let's check whether there are doubles on the run numbers!
-
-
-    print len(this_full_runddata['item'])
-    print len(this_full_runddata['item'].unique())
 
 
 
