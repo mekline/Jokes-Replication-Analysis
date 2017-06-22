@@ -17,17 +17,6 @@ df_psum = pd.read_csv('/Users/mekline/Dropbox/_Projects/Jokes \
 
 df_param = pd.read_csv('parameter unfolding.csv')
 
-mat_names = glob.glob('*_materials.csv')
-
-mat_df_list = []
-for fi in mat_names:
-    frame = pd.read_csv(fi, header=None)
-    frame['filename'] = fi
-    mat_df_list.append(frame)
-
-df_allmats = pd.concat(mat_df_list)
-
-
 run_names = glob.glob('*_data.csv')
 run_df_list = []
 for fi in run_names:
@@ -72,28 +61,25 @@ for participant in df_psum['Full_SessionID']:
         beh_code = this_row['Jokes_behavioral_code'].tolist()[0]
     except IndexError: #found empty line
             continue
-    # (that's all we need from the participant summary df anymore!)
 
     this_run_params = df_param[df_param['ID'] == participant]
     # should give 1 row per existing run from the datasheets
 
-    expected_mats = beh_code + '_materials.csv'
-    this_materials = df_allmats[df_allmats['filename'] == expected_mats]
-    this_materials['ID'] = participant
-    # (we are just looking at the materials files to understand structure, will use 'empirical' timings/items for para files)
-
     this_rundata = df_rundata[df_rundata['filename'].str.contains(beh_code)]
     this_rundata['ID'] = participant
     nRuns = len(this_rundata['filename'].unique())
+    # should give set of runs with that code
 
     # Some column renaming etc. to facilitate merge!
     this_run_params = this_run_params.drop(['Session ID', 'Unnamed: 7'], axis=1)
-    this_materials = this_materials.drop(this_materials.columns[[4, 5, 6]], axis=1)
-    this_materials.columns = ['mysteryno', 'item', 'list-maybe', 'category', 'displayed','filename', 'ID']
     this_rundata = this_rundata.drop(['subj', 'sentence', 'joke ending', 'nonjoke ending'], axis=1)
 
     this_full_runddata = pd.merge(this_rundata, this_run_params, on = ['ID', 'run'], how='outer')
     
+    #drop NA lines (using the sentence-displayed field, not response or anything else!)
+    this_full_runddata['displayed'] = this_full_runddata['displayed'].astype(str)
+    this_full_runddata = this_full_runddata[this_full_runddata['displayed'] != 'nan']
+
     # Time to check the structure of the runndata for goodness and then make some para files
     # For NOW (until extra runs have been ID'd and placed in 'extra runs/ folder')
     # we just skip & note any subject who we don't manage to find well-formed data for
@@ -105,7 +91,9 @@ for participant in df_psum['Full_SessionID']:
     else:
         print participant
         print nRuns
+        print this_rundata['filename'].unique()
         print len(this_full_runddata)
+        # print this_full_runddata.head(1000)
         print 'check data files!'
         continue
 
@@ -113,9 +101,7 @@ for participant in df_psum['Full_SessionID']:
     # have appeared as we expect (many columns were not labeled & meaning
     # inferred from sample files!) (we can drop this later)
 
-    this_full_runddata['displayed'] = this_full_runddata['displayed'].astype(str)
-    this_full_runddata = this_full_runddata[this_full_runddata['displayed'] != 'nan']
-    #drop empty lines
+    
 
     this_full_runddata['listno'] = this_full_runddata['listno'].astype(float)
     this_full_runddata['list_x'] = this_full_runddata['list_x'].astype(float)
