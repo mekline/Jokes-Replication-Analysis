@@ -1,0 +1,24 @@
+why files are in here
+
+
+FED_20161227a_3T2_run2-x2_data.csv - Accidentally played these same materials to participant a second time!
+FED_20170412a_3T2_run1_data.csv - Only a few trials recorded, script crashed after start
+FED_20170412a_3T2_run2_data.csv - blank file, script didn't start correctly
+FED_2017021017c_3T2_run3_data.csv - behavioral data that doesn't correspond to any fmri run (last scan of the day) - we were demonstrating the materials outside the scanner and didn't use another subj number
+FED20161215c_3T2_run2_data.csv - crashed after just a few trials
+
+
+Dummy data/practicing the script
+
+FED_2042_run1_data.csv
+FED_2042_run1-x2_data.csv
+FED_2042_run1-x3_data.csv
+FED_2043_materials.csv
+FED_2043_run1_data.csv
+FED_2043_run1-x2_data.csv
+FED_2043_run1-x3_data.csv
+FED_2043_run1-x4_data.csv
+FED_2043_run1-x5_data.csv
+fooooo_materials.csv
+fooooo_run1_data.csv
+fooooo_run1-x2_data.csv
