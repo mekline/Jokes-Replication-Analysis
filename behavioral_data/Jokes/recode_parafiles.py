@@ -13,8 +13,7 @@ import glob
 import pandas as pd
 import numpy as np
 
-df_psum = pd.read_csv('/Users/mekline/Dropbox/_Projects/Jokes \
-- fMRI/Jokes-Replication-Analysis/participant_summary.csv')
+df_psum = pd.read_csv('/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/participant_summary.csv')
 
 df_param = pd.read_csv('parameter unfolding.csv')
 
@@ -27,9 +26,7 @@ for fi in run_names:
 
 df_allruns = pd.concat(run_df_list)
 
-print len(df_allruns.columns)
-
-#NOTE: the run_data.csv files are are in a weird format, and
+#NOTE: the XXX_run_data.csv files are are in a weird format, and
 #need to be re-constituted to be more normal. Do that here. 
 
 df_responses = df_allruns[df_allruns['category'].isin(['joke', 'nonjoke'])]
@@ -65,7 +62,8 @@ for participant in df_psum['Full_SessionID']:
         beh_code = this_row['Jokes_behavioral_code'].tolist()[0]
     except IndexError: #found empty line
             continue
-    run_nos_for_para = this_row['Jokes run no'].tolist()[0]
+
+    run_index_for_para = this_row['Jokes run no'].tolist()[0]
 
     this_run_params = df_param[df_param['ID'] == participant]
     # should give 1 row per existing run from the datasheets
@@ -88,17 +86,15 @@ for participant in df_psum['Full_SessionID']:
     # Time to check the structure of the runndata for goodness and then make some para files
     # (We retain the 1st 2 subjects, who saw the whole run minus just a few final trial thanks to early ending script)
     
+    print ''
     if (len(this_full_runddata) == 156) & (nRuns == 3):
-        print participant + ' files merged well'
+        print participant + 'files merged well'
     elif (len(this_full_runddata) == 104) & (nRuns == 2):
-        print participant + ' files merged well'
+        print participant + 'files merged well'
     else:
-        print participant
+        print participant + 'check data files'
         print nRuns
-        print this_rundata['filename'].unique()
         print len(this_full_runddata)
-        # print this_full_runddata.head(1000)
-        print 'check data files!'
 
     # Conduct some basic checks to make sure that merge and datafiles 
     # have appeared as we expect (many columns were not labeled & meaning
@@ -107,6 +103,9 @@ for participant in df_psum['Full_SessionID']:
     # and fixed thereafter. So, list_x (from this_runddata) is correct, while 
     # list_y is sometimes inaacurate bc the parameter entered doesn't match what
     # the script actually gives you. 
+
+    print beh_code
+
 
 
     this_full_runddata['listno'] = this_full_runddata['listno'].astype(float)
@@ -138,12 +137,16 @@ for participant in df_psum['Full_SessionID']:
     para_filenames_for_cat_custom = []
 
     #Make each para file
+    print this_full_runddata['run'].unique()
+
     for i in this_full_runddata['run'].unique():
 
     	#Filenames
     	thispara = 'nonlit_joke_' + participant + '_run' + str(int(i)) + '.para'
     	para_filenames_for_cat.append('nonlit_joke_individual_paras/' + thispara)
         thispara_out = 'Para_indiv_jnj/'+thispara
+
+        print thispara
         
         thispara_custom = 'nonlit_joke_' + participant + '_run' + str(int(i)) + '_customratings.para'
         para_filenames_for_cat_custom.append('nonlit_joke_individual_paras_custom/' + thispara_custom)
@@ -154,17 +157,16 @@ for participant in df_psum['Full_SessionID']:
         this_run_onsets['tr'] = this_run_onsets['onset'].astype(float) / 2
         this_run_onsets['catno'] = np.where(this_run_onsets['category']=='joke', '1', '2')
 
-        #recode ratings! Note, if they don't give a response, we'll be skipping that line for custom paras
-        this_run_onsets['response'] = this_run_onsets['response'].fillna(500)
-        this_run_onsets.loc[(this_run_onsets['response'].astype(int) == 1, 'rating')] = '2'
-        this_run_onsets.loc[(this_run_onsets['response'].astype(int) == 2, 'rating')] = '3'
-        this_run_onsets.loc[(this_run_onsets['response'].astype(int) == 3, 'rating')] = '4'
-        this_run_onsets.loc[(this_run_onsets['response'].astype(int) == 4, 'rating')] = '4'
-        this_run_onsets.loc[(this_run_onsets['response'].astype(int) == 500, 'rating')] = '1'
+        #recode ratings! Note, if they don't give a response, we code as 1/other
 
+        this_run_onsets['rating'] = np.where(this_run_onsets['response'].isnull(), '1','0')
+        this_run_onsets.loc[(this_run_onsets['response'] == 1.0, 'rating')] = '2'
+        this_run_onsets.loc[(this_run_onsets['response'] == 2.0, 'rating')] = '3'
+        this_run_onsets.loc[(this_run_onsets['response'] == 3.0, 'rating')] = '4'
+        this_run_onsets.loc[(this_run_onsets['response'] == 4.0, 'rating')] = '4'
         
 
-
+        
         onsetstrings_jnj = []
         onsetstrings_custom = []
         for index, line in this_run_onsets.iterrows():
@@ -184,11 +186,11 @@ for participant in df_psum['Full_SessionID']:
        		text_file.write(parastring_custom)
        	
     #After making each para file, make the cat file
-    catstring = '#runs ' + run_nos_for_para + '\n#path /mindhive/evlab/u/Shared/PARAS/\n#files\n' + '\n'.join(para_filenames_for_cat)
+    catstring = '#runs ' + run_index_for_para + '\n#path /mindhive/evlab/u/Shared/PARAS/\n#files\n' + '\n'.join(para_filenames_for_cat)
     with open(cat_file_name, "w") as text_file:
     	text_file.write(catstring)
 
-   	catstring_custom = '#runs ' + run_nos_for_para + '\n#path /mindhive/evlab/u/Shared/PARAS/\n#files\n' + '\n'.join(para_filenames_for_cat_custom)
+   	catstring_custom = '#runs ' + run_index_for_para + '\n#path /mindhive/evlab/u/Shared/PARAS/\n#files\n' + '\n'.join(para_filenames_for_cat_custom)
     with open(cat_file_name_custom, "w") as text_file:
     	text_file.write(catstring_custom)
     	
@@ -197,23 +199,4 @@ for participant in df_psum['Full_SessionID']:
 alldata = pd.concat(df_runs_per_participant)
 alldata = alldata[['ID', 'filename', 'listno', 'runno', 'onset', 'length', 'item',  'category', 'displayed', 'response', 'RT', 'question onset',  'para', 'counter', 'listcheck', 'runcheck']]
 alldata.to_csv('all_behavioral_output.csv', index = False, na_rep='NA')
-
-
-
-
-        
-
-# Try to match up people with datafiles
-# - Get the name of the behav file from participant summary, and check that it has the right # of runs
-# - If not, stop and say what's up; this is MK's chance to move extraneous csvs to Unused_files
-
-# Try to match up files with recorded parameters
-# Do this by saving a dict of the timing of the first 5 trials, which is enough to 
-# diagnose optseq/counterbalancing, which is the most important thing for doing analysses right
-
-# Assuming everything above looks copacetic, make new parafiles. Do as follows:
-# For each (good) csv, just read the lines and timings, assigning conditions as we go. Keep a running
-# buffer of item number, and check each one against it. If found, print the item number and break (at first, to 
-# double check what's going on) or assign it the OTHER condition. Remeber that fixation is modeled implicitly!
-
 
