@@ -158,14 +158,11 @@ for participant in df_psum['Full_SessionID']:
         this_run_onsets['catno'] = np.where(this_run_onsets['category']=='joke', '1', '2')
 
         #recode ratings! Note, if they don't give a response, we code as 1/other
+        this_run_onsets['response'] = np.where(this_run_onsets['response'].isnull(), 0,this_run_onsets['response'])
 
-        this_run_onsets['rating'] = np.where(this_run_onsets['response'].isnull(), '1','0')
-        this_run_onsets.loc[(this_run_onsets['response'] == 1.0, 'rating')] = '2'
-        this_run_onsets.loc[(this_run_onsets['response'] == 2.0, 'rating')] = '3'
-        this_run_onsets.loc[(this_run_onsets['response'] == 3.0, 'rating')] = '4'
-        this_run_onsets.loc[(this_run_onsets['response'] == 4.0, 'rating')] = '4'
-        
+        this_run_onsets['rating_levels'] = this_run_onsets['response'].astype(int) + 1
 
+        this_run_onsets['rating_levels'] = np.where((this_run_onsets['rating_levels'] == 5), 4, this_run_onsets['rating_levels'])
         
         onsetstrings_jnj = []
         onsetstrings_custom = []
@@ -174,7 +171,7 @@ for participant in df_psum['Full_SessionID']:
         	mystr = str(int(line['tr'])) + ' ' + str(line['catno'])
         	onsetstrings_jnj.append(mystr)
 
-        	mystr_custom = str(int(line['tr'])) + ' ' + str(line['rating'])
+        	mystr_custom = str(int(line['tr'])) + ' ' + str(line['rating_levels'])
         	onsetstrings_custom.append(mystr_custom)
 
        	parastring = '#onsets\n' + '\n'.join(onsetstrings_jnj) + '\n\n#names\njoke lit\n\n#durations\n4 4'
