@@ -1,3 +1,6 @@
+
+
+
 %Before running you should make sure that you are using the correct version of the
 %SPM toolbox if it is something other than the standard. I've moved all the common parameters we 
 %usually set up to the top of the script; anything else you want you can
@@ -23,21 +26,21 @@
 %SET ALL FILEPATHS AND EXP INFO HERE 
 DataFolder = '/mindhive/evlab/u/Shared/SUBJECTS/'; % path to the data directory
 MyOutputPath = '/mindhive/evlab/u/mekline/Documents/Projects/Jokes_Study2/Jokes_Replication_Repo/meansignal_outputs/'; %Where should the results wind up? For testing this script, this is all u need to change and it should just work! Note: usually the scripts are good about this but this one actually does break if you put a slash at the end of your dir name.
-MyOutputFolder = [MyOutputPath 'LangfROIs_resp_Jokes_Top50Voxels_20170703']; %Change to match this analysis!!
+MyOutputFolder = [MyOutputPath 'MDfROIs_resp_MD_20170703']; %Change to match this analysis!!
 
 
 
-firstlevel_loc = 'firstlevel_langlocSN'; % path to the first-level analysis directory for the lang localizer or whatever
-firstlevel_crit = 'firstlevel_Jokes'; %path to 1st-level analysis directory for the critical task
+firstlevel_loc = 'firstlevel_spatialFIN'; % path to the first-level analysis directory for the lang localizer or whatever
+firstlevel_crit = 'firstlevel_spatialFIN'; %path to 1st-level analysis directory for the critical task
 
 
-loc_cons = {{'S-N'}}; %Which contrast used to localize issROIs?
-crit_cons = {{'joke','lit','joke-lit'}}; %Effect of interest contrasts: cons of the crit. experiment do we want to measure there? It could be the same as the loc! In that case SPM will make ur data independent for you :)
+loc_cons = {{'H-E'}}; %Which contrast used to localize issROIs?
+crit_cons = {{'H','E','H-E'}}; %Effect of interest contrasts: cons of the crit. experiment do we want to measure there? It could be the same as the loc! In that case SPM will make ur data independent for you :)
 
-what_parcels = '/users/evelina9/fMRI_PROJECTS/ROIS/LangParcels_n220_LH.img'; %specify the full path to the *img or *nii file that will constrain the search for top voxels
+what_parcels = '/users/evelina9/fMRI_PROJECTS/ROIS/MDfROIs.img'; %specify the full path to the *img or *nii file that will constrain the search for top voxels
 
-thresh_type = 'Nvoxels-ROI-level'; %percentile-ROI-level or Nvoxels-ROI-level
-thresh_p = 50; %Fun fact! In percentile mode, p=proportion (.1=%10), In top-n mode p = n voxels (eg 50)
+thresh_type = 'percentile-ROI-level'; %percentile-ROI-level or Nvoxels-ROI-level
+thresh_p = .1; %Fun fact! In percentile mode, p=proportion (.1=%10), In top-n mode p = n voxels (eg 50)
 
 %Make sure participants are in the same order for loc and crit!!!!!!
 loc_sessions = {{'168_KAN_evDB_20141020b',....
@@ -100,8 +103,8 @@ ss=struct(...
 
 %%%
 %mk addition! Add the version of spm that you intend to use right here, possibly
-%addpath('/users/evelina9/fMRI_PROJECTS/spm_ss_vE/') %The usual one
-addpath('users/evelina9/fMRI_PROJECTS/spm_ss_Jun18-2015/') %This one has the N-top-voxels options (?)
+addpath('/users/evelina9/fMRI_PROJECTS/spm_ss_vE/') %The usual one
+%addpath('users/evelina9/fMRI_PROJECTS/spm_ss_Jun18-2015/') %This one has the N-top-voxels options (?)
 
 %%%
 %...and now SPM actually runs!
@@ -117,6 +120,7 @@ ss=spm_ss_estimate(ss);
 % '/users/evelina9/fMRI_PROJECTS/ROIS/MDfROIs.img' - the standard MD parcels, use contrast {{'H-E'}}
 % '/users/evelina9/fMRI_PROJECTS/ROIS/ToMparcels_Mar2015.img'; - the 'new'
 % ToM parcels, uses bel-pho
+
 
 
 
