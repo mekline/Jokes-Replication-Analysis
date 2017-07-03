@@ -29,7 +29,7 @@ MyOutputFolder = [MyOutputPath 'ToMfROIS_resp_JokesCustom_Top50Voxels_20170703']
 
 
 firstlevel_loc = 'firstlevel_ToMshort'; % path to the first-level analysis directory for the lang localizer or whatever
-firstlevel_crit = 'firstlevel_JokesCustom'; %path to 1st-level analysis directory for the critical task
+firstlevel_crit = 'firstlevel_Jokes_Custom'; %path to 1st-level analysis directory for the critical task
 
 
 loc_cons = {{'bel-pho'}}; %Which contrast used to localize issROIs?
@@ -140,7 +140,7 @@ ss=struct(...
 %%%
 %mk addition! Add the version of spm that you intend to use right here, possibly
 %addpath('/users/evelina9/fMRI_PROJECTS/spm_ss_vE/') %The usual one
-addpath('users/evelina9/fMRI_PROJECTS/spm_ss_Jun18-2015/') %This one has the N-top-voxels options (?)
+addpath('/users/evelina9/fMRI_PROJECTS/spm_ss_Feb1-2016/') %This one has the N-top-voxels options (?)
 
 %%%
 %...and now SPM actually runs!

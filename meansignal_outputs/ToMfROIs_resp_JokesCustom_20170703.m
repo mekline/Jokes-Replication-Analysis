@@ -29,7 +29,7 @@ MyOutputFolder = [MyOutputPath 'ToMfROIS_resp_JokesCustom_20170703']; %Change to
 
 
 firstlevel_loc = 'firstlevel_ToMshort'; % path to the first-level analysis directory for the lang localizer or whatever
-firstlevel_crit = 'firstlevel_JokesCustom'; %path to 1st-level analysis directory for the critical task
+firstlevel_crit = 'firstlevel_Jokes_Custom'; %path to 1st-level analysis directory for the critical task
 
 
 loc_cons = {{'bel-pho'}}; %Which contrast used to localize issROIs?

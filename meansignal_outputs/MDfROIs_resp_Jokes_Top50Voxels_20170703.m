@@ -144,7 +144,7 @@ ss=struct(...
 %%%
 %mk addition! Add the version of spm that you intend to use right here, possibly
 %addpath('/users/evelina9/fMRI_PROJECTS/spm_ss_vE/') %The usual one
-addpath('users/evelina9/fMRI_PROJECTS/spm_ss_Jun18-2015/') %This one has the N-top-voxels options (?)
+addpath('/users/evelina9/fMRI_PROJECTS/spm_ss_Feb1-2016/')  %This one has the N-top-voxels options (?)
 
 %%%
 %...and now SPM actually runs!
