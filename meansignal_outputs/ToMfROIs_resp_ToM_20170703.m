@@ -26,6 +26,18 @@ DataFolder = '/mindhive/evlab/u/Shared/SUBJECTS/'; % path to the data directory
 MyOutputPath = '/mindhive/evlab/u/mekline/Documents/Projects/Jokes_Study2/Jokes_Replication_Repo/meansignal_outputs/'; %Where should the results wind up? For testing this script, this is all u need to change and it should just work! Note: usually the scripts are good about this but this one actually does break if you put a slash at the end of your dir name.
 MyOutputFolder = [MyOutputPath 'ToMfROIS_resp_ToM_preliminary_20170612']; %Change to match this analysis!!
 
+firstlevel_loc = 'firstlevel_ToMshort'; % path to the first-level analysis directory for the lang localizer or whatever
+firstlevel_crit = 'firstlevel_ToMshort'; %path to 1st-level analysis directory for the critical task
+
+
+loc_cons = {{'bel-pho'}}; %Which contrast used to localize issROIs?
+crit_cons = {{'bel','pho','bel-pho'}}; %Effect of interest contrasts: cons of the crit. experiment do we want to measure there? It could be the same as the loc! In that case SPM will make ur data independent for you :)
+
+what_parcels = '/users/evelina9/fMRI_PROJECTS/ROIS/ToMparcels_Mar2015.img'; %specify the full path to the *img or *nii file that will constrain the search for top voxels
+
+thresh_type = 'percentile-ROI-level'; %percentile-ROI-level or Nvoxels-ROI-level
+thresh_p = .1; %Fun fact! In percentile mode, p=proportion (.1=%10), In top-n mode p = n voxels (eg 50)
+
 %Make sure participants are in the same order for loc and crit!!!!!!
 loc_sessions = {{'168_KAN_evDB_20141020b',....
 '288_FED_20160411a_3T1',...
@@ -72,17 +84,6 @@ crit_sessions = {{'168_KAN_evDB_20141020b',....
 
 
 
-firstlevel_loc = 'firstlevel_ToMshort'; % path to the first-level analysis directory for the lang localizer or whatever
-firstlevel_crit = 'firstlevel_ToMshort'; %path to 1st-level analysis directory for the critical task
-
-
-loc_cons = {{'bel-pho'}}; %Which contrast used to localize issROIs?
-crit_cons = {{'bel','pho','bel-pho'}}; %Effect of interest contrasts: cons of the crit. experiment do we want to measure there? It could be the same as the loc! In that case SPM will make ur data independent for you :)
-
-what_parcels = '/users/evelina9/fMRI_PROJECTS/ROIS/ToMparcels_Mar2015.img'; %specify the full path to the *img or *nii file that will constrain the search for top voxels
-
-thresh_type = 'percentile-ROI-level'; %percentile-ROI-level or Nvoxels-ROI-level
-thresh_p = .1; %Fun fact! In percentile mode, p=proportion (.1=%10), In top-n mode p = n voxels (eg 50)
 
 %%%
 %STANDARD TOOLBOX SPECS BELOW
