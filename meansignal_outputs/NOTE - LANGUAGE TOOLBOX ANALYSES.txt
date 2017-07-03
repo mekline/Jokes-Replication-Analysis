@@ -1,0 +1,5 @@
+# NOTE ON LANGUAGE TOOLBOX ANALYSES!!!
+
+In subject 426's language session (426_FED_20160908d_3T1) there are two versions of the firstlevel calcs for langlocSN, one using the old pipeline (us) and one hte new (other exp.)  For the toolbox scripts to work, you have to move all firstlevel_langlocSN_old/ into firstlevel_langlocSN/   (ditto model/)
+
+Be nice & move back afterwards!!!
