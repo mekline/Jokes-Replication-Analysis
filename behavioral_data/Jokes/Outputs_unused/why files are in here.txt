@@ -1,6 +1,6 @@
 why files are in here
 
-
+FED_20161205a_run1 - scan stopped too soon!
 FED_20161227a_3T2_run2-x2_data.csv - Accidentally played these same materials to participant a second time!
 FED_20170412a_3T2_run1_data.csv - Only a few trials recorded, script crashed after start
 FED_20170412a_3T2_run2_data.csv - blank file, script didn't start correctly
