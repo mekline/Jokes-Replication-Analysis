@@ -72,50 +72,40 @@ reportTests <- function(ts, ps){
 ###
 #RESP LOCALIZER
 allTests %>%
-  filter(Group == 'LHLang-toLang', contrastName == 'sent-non') %>%
+  filter(Group == 'LHLang', task == 'Lang', contrastName == 'S-N') %>%
   summarise(n(), sum(sig), reportTests(t,p)) #Convention: when all significant, report the largest p
 
-#allTests %>%
-#  filter(Group == 'RHLang-toLang', contrastName == 'sent-non') %>%
-#  summarise(n(), sum(sig), reportTests(t,p)) #found a surprise nonsig!
 allTests %>%
-  filter(Group == 'RHLang-toLang', contrastName == 'sent-non', sig) %>%
+  filter(Group == 'RHLang', task == 'Lang', contrastName == 'S-N') %>%
+  summarise(n(), sum(sig), reportTests(t,p)) #Orig found a surprise nonsig, but not in the replication
+
+allTests %>%
+  filter(Group == 'MDLeft', task == 'MD', contrastName == 'H-E') %>%
+  summarise(n(), sum(sig), reportTests(t,p)) #Orig found a surprise nonsig, but not in the replication
+
+allTests %>%
+  filter(Group == 'MDRight', task == 'MD', contrastName == 'H-E') %>%
+  summarise(n(), sum(sig), reportTests(t,p)) #Orig found a surprise nonsig, but not in the replication
+
+#(Note, in the orig we evaluated MD localizer with non-sent, but now we have participants with 2 localizer sessions!)
+
+allTests %>%
+  filter(Group == 'ToM', task == 'ToM', contrastName == 'bel-pho') %>%
   summarise(n(), sum(sig), reportTests(t,p)) 
-filter(allTests, Group == 'RHLang-toLang', contrastName == 'sent-non', !sig)
-
-###MD localizer check
-allTests %>%
-  #filter(Group == 'MDRight-toLang', contrastName == 'non-sent') %>%
-  #summarise(n(), sum(sig), reportTests(t,p))
-  filter(Group == 'MDRight-toLang', contrastName == 'non-sent', sig) %>%
-  summarise(n(), sum(sig), reportTests(t,p)) 
-filter(allTests, Group == 'MDRight-toLang', contrastName == 'non-sent', !sig)
-
-allTests %>%
-  filter(Group == 'MDLeft-toLang', contrastName == 'non-sent', sig) %>%
-  summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'MDLeft-toLang', contrastName == 'non-sent', !sig)
-
-
-allTests %>%
-  filter(Group == 'ToM-toToM', contrastName == 'bel-pho', sig) %>%
-  summarise(n(), sum(sig), reportTests(t,p)) 
-filter(allTests, Group == 'ToM-toToM', contrastName == 'bel-pho', !sig)
-
 
 ###
 #RESP JOKES
 
 ### RHLang
-#Jokes and Nonjokes both activate, but no differences.
+#Jokes and Nonjokes both activate, and this time differences! RAngG is nonsignificant
 
 allTests %>%
-  filter(Group == 'RHLang', contrastName == 'joke', sig) %>%
+  filter(Group == 'RHLang', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'RHLang', contrastName == 'joke', !sig)
 
 allTests %>%
-  filter(Group == 'RHLang', contrastName == 'lit', sig) %>%
+  filter(Group == 'RHLang', contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'RHLang', contrastName == 'lit', !sig)
 
@@ -125,83 +115,78 @@ allTests %>%
 
 
 ### LHLang
-#Jokes and Nonjokes both activate, but no differences.
+#Jokes and Nonjokes both activate, and this time there's differences?! 
 
 allTests %>%
-  filter(Group == 'LHLang', contrastName == 'joke') %>%
+  filter(Group == 'LHLang', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'LHLang', contrastName == 'lit') %>%
+  filter(Group == 'LHLang', task == 'Jokes', contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'LHLang', contrastName == 'joke-lit', !sig) %>%
-  summarise(n(), sum(sig), reportTests(t,p)) #ONLY ONE of the ROIs significant
-filter(allTests, Group == 'LHLang', contrastName == 'joke-lit', sig)
-
+  filter(Group == 'LHLang', task == 'Jokes', contrastName == 'joke-lit') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
 
 ### RHMD
-# RH is pretty boring
 
 allTests %>%
-  filter(Group == 'MDRight', contrastName == 'joke', sig) %>%
+  filter(Group == 'MDRight', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'MDRight', contrastName == 'joke', !sig)
 
 allTests %>%
-  filter(Group == 'MDRight', contrastName == 'lit',sig) %>%
+  filter(Group == 'MDRight', task == 'Jokes',  contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'MDRight', contrastName == 'lit', !sig)
 
 allTests %>%
-  filter(Group == 'MDRight', contrastName == 'joke-lit', !sig) %>%
+  filter(Group == 'MDRight', task == 'Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'MDRight', contrastName == 'joke-lit', sig)
 
 
 ###LHMD
-# LH has some joke-lit differences
 
 allTests %>%
-  filter(Group == 'MDLeft', contrastName == 'joke', sig) %>%
+  filter(Group == 'MDLeft', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'MDLeft', contrastName == 'joke', !sig)
 
 allTests %>%
-  filter(Group == 'MDLeft', contrastName == 'lit',sig) %>%
+  filter(Group == 'MDLeft', task == 'Jokes', contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'MDLeft', contrastName == 'lit', !sig)
 
 allTests %>%
-  filter(Group == 'MDLeft', contrastName == 'joke-lit', !sig) %>%
+  filter(Group == 'MDLeft', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'MDLeft', contrastName == 'joke-lit', sig)
-
 
 
 ### ToM
 # Interesting activations!
 allTests %>%
-  filter(Group == 'ToM', contrastName == 'joke',!sig) %>%
+  filter(Group == 'ToM', task =='Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'ToM', contrastName == 'joke', sig)
 
 allTests %>%
-  filter(Group == 'ToM', contrastName == 'lit', !sig) %>%
+  filter(Group == 'ToM', task =='Jokes', contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'ToM', contrastName == 'lit', sig)
 
 allTests %>%
-  filter(Group == 'ToM', contrastName == 'joke-lit', !sig) %>%
+  filter(Group == 'ToM', task =='Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'ToM', contrastName == 'joke-lit', sig)
+
+#07/10/17 Where DID the paramfun go? 
 
 #10/14 Huh, where did the ToM paramfun test go? Here it is again...
-allTests %>%
-  filter(Group == 'ToMCustom', contrastName == 'paramfun',!sig) %>%
-  summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'ToM', contrastName == 'joke-lit', sig)
+#allTests %>%
+#  filter(Group == 'ToMCustom', contrastName == 'paramfun',!sig) %>%
+#  summarise(n(), sum(sig), reportTests(t,p))
+#filter(allTests, Group == 'ToM', contrastName == 'joke-lit', sig)
+
+
 
 
 ###############Here be exploratory analyses######
