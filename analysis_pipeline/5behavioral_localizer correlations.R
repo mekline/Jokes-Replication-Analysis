@@ -14,46 +14,60 @@ behavdir = "/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Anal
 behavdata = read.csv(paste(behavdir, '/all_behavioral_output.csv', sep=''))
 
 #Make sure you have AllSigChange!
-
 View(allSigChange)
+
+#We need to make sure to match up the right participants, so here we add the list order that participants
+#were loaded into the ToM initial first-level analyses.
+
+participants = c('168_KAN_evDB_20141020b',
+                 '290_FED_20170109b_3T2',
+                 '301_FED_20150708c_3T2',
+                 '366_FED_20161103a_3T1',
+                 '426_FED_20161107c_3T2',
+                 '430_FED_20170110b_3T2',
+                 '498_FED_20170210c_3T2',
+                 '555_FED_20170426c_3T2',
+                 '576_FED_20170414b_3T2',
+                 '577_FED_20170414c_3T2',
+                 '578_FED_20170414d_3T2',
+                 '288_FED_20160411a_3T1',
+                 '334_FED_20160204c_3T2',
+                 '343_FED_20160204b_3T2',
+                 '521_FED_20161228a_3T2',
+                 '551_FED_20170412a_3T2',
+                 '571_FED_20170412c_3T2',
+                 '473_FED_20170210b_3T2',
+                 '520_FED_20161227a_3T2',
+                 '596_FED_20170426b_3T2')
+
+participants = as.data.frame(participants)
+participants$SubjectNumber = 1:nrow(participants)
+participants$ID = participants$participant
+
+allSigChange <- merge(allSigChange, participants, by=c('SubjectNumber'), all_x=TRUE, all_y=TRUE)
+#(This drops subjects who didn't get included for the Jokes analyses!)
 ####
 # Ratings
 ####
 
 #Get average ratings per category per participant
-mydata$response <- as.numeric(as.character(mydata$response))
-avgResponse <- mydata %>%
-  group_by(newSubjectName, category) %>%
-  summarise(meanResponse = mean(response))
-
-
-####
-# Now go to the contrast files and get the jokes-lit average activation per subj.
-setwd("~/Dropbox/_Projects/Jokes - fMRI/Jokes-Analysis Repository/Analyses_paper/contrasts")
-
-ToMROI.Names = c('DMPFC', 'LTPJ',  'MMPFC', 'PC',
-                 'RTPJ',  'VMPFC', 'RSTS');
-normal.contrasts = c('joke', 'lit', 'joke-lit')
-
-myfMRIResults = read.csv('NewToMfROIsrespNonlitJokes.csv')%>%
-  mutate(ROIName = ToMROI.Names[ROI]) %>%
-  mutate(contrastName = normal.contrasts[Contrast]) %>%
-  mutate(Group = 'ToM') %>%
-  filter(contrastName == 'joke-lit') %>%
-  filter(ROIName !='VMPFC')%>% #New! This fROI is not reliable in teh localizer data
-  group_by(SubjectNumber)%>%
-  summarize(meanSigChange = mean(sigChange))
-
-myRatingResults <- mydata %>%
-  mutate(SubjectNumber = as.numeric(as.factor(newSubjectName))) %>%
-  group_by(SubjectNumber, newSubjectName, category) %>%
+behavdata$response <- as.numeric(as.character(behavdata$response))
+jokeResponseChange <- behavdata %>%
+  filter(!is.na(response)) %>% 
+  group_by(ID, category) %>%
   summarise(meanResponse = mean(response)) %>%
   spread(category, meanResponse) %>%
   mutate(meanResponseChange = joke-nonjoke)
 
+####
+# Signal change
+####
+
+jokeSigChange <- allSigChange %>%
+  filter(contrastName == 'joke-lit', Group == 'ToM', task == 'Jokes', ROIName == 'LocalizerAverage')
 
 #Merge the datasets!
-bb <- merge(myRatingResults, myfMRIResults)
+bb <- merge(jokeResponseChange, jokeSigChange, by=c('ID'))
 
 ## REPORT STATS
 cor(bb$meanResponseChange, bb$meanSigChange)
