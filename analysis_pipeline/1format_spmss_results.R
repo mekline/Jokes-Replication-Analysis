@@ -6,54 +6,107 @@
 #and reorganizes the data into proper longform. Take your analysis from there or save the result in a csv.
 #Here, the csvs get saved back to the mean_signal folder for tidyness
 
+
+library(dplyr)
+library(tidyr)
+library(stringr)
+requireNamespace(plyr)
+
 ####
 #Stuff to change!
 myResultsPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/meansignal_outputs/'
 myOutputPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/meansignal_outputs/'
 
-whichResults = 'ToMfROIS_resp_ToM_preliminary_20170612'; #Change this to the set of results to analyse!
+whichResults = c('ToMfROIs_resp_ToM_20170703', #Change this to the set of results to analyse!
+  'LangfROIs_resp_Jokes_20170703',
+  'LangfROIs_resp_Jokes_Top50Voxels_20170703',
+  'LangfROIs_resp_Lang_20170703',
+  'MDfROIs_resp_Jokes_20170703',
+  'MDfROIs_resp_Jokes_Top50Voxels_20170703',
+  'MDfROIs_resp_MD_20170703',
+  'RHLfROIs_resp_Jokes_20170703',
+  'RHLfROIs_resp_Jokes_Top50Voxels_20170703',
+  'RHLfROIs_resp_Lang_20170703',
+  'ToMfROIs_resp_JokesCustom_20170703',
+  'ToMfROIs_resp_JokesCustom_Top50Voxels_20170703',
+  'ToMfROIs_resp_Jokes_20170703',
+  'ToMfROIs_resp_Jokes_Top50Voxels_20170703',
+  'ToMfROIs_resp_ToM_20170703');
+
 toSave = 1
 
-####
-#Leave the rest alone unless you're feeling fancy
+  ####
+  #Leave the rest alone unless you're feeling fancy
 
-library(dplyr)
-library(tidyr)
-library(stringr)
+all_mean_signal = data.frame(NULL)
 
-setwd(paste(myResultsPath,whichResults, sep=""))
+for (result in whichResults){
+  setwd(paste(myResultsPath,result, sep=""))
+  
+  #Open the weirdly formatted files and get just the table we want. 
+  myfile  = read.csv('spm_ss_mROI_data.csv',sep=',', skip=1)
+  lastsub = ncol(myfile) 
+  myfile= myfile[complete.cases(myfile[,lastsub]),]#drop things past the individual % changes....
+  
+  #To add: Look at the # of ROI parcels and their sizes, declare this to be a particular 
+  #localizer, provide names for parcels. Also could add all that as an optional function arg. 
+  #(this happens in 2_figs etc. now, but we do read the filenames to make that easier...)
+  
+  #Add details about what this analysis is by splitting up the filename (requires regular filenames!)
+  rundetails = str_split_fixed(result, '_', 4)
+  myfROIs = rundetails[[1]]
+  myTask = rundetails[[3]]
+  myMethod = 'Top10Percent'
+  if(str_detect(rundetails[[4]], 'Top50')){myMethod = 'Top50Voxels'}
+  
+  extract_val <- function(mystring, mynum){# fn to extract subject & contrast numbers
+    foo = str_split(mystring, "\\.")
+    myval = unlist(foo[[1]][mynum])
+    return(myval)
+    
+  }
+  
+  #Make the data beautiful and longform.
+  myfile[] <- lapply(myfile, as.character) #(Everything's a string, no factors)
+  myfile <- myfile %>% 
+    gather("Subject_and_Cont", "sigChange", Subject.1.1.:ncol(myfile)) %>%
+    rowwise() %>% 
+    mutate(SubjectNumber = extract_val(Subject_and_Cont, 2)) %>%
+    mutate(Contrast = extract_val(Subject_and_Cont, 3)) %>%
+    select(-Subject_and_Cont) %>%
+    rename(ROI = ROI.) %>%
+    mutate(filename = result)%>%
+    mutate(fROIs = myfROIs)%>%
+    mutate(task = myTask)%>%
+    mutate(ind_selection_method = myMethod)%>%
+    plyr::rename(replace = c(average.ROI.size="ROI.size"), warn_missing = FALSE)
+  
+  
+  
+  #if string contains 'Top50'
+  #'LangFrois' etc.
+  #(rename critical)
+  #'Jokes'
+  #'JokesCustom'
+  
+    
+  
+  #Optional: print back out a nice file with a more informative name.
+  if(toSave){
+    setwd(myOutputPath)
+    myFileName = paste(result,'.csv', sep="")
+    zz <- file(myFileName, "w")
+    write.csv(myfile, zz, row.names=FALSE)
+    close(zz)
+  }
 
-#Open the weirdly formatted files and get just the table we want. 
-myfile  = read.csv('spm_ss_mROI_data.csv',sep=',', skip=1)
-lastsub = ncol(myfile) 
-myfile= myfile[complete.cases(myfile[,lastsub]),]#drop things past the individual % changes....
-
-#To add: Look at the # of ROI parcels and their sizes, declare this to be a particular 
-#localizer, provide names for parcels. Also could add all that as an optional function arg. 
-
-extract_val <- function(mystring, mynum){# fn to extract subject & contrast numbers
-  foo = str_split(mystring, "\\.")
-  myval = unlist(foo[[1]][mynum])
-  return(myval)
+  #And add it to the giant dataframe
+  if (nrow(all_mean_signal) == 0){
+    all_mean_signal = myfile
+  }else{
+  all_mean_signal = rbind(all_mean_signal, myfile)
+  }
   
 }
 
-#Make the data beautiful and longform.
-myfile[] <- lapply(myfile, as.character) #(Everything's a string, no factors)
-myfile <- myfile %>% 
-  gather("Subject_and_Cont", "sigChange", Subject.1.1.:ncol(myfile)) %>%
-  rowwise() %>% 
-  mutate(SubjectNumber = extract_val(Subject_and_Cont, 2)) %>%
-  mutate(Contrast = extract_val(Subject_and_Cont, 3)) %>%
-  select(-Subject_and_Cont) %>%
-  rename(ROI = ROI.)
-  
-
-#Optional: print back out a nice file with a more informative name.
-if(toSave){
-  setwd(myOutputPath)
-  myFileName = paste(whichResults,'.csv', sep="")
-  zz <- file(myFileName, "w")
-  write.csv(myfile, zz, row.names=FALSE)
-  close(zz)
-}
+write.csv(all_mean_signal, 'all_mean_signal_outputs.csv', row.names = FALSE)
