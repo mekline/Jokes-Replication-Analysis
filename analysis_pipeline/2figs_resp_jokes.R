@@ -2,6 +2,8 @@
 # Those %-signal-change calculations are produced by the awesome toolbox analyses, and represent a single overall calculation
 #derived for the whole parcel region (not individual voxels, as mk sometimes forgets)
 
+#But we just print out the figs for regions responding to Jokes/Jokes custom, because that's the main result
+
 rm(list = ls())
 library(bootstrap)
 library(dplyr)
@@ -16,9 +18,13 @@ meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Re
 ########
 #READ IN DATA
 ########
-#Here, we read in all those files, calculate a whole passle of mean and standard error bars, and then make graphs
+#New method: Read in the raw data from all_meansignal, that's much easier! Then condition on the
+#column labeled fROIs to assign names appropriately. NOTE that this now takes care of reading
+#in the localizer-to-localizer ones too, to facilitate making the supplemental materials. 
 
-# Add in the contrast and ROI names so it's not just numbers!!!!! (This ordering comes from the 
+allSigChange = read.csv(paste(meansig_outputs_folder, 'all_mean_signal_outputs.csv', sep=''))
+
+# List contrast and ROI names so it's not just numbers!!!!! (This ordering comes from the 
 # standard ordering produced by the 2nd level analyses; we'll arrange differently in the plots)
 
 RHLangROI.Names = c('RPost Temp', 'RAnt Temp', 'RAngG', 'RIFG',      'RMFG',     'RIFG orb');
@@ -34,62 +40,76 @@ ToMROI.Names = c('DM PFC', 'LTPJ',  'MM PFC', 'PC',
 
 normal.contrasts = c('joke', 'lit', 'joke-lit')
 custom.contrasts = c('low','med','high','other')
+lang.contrasts = c('S','N','S-N')
+MD.contrasts = c('H','E','H-E')
+ToM.contrasts = c('bel','pho','bel-pho')
+
+#Split the data into groups by fROIs, and rename them as appropriate
+RHLang_sigs = data.frame(NULL)
+LHLang_sigs = data.frame(NULL)
+MD_sigs = data.frame(NULL)
+ToM_sigs = data.frame(NULL)
 
 
-# myResults = read.csv(paste(meansig_outputs_folder, 'RHLangfROIsrespNonlitJokes.csv', sep='')%>%
-#   mutate(ROIName = RHLangROI.Names[ROI]) %>%
-#   mutate(contrastName = normal.contrasts[Contrast])%>%
-#   mutate(Group = 'RHLang')
-# allSigChange = myResults
-# 
-# myResults = read.csv('LangfROIsrespNonlitJokes.csv') %>%
-#   mutate(ROIName = LangROI.Names[ROI]) %>%
-#   mutate(contrastName = normal.contrasts[Contrast])%>%
-#   mutate(Group = 'LHLang')
-# allSigChange = rbind(allSigChange, myResults)
-# 
-# myResults = read.csv('MDfROIsrespNonlitJokes.csv') %>%
-#   mutate(ROIName = MDROI.Names[ROI]) %>%
-#   mutate(contrastName = normal.contrasts[Contrast]) %>%
-#   mutate(Group = 'MDAll')
-# allSigChange = rbind(allSigChange, myResults)
-# 
-# #Little extra thing here, rename MD to split by L and R hemisphere!
-# allSigChange[(allSigChange$Group == 'MDAll') & (allSigChange$ROI %%2 == 1),]$Group = 'MDLeft'
-# allSigChange[(allSigChange$Group == 'MDAll') & (allSigChange$ROI %%2 == 0),]$Group = 'MDRight'
+RHLang_sigs = allSigChange %>%
+  filter(fROIs == 'RHLfROIs')%>%
+  mutate(ROIName = RHLangROI.Names[ROI]) %>%
+  group_by(task)%>%
+  mutate(contrastName = ifelse(task == 'Jokes', normal.contrasts[Contrast], 
+                               ifelse(task == 'JokesCustom', custom.contrasts[Contrast], 
+                               lang.contrasts[Contrast]))) %>%
+  mutate(Group = 'RHLang') %>%
+  ungroup()
 
-myResults = read.csv(paste(meansig_outputs_folder, 'ToMfROIS_resp_Jokes_preliminary_20170612.csv', sep=''))%>%
+LHLang_sigs = allSigChange %>%
+  filter(fROIs == 'LangfROIs')%>%
+  mutate(ROIName = LangROI.Names[ROI]) %>%
+  group_by(task)%>%
+  mutate(contrastName = ifelse(task == 'Jokes', normal.contrasts[Contrast], 
+                               ifelse(task == 'JokesCustom', custom.contrasts[Contrast], 
+                               lang.contrasts[Contrast]))) %>%
+  mutate(Group = 'LHLang') %>%
+  ungroup()
+
+MD_sigs = allSigChange %>%
+  filter(fROIs == 'MDfROIs')%>%
+  mutate(ROIName = MDROI.Names[ROI]) %>%
+  group_by(task)%>%
+  mutate(contrastName = ifelse(task == 'Jokes', normal.contrasts[Contrast], 
+                               ifelse(task == 'JokesCustom', custom.contrasts[Contrast], 
+                               MD.contrasts[Contrast]))) %>%
+  mutate(Group = ifelse(ROI %%2 == 1, 'MDLeft','MDRight')) %>%
+  ungroup()
+
+ToM_sigs = allSigChange %>%
+  filter(fROIs == 'ToMfROIs')%>%
   mutate(ROIName = ToMROI.Names[ROI]) %>%
-  mutate(contrastName = normal.contrasts[Contrast]) %>%
-  mutate(Group = 'ToM') 
-  # %>%
-  # filter(ROIName !="VM PFC")
-# allSigChange = rbind(allSigChange, myResults)
-allSigChange = myResults
+  group_by(task)%>%
+  mutate(contrastName = ifelse(task == 'Jokes', normal.contrasts[Contrast], 
+                               ifelse(task == 'JokesCustom', custom.contrasts[Contrast], 
+                               ToM.contrasts[Contrast]))) %>%
+  mutate(Group = 'ToM') %>%
+  ungroup()
 
-# myResults = read.csv('NewToMfROIsresCustomJokes.csv')%>%
-#   mutate(ROIName = ToMROI.Names[ROI]) %>%
-#   mutate(contrastName = custom.contrasts[Contrast])%>%
-#   mutate(Group = 'ToMCustom')%>%
-#   #filter(ROIName !="VM PFC")
-# allSigChange = rbind(allSigChange, myResults)
-# 
+#And stick it all back together!!
+allSigChange = rbind(RHLang_sigs, LHLang_sigs, MD_sigs, ToM_sigs)
 
-
-#########
-# TRANSFORMATIONS
-#########
-
-#First, in addition to the by-region signal changes, we are going to give each person an average signal change value for each localizer 
-avgSigChange = aggregate(allSigChange$sigChange, by=list(allSigChange$Group,allSigChange$SubjectNumber,allSigChange$contrastName), mean)
-names(avgSigChange) = c('Group','SubjectNumber', 'contrastName','sigChange')
+#In addition to the by-region signal changes, we are going to give each person an average signal change value for each localizer 
+avgSigChange = aggregate(allSigChange$sigChange, by=list(allSigChange$Group,allSigChange$task, allSigChange$SubjectNumber,allSigChange$contrastName), mean)
+names(avgSigChange) = c('Group', 'task', 'SubjectNumber', 'contrastName','sigChange')
 avgSigChange$ROIName = 'LocalizerAverage'
 avgSigChange$ROI = 0
 
 allSigChange <- allSigChange %>%
-  dplyr::select(one_of(c('Group','ROIName', 'ROI','SubjectNumber', 'contrastName','sigChange')))
+  dplyr::select(one_of(c('Group', 'task', 'ROIName', 'ROI','SubjectNumber', 'contrastName','sigChange')))
 
 allSigChange <- rbind(allSigChange, avgSigChange)
+
+#NOTE: Later scripts require this allSigChange object to be loaded into memory, run this script to here if it's missing
+
+#########
+# GRAPHING
+#########
 
 #Drop the contrasts we're not interested in...
 toGraph = allSigChange %>%
@@ -103,18 +123,14 @@ sterr <- function(mylist){
   return(my_se)
 }
 
-mystats = aggregate(toGraph$sigChange, by=list(toGraph$Group, toGraph$ROIName, toGraph$ROI,toGraph$contrastName), mean)
-names(mystats) = c('Group','ROIName', 'ROI','contrastName', 'themean')
-myster = aggregate(toGraph$sigChange, by=list(toGraph$Group, toGraph$ROIName, toGraph$ROI,toGraph$contrastName), sterr)
-names(myster) = c('Group','ROIName', 'ROI','contrastName', 'sterr')
+mystats = aggregate(toGraph$sigChange, by=list(toGraph$Group, toGraph$task, toGraph$ROIName, toGraph$ROI,toGraph$contrastName), mean)
+names(mystats) = c('Group','Task', 'ROIName', 'ROI','contrastName', 'themean')
+myster = aggregate(toGraph$sigChange, by=list(toGraph$Group, toGraph$task, toGraph$ROIName, toGraph$ROI,toGraph$contrastName), sterr)
+names(myster) = c('Group','Task', 'ROIName', 'ROI','contrastName', 'sterr')
 
 mystats = merge(mystats,myster)
 mystats$se_up = mystats$themean + mystats$sterr
 mystats$se_down = mystats$themean - mystats$sterr
-
-#Print out a simple summary for mega-graphs
-avgz <- filter(mystats, ROIName == 'LocalizerAverage')
-write.csv(avgz, 'jokes_localizer_avg.csv')
 
 #Edit! We should be doing bootstrapped 95% confidence intervals instead! calculate them from allSigChange
 #then merge into mystats
@@ -126,10 +142,10 @@ bootdown <- function(mylist){
   foo <- bootstrap(mylist, 1000, mean)
   return(quantile(foo$thetastar, 0.025)[1])
 }
-mybootup = aggregate(toGraph$sigChange, by=list(toGraph$Group, toGraph$ROIName, toGraph$ROI, toGraph$contrastName), bootup)
-names(mybootup) = c('Group','ROIName', 'ROI','contrastName', 'bootup')
-mybootdown = aggregate(toGraph$sigChange, by=list(toGraph$Group, toGraph$ROIName, toGraph$ROI, toGraph$contrastName), bootdown)
-names(mybootdown) = c('Group','ROIName', 'ROI','contrastName', 'bootdown')
+mybootup = aggregate(toGraph$sigChange, by=list(toGraph$Group, toGraph$task, toGraph$ROIName, toGraph$ROI, toGraph$contrastName), bootup)
+names(mybootup) = c('Group', 'Task', 'ROIName', 'ROI','contrastName', 'bootup')
+mybootdown = aggregate(toGraph$sigChange, by=list(toGraph$Group, toGraph$task, toGraph$ROIName, toGraph$ROI, toGraph$contrastName), bootdown)
+names(mybootdown) = c('Group', 'Task', 'ROIName', 'ROI','contrastName', 'bootdown')
 
 mystats = merge(mystats,mybootup)
 mystats = merge(mystats,mybootdown)
@@ -207,17 +223,17 @@ MDRight = filter(mystats, Group == 'MDRight')
 MDRight <- MDRight[order(MDRight$ROI),]
 MDRight = arrange(MDRight, desc(ROIGroup))
 
-ToM = filter(mystats, Group == 'ToM')
+ToM = filter(mystats, Group == 'ToM', Task == 'Jokes')
 ToM <- ToM[order(ToM$ROI),]
 # ToM$PresOrder = c(1,2,3,4,9,10,5,6,7,8,11,12,13,14) This is for when VMPFC is NOT included
 ToM$PresOrder = c(1,2,3,4,9,10,5,6,7,8,11,12,13,14,15,16) #This is for all contrasts
 ToM <- ToM[order(ToM$PresOrder),]
 ToM = arrange(ToM, desc(ROIGroup))
 
-ToMCustom = filter(mystats, Group == 'ToMCustom')
+ToMCustom = filter(mystats, Group == 'ToM', Task == 'JokesCustom')
 ToMCustom <- arrange(ToMCustom, contNo)
 ToMCustom <- ToMCustom[order(ToMCustom$ROI),]
-ToMCustom$PresOrder = c(1,2,3,4,5,6,13,14,15,7,8,9,10,11,12,16,17,18,19,20,21)
+ToMCustom$PresOrder = c(1,2,3,4,5,6,13,14,15,7,8,9,10,11,12,16,17,18,19,20,21, 22, 23, 24)
 ToMCustom <- ToMCustom[order(ToMCustom$PresOrder),]
 ToMCustom = arrange(ToMCustom, desc(ROIGroup))
 
@@ -230,7 +246,7 @@ makeBar = function(plotData,ylow=-0.5,yhigh=2.5, mycolors = c("gray35", "gray60"
   plotData$ROIName <- factor(plotData$ROIName, levels = unique(plotData$ROIName))
   plotData$ROIGroup <- factor(plotData$ROIGroup, levels = unique(plotData$ROIGroup))
   plotData$contrastLabel <- factor(plotData$contrastLabel, levels = unique(plotData$contrastLabel))
-  myfi = paste(plotData$Group[1], '.jpg', sep="")#filename
+  myfi = paste(plotData$Group[1], '_', plotData$Task[2], '.jpg', sep="")#filename
   print(myfi)
 
 ggplot(data=plotData, aes(x=ROIName, y=themean, fill=contrastLabel)) + 
