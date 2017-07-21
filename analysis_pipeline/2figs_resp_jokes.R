@@ -24,6 +24,9 @@ meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Re
 
 allSigChange = read.csv(paste(meansig_outputs_folder, 'all_mean_signal_outputs.csv', sep=''))
 
+#FOR NOW: Make a choice whether to do all analyses with top 50 voxels or top 10% voxels 
+
+allSigChange = filter(allSigChange, ind_selection_method == 'Top50Voxels')
 # List contrast and ROI names so it's not just numbers!!!!! (This ordering comes from the 
 # standard ordering produced by the 2nd level analyses; we'll arrange differently in the plots)
 

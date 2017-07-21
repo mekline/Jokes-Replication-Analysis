@@ -1,7 +1,6 @@
 #This rebuilds the t tests that spmss spits out from the individual signal change values (reproduced here from ind. 
 #signal change values so mk can track how those are done/feed into other analyses)
 
-rm(list=ls(all=TRUE))
 library(tidyr)
 library(dplyr)
 library(pwr)
@@ -16,6 +15,7 @@ View(allSigChange)
 #measurements are not robust enough
 #New 10/12: Localizer analysis shows that VMPFC localizer doesn't come out in this dataset, so remove it from
 #the joke-lit tests for ToM and ToM custom (but leave it for the localizer itself)
+#Replication: Nothing looks like it should be left out yet!
 
 #allSigChange = allSigChange %>%
 #  filter(!(Group == 'ToM' & ROIName =='VMPFC')) %>%
@@ -100,17 +100,17 @@ allTests %>%
 #Jokes and Nonjokes both activate, and this time differences! RAngG is nonsignificant
 
 allTests %>%
-  filter(Group == 'RHLang', contrastName == 'joke') %>%
+  filter(Group == 'RHLang', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'RHLang', contrastName == 'joke', !sig)
 
 allTests %>%
-  filter(Group == 'RHLang', contrastName == 'lit') %>%
+  filter(Group == 'RHLang', task == 'Jokes', contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'RHLang', contrastName == 'lit', !sig)
 
 allTests %>%
-  filter(Group == 'RHLang', contrastName == 'joke-lit') %>%
+  filter(Group == 'RHLang', task == 'Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p)) 
 
 
@@ -144,6 +144,7 @@ filter(allTests, Group == 'MDRight', contrastName == 'lit', !sig)
 allTests %>%
   filter(Group == 'MDRight', task == 'Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
+filter(allTests, Group == 'MDRight', contrastName == 'joke-lit', !sig)
 
 
 ###LHMD

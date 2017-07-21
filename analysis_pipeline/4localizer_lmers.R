@@ -1,7 +1,6 @@
 #This takes the individual-subject contrast values and runs some nifty lmer models.  First #many
 #lines are reading in the contrasts as in localizer_t_tests, fun stuff starts on line 105
 
-rm(list=ls(all=TRUE))
 library(tidyr)
 library(dplyr)
 library(lme4)
