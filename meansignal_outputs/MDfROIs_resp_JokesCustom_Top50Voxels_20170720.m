@@ -37,7 +37,7 @@ firstlevel_crit = 'firstlevel_Jokes_Custom'; %path to 1st-level analysis directo
 loc_cons = {{'H-E'}}; %Which contrast used to localize issROIs?
 crit_cons = {{'low','med','high','linear'}}; %Effect of interest contrasts: cons of the crit. experiment do we want to measure there? It could be the same as the loc! In that case SPM will make ur data independent for you :)
 
-what_parcels = '/users/evelina9/fMRI_PROJECTS/ROIS/MDfROIs.img'; %specify the full path to the *img or *nii file that will constrain the search for top voxels
+what_parcels = '/users/evelina9/fMRI_PROJECTS/ROIS/MDfROIs_v3.img'; %specify the full path to the *img or *nii file that will constrain the search for top voxels
 
 thresh_type = 'Nvoxels-ROI-level'; %percentile-ROI-level or Nvoxels-ROI-level
 thresh_p = 50; %Fun fact! In percentile mode, p=proportion (.1=%10), In top-n mode p = n voxels (eg 50)
