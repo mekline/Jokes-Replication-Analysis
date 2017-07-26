@@ -25,8 +25,9 @@ meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Re
 allSigChange = read.csv(paste(meansig_outputs_folder, 'all_mean_signal_outputs.csv', sep=''))
 
 #FOR NOW: Make a choice whether to do all analyses with top 50 voxels or top 10% voxels 
+allSigChange = filter(allSigChange, ind_selection_method == 'Top10Percent')
+#(This can be changed to 'Top50Voxels' to see results with that fROI selection procedure
 
-allSigChange = filter(allSigChange, ind_selection_method == 'Top50Voxels')
 # List contrast and ROI names so it's not just numbers!!!!! (This ordering comes from the 
 # standard ordering produced by the 2nd level analyses; we'll arrange differently in the plots)
 
@@ -85,7 +86,7 @@ MD_sigs = allSigChange %>%
   ungroup()
 
 ToM_sigs = allSigChange %>%
-  filter(fROIs == 'ToMfROIs')%>%
+  filter(fROIs == 'ToMfROIS')%>% ##Typo in all the filenames!
   mutate(ROIName = ToMROI.Names[ROI]) %>%
   group_by(task)%>%
   mutate(contrastName = ifelse(task == 'Jokes', normal.contrasts[Contrast], 
@@ -97,7 +98,7 @@ ToM_sigs = allSigChange %>%
 #And stick it all back together!!
 allSigChange = rbind(RHLang_sigs, LHLang_sigs, MD_sigs, ToM_sigs)
 
-#In addition to the by-region signal changes, we are going to give each person an average signal change value for each localizer 
+#In addition to the by-region signal changes, we are going to give each person an average signal change value for each localizer, each task
 avgSigChange = aggregate(allSigChange$sigChange, by=list(allSigChange$Group,allSigChange$task, allSigChange$SubjectNumber,allSigChange$contrastName), mean)
 names(avgSigChange) = c('Group', 'task', 'SubjectNumber', 'contrastName','sigChange')
 avgSigChange$ROIName = 'LocalizerAverage'
@@ -114,7 +115,7 @@ allSigChange <- rbind(allSigChange, avgSigChange)
 # GRAPHING
 #########
 
-#Drop the contrasts we're not interested in...
+#Drop the contrasts (localizer results) we're not interested in for graphing...
 toGraph = allSigChange %>%
   filter(contrastName %in% c('joke','lit','high','med','low'))
 
@@ -202,6 +203,8 @@ mystats[mystats$contrastName == "med",]$contrastLabel <- "med\n   "
 mystats[mystats$contrastName == "low",]$contrastLabel <- "low\n  "
 
 
+
+#XXX START HERE TO SPLIT INTO REG AND CUSTOM (exploratory!) ASSIGNMENTS!!!
 
 #Subsets & Ordering (elaborate code, probably can condense these; ggplot is finicky at orders)
 RHLang = filter(mystats, Group == 'RHLang')

@@ -17,21 +17,26 @@ requireNamespace(plyr)
 myResultsPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/meansignal_outputs/'
 myOutputPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/meansignal_outputs/'
 
-whichResults = c('ToMfROIs_resp_ToM_20170703', #Change this to the set of results to analyse!
-  'LangfROIs_resp_Jokes_20170703',
-  'LangfROIs_resp_Jokes_Top50Voxels_20170703',
-  'LangfROIs_resp_Lang_20170703',
-  'MDfROIs_resp_Jokes_20170703',
-  'MDfROIs_resp_Jokes_Top50Voxels_20170703',
-  'MDfROIs_resp_MD_20170703',
-  'RHLfROIs_resp_Jokes_20170703',
-  'RHLfROIs_resp_Jokes_Top50Voxels_20170703',
-  'RHLfROIs_resp_Lang_20170703',
-  'ToMfROIs_resp_JokesCustom_20170703',
-  'ToMfROIs_resp_JokesCustom_Top50Voxels_20170703',
-  'ToMfROIs_resp_Jokes_20170703',
-  'ToMfROIs_resp_Jokes_Top50Voxels_20170703',
-  'ToMfROIs_resp_ToM_20170703');
+whichResults = c('LangfROIs_resp_JokesCustom_20170720',
+                 'LangfROIs_resp_JokesCustom_Top50Voxels_20170720',
+                 'LangfROIs_resp_Jokes_20170703',
+                 'LangfROIs_resp_Jokes_Top50Voxels_20170703',
+                 'LangfROIs_resp_Lang_20170703',
+                 'MDfROIs_resp_JokesCustom_20170720',
+                 'MDfROIs_resp_JokesCustom_Top50Voxels_20170720',
+                 'MDfROIs_resp_Jokes_20170720',
+                 'MDfROIs_resp_Jokes_Top50Voxels_20170720',
+                 'MDfROIs_resp_MD_20170720',
+                 'RHLfROIs_resp_JokesCustom_20170720',
+                 'RHLfROIs_resp_JokesCustom_Top50Voxels_20170720',
+                 'RHLfROIs_resp_Jokes_20170703',
+                 'RHLfROIs_resp_Jokes_Top50Voxels_20170703',
+                 'RHLfROIs_resp_Lang_20170703',
+                 'ToMfROIS_resp_JokesCustom_20170720',
+                 'ToMfROIS_resp_JokesCustom_Top50Voxels_20170720',
+                 'ToMfROIS_resp_Jokes_20170720',
+                 'ToMfROIS_resp_Jokes_Top50Voxels_20170720',
+                 'ToMfROIS_resp_ToM_20170720');
 
 toSave = 1
 
