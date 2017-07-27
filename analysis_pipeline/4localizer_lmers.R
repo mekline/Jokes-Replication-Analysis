@@ -17,7 +17,7 @@ View(allSigChange)
 
 #EFFECT SIZE CALCULATION! Requested by the journal.  There is no standard way to report effect sizes for linear mixed
 #models, so the approach we'll take is to report mean signal change values at the system level.  This is calculated
-#over in the figure script since we general those values there. 
+#over in the figure script (2figs_resp_jokes) since we general those values there. 
 
 # Linear mixed Models!
 #Plan: Within each system (localizers, and jokes), test for basic localizer condition differences, then do some
@@ -53,7 +53,7 @@ m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber)
 anova(m1,m0)
  
 
-#To jokes!
+#To jokes! 
 
 RHLang <- filter(allSigChange, Group == "RHLang", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
 m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = RHLang)
@@ -139,3 +139,32 @@ anova(m1,m0)
 #Lang or MDL.  One way to show that those MD and RHL activations are tapping something other than humor in the task would be if 
 #funniness ratings didn't correlate with activation strength.  Let's see! (Oh wait, pause, this requires running more first level
 #analyses to get those contrasts.  Check with Ev first. )
+
+RHLCustom <- filter(allSigChange, Group == "RHLang", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
+#Make sure those factors are ordered....
+RHLCustom$contrastName <- as.factor(RHLCustom$contrastName)
+m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = RHLCustom)
+m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = RHLCustom)
+anova(m1,m0)
+
+LHLCustom <- filter(allSigChange, Group == "LHLang", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
+#Make sure those factors are ordered....
+LHLCustom$contrastName <- as.factor(LHLCustom$contrastName)
+m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = LHLCustom)
+m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = LHLCustom)
+anova(m1,m0)
+
+MDRCustom <- filter(allSigChange, Group == "MDRight", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
+#Make sure those factors are ordered....
+MDRCustom$contrastName <- as.factor(MDRCustom$contrastName)
+m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDRCustom)
+m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDRCustom)
+anova(m1,m0)
+
+MDLCustom <- filter(allSigChange, Group == "MDLeft", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
+#Make sure those factors are ordered....
+MDLCustom$contrastName <- as.factor(MDLCustom$contrastName)
+m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDLCustom)
+m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDLCustom)
+anova(m1,m0)
+
