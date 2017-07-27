@@ -43,7 +43,7 @@ ToMROI.Names = c('DM PFC', 'LTPJ',  'MM PFC', 'PC',
                       'RTPJ',  'VM PFC', 'RSTS');
 
 normal.contrasts = c('joke', 'lit', 'joke-lit')
-custom.contrasts = c('low','med','high','other')
+custom.contrasts = c('low','med','high', 'linear') #Bug solved! I didn't record 'other' (no response) in the toolbox output this time. NBD. 
 lang.contrasts = c('S','N','S-N')
 MD.contrasts = c('H','E','H-E')
 ToM.contrasts = c('bel','pho','bel-pho')
@@ -207,27 +207,47 @@ mystats[mystats$contrastName == "low",]$contrastLabel <- "low\n  "
 #XXX START HERE TO SPLIT INTO REG AND CUSTOM (exploratory!) ASSIGNMENTS!!!
 
 #Subsets & Ordering (elaborate code, probably can condense these; ggplot is finicky at orders)
-RHLang = filter(mystats, Group == 'RHLang')
+RHLang = filter(mystats, Group == 'RHLang', Task == 'Jokes')
 RHLang <- RHLang[order(RHLang$ROI),]
 RHLang$PresOrder = c(13,14, 9,10, 7,8, 11,12, 3,4,5,6,1,2) #Reorder for standard presentation!
 RHLang <- RHLang[order(RHLang$PresOrder),]
 RHLang = arrange(RHLang, desc(ROIGroup))
 
+RHLangCustom = filter(mystats, Group == 'RHLang', Task == 'JokesCustom')
+RHLangCustom <- RHLangCustom[order(RHLangCustom$ROI),]
+RHLangCustom$PresOrder = c(19,20,21, 13,14,15, 10,11,12, 16,17,18, 4,5,6, 7,8,9, 1,2,3) #Reorder for standard presentation!
+RHLangCustom <- RHLangCustom[order(RHLangCustom$PresOrder),]
+RHLangCustom = arrange(RHLangCustom, desc(ROIGroup))
 
-LHLang = filter(mystats, Group == 'LHLang')
+
+LHLang = filter(mystats, Group == 'LHLang', Task == 'Jokes')
 LHLang <- LHLang[order(LHLang$ROI),]
 LHLang$PresOrder = c(13,14, 9,10, 7,8, 11,12, 3,4,5,6,1,2)
 LHLang <- LHLang[order(LHLang$PresOrder),]
 LHLang = arrange(LHLang, desc(ROIGroup))
 
+LHLangCustom = filter(mystats, Group == 'LHLang', Task == 'JokesCustom')
+LHLangCustom <- LHLangCustom[order(LHLangCustom$ROI),]
+LHLangCustom$PresOrder = c(19,20,21, 13,14,15, 10,11,12, 16,17,18, 4,5,6, 7,8,9, 1,2,3) 
+LHLangCustom <- LHLangCustom[order(LHLangCustom$PresOrder),]
+LHLangCustom = arrange(LHLangCustom, desc(ROIGroup))
 
-MDLeft = filter(mystats, Group == 'MDLeft')
+
+MDLeft = filter(mystats, Group == 'MDLeft', Task == 'Jokes')
 MDLeft <- MDLeft[order(MDLeft$ROI),]
 MDLeft = arrange(MDLeft, desc(ROIGroup))
 
-MDRight = filter(mystats, Group == 'MDRight')
+MDLeftCustom = filter(mystats, Group == 'MDLeft', Task == 'JokesCustom')
+MDLeftCustom <- MDLeftCustom[order(MDLeftCustom$ROI),]
+MDLeftCustom = arrange(MDLeftCustom, desc(ROIGroup))
+
+MDRight = filter(mystats, Group == 'MDRight', Task == 'Jokes')
 MDRight <- MDRight[order(MDRight$ROI),]
 MDRight = arrange(MDRight, desc(ROIGroup))
+
+MDRightCustom = filter(mystats, Group == 'MDRight', Task == 'JokesCustom')
+MDRightCustom <- MDRightCustom[order(MDRightCustom$ROI),]
+MDRightCustom = arrange(MDRightCustom, desc(ROIGroup))
 
 ToM = filter(mystats, Group == 'ToM', Task == 'Jokes')
 ToM <- ToM[order(ToM$ROI),]
@@ -282,4 +302,9 @@ makeBar(RHLang)
 makeBar(MDLeft)
 makeBar(MDRight)
 makeBar(ToM, -0.5, 1)
+
 makeBar(ToMCustom, -0.5, 1, c("high\n  "= "gray35", "med\n   "= "gray50", "low\n  "= "gray65"))
+makeBar(RHLangCustom, mycolors = c("high\n  "= "gray35", "med\n   "= "gray50", "low\n  "= "gray65"))
+makeBar(LHLangCustom, mycolors = c("high\n  "= "gray35", "med\n   "= "gray50", "low\n  "= "gray65"))
+makeBar(MDLeftCustom, mycolors = c("high\n  "= "gray35", "med\n   "= "gray50", "low\n  "= "gray65"))
+makeBar(MDRightCustom, mycolors = c("high\n  "= "gray35", "med\n   "= "gray50", "low\n  "= "gray65"))

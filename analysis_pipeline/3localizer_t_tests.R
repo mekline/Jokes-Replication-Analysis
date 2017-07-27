@@ -13,8 +13,8 @@ View(allSigChange)
 
 #For the replication, commenting this out, we'll find out in a minute if any localizer-to-localizer
 #measurements are not robust enough
-#New 10/12: Localizer analysis shows that VMPFC localizer doesn't come out in this dataset, so remove it from
-#the joke-lit tests for ToM and ToM custom (but leave it for the localizer itself)
+#New 10/12: Localizer analysis shows that VMPFC localizer doesn't come out in this dataset (replication/study 2), so DONT remove it from
+#the joke-lit tests for ToM and ToM custom 
 #Replication: Nothing looks like it should be left out yet!
 
 #allSigChange = allSigChange %>%
@@ -77,11 +77,11 @@ allTests %>%
 
 allTests %>%
   filter(Group == 'RHLang', task == 'Lang', contrastName == 'S-N') %>%
-  summarise(n(), sum(sig), reportTests(t,p)) #Orig found a surprise nonsig, but not in the replication
+  summarise(n(), sum(sig), reportTests(t,p)) 
 
 allTests %>%
   filter(Group == 'MDLeft', task == 'MD', contrastName == 'H-E') %>%
-  summarise(n(), sum(sig), reportTests(t,p)) #Orig found a surprise nonsig, but not in the replication
+  summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
   filter(Group == 'MDRight', task == 'MD', contrastName == 'H-E') %>%
@@ -103,11 +103,15 @@ allTests %>%
   filter(Group == 'RHLang', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'RHLang', contrastName == 'joke', !sig)
+filter(allTests, Group == 'RHLang', contrastName == 'joke', sig) %>%
+  summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
   filter(Group == 'RHLang', task == 'Jokes', contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'RHLang', contrastName == 'lit', !sig)
+filter(allTests, Group == 'RHLang', contrastName == 'lit', sig) %>%
+  summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
   filter(Group == 'RHLang', task == 'Jokes', contrastName == 'joke-lit') %>%
@@ -145,6 +149,8 @@ allTests %>%
   filter(Group == 'MDRight', task == 'Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'MDRight', contrastName == 'joke-lit', !sig)
+filter(allTests, Group == 'MDRight', contrastName == 'joke-lit', sig) %>%
+  summarise(n(), sum(sig), reportTests(t,p))
 
 
 ###LHMD
@@ -179,13 +185,13 @@ allTests %>%
   filter(Group == 'ToM', task =='Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
-#07/10/17 Where DID the paramfun go? 
+#07/10/17 Where DID the paramfun go?  7/27 I found it! Whoops, and it has a different name in Study 1 and 2, which could cause problems...
 
 #10/14 Huh, where did the ToM paramfun test go? Here it is again...
-#allTests %>%
-#  filter(Group == 'ToMCustom', contrastName == 'paramfun',!sig) %>%
-#  summarise(n(), sum(sig), reportTests(t,p))
-#filter(allTests, Group == 'ToM', contrastName == 'joke-lit', sig)
+allTests %>%
+ filter(Group == 'ToM', task == 'JokesCustom', contrastName == 'linear') %>%
+ summarise(n(), sum(sig), reportTests(t,p))
+filter(allTests, Group == 'ToM', contrastName == 'joke-lit', sig)
 
 
 
