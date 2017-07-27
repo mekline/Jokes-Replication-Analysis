@@ -194,9 +194,29 @@ allTests %>%
 filter(allTests, Group == 'ToM', contrastName == 'joke-lit', sig)
 
 
-
-
 ###############Here be exploratory analyses######
+
+###############Exploratory analysis on Study 2
+
+#Extend the paramfun contrasts of the critical task to measure them in lang and in MD!
+allTests %>%
+  filter(Group == 'RHLang', task == 'JokesCustom', contrastName == 'linear') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
+
+allTests %>%
+  filter(Group == 'LHLang', task == 'JokesCustom', contrastName == 'linear') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
+
+allTests %>%
+  filter(Group == 'MDRight', task == 'JokesCustom', contrastName == 'linear') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
+
+allTests %>%
+  filter(Group == 'MDLeft', task == 'JokesCustom', contrastName == 'linear') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
+
+################ Exploratory analysis on Study 1: power analysis
+
 
 #Let's try and do a power analysis on the Jokes results. (Considering a replication
 #since a journal has asked for one) There are 4 regions we expect to 
@@ -216,7 +236,7 @@ cohens_d <- function(x, y) {
 
 forPower <- allSigChange %>%
   filter(Group == 'ToM', contrastName == 'joke-lit') %>%
-  filter(ROIName %in% c('RTPJ','LTPJ','PC','MMPFC') ) %>%
+  filter(ROIName %in% c('RTPJ','LTPJ','PC','MM PFC') ) %>%
   group_by(ROIName)%>%
   summarise(m = mean(sigChange), sd = sd(sigChange), t = t.test(sigChange, mu=0,alt='greater')$statistic, 
             p = t.test(sigChange, mu=0,alt='greater')$p.value)
@@ -227,6 +247,8 @@ forPower$cohens_d <- forPower$m / forPower$sd
 ptests <- mapply(pwr.t.test, n=forPower$n, d=forPower$cohens_d, sig.level=0.05, alternative='greater')
 
 #These effects are powered okay: range 0.587 - 0.856
+#UPDATE: Study 2, the effects are powered VERY well, RTPJ, LTPJ, PC are at .92 or higher, MM PFC is at .62
+
 
 #Assume the smallest effect in ToM regions is the true effect size
 effect_est <- min(forPower$cohens_d)
