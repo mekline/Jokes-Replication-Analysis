@@ -128,6 +128,8 @@ t.test(meanResponse ~ category, data=avgResponse)
 #Responses are different by condition! The jokes are funny!
 
 
+#### See below graphs for exploratory analyses. 
+
 ####
 # Graphs!
 ####
@@ -235,3 +237,43 @@ ggplot(data=toPlotResp, aes(y=mean, x=categoryLabel)) +
   theme(legend.position="none")  
 ggsave(filename="behavioral.jpg", width=3, height=3)
 
+
+##################
+# Exploratory analyses!
+##################
+
+
+# There are some differences between studies 1 and 2! In particular, we see overall 
+# bumps in activation (J > NJ) for the other 2 systems, Lang and MD.
+# One thing Ev wondered was whether there were any 'oddball' responders in our
+# task who were evaluating the jokes very differently.  To determine this, we're going 
+# to try and calculate a value for each person, which is: "how far away from the mean
+# response is this person's average answer"
+
+# Make a table that aggregates responses by *item* (not person)
+avgItemResponse <- behavdata %>%
+  group_by(item, category) %>%
+  summarise(meanResponse = mean(response))
+
+#Merge it back to the main table
+behavdata <- merge(behavdata, avgItemResponse, by=c("item","category"))
+
+#Add distance-from-mean, and do a summary table!
+oddballSubj <- behavdata %>%
+  mutate(distanceFromMean = response - meanResponse) %>%
+  group_by(ID, category) %>%
+  summarize(myMeanDistance = mean(distanceFromMean))
+
+
+#Visualize that....
+ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) + 
+  geom_point(stat = "identity")
+
+#Is there anyone who is an outlier? Do a boxplot to see
+# (Details: ) The upper whisker extends from the hinge to the largest value no further than 1.5 * IQR from the hinge (where IQR is the inter-quartile range, or distance between the first and third quartiles). The lower whisker extends from the hinge to the smallest value at most 1.5 * IQR of the hinge. Data beyond the end of the whiskers are called "outlying" points and are plotted individually.
+
+ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) + 
+  geom_boxplot(stat = "boxplot")
+
+#Interpretation: there are two people who found the NONjokes a bit funny, e.g. ~0.5 points funnier than the average person
+#(This is about half the observed effect size, jokes are about 1 point funnier than nonjokes over the whole dataset)

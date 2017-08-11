@@ -215,7 +215,16 @@ allTests %>%
   filter(Group == 'MDLeft', task == 'JokesCustom', contrastName == 'linear') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
-################ Exploratory analysis on Study 1: power analysis
+
+
+
+
+
+
+
+
+
+################ Exploratory analysis from Study 1: power analysis
 
 
 #Let's try and do a power analysis on the Jokes results. (Considering a replication
