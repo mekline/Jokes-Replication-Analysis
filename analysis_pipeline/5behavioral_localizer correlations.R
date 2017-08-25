@@ -128,7 +128,7 @@ t.test(meanResponse ~ category, data=avgResponse)
 #Responses are different by condition! The jokes are funny!
 
 
-#### See below graphs for exploratory analyses. 
+#### End of confirmatory/planned analyses, see below graphs for exploratory analyses. 
 
 ####
 # Graphs!
