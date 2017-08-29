@@ -139,6 +139,7 @@ anova(m1,m0)
 #Lang or MDL.  One way to show that those MD and RHL activations are tapping something other than humor in the task would be if 
 #funniness ratings didn't correlate with activation strength.  Let's see! (Oh wait, pause, this requires running more first level
 #analyses to get those contrasts.  Check with Ev first. )
+#(In fact, funniness ratings do correlate with activations in these regions as well)
 
 RHLCustom <- filter(allSigChange, Group == "RHLang", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
 #Make sure those factors are ordered....
@@ -168,3 +169,64 @@ m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|Sub
 m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDLCustom)
 anova(m1,m0)
 
+#Exploratory analysis 2: How do the signal changes for Joke > NonJoke compare to the localizer signal change in each 
+#ROI? Are these *proportions* different for the different signals? 
+
+localizer2task <- allSigChange %>%
+  filter(contrastName %in% c('joke-lit','H-E','S-N','bel-pho')) %>%
+  filter(task != 'JokesCustom') %>%
+  filter(ROIName != 'LocalizerAverage') %>%
+  mutate(taskType = ifelse(task == 'Jokes', 'Critical', 'Localizer')) %>% 
+  select(-c(contrastName, task)) #%>% #so the spreads/groups work
+  #spread(taskType, sigChange) %>%
+  #mutate(sigDiff = Localizer - Critical)
+
+#Okay, so what do we want to know? we want to know if the localizer effect is 
+#bigger than the jokes effect in each region.
+
+m1 <- lmer(sigChange ~ taskType*Group + (1|ROIName) + (taskType|SubjectNumber), data = localizer2task)
+m0 <- lmer(sigChange ~ taskType+Group + (1|ROIName) + (taskType|SubjectNumber), data = localizer2task)
+anova(m1, m0)
+
+#Answer: the interaction matters! But we want more specifics. How about a graph
+
+loctaskstats <- aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
+                                                            localizer2task$taskType, 
+                                                            localizer2task$ROIName, 
+                                                            localizer2task$ROI), mean)
+names(loctaskstats) = c('Group','taskType', 'ROIName', 'ROI','themean')
+#TO DO: add error bars
+
+
+mybootup = aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
+                                                       localizer2task$taskType, 
+                                                       localizer2task$ROIName, 
+                                                       localizer2task$ROI), bootup)
+names(mybootup) = c('Group','taskType', 'ROIName', 'ROI', 'bootup')
+mybootdown = aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
+                                                         localizer2task$taskType, 
+                                                         localizer2task$ROIName, 
+                                                         localizer2task$ROI), bootdown)
+names(mybootdown) = c('Group','taskType', 'ROIName', 'ROI', 'bootdown')
+
+loctaskstats = merge(loctaskstats,mybootup)
+loctaskstats = merge(loctaskstats,mybootdown)
+
+
+
+ggplot(data=loctaskstats, aes(x=ROIName, y=themean, fill=taskType)) + 
+  geom_bar(position=position_dodge(), stat="identity") +
+  xlab('') +
+  ylab(str_wrap('% signal change, Crit - Control', width=18)) +
+  facet_grid(~Group, scale='free_x', space='free_x')
+theme_bw() +
+  theme(legend.key = element_blank()) +
+  theme(text = element_text(size = 40)) +
+  theme(strip.background = element_blank()) +
+  theme(strip.text = element_blank()) 
+
+
+#For each region, ask whether there's a difference.
+ToMmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'ToM'))
+ToMmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'ToM'))
+                 

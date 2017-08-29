@@ -24,7 +24,7 @@ allSigChange_E1 = allSigChange_E1 %>%
 
 allSigChange = allSigChange %>%
   select(-one_of(c('participants','ID'))) %>%
-  mutate(Experiment = 'Replication')
+  mutate(Experiment = 'Experiment 2')
 
 avgRT_E1 = avgRT_E1 %>%
   mutate(ID = newSubjectName) %>%
@@ -36,8 +36,8 @@ avgResponse_E1 = avgResponse_E1 %>%
   mutate(Experiment = 'Experiment 1') %>%
   select(-newSubjectName)
 
-avgRT = mutate(avgRT, Experiment = 'Replication')
-avgResponse <- mutate(avgResponse, Experiment = 'Replication')
+avgRT = mutate(avgRT, Experiment = 'Experiment 2')
+avgResponse <- mutate(avgResponse, Experiment = 'Experiment 2')
 
 #And merge the datasets
 avgRT_E1$category <- as.factor(avgRT_E1$category)
@@ -58,7 +58,7 @@ all_avgResponse = merge(avgResponse, avgResponse_E1, all.x = TRUE, all.y = TRUE)
 
 #Whoops! RTs should be in milliseconds. 
 
-all_avgRT$meanRT <- all_avgRT$meanRT * 1000
+all_avgRT[all_avgRT$Experiment == 'Experiment 1',]$meanRT <- all_avgRT[all_avgRT$Experiment == 'Experiment 1',]$meanRT * 1000
 
 ##############
 ##############
@@ -162,7 +162,7 @@ ggsave(filename="composite_E1_rep_behavioral.jpg", width=3, height=3)
 ##############
 
 toGraph <- all_allSignalChange %>%
-  filter(contrastName %in% c('joke','lit', 'high', 'med','low')) %>%
+  filter(contrastName %in% c('joke','lit', 'high', 'med','low', 'joke-lit')) %>%
   mutate(newSubjName = paste(Experiment, SubjectNumber))
 
 sterr <- function(mylist){
@@ -204,12 +204,13 @@ mystats$ROIName <- str_wrap(mystats$ROIName, width = 4)
 
 mystats$contrastLabel <- mystats$contrastName
 mystats[mystats$contrastName == "joke",]$contrastLabel <- "Jokes\n  "
-mystats[mystats$contrastName == "lit",]$contrastLabel <- "Non-jokes\n   "
+mystats[mystats$contrastName == "lit",]$contrastLabel <- "Non-Jokes\n   "
 
+mystats$Group <- factor(mystats$Group, levels = c("ToM", "RHLang", "MDRight", "LHLang", "MDLeft", "ToMCustom"))
 
 #Graphing function!
 
-makeBar = function(plotData,ylow=-0.5,yhigh=2.5, mycolors = c("gray35", "gray60")) {
+makeBar = function(plotData,ylow=-0.5,yhigh=2, mycolors = c("gray35", "gray60")) {
   
   #freeze factor orders
   plotData$ROIName <- factor(plotData$ROIName, levels = unique(plotData$ROIName))
@@ -258,12 +259,12 @@ ToMCustom <- ToMCustom[order(ToMCustom$ROI),]
 ToMCustom$PresOrder = c(1,2,3,4,5,6,13,14,15,7,8,9,10,11,12,16,17,18,19,20,21, 22, 23, 24)
 ToMCustom <- ToMCustom[order(ToMCustom$PresOrder),]
 
-makeRegionsBar = function(plotData,ylow=-0.5,yhigh=2.5, mycolors = c("gray35", "gray60")) {
+makeRegionsBar = function(plotData,ylow=-0.5,yhigh=2, mycolors = c("gray35", "gray60")) {
   
   #freeze factor orders
   plotData$ROIName <- factor(plotData$ROIName, levels = unique(plotData$ROIName))
   plotData$contrastLabel <- factor(plotData$contrastLabel, levels = unique(plotData$contrastLabel)[c(1,3,2)])
-  myfi = paste('composite_CustomRatings_', plotData$Task[2], '.jpg', sep="")#filename
+  myfi = paste('composite_', plotData$Group[2], plotData$Task[2], '.jpg', sep="")#filename
   print(myfi)
   
   ggplot(data=plotData, aes(x=contrastLabel, y=themean, fill=Experiment)) + 
@@ -290,5 +291,114 @@ makeRegionsBar = function(plotData,ylow=-0.5,yhigh=2.5, mycolors = c("gray35", "
 
 makeRegionsBar(ToMCustom)
 
+#####################################################
+#
+# Figures for the Supplemental - parcel by parcel graphs, for each system on the Jokes > Non-Jokes contrast
+# This uses the same makeRegionsBar function, just need to organize and prettify each system here; stealing code from the original figs script
+#####################################################
 
-#Fig 4 - Signal changes in ToM with custom ratings, by experiment
+mystats <- mystats %>%
+  mutate(ROIGroup = ifelse((ROIName == "average\nacross\nfROIs"), 1, 2))
+
+#Subsets & Ordering (elaborate code, probably can condense these; ggplot is finicky at orders)
+RHLang = filter(mystats, Group == 'RHLang', Task == 'Jokes', (contrastName == 'joke' | contrastName == 'lit'))
+RHLang <- RHLang[order(RHLang$ROI),]
+RHLang$PresOrder = c(13,14, 9,10, 7,8, 11,12, 3,4,5,6,1,2) #Reorder for standard presentation!
+RHLang <- RHLang[order(RHLang$PresOrder),]
+RHLang = arrange(RHLang, ROIGroup)
+makeRegionsBar(RHLang)
+
+LHLang = filter(mystats, Group == 'LHLang', Task == 'Jokes', (contrastName == 'joke' | contrastName == 'lit'))
+LHLang <- LHLang[order(LHLang$ROI),]
+LHLang$PresOrder = c(13,14, 9,10, 7,8, 11,12, 3,4,5,6,1,2)
+LHLang <- LHLang[order(LHLang$PresOrder),]
+LHLang = arrange(LHLang, ROIGroup)
+makeRegionsBar(LHLang)
+
+MDLeft = filter(mystats, Group == 'MDLeft', Task == 'Jokes', (contrastName == 'joke' | contrastName == 'lit'))
+MDLeft <- MDLeft[order(MDLeft$ROI),]
+MDLeft = arrange(MDLeft, ROIGroup)
+makeRegionsBar(MDLeft)
+
+MDRight = filter(mystats, Group == 'MDRight', Task == 'Jokes', (contrastName == 'joke' | contrastName == 'lit'))
+MDRight <- MDRight[order(MDRight$ROI),]
+MDRight = arrange(MDRight, ROIGroup)
+makeRegionsBar(MDRight)
+
+ToM = filter(mystats, Group == 'ToM', Task == 'Jokes', (contrastName == 'joke' | contrastName == 'lit'))
+ToM <- ToM[order(ToM$ROI),]
+# ToM$PresOrder = c(1,2,3,4,9,10,5,6,7,8,11,12,13,14) This is for when VMPFC is NOT included
+ToM$PresOrder = c(1,2,3,4,9,10,5,6,7,8,11,12,13,14,15,16) #This is for all contrasts
+ToM <- ToM[order(ToM$PresOrder),]
+ToM = arrange(ToM, ROIGroup)
+makeRegionsBar(ToM)
+
+#NOTE remember I've only done 1st levels on Custom for the non-TOM regions for Exp 2
+RHLangCustom = filter(mystats, Group == 'RHLang', Task == 'JokesCustom')
+RHLangCustom <- RHLangCustom[order(RHLangCustom$ROI),]
+RHLangCustom$PresOrder = c(19,20,21, 13,14,15, 10,11,12, 16,17,18, 4,5,6, 7,8,9, 1,2,3) #Reorder for standard presentation!
+RHLangCustom <- RHLangCustom[order(RHLangCustom$PresOrder),]
+RHLangCustom = arrange(RHLangCustom, ROIGroup)
+makeRegionsBar(RHLangCustom)
+
+LHLangCustom = filter(mystats, Group == 'LHLang', Task == 'JokesCustom')
+LHLangCustom <- LHLangCustom[order(LHLangCustom$ROI),]
+LHLangCustom$PresOrder = c(19,20,21, 13,14,15, 10,11,12, 16,17,18, 4,5,6, 7,8,9, 1,2,3) 
+LHLangCustom <- LHLangCustom[order(LHLangCustom$PresOrder),]
+LHLangCustom = arrange(LHLangCustom, ROIGroup)
+makeRegionsBar(LHLangCustom)
+
+MDRightCustom = filter(mystats, Group == 'MDRight', Task == 'JokesCustom')
+MDRightCustom <- MDRightCustom[order(MDRightCustom$ROI),]
+MDRightCustom = arrange(MDRightCustom, ROIGroup)
+makeRegionsBar(MDRightCustom)
+
+MDLeftCustom = filter(mystats, Group == 'MDLeft', Task == 'JokesCustom')
+MDLeftCustom <- MDLeftCustom[order(MDLeftCustom$ROI),]
+MDLeftCustom = arrange(MDLeftCustom, ROIGroup)
+makeRegionsBar(MDLeftCustom)
+
+
+##################
+# AN EXPLORATORY FIGURE
+
+#FROM EV:
+#get the average joke>non-joke effect size from Study 1 vs. Study 2, 
+#and correlate these. I'd be curious to see correlations
+#* within each of the 5 sets of fROIs,
+#* across all fROIs in the first three sets
+#* across all fROIs
+
+#This would give us a sense of how consistent the relative sizes of the 
+#effects across systems and fROIs are across studies.
+
+jokelits <- mystats %>%
+  filter(contrastName == 'joke-lit') %>%
+  select(c(Group, ROIName, Experiment, themean)) %>%
+  filter(ROIName != "average\nacross\nfROIs") %>%
+  mutate(Experiment = ifelse(Experiment == "Experiment 1", 'Experiment1', 'Experiment2')) %>%
+  spread(Experiment, themean) %>%
+  filter(ROIName != "VM\nPFC") #VMPFC was dropped from E1
+
+
+
+#A Graph
+ggplot(data=jokelits, aes(y=Experiment1, x=Experiment2, color = Group)) + 
+  geom_point() +
+  geom_text(aes(label = ROIName)) +
+  facet_wrap(~ Group, ncol=2) +
+  geom_smooth(method="lm", se=FALSE) + 
+  theme(legend.position="none") +
+  ggsave(filename="compare_activation_E1_E2.jpg", width=12, height=18)
+
+#A Statistics
+
+cor(jokelits$Experiment1, jokelits$Experiment2)
+
+main3 <- filter(jokelits, Group == 'ToM' | Group == 'RHLang' | Group == 'MDRight')
+cor(main3$Experiment1, main3$Experiment2)
+
+allcors <- jokelits %>%
+  group_by(Group) %>%
+  summarize(cor(Experiment1, Experiment2))
+

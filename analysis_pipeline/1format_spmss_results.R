@@ -38,7 +38,7 @@ whichResults = c('LangfROIs_resp_JokesCustom_20170720',
                  'ToMfROIS_resp_Jokes_Top50Voxels_20170720',
                  'ToMfROIS_resp_ToM_20170720');
 
-toSave = 1
+toSave = 0
 
   ####
   #Leave the rest alone unless you're feeling fancy
