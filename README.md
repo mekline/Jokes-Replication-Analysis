@@ -2,6 +2,8 @@
 
 This is the repo that contains all analysis of the 'Jokes' replication reported in **PAPER TITLE**, which is a preregistered replication of this experiment (link to repo and preprint.) Read the preprint for details, but essentially this experiment is identical except that we use a sample size based on power analysis from the previous round of results (see LINK for these calculations), and add an additional, exploratory Theory-of-Mind localizer designed to test how/whether joke-specific activation in ToM regions is dependent on the particular localizer task used. 
 
+(test commit)
+
 ## Repository Contents
 
 * participant_summary.csv - contains basic info one each participant, including basic demographics (age, gender, handedness, langauge background), any oddities about the critical testing session, and information on localizers, including whether localizer data was collected for that participant on another day, & any exclusions from analyses & reasons for doing so.  All participants who participated in testing sessions for the Jokes study are included in this doc.
