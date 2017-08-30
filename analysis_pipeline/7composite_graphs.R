@@ -58,7 +58,7 @@ all_avgResponse = merge(avgResponse, avgResponse_E1, all.x = TRUE, all.y = TRUE)
 
 #Whoops! RTs should be in milliseconds. 
 
-all_avgRT[all_avgRT$Experiment == 'Experiment 1',]$meanRT <- all_avgRT[all_avgRT$Experiment == 'Experiment 1',]$meanRT * 1000
+all_avgRT[all_avgRT$Experiment == 'Experiment 2',]$meanRT <- all_avgRT[all_avgRT$Experiment == 'Experiment 2',]$meanRT * 1000
 
 ##############
 ##############
