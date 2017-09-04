@@ -36,9 +36,13 @@ whichResults = c('LangfROIs_resp_JokesCustom_20170720',
                  'ToMfROIS_resp_JokesCustom_Top50Voxels_20170720',
                  'ToMfROIS_resp_Jokes_20170720',
                  'ToMfROIS_resp_Jokes_Top50Voxels_20170720',
-                 'ToMfROIS_resp_ToM_20170720');
+                 'ToMfROIS_resp_ToM_20170720',
+                 'SplitHalf_RHLfROIs_resp_Jokes_20170904',
+                 'SplitHalf_LangfROIs_resp_Jokes_20170904',
+                 'SplitHalf_MDfROIs_resp_Jokes_20170904',
+                 'SplitHalf_ToMfROIs_resp_Jokes_20170904');
 
-toSave = 0
+toSave = 1
 
   ####
   #Leave the rest alone unless you're feeling fancy
