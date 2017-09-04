@@ -128,7 +128,7 @@ t.test(meanResponse ~ category, data=avgResponse)
 #Responses are different by condition! The jokes are funny!
 
 
-#### End of confirmatory/planned analyses, see below graphs for exploratory analyses. 
+#### End of confirmatory/planned analyses, see below the graphs to get to exploratory analyses. 
 
 ####
 # Graphs!
@@ -275,5 +275,5 @@ ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) +
 ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) + 
   geom_boxplot(stat = "boxplot")
 
-#Interpretation: there are two people who found the NONjokes a bit funny, e.g. ~0.5 points funnier than the average person
+#Interpretation: there are two people who found the NONjokes a bit funny, e.g. ~0.5 points funnier than the average person, that's it. 
 #(This is about half the observed effect size, jokes are about 1 point funnier than nonjokes over the whole dataset)

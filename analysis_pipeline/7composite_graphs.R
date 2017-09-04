@@ -7,6 +7,9 @@ View(avgRT)
 View(avgResponse)
 View(allSigChange)
 
+#STOP HERE and look if avgRT for this data (Exp 2) is already in milliseconds. If not, make it so!
+#avgRT$meanRT <- avgRT$meanRT * 1000
+
 ##############
 #Now load up the data saved from experiment 1, and adjust column names to match
 ##############
@@ -56,9 +59,8 @@ all_allSignalChange = merge(allSigChange, allSigChange_E1, all.x = TRUE, all.y =
 all_avgRT = merge(avgRT, avgRT_E1, all.x = TRUE, all.y = TRUE)
 all_avgResponse = merge(avgResponse, avgResponse_E1, all.x = TRUE, all.y = TRUE)
 
-#Whoops! RTs should be in milliseconds. 
-
-all_avgRT[all_avgRT$Experiment == 'Experiment 2',]$meanRT <- all_avgRT[all_avgRT$Experiment == 'Experiment 2',]$meanRT * 1000
+#Whoops! RTs should be in milliseconds. Experiment 1 probably isn't yet. 
+all_avgRT[all_avgRT$Experiment == 'Experiment 1',]$meanRT <- all_avgRT[all_avgRT$Experiment == 'Experiment 1',]$meanRT * 1000
 
 ##############
 ##############
@@ -137,6 +139,8 @@ ggplot(data=toPlotRT, aes(y=mean, x=categoryLabel, fill = Experiment)) +
   theme_bw() +
   theme(legend.key = element_blank()) +
   theme(strip.background = element_blank()) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank()) +
   theme(legend.position="none")  
 ggsave(filename="composite_E1_rep_behavioralrt.jpg", width=2, height=3)
 
@@ -152,7 +156,10 @@ ggplot(data=toPlotResp, aes(y=mean, x=categoryLabel, fill = Experiment)) +
   scale_fill_manual(name="", values=c("gray35", "gray60")) +
   theme_bw() +
   theme(legend.key = element_blank()) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank())+
   theme(strip.background = element_blank()) +
+  
 ggsave(filename="composite_E1_rep_behavioral.jpg", width=3, height=3)
 
 
@@ -207,10 +214,25 @@ mystats[mystats$contrastName == "joke",]$contrastLabel <- "Jokes\n  "
 mystats[mystats$contrastName == "lit",]$contrastLabel <- "Non-Jokes\n   "
 
 mystats$Group <- factor(mystats$Group, levels = c("ToM", "RHLang", "MDRight", "LHLang", "MDLeft", "ToMCustom"))
+mystats <- mutate(mystats, GroupLabel = ifelse(Group == "ToM", "Social network,\nRight hemisphere",
+                                               ifelse(Group == "RHLang", "Language network, \nRight hemisphere",
+                                                      ifelse(Group == "MDRight", "Executive network,\nRight hemisphere",
+                                                             ifelse(Group == "LHLang", "Language network,\nLeft hemisphere",
+                                                                    ifelse(Group == "MDLeft", "Executive network,\nLeft hemisphere","ToMCustom")
+                                                                    )))))
+
+#ARE YOU KIDDING ME, R.  More factor order setting. 
+mystats$GroupLabel <- factor(mystats$GroupLabel, levels=c("Social network,\nRight hemisphere", 
+                                                          "Language network, \nRight hemisphere",
+                                                          "Executive network,\nRight hemisphere",
+                                                          "Language network,\nLeft hemisphere",
+                                                          "Executive network,\nLeft hemisphere"
+                                                          ))
+
 
 #Graphing function!
 
-makeBar = function(plotData,ylow=-0.5,yhigh=2, mycolors = c("gray35", "gray60")) {
+makeBar = function(plotData,ylow=-0.4,yhigh=3, mycolors = c("gray35", "gray60")) {
   
   #freeze factor orders
   plotData$ROIName <- factor(plotData$ROIName, levels = unique(plotData$ROIName))
@@ -222,21 +244,21 @@ makeBar = function(plotData,ylow=-0.5,yhigh=2, mycolors = c("gray35", "gray60"))
     geom_bar(position=position_dodge(), stat="identity") +
     geom_errorbar(aes(ymin=bootdown, ymax=bootup), colour="black", width=.1, position=position_dodge(.9)) +
     coord_cartesian(ylim=c(ylow,yhigh)) +
-    scale_y_continuous(breaks = seq(-0.5, 1.5, 0.5))+
+    scale_y_continuous(breaks = seq(0, 1, 0.5))+
     xlab('') +
     ylab(str_wrap('% signal change over fixation', width=18)) +
     scale_fill_manual(name="", values=mycolors) +
-    facet_grid(~Group, scale='free_x', space='free_x')
+    facet_grid(~GroupLabel) +
     theme_bw() +
     theme(legend.key = element_blank()) +
-    theme(text = element_text(size = 40)) +
-    theme(strip.background = element_blank()) +
-    theme(strip.text = element_blank()) 
+    #theme(strip.background = element_blank()) +
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+  panel.background = element_blank())
   # Optional, remove for RHLang and ToMCustom since we want the legend there...
   #+ theme(legend.position="none")
   
   
-  ggsave(filename=myfi, width=9, height=3)
+  ggsave(filename=myfi, width=9, height=4)
   
 }
 
@@ -246,6 +268,46 @@ mylocs = mystats %>%
   filter(contrastName %in% c('joke','lit'))
 makeBar(mylocs)
 
+#OKAY. Also, Ev would like a line graph below, showing how *signal change* Jokes > Nonjokes in each system
+#compares across experiments. Let's do it. 
+
+
+makeLine = function(plotData,ylow=-0.1,yhigh=0.6, mycolors = c("gray35", "gray60")) {
+  
+  #freeze factor orders
+  plotData$ROIName <- factor(plotData$ROIName, levels = unique(plotData$ROIName))
+  plotData$contrastLabel <- factor(plotData$contrastLabel, levels = unique(plotData$contrastLabel))
+  myfi = paste('composite_EffectSizeLine_', plotData$Task[2], '.jpg', sep="")#filename
+  print(myfi)
+  
+  ggplot(data=plotData, aes(x=contrastLabel, y=themean, color=Experiment)) + 
+    geom_errorbar(aes(ymin=bootdown, ymax=bootup, colour=factor(Experiment)), width=.05, position=position_dodge(.15)) +
+    geom_point(stat="identity", position=position_dodge(.15)) +
+    coord_cartesian(ylim=c(ylow,yhigh)) +
+    scale_y_continuous(breaks = seq(0, 0.5, 0.25))+
+    xlab('') +
+    ylab(str_wrap('% signal change Joke > Non-Joke', width=18)) +
+    scale_color_manual(name="", values=mycolors) +
+    facet_grid(~GroupLabel) +
+    theme_bw() +
+    theme(legend.key = element_blank()) +
+    theme(strip.background = element_blank()) +
+    theme(axis.text.x=element_blank(), axis.ticks.x=element_blank()) +
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+          panel.background = element_blank())
+  # Optional, remove for RHLang and ToMCustom since we want the legend there...
+  #+ theme(legend.position="none")
+  
+  
+  ggsave(filename=myfi, width=9, height=2)
+  
+}
+
+#Localizer averages only, regular condition assignment
+mylocs = mystats %>%
+  filter(ROIName == 'average\nacross\nfROIs') %>%
+  filter(contrastName %in% c('joke-lit'))
+makeLine(mylocs)
 ########################
 #Figure 4 - TOM with custom by-person assignments
 ########################
@@ -259,10 +321,11 @@ ToMCustom <- ToMCustom[order(ToMCustom$ROI),]
 ToMCustom$PresOrder = c(1,2,3,4,5,6,13,14,15,7,8,9,10,11,12,16,17,18,19,20,21, 22, 23, 24)
 ToMCustom <- ToMCustom[order(ToMCustom$PresOrder),]
 
-makeRegionsBar = function(plotData,ylow=-0.5,yhigh=2, mycolors = c("gray35", "gray60")) {
+makeRegionsBar = function(plotData,ylow=-0.5,yhigh=2.25, mycolors = c("gray35", "gray60")) {
   
   #freeze factor orders
   plotData$ROIName <- factor(plotData$ROIName, levels = unique(plotData$ROIName))
+  nROI = length(unique(plotData$ROIName))
   plotData$contrastLabel <- factor(plotData$contrastLabel, levels = unique(plotData$contrastLabel)[c(1,3,2)])
   myfi = paste('composite_', plotData$Group[2], plotData$Task[2], '.jpg', sep="")#filename
   print(myfi)
@@ -271,21 +334,18 @@ makeRegionsBar = function(plotData,ylow=-0.5,yhigh=2, mycolors = c("gray35", "gr
     geom_bar(position=position_dodge(), stat="identity") +
     geom_errorbar(aes(ymin=bootdown, ymax=bootup), colour="black", width=.1, position=position_dodge(.9)) +
     coord_cartesian(ylim=c(ylow,yhigh)) +
-    scale_y_continuous(breaks = seq(-0.5, 1.5, 0.5))+
+    scale_y_continuous(breaks = seq(-0.5, 2, 0.5))+
     xlab('') +
     ylab(str_wrap('% signal change over fixation', width=18)) +
     scale_fill_manual(name="", values=mycolors) +
-    facet_grid(~ROIName, scale='free_x', space='free_x')
-  theme_bw() +
+    facet_grid(~ROIName, scale='free_x', space='free_x')+
+    theme_bw() +
     theme(legend.key = element_blank()) +
-    theme(text = element_text(size = 40)) +
-    theme(strip.background = element_blank()) +
-    theme(strip.text = element_blank()) 
-  # Optional, remove for RHLang and ToMCustom since we want the legend there...
-  #+ theme(legend.position="none")
-  
-  
-  ggsave(filename=myfi, width=9, height=3)
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+          panel.background = element_blank()) +
+    theme(legend.position="none")
+
+  ggsave(filename=myfi, width=nROI+1, height=3)
   
 }
 

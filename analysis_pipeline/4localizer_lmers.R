@@ -195,7 +195,6 @@ loctaskstats <- aggregate(localizer2task$sigChange, by=list(localizer2task$Group
                                                             localizer2task$ROIName, 
                                                             localizer2task$ROI), mean)
 names(loctaskstats) = c('Group','taskType', 'ROIName', 'ROI','themean')
-#TO DO: add error bars
 
 
 mybootup = aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
@@ -216,17 +215,35 @@ loctaskstats = merge(loctaskstats,mybootdown)
 
 ggplot(data=loctaskstats, aes(x=ROIName, y=themean, fill=taskType)) + 
   geom_bar(position=position_dodge(), stat="identity") +
+  geom_errorbar(aes(ymin=bootdown, ymax=bootup), colour="black", width=.1, position=position_dodge(.9)) +
   xlab('') +
   ylab(str_wrap('% signal change, Crit - Control', width=18)) +
-  facet_grid(~Group, scale='free_x', space='free_x')
-theme_bw() +
+  facet_grid(~Group, scale='free_x', space='free_x')+
+  theme_bw() +
   theme(legend.key = element_blank()) +
   theme(text = element_text(size = 40)) +
   theme(strip.background = element_blank()) +
   theme(strip.text = element_blank()) 
 
 
-#For each region, ask whether there's a difference.
+#For each region, ask whether there's a difference. There is. This is not a very interesting analysis.  
 ToMmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'ToM'))
 ToMmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'ToM'))
-                 
+anova(ToMmodel, ToMmodel0)  
+
+MDRmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDRight'))
+MDRmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDRight'))
+anova(MDRmodel, MDRmodel0)  
+
+MDLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDLeft'))
+MDLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDLeft'))
+anova(MDLmodel, MDLmodel0)  
+
+RHLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'RHLang'))
+RHLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'RHLang'))
+anova(RHLmodel, RHLmodel0)  
+
+#Note, dropped subject slope for this model only, didn't converge
+LHLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group == 'LHLang'))
+LHLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group == 'LHLang'))
+anova(LHLmodel, LHLmodel0)  
