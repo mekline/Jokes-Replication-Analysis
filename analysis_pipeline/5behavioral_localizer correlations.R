@@ -250,6 +250,7 @@ ggsave(filename="behavioral.jpg", width=3, height=3)
 # to try and calculate a value for each person, which is: "how far away from the mean
 # response is this person's average answer"
 
+#(((EXPLORATORY D)))
 # Make a table that aggregates responses by *item* (not person)
 avgItemResponse <- behavdata %>%
   group_by(item, category) %>%

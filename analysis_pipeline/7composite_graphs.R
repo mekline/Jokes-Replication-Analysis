@@ -422,6 +422,7 @@ makeRegionsBar(MDLeftCustom)
 ##################
 # AN EXPLORATORY FIGURE
 
+## (((EXPLORATORY E)))
 #FROM EV:
 #get the average joke>non-joke effect size from Study 1 vs. Study 2, 
 #and correlate these. I'd be curious to see correlations

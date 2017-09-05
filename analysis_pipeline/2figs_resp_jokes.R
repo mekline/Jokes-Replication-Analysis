@@ -26,6 +26,11 @@ allSigChange = read.csv(paste(meansig_outputs_folder, 'all_mean_signal_outputs.c
 
 #FOR NOW: Make a choice whether to do all analyses with top 50 voxels or top 10% voxels 
 allSigChange = filter(allSigChange, ind_selection_method == 'Top10Percent')
+#NEW: Also, screen out the split-half analyses, we'll treat those in their own file since exploratory
+allSigChange = filter(allSigChange, !filename %in% c('SplitHalf_RHLfROIs_resp_Jokes_20170904', 
+                                                     'SplitHalf_LangfROIs_resp_Jokes_20170904',
+                                                     'SplitHalf_MDfROIs_resp_Jokes_20170904',
+                                                     'SplitHalf_ToMfROIs_resp_Jokes_20170904'))
 #(This can be changed to 'Top50Voxels' to see results with that fROI selection procedure
 
 # List contrast and ROI names so it's not just numbers!!!!! (This ordering comes from the 

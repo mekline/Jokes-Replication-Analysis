@@ -224,7 +224,7 @@ allTests %>%
 
 
 
-################ Exploratory analysis from Study 1: power analysis
+################ Exploratory analysis from Study 1: power analysis (((EXPLORATORY A)))
 
 
 #Let's try and do a power analysis on the Jokes results. (Considering a replication

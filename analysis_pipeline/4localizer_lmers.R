@@ -133,7 +133,7 @@ anova(m1,m0)
 
 
 
-####################HERE BE EXPLORATORY ANALYSES
+####################HERE BE EXPLORATORY ANALYSES (((EXPLORATORY B)))
 #As is math, after powering the study up for the replication, we now detect (probably smaller) significant effects
 #in all systems for jokes > nonjokes. The ToM ones are > RHLang and RMD (good!) but not significantly different in magnitude to 
 #Lang or MDL.  One way to show that those MD and RHL activations are tapping something other than humor in the task would be if 
@@ -169,7 +169,7 @@ m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|Sub
 m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDLCustom)
 anova(m1,m0)
 
-#Exploratory analysis 2: How do the signal changes for Joke > NonJoke compare to the localizer signal change in each 
+#Exploratory analysis 2 (((((EXPLORATORY C)))): How do the signal changes for Joke > NonJoke compare to the localizer signal change in each 
 #ROI? Are these *proportions* different for the different signals? 
 
 localizer2task <- allSigChange %>%
