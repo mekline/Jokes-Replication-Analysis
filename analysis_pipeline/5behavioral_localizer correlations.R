@@ -1,15 +1,8 @@
-#Relating behavioral and contrast data by subjects!
-
-
-library(tidyr)
-library(dplyr)
-library(lme4)
-library(ggplot2)
-library(bootstrap)
+#This set of analyses is for relating (individual) behavioral and contrast data by subjects. 
 
 #(set your own wd first)
 setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
-behavdir = "/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/behavioral_data/Jokes"
+behavdir = "/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/E2_behavioral_data/Jokes"
 
 #New  - read in the nicely formatted behavioral data we made!
 behavdata = read.csv(paste(behavdir, '/all_behavioral_output.csv', sep=''))
@@ -71,6 +64,7 @@ jokeSigChange <- allSigChange %>%
 bb <- merge(jokeResponseChange, jokeSigChange, by=c('ID'))
 
 ## REPORT STATS
+#E2 result - these are not highly correlated. 
 cor(bb$meanResponseChange, bb$sigChange)
 
 ## Added an LM (no random slopes/intercepts! just 1 value/person)
@@ -94,7 +88,8 @@ ggsave(filename="behav_activation.jpg", width=3, height=3)
   
 
 ######################
-#Make the behavioral graphs for basic response times and ratings, (FIG 2)
+#Make the behavioral graphs for basic response times and ratings (note, superseded by the composite version
+#of this figure)
 
 # Drop NA response
 
@@ -126,9 +121,6 @@ avgResponse <- behavdata %>%
 
 t.test(meanResponse ~ category, data=avgResponse)
 #Responses are different by condition! The jokes are funny!
-
-
-#### End of confirmatory/planned analyses, see below the graphs to get to exploratory analyses. 
 
 ####
 # Graphs!
@@ -236,45 +228,3 @@ ggplot(data=toPlotResp, aes(y=mean, x=categoryLabel)) +
   # Optional, remove for RHLang and ToMCustom since we want the legend there...
   theme(legend.position="none")  
 ggsave(filename="behavioral.jpg", width=3, height=3)
-
-
-##################
-# Exploratory analyses!
-##################
-
-
-# There are some differences between studies 1 and 2! In particular, we see overall 
-# bumps in activation (J > NJ) for the other 2 systems, Lang and MD.
-# One thing Ev wondered was whether there were any 'oddball' responders in our
-# task who were evaluating the jokes very differently.  To determine this, we're going 
-# to try and calculate a value for each person, which is: "how far away from the mean
-# response is this person's average answer"
-
-#(((EXPLORATORY D)))
-# Make a table that aggregates responses by *item* (not person)
-avgItemResponse <- behavdata %>%
-  group_by(item, category) %>%
-  summarise(meanResponse = mean(response))
-
-#Merge it back to the main table
-behavdata <- merge(behavdata, avgItemResponse, by=c("item","category"))
-
-#Add distance-from-mean, and do a summary table!
-oddballSubj <- behavdata %>%
-  mutate(distanceFromMean = response - meanResponse) %>%
-  group_by(ID, category) %>%
-  summarize(myMeanDistance = mean(distanceFromMean))
-
-
-#Visualize that....
-ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) + 
-  geom_point(stat = "identity")
-
-#Is there anyone who is an outlier? Do a boxplot to see
-# (Details: ) The upper whisker extends from the hinge to the largest value no further than 1.5 * IQR from the hinge (where IQR is the inter-quartile range, or distance between the first and third quartiles). The lower whisker extends from the hinge to the smallest value at most 1.5 * IQR of the hinge. Data beyond the end of the whiskers are called "outlying" points and are plotted individually.
-
-ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) + 
-  geom_boxplot(stat = "boxplot")
-
-#Interpretation: there are two people who found the NONjokes a bit funny, e.g. ~0.5 points funnier than the average person, that's it. 
-#(This is about half the observed effect size, jokes are about 1 point funnier than nonjokes over the whole dataset)

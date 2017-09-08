@@ -1,6 +1,5 @@
-rm(list=ls(all=TRUE))
-library(tidyr)
-library(dplyr)
+#(You don't need to run this for the rest of the analysis, it just compares the sizes of the parcels (and hence
+#fROIs, since we use top 10% selection in the 3 systems))
 
 #Set wd!
 setwd("~/Dropbox/_Projects/Jokes - fMRI/Jokes-Analysis Repository/Analyses_paper/reproducible analyses")

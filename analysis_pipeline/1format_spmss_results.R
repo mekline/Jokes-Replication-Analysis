@@ -1,5 +1,9 @@
 #load_spmss_results
 #
+# This does not need to be run to reproduce the analyses in the Jokes paper, unless you want to recapitulate
+# the transformation from SPM_SS output folders to raw csv. Start with 2figs_resp_jokes.R for loading in of
+# the data used for all subsequent analyses...
+#
 #This file loads the output of one of the results.csv files produced by the (mean signal) toolbox scripts into R.
 #If I knew more about the mat file produced you could probably get all of this stuff out of
 #there too.  But anyway this gets the mROI_data.csv file, sorts out its structure

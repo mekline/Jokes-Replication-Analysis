@@ -1,19 +1,23 @@
+# Start here to reproduce the main (confirmatory) analyses for the Jokes paper
 #This file reads in ALL the %-signal-change values, per-participant, per-parcel, per-contrast,
 # Those %-signal-change calculations are produced by the awesome toolbox analyses, and represent a single overall calculation
 #derived for the whole parcel region (not individual voxels, as mk sometimes forgets)
 
-#But we just print out the figs for regions responding to Jokes/Jokes custom, because that's the main result
+#Here we just print out the figs for regions responding to Jokes/Jokes custom, because that's the main result
 
+#ALL packages necessary for the analysis pipeline should get loaded here
 rm(list = ls())
 library(bootstrap)
 library(dplyr)
-library(tidyr)
 library(ggplot2)
+library(lme4)
+library(pwr)
 library(stringr)
+library(tidyr)
 
 
 setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
-meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/meansignal_outputs/'
+meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/E2_meansignal_outputs/'
 
 ########
 #READ IN DATA

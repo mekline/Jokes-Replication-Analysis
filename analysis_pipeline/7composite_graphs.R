@@ -3,18 +3,20 @@
 
 #(set your own wd first)
 setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
+mywd = "/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline"
 View(avgRT)
 View(avgResponse)
 View(allSigChange)
 
 #STOP HERE and look if avgRT for this data (Exp 2) is already in milliseconds. If not, make it so!
+avgRT$meanRT
 #avgRT$meanRT <- avgRT$meanRT * 1000
 
 ##############
 #Now load up the data saved from experiment 1, and adjust column names to match
 ##############
 
-setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/")
+setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/E1_tabular_data")
 
 avgRT_E1 = read.csv('avgRT_Behavioral_Exp1.csv')
 avgResponse_E1 = read.csv('avgResponse_Behavioral_Exp1.csv')
@@ -61,12 +63,6 @@ all_avgResponse = merge(avgResponse, avgResponse_E1, all.x = TRUE, all.y = TRUE)
 
 #Whoops! RTs should be in milliseconds. Experiment 1 probably isn't yet. 
 all_avgRT[all_avgRT$Experiment == 'Experiment 1',]$meanRT <- all_avgRT[all_avgRT$Experiment == 'Experiment 1',]$meanRT * 1000
-
-##############
-##############
-#Now we're ready to make some cool graphs!
-##############
-
 
 ##############
 #Fig 2 - behavioral, RT and funny-ness ratings
@@ -214,19 +210,19 @@ mystats[mystats$contrastName == "joke",]$contrastLabel <- "Jokes\n  "
 mystats[mystats$contrastName == "lit",]$contrastLabel <- "Non-Jokes\n   "
 
 mystats$Group <- factor(mystats$Group, levels = c("ToM", "RHLang", "MDRight", "LHLang", "MDLeft", "ToMCustom"))
-mystats <- mutate(mystats, GroupLabel = ifelse(Group == "ToM", "Social network,\nRight hemisphere",
+mystats <- mutate(mystats, GroupLabel = ifelse(Group == "ToM", "Theory of mind network,\nRight hemisphere",
                                                ifelse(Group == "RHLang", "Language network, \nRight hemisphere",
-                                                      ifelse(Group == "MDRight", "Executive network,\nRight hemisphere",
+                                                      ifelse(Group == "MDRight", "Multiple demand network,\nRight hemisphere",
                                                              ifelse(Group == "LHLang", "Language network,\nLeft hemisphere",
-                                                                    ifelse(Group == "MDLeft", "Executive network,\nLeft hemisphere","ToMCustom")
+                                                                    ifelse(Group == "MDLeft", "Multiple demand network,\nLeft hemisphere","ToMCustom")
                                                                     )))))
 
 #ARE YOU KIDDING ME, R.  More factor order setting. 
-mystats$GroupLabel <- factor(mystats$GroupLabel, levels=c("Social network,\nRight hemisphere", 
+mystats$GroupLabel <- factor(mystats$GroupLabel, levels=c("Theory of mind network,\nRight hemisphere", 
                                                           "Language network, \nRight hemisphere",
-                                                          "Executive network,\nRight hemisphere",
+                                                          "Multiple demand network,\nRight hemisphere",
                                                           "Language network,\nLeft hemisphere",
-                                                          "Executive network,\nLeft hemisphere"
+                                                          "Multiple demand network,\nLeft hemisphere"
                                                           ))
 
 
@@ -251,6 +247,7 @@ makeBar = function(plotData,ylow=-0.4,yhigh=3, mycolors = c("gray35", "gray60"))
     facet_grid(~GroupLabel) +
     theme_bw() +
     theme(legend.key = element_blank()) +
+    theme(legend.position = 'bottom') +
     #theme(strip.background = element_blank()) +
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
   panel.background = element_blank())
@@ -258,11 +255,12 @@ makeBar = function(plotData,ylow=-0.4,yhigh=3, mycolors = c("gray35", "gray60"))
   #+ theme(legend.position="none")
   
   
-  ggsave(filename=myfi, width=9, height=4)
+  ggsave(filename=myfi, width=10, height=4)
   
 }
 
 #Localizer averages only, regular condition assignment
+setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline/figs")
 mylocs = mystats %>%
   filter(ROIName == 'average\nacross\nfROIs') %>%
   filter(contrastName %in% c('joke','lit'))
@@ -303,7 +301,7 @@ makeLine = function(plotData,ylow=-0.1,yhigh=0.6, mycolors = c("gray35", "gray60
   
 }
 
-#Localizer averages only, regular condition assignment
+#Localizer averages only, regular condition assignment (will add lines between manually)
 mylocs = mystats %>%
   filter(ROIName == 'average\nacross\nfROIs') %>%
   filter(contrastName %in% c('joke-lit'))
@@ -417,49 +415,4 @@ MDLeftCustom = filter(mystats, Group == 'MDLeft', Task == 'JokesCustom')
 MDLeftCustom <- MDLeftCustom[order(MDLeftCustom$ROI),]
 MDLeftCustom = arrange(MDLeftCustom, ROIGroup)
 makeRegionsBar(MDLeftCustom)
-
-
-##################
-# AN EXPLORATORY FIGURE
-
-## (((EXPLORATORY E)))
-#FROM EV:
-#get the average joke>non-joke effect size from Study 1 vs. Study 2, 
-#and correlate these. I'd be curious to see correlations
-#* within each of the 5 sets of fROIs,
-#* across all fROIs in the first three sets
-#* across all fROIs
-
-#This would give us a sense of how consistent the relative sizes of the 
-#effects across systems and fROIs are across studies.
-
-jokelits <- mystats %>%
-  filter(contrastName == 'joke-lit') %>%
-  select(c(Group, ROIName, Experiment, themean)) %>%
-  filter(ROIName != "average\nacross\nfROIs") %>%
-  mutate(Experiment = ifelse(Experiment == "Experiment 1", 'Experiment1', 'Experiment2')) %>%
-  spread(Experiment, themean) %>%
-  filter(ROIName != "VM\nPFC") #VMPFC was dropped from E1
-
-
-
-#A Graph
-ggplot(data=jokelits, aes(y=Experiment1, x=Experiment2, color = Group)) + 
-  geom_point() +
-  geom_text(aes(label = ROIName)) +
-  facet_wrap(~ Group, ncol=2) +
-  geom_smooth(method="lm", se=FALSE) + 
-  theme(legend.position="none") +
-  ggsave(filename="compare_activation_E1_E2.jpg", width=12, height=18)
-
-#A Statistics
-
-cor(jokelits$Experiment1, jokelits$Experiment2)
-
-main3 <- filter(jokelits, Group == 'ToM' | Group == 'RHLang' | Group == 'MDRight')
-cor(main3$Experiment1, main3$Experiment2)
-
-allcors <- jokelits %>%
-  group_by(Group) %>%
-  summarize(cor(Experiment1, Experiment2))
 

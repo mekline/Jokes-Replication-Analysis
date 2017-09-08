@@ -1,11 +1,8 @@
 #This rebuilds the t tests that spmss spits out from the individual signal change values (reproduced here from ind. 
 #signal change values so mk can track how those are done/feed into other analyses)
 
-library(tidyr)
-library(dplyr)
-library(pwr)
-
-#Set wd!
+#Prerequisites to run this file
+#- Set (your) working directory
 setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
 
 #Make sure allSigChange is loaded. If it's not, run 2figs_resp_jokes.R to at least line 108
@@ -13,9 +10,8 @@ View(allSigChange)
 
 #For the replication, commenting this out, we'll find out in a minute if any localizer-to-localizer
 #measurements are not robust enough
-#New 10/12: Localizer analysis shows that VMPFC localizer doesn't come out in this dataset (replication/study 2), so DONT remove it from
+#Result 10/12: Localizer analysis shows that VMPFC localizer DOESN'T come out in this dataset (replication/study 2), so DONT remove it from
 #the joke-lit tests for ToM and ToM custom 
-#Replication: Nothing looks like it should be left out yet!
 
 #allSigChange = allSigChange %>%
 #  filter(!(Group == 'ToM' & ROIName =='VMPFC')) %>%
@@ -44,7 +40,7 @@ write.csv(allTests, zz, row.names=FALSE)
 close(zz)
 
 ########
-# Report those T tests like we want for the paper
+# Report those T tests like we want for the paper (main text)
 ########
 
 #Do corrections ever matter?
@@ -56,7 +52,7 @@ allTests <- allTests %>%
 View(filter(allTests,mismatch))
 #In the replication set, one mismatch: Nonwords over fixation in the linguistic task, LIFG orb, is 
 #significant before but not after correction. We don't care about this bc the interesting thing from
-#that task is Sentences - Nonwords. 
+#that task is Sentences - Nonwords, not activation over fixation. 
 
 #Convention: when all tests go one way, report them together as follows:
 reportTests <- function(ts, ps){
@@ -185,46 +181,14 @@ allTests %>%
   filter(Group == 'ToM', task =='Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
-#07/10/17 Where DID the paramfun go?  7/27 I found it! Whoops, and it has a different name in Study 1 and 2, which could cause problems...
-
-#10/14 Huh, where did the ToM paramfun test go? Here it is again...
+#Paramfun t test (jokesCustom parametric)
 allTests %>%
  filter(Group == 'ToM', task == 'JokesCustom', contrastName == 'linear') %>%
  summarise(n(), sum(sig), reportTests(t,p))
 filter(allTests, Group == 'ToM', contrastName == 'joke-lit', sig)
 
 
-###############Here be exploratory analyses######
-
-###############Exploratory analysis on Study 2
-
-#Extend the paramfun contrasts of the critical task to measure them in lang and in MD!
-allTests %>%
-  filter(Group == 'RHLang', task == 'JokesCustom', contrastName == 'linear') %>%
-  summarise(n(), sum(sig), reportTests(t,p))
-
-allTests %>%
-  filter(Group == 'LHLang', task == 'JokesCustom', contrastName == 'linear') %>%
-  summarise(n(), sum(sig), reportTests(t,p))
-
-allTests %>%
-  filter(Group == 'MDRight', task == 'JokesCustom', contrastName == 'linear') %>%
-  summarise(n(), sum(sig), reportTests(t,p))
-
-allTests %>%
-  filter(Group == 'MDLeft', task == 'JokesCustom', contrastName == 'linear') %>%
-  summarise(n(), sum(sig), reportTests(t,p))
-
-
-
-
-
-
-
-
-
-
-################ Exploratory analysis from Study 1: power analysis (((EXPLORATORY A)))
+################ Exploratory analysis from Study 1: power analysis for Study 2
 
 
 #Let's try and do a power analysis on the Jokes results. (Considering a replication

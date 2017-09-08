@@ -1,14 +1,10 @@
 #This takes the individual-subject contrast values and runs some nifty lmer models.  First #many
 #lines are reading in the contrasts as in localizer_t_tests, fun stuff starts on line 105
 
-library(tidyr)
-library(dplyr)
-library(lme4)
-
 #Set wd!
 setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
 
-#None of that nonsense, just make sure thw data is loaded in! If not, run 2figs_resp_jokes.R to at least line 108
+#Make sure the data is loaded in! If not, run 2figs_resp_jokes.R to at least line 121
 View(allSigChange)
 
 
@@ -17,7 +13,7 @@ View(allSigChange)
 
 #EFFECT SIZE CALCULATION! Requested by the journal.  There is no standard way to report effect sizes for linear mixed
 #models, so the approach we'll take is to report mean signal change values at the system level.  This is calculated
-#over in the figure script (2figs_resp_jokes) since we general those values there. 
+#over in the figure script (2figs_resp_jokes) since we generated those values there. 
 
 # Linear mixed Models!
 #Plan: Within each system (localizers, and jokes), test for basic localizer condition differences, then do some
@@ -95,6 +91,7 @@ anova(m1,m0)
  
 
 #hypothesis: large between-system differences eat most of the variance.  Use joke-lit contrast value instead
+#(note this decision was made after E1, before E2)
 ToM_MDRight_cont <- filter(allSigChange, Group == "ToM" | Group == "MDRight", task == 'Jokes', contrastName == 'joke-lit')
 m1 <- lmer(sigChange ~ Group + (1|ROIName) + (Group|SubjectNumber), data = ToM_MDRight_cont)
 m0 <- lmer(sigChange ~ 1 + (1|ROIName) + (Group|SubjectNumber), data = ToM_MDRight_cont)
@@ -120,8 +117,6 @@ anova(m1,m0)
  
 
 
-
-
 #####
 #Finally, remodel ToM activations with funniness ratings
 ToMCustom <- filter(allSigChange, Group == "ToM", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
@@ -132,118 +127,3 @@ m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber)
 anova(m1,m0)
 
 
-
-####################HERE BE EXPLORATORY ANALYSES (((EXPLORATORY B)))
-#As is math, after powering the study up for the replication, we now detect (probably smaller) significant effects
-#in all systems for jokes > nonjokes. The ToM ones are > RHLang and RMD (good!) but not significantly different in magnitude to 
-#Lang or MDL.  One way to show that those MD and RHL activations are tapping something other than humor in the task would be if 
-#funniness ratings didn't correlate with activation strength.  Let's see! (Oh wait, pause, this requires running more first level
-#analyses to get those contrasts.  Check with Ev first. )
-#(In fact, funniness ratings do correlate with activations in these regions as well)
-
-RHLCustom <- filter(allSigChange, Group == "RHLang", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
-#Make sure those factors are ordered....
-RHLCustom$contrastName <- as.factor(RHLCustom$contrastName)
-m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = RHLCustom)
-m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = RHLCustom)
-anova(m1,m0)
-
-LHLCustom <- filter(allSigChange, Group == "LHLang", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
-#Make sure those factors are ordered....
-LHLCustom$contrastName <- as.factor(LHLCustom$contrastName)
-m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = LHLCustom)
-m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = LHLCustom)
-anova(m1,m0)
-
-MDRCustom <- filter(allSigChange, Group == "MDRight", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
-#Make sure those factors are ordered....
-MDRCustom$contrastName <- as.factor(MDRCustom$contrastName)
-m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDRCustom)
-m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDRCustom)
-anova(m1,m0)
-
-MDLCustom <- filter(allSigChange, Group == "MDLeft", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
-#Make sure those factors are ordered....
-MDLCustom$contrastName <- as.factor(MDLCustom$contrastName)
-m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDLCustom)
-m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDLCustom)
-anova(m1,m0)
-
-#Exploratory analysis 2 (((((EXPLORATORY C)))): How do the signal changes for Joke > NonJoke compare to the localizer signal change in each 
-#ROI? Are these *proportions* different for the different signals? 
-
-localizer2task <- allSigChange %>%
-  filter(contrastName %in% c('joke-lit','H-E','S-N','bel-pho')) %>%
-  filter(task != 'JokesCustom') %>%
-  filter(ROIName != 'LocalizerAverage') %>%
-  mutate(taskType = ifelse(task == 'Jokes', 'Critical', 'Localizer')) %>% 
-  select(-c(contrastName, task)) #%>% #so the spreads/groups work
-  #spread(taskType, sigChange) %>%
-  #mutate(sigDiff = Localizer - Critical)
-
-#Okay, so what do we want to know? we want to know if the localizer effect is 
-#bigger than the jokes effect in each region.
-
-m1 <- lmer(sigChange ~ taskType*Group + (1|ROIName) + (taskType|SubjectNumber), data = localizer2task)
-m0 <- lmer(sigChange ~ taskType+Group + (1|ROIName) + (taskType|SubjectNumber), data = localizer2task)
-anova(m1, m0)
-
-#Answer: the interaction matters! But we want more specifics. How about a graph
-
-loctaskstats <- aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
-                                                            localizer2task$taskType, 
-                                                            localizer2task$ROIName, 
-                                                            localizer2task$ROI), mean)
-names(loctaskstats) = c('Group','taskType', 'ROIName', 'ROI','themean')
-
-
-mybootup = aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
-                                                       localizer2task$taskType, 
-                                                       localizer2task$ROIName, 
-                                                       localizer2task$ROI), bootup)
-names(mybootup) = c('Group','taskType', 'ROIName', 'ROI', 'bootup')
-mybootdown = aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
-                                                         localizer2task$taskType, 
-                                                         localizer2task$ROIName, 
-                                                         localizer2task$ROI), bootdown)
-names(mybootdown) = c('Group','taskType', 'ROIName', 'ROI', 'bootdown')
-
-loctaskstats = merge(loctaskstats,mybootup)
-loctaskstats = merge(loctaskstats,mybootdown)
-
-
-
-ggplot(data=loctaskstats, aes(x=ROIName, y=themean, fill=taskType)) + 
-  geom_bar(position=position_dodge(), stat="identity") +
-  geom_errorbar(aes(ymin=bootdown, ymax=bootup), colour="black", width=.1, position=position_dodge(.9)) +
-  xlab('') +
-  ylab(str_wrap('% signal change, Crit - Control', width=18)) +
-  facet_grid(~Group, scale='free_x', space='free_x')+
-  theme_bw() +
-  theme(legend.key = element_blank()) +
-  theme(text = element_text(size = 40)) +
-  theme(strip.background = element_blank()) +
-  theme(strip.text = element_blank()) 
-
-
-#For each region, ask whether there's a difference. There is. This is not a very interesting analysis.  
-ToMmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'ToM'))
-ToMmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'ToM'))
-anova(ToMmodel, ToMmodel0)  
-
-MDRmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDRight'))
-MDRmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDRight'))
-anova(MDRmodel, MDRmodel0)  
-
-MDLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDLeft'))
-MDLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDLeft'))
-anova(MDLmodel, MDLmodel0)  
-
-RHLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'RHLang'))
-RHLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'RHLang'))
-anova(RHLmodel, RHLmodel0)  
-
-#Note, dropped subject slope for this model only, didn't converge
-LHLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group == 'LHLang'))
-LHLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group == 'LHLang'))
-anova(LHLmodel, LHLmodel0)  
