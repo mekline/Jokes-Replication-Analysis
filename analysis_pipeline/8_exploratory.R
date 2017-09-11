@@ -7,6 +7,7 @@
 rm(list = ls())
 library(bootstrap)
 library(dplyr)
+library(lme4)
 library(tidyr)
 library(ggplot2)
 library(stringr)
@@ -19,7 +20,7 @@ meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Re
 ###########
 #(((EXPLORATORY A - Extend the high-med-low individual joke rating tests to the other systems)))
 ##########
-#As is math, after powering the study up for the replication, we now detect (probably smaller) significant effects
+#after powering the study up for the replication, we now detect (probably smaller) significant effects
 #in all systems for jokes > nonjokes. The ToM ones are > RHLang and RMD (good!) but not significantly different in magnitude to 
 #Lang or MDL.  One way to show that those MD and RHL activations are tapping something other than humor in the task would be if 
 #funniness ratings didn't correlate with activation strength.  Let's see! (Oh wait, pause, this requires running more first level
@@ -104,7 +105,9 @@ anova(m1,m0)
 # to try and calculate a value for each person, which is: "how far away from the mean
 # response is this person's average answer"
 
-#Prereq: run script 5behavioral to reload behavioral data!
+#Prereq: run script 5behavioral to reload behavioral data and 2figs to load the signal-change data!
+View(behavdata)
+View(allSigChange)
 
 #(((EXPLORATORY D)))
 # Make a table that aggregates responses by *item* (not person)
@@ -119,7 +122,7 @@ behavdata <- merge(behavdata, avgItemResponse, by=c("item","category"))
 oddballSubj <- behavdata %>%
   mutate(distanceFromMean = response - meanResponse) %>%
   group_by(ID, category) %>%
-  summarize(myMeanDistance = mean(distanceFromMean))
+  summarize(myMeanDistance = mean(distanceFromMean, na.rm=TRUE))
 
 
 #Visualize that....
@@ -130,7 +133,9 @@ ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) +
 # (Details: ) The upper whisker extends from the hinge to the largest value no further than 1.5 * IQR from the hinge (where IQR is the inter-quartile range, or distance between the first and third quartiles). The lower whisker extends from the hinge to the smallest value at most 1.5 * IQR of the hinge. Data beyond the end of the whiskers are called "outlying" points and are plotted individually.
 
 ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) + 
-  geom_boxplot(stat = "boxplot")
+  geom_boxplot(stat = "boxplot") +
+  xlab('') +
+  ylab('Average distance from other subjects\' ratings')
 
 #Interpretation: there are two people who found the NONjokes a bit funnier than we might expect, e.g. ~0.5 points funnier than the average person, that's it. 
 #(This is about half the observed effect size, jokes are about 1 point funnier than nonjokes over the whole dataset)
@@ -153,33 +158,42 @@ ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) +
 
 jokelits <- mystats %>%
   filter(contrastName == 'joke-lit') %>%
-  select(c(Group, ROIName, Experiment, themean)) %>%
+  select(c(GroupLabel, ROIName, Experiment, themean)) %>%
   filter(ROIName != "average\nacross\nfROIs") %>%
   mutate(Experiment = ifelse(Experiment == "Experiment 1", 'Experiment1', 'Experiment2')) %>%
   spread(Experiment, themean) %>%
-  filter(ROIName != "VM\nPFC") #VMPFC was dropped from E1 therefore from these comparisons
+  filter(ROIName != "VM\nPFC") %>% #VMPFC was dropped from E1 therefore from these comparisons 
+  mutate(ROIName_noN = gsub("\n","", ROIName))
+
+cor_labels <- jokelits %>%
+  group_by(GroupLabel) %>%
+  summarize(group_cor = cor(Experiment1, Experiment2, method="spearman")) %>%
+  mutate(my_cor_label = paste("\u03C1=", round(group_cor, 3)))
 
 
-
+setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline/figs")
 #A Graph
-ggplot(data=jokelits, aes(y=Experiment1, x=Experiment2, color = Group)) + 
-  geom_point() +
-  geom_text(aes(label = ROIName)) +
-  facet_wrap(~ Group, ncol=2) +
+library(ggrepel)
+ggplot(data=jokelits, aes(y=Experiment2, x=Experiment1, color = GroupLabel)) + 
+  facet_wrap(~ GroupLabel, ncol=3, scales = "free") +
   geom_smooth(method="lm", se=FALSE) + 
+  geom_point() +
+  expand_limits(x = 0, y = 0) +
+  xlab('Joke>Non-Joke signal change, \nExperiment 1') +
+  ylab('Joke>Non-Joke signal change, \nExperiment 2') +
+  geom_text_repel(aes(label = ROIName_noN), box.padding = unit(0.4, "lines"),
+                  size = 3, color="black") +
+  geom_text(data=cor_labels, aes(label=my_cor_label), 
+            x=Inf, y=-Inf, hjust=1, vjust=-0.6,
+            colour="black", inherit.aes=FALSE, parse=FALSE) +
   theme(legend.position="none") +
-  ggsave(filename="compare_activation_E1_E2.jpg", width=12, height=18)
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+       panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  ggsave(filename="compare_activation_E1_E2.jpg", width=9, height=6)
 
-#Statistics
+# START HERE, PUT R VALUES ON GRAPH!!!! 
 
-cor(jokelits$Experiment1, jokelits$Experiment2)
-
-main3 <- filter(jokelits, Group == 'ToM' | Group == 'RHLang' | Group == 'MDRight')
-cor(main3$Experiment1, main3$Experiment2)
-
-allcors <- jokelits %>%
-  group_by(Group) %>%
-  summarize(cor(Experiment1, Experiment2))
+cor(jokelits$Experiment1, jokelits$Experiment2, method="spearman")
 
 
 #Takehome: activations within each system are relatively well correlated with 1 another. 
@@ -187,23 +201,24 @@ allcors <- jokelits %>%
 #########
 #########
 
-#Exploratory analysis 2 (((((EXPLORATORY C)))): How do the signal changes for Joke > NonJoke compare to the localizer signal change in each 
+#Exploratory analysis: How do the signal changes for Joke > NonJoke compare to the localizer signal change in each 
 #ROI? Are these *proportions* different for the different signals? 
 
 localizer2task <- allSigChange %>%
   filter(contrastName %in% c('joke-lit','H-E','S-N','bel-pho')) %>%
   filter(task != 'JokesCustom') %>%
   filter(ROIName != 'LocalizerAverage') %>%
-  mutate(taskType = ifelse(task == 'Jokes', 'Critical', 'Localizer')) %>% 
-  select(-c(contrastName, task)) #%>% #so the spreads/groups work
+  mutate(taskType = ifelse(task == 'Jokes', 'Critical', 'Localizer')) 
+
+  #select(-c(contrastName, task)) #%>% #so the spreads/groups work
 #spread(taskType, sigChange) %>%
 #mutate(sigDiff = Localizer - Critical)
 
 #Okay, so what do we want to know? we want to know if the localizer effect is 
 #bigger than the jokes effect in each region.
 
-m1 <- lmer(sigChange ~ taskType*Group + (1|ROIName) + (taskType|SubjectNumber), data = localizer2task)
-m0 <- lmer(sigChange ~ taskType+Group + (1|ROIName) + (taskType|SubjectNumber), data = localizer2task)
+m1 <- lmer(sigChange ~ taskType*Group + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','RHLang','MDRight')))
+m0 <- lmer(sigChange ~ taskType+Group + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','RHLang','MDRight')))
 anova(m1, m0)
 
 #Answer: the interaction matters! But we want more specifics. How about a graph
@@ -238,10 +253,10 @@ ggplot(data=loctaskstats, aes(x=ROIName, y=themean, fill=taskType)) +
   ylab(str_wrap('% signal change, Crit - Control', width=18)) +
   facet_grid(~Group, scale='free_x', space='free_x')+
   theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   theme(legend.key = element_blank()) +
-  theme(text = element_text(size = 40)) +
   theme(strip.background = element_blank()) +
-  theme(strip.text = element_blank()) 
+  ggsave(filename="localizer_to_critical_E2.jpg", width=9, height=6) 
 
 
 #For each region, ask whether there's a difference. There is. This is not a very interesting analysis.  
@@ -267,9 +282,15 @@ LHLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (1|SubjectNumber), data =
 anova(LHLmodel, LHLmodel0)  
 
 
+#Ask whether there is a difference between ToM and the other right-hemisphere systems, using same randoms as above
 
+m1 <- lmer(sigChange ~ taskType*Group + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','MDRight')))
+m0 <- lmer(sigChange ~ taskType+Group + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','MDRight')))
+anova(m1, m0)
 
-
+m1 <- lmer(sigChange ~ taskType*Group + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','RHLang')))
+m0 <- lmer(sigChange ~ taskType+Group + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','RHLang')))
+anova(m1, m0)
 #(((EXPLORATORY F)))
 
 
