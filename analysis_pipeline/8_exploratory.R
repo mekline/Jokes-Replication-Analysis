@@ -417,8 +417,8 @@ system_avg = odd_even %>%
   summarise(meancorr = mean(meancorr))
 
 #We'd like to put hemispheres of systems together here, since they are actually correlated!
-system_avg$Group1 <-factor(system_avg$Group1, levels = c('RHLang','LHLang','MDRight','MDLeft','ToM'))
-system_avg$Group2 <-factor(system_avg$Group2, levels = c('RHLang','LHLang','MDRight','MDLeft','ToM'))
+system_avg$Group1 <-factor(system_avg$Group1, levels = c('LHLang','MDLeft','RHLang','MDRight','ToM'))
+system_avg$Group2 <-factor(system_avg$Group2, levels = c('LHLang','MDLeft','RHLang','MDRight','ToM'))
 
 ggplot(data = system_avg, aes(x=Group1, y=Group2, fill=meancorr)) + 
   geom_tile()
