@@ -321,28 +321,75 @@ systemAvgs <- allSigChange %>%
   mutate("ROILabel" = ifelse(OtherSystem=="MDRight", "RH Multiple Demand fROIs", "RH Language fROIs"))
   
   
+#Remove an oddball subject for stats only!
+systemAvgs_noout <- systemAvgs%>%
+  filter(SubjectNumber != 3)
+
 #Let's graph, I'm confused how to compare these. 
 ggplot(data=systemAvgs, aes(x=OthersigChange, y=ToM, color=ROILabel)) +
-  geom_smooth(method="lm", fill=NA) +
+  geom_smooth(method="lm", fill=NA, size = 0.3) +
   geom_point() +
   coord_fixed() + 
+  geom_smooth(data = systemAvgs_noout, method="lm", fill=NA) +
+  scale_x_continuous(breaks=seq(-.1, 2, .1)) +
+  scale_y_continuous(breaks=seq(-.1, 2, .1)) +
+  scale_color_manual(values=c("red","blue")) +
+  theme_bw() +
+  theme(legend.title = element_blank()) +
+  theme(legend.position = 'bottom') +
+  xlab("% signal change on Jokes task in subject-specific fROIs") +
+  ylab ("% signal change on Jokes task (Theory of Mind fROIs)") +
+  facet_grid(~ROILabel) +
+  ggsave('exploratory_ToM_to_others_cor.jpg')
+
+#Make a note - single very high outlier on both MD and ToM; make sure test is not contingent on just this subj.
+#see above now
+
+#For completeness, the same graph comparing Lang and MD. 
+langtoMD <- systemAvgs %>%
+  select(-c(ROILabel)) %>%
+  spread(OtherSystem, OthersigChange)
+
+langtoMD_noout <- langtoMD %>%
+  filter(SubjectNumber != 3)
+  
+
+ggplot(data=langtoMD, aes(x=MDRight, y=RHLang)) +
+  geom_smooth(method="lm", fill=NA, size = 0.3, color="purple") +
+  geom_point(color="purple") +
+  coord_fixed() + 
+  geom_smooth(data = langtoMD_noout, method="lm", fill=NA, color="purple") +
   scale_x_continuous(breaks=seq(-.1, 2, .1)) +
   scale_y_continuous(breaks=seq(-.1, 2, .1)) +
   theme_bw() +
   theme(legend.title = element_blank()) +
-  xlab("% signal change on Jokes task in subject-specific fROIs") +
-  ylab ("% signal change on Jokes task (Theory of Mind fROIs)") +
-  facet_grid(~ROILabel)
+  xlab("% signal change on Jokes task (RH Multiple Demand fROIs)") +
+  ylab ("% signal change on Jokes task (RH Language fROIs)") +
+  ggsave('exploratory_MD_to_Lang_Cor.jpg')
 
-#Make a note - single very high outlier on both MD and ToM; make sure test is not contingent on just this subj. 
 
 #Neither is very correlated! Let's quantify that with simple correlation tests. 
 
-cor.test(systemAvgs[systemAvgs$OtherSystem == "MDRight",]$ToM, 
-    systemAvgs[systemAvgs$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs')
-
 cor.test(systemAvgs[systemAvgs$OtherSystem == "RHLang",]$ToM, 
          systemAvgs[systemAvgs$OtherSystem == "RHLang",]$OthersigChange, use='pairwise.complete.obs')
+
+cor.test(systemAvgs[systemAvgs$OtherSystem == "MDRight",]$ToM, 
+         systemAvgs[systemAvgs$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs')
+
+cor.test(systemAvgs[systemAvgs$OtherSystem == "RHLang",]$OthersigChange, 
+         systemAvgs[systemAvgs$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs')
+
+
+
+#And without the outlier
+cor.test(systemAvgs_noout[systemAvgs_noout$OtherSystem == "RHLang",]$ToM, 
+         systemAvgs_noout[systemAvgs_noout$OtherSystem == "RHLang",]$OthersigChange, use='pairwise.complete.obs')
+
+cor.test(systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$ToM, 
+         systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs')
+
+cor.test(systemAvgs_noout[systemAvgs_noout$OtherSystem == "RHLang",]$OthersigChange, 
+         systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs')
 
 # #OLD EXPLORATORY F - I MISUNDERSTOOD EV.  - CONFLATED 2 EXPS SHE WANTED
 # ########
