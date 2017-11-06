@@ -200,7 +200,7 @@ ggplot(data=jokelits, aes(y=Experiment2, x=Experiment1, color = GroupLabel)) +
   theme(legend.position="none") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
-  ggsave(filename="compare_activation_E1_E2.jpg", width=9, height=6)
+  ggsave(filename="figs/exploratory_compare_activation_E1_E2.jpg", width=9, height=6)
 
 # START HERE, PUT R VALUES ON GRAPH!!!! 
 
@@ -267,7 +267,7 @@ ggplot(data=loctaskstats, aes(x=ROIName, y=themean, fill=taskType)) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   theme(legend.key = element_blank()) +
   theme(strip.background = element_blank()) +
-  ggsave(filename="localizer_to_critical_E2.jpg", width=9, height=6) 
+  ggsave(filename="figs/exploratory_localizer_to_critical_E2.jpg", width=9, height=6) 
 
 
 #For each region, ask whether there's a difference. There is. This is not a very interesting analysis.  
@@ -340,7 +340,7 @@ ggplot(data=systemAvgs, aes(x=OthersigChange, y=ToM, color=ROILabel)) +
   xlab("% signal change on Jokes task in subject-specific fROIs") +
   ylab ("% signal change on Jokes task (Theory of Mind fROIs)") +
   facet_grid(~ROILabel) +
-  ggsave('exploratory_ToM_to_others_cor.jpg')
+  ggsave('figs/exploratory_ToM_to_others_cor.jpg', height = 7, width = 8)
 
 #Make a note - single very high outlier on both MD and ToM; make sure test is not contingent on just this subj.
 #see above now
@@ -365,7 +365,7 @@ ggplot(data=langtoMD, aes(x=MDRight, y=RHLang)) +
   theme(legend.title = element_blank()) +
   xlab("% signal change on Jokes task (RH Multiple Demand fROIs)") +
   ylab ("% signal change on Jokes task (RH Language fROIs)") +
-  ggsave('exploratory_MD_to_Lang_Cor.jpg')
+  ggsave('figs/exploratory_MD_to_Lang_Cor.jpg', height = 6, width = 7)
 
 
 #Neither is very correlated! Let's quantify that with simple correlation tests. 
