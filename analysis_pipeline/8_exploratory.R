@@ -152,7 +152,7 @@ ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) +
 #(This is about half the observed effect size, jokes are about 1 point funnier than nonjokes over the whole dataset)
 
 #########
-# (((EXPLORATORY C - Appears in Supplemental section E1)))
+# (((EXPLORATORY C - Appears in Supplemental section E4)))
 #########
 
 #FROM EV:
@@ -165,7 +165,7 @@ ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) +
 #This would give us a sense of how consistent the relative sizes of the 
 #effects across systems and fROIs are across studies.
 
-#NOTE view mystats and check you have the version with Experiment 1 values in it too. If not, run the script with the composite graphs (7composite... to get it)
+#NOTE view mystats and check you have the version with Experiment 1 values in it too. If not, run the script with the composite graphs (7composite..., requires 5) to get it)
 
 jokelits <- mystats %>%
   filter(contrastName == 'joke-lit') %>%
@@ -209,7 +209,48 @@ cor(jokelits$Experiment1, jokelits$Experiment2, method="spearman")
 
 #Takehome: activations within each system are relatively well correlated with 1 another. 
 
+#Accompanying statistical analysis! Experiment 1 finds NO CHANGE in RHLang and MDRight, while Experiment 2 finds a change. 
+#But, can we actually measure that difference, or are we underpowered? Compare values to each other....
+
+View(all_allSignalChange) #Comes from #7, should be prsent if the graph worked)
+
+#Wait! Make sure we don't accidentally treat E2 subjects as re-measurements of E1 ones.  
+
+allSignalChange_Exploratory <- all_allSignalChange %>%
+  mutate(realSubjN = paste(Experiment, SubjectNumber)) %>%
+  select(-SubjectNumber)
+
+#Model comparison time! 
+
+RHLang <- filter(allSignalChange_Exploratory, Group == "RHLang", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = RHLang)
+m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = RHLang)
+anova(m1,m0)
+
+
+MDRight <- filter(allSignalChange_Exploratory,  Group == "MDRight", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = MDRight)
+m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = MDRight)
+anova(m1,m0)
+
+ToM <- filter(allSignalChange_Exploratory,  Group == "ToM", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = ToM)
+m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = ToM)
+anova(m1,m0)
+
+LHLang <- filter(allSignalChange_Exploratory, Group == "LHLang", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = LHLang)
+m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = LHLang)
+anova(m1,m0)
+
+
+MDLeft <- filter(allSignalChange_Exploratory,  Group == "MDLeft", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = MDLeft)
+m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = MDLeft)
+anova(m1,m0)
+
 #########
+#EXPLORATORY E
 #########
 
 #Exploratory analysis: How do the signal changes for Joke > NonJoke compare to the localizer signal change in each 
@@ -308,7 +349,7 @@ m1 <- lmer(sigChange ~ taskType*Group + (1|ROIName) + (1|SubjectNumber), data = 
 m0 <- lmer(sigChange ~ taskType+Group + (1|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','RHLang')))
 anova(m1, m0)
 
-
+###################################
 #EXPLORATORY F
 #Each person gets 3 values: in Right Hemisphere, average activation of Lang, MD, ToM. Are people high in one also high in the other two?
 systemAvgs <- allSigChange %>%
@@ -371,25 +412,25 @@ ggplot(data=langtoMD, aes(x=MDRight, y=RHLang)) +
 #Neither is very correlated! Let's quantify that with simple correlation tests. 
 
 cor.test(systemAvgs[systemAvgs$OtherSystem == "RHLang",]$ToM, 
-         systemAvgs[systemAvgs$OtherSystem == "RHLang",]$OthersigChange, use='pairwise.complete.obs')
+         systemAvgs[systemAvgs$OtherSystem == "RHLang",]$OthersigChange, use='pairwise.complete.obs', method = 'pearson')
 
 cor.test(systemAvgs[systemAvgs$OtherSystem == "MDRight",]$ToM, 
-         systemAvgs[systemAvgs$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs')
+         systemAvgs[systemAvgs$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs', method = 'pearson')
 
 cor.test(systemAvgs[systemAvgs$OtherSystem == "RHLang",]$OthersigChange, 
-         systemAvgs[systemAvgs$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs')
+         systemAvgs[systemAvgs$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs', method = 'pearson')
 
 
 
 #And without the outlier
 cor.test(systemAvgs_noout[systemAvgs_noout$OtherSystem == "RHLang",]$ToM, 
-         systemAvgs_noout[systemAvgs_noout$OtherSystem == "RHLang",]$OthersigChange, use='pairwise.complete.obs')
+         systemAvgs_noout[systemAvgs_noout$OtherSystem == "RHLang",]$OthersigChange, use='pairwise.complete.obs', method = 'pearson')
 
 cor.test(systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$ToM, 
-         systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs')
+         systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs', method = 'pearson')
 
 cor.test(systemAvgs_noout[systemAvgs_noout$OtherSystem == "RHLang",]$OthersigChange, 
-         systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs')
+         systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs', method = 'pearson')
 
 # #OLD EXPLORATORY F - I MISUNDERSTOOD EV.  - CONFLATED 2 EXPS SHE WANTED
 # ########
