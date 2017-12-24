@@ -106,7 +106,7 @@ anova(m1,m0)
 
 
 ###########
-#(((EXPLORATORY B - Checking for behaviorally 'oddball' subjects. Supplemental E1)))
+#(((EXPLORATORY B - Checking for behaviorally 'oddball' subjects. Supplemental 5)))
 ##########
 
 # There are some differences between studies 1 and 2! In particular, we see overall 
@@ -377,9 +377,9 @@ ggplot(data=systemAvgs, aes(x=OthersigChange, y=ToM, color=ROILabel)) +
   scale_color_manual(values=c("red","blue")) +
   theme_bw() +
   theme(legend.title = element_blank()) +
-  theme(legend.position = 'bottom') +
-  xlab("% signal change on Jokes task in subject-specific fROIs") +
-  ylab ("% signal change on Jokes task (Theory of Mind fROIs)") +
+  theme(legend.position = 'none') +
+  xlab("% signal change Joke>Non-Joke\nin the RH language and RH MD fROIs") +
+  ylab ("% signal change Joke>Non-Joke\nin the ToM fROIs") +
   facet_grid(~ROILabel) +
   ggsave('figs/exploratory_ToM_to_others_cor.jpg', height = 7, width = 8)
 

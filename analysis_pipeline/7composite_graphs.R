@@ -10,7 +10,7 @@ View(allSigChange)
 
 #STOP HERE and look if avgRT for this data (Exp 2) is already in milliseconds. If not, make it so!
 avgRT$meanRT
-#avgRT$meanRT <- avgRT$meanRT * 1000
+avgRT$meanRT <- avgRT$meanRT * 1000
 
 ##############
 #Now load up the data saved from experiment 1, and adjust column names to match
