@@ -62,7 +62,7 @@ loc_sessions = {{
 
 %crit_sessions would be the same as loc_sessions if all localizers conducted on the same day
 crit_sessions = {{
-    '288_FED_20170412b_3T2',...
+    '288_FED_20170412b_3T2_PL2017',...
     '301_FED_20161217b_3T2',...
     '424_FED_20161228c_3T2',...
     '426_FED_20161215c_3T2',...
@@ -138,6 +138,7 @@ addpath('/users/evelina9/fMRI_PROJECTS/spm_ss_vE/') %The usual one
 
 %%%
 %...and now SPM actually runs!
+addpath('/software/spm_ss/');
 ss=spm_ss_design(ss);                                          % see help spm_ss_design for additional information
 ss=spm_ss_estimate(ss);
 
