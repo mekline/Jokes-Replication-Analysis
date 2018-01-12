@@ -18,8 +18,8 @@ requireNamespace(plyr)
 
 ####
 #Stuff to change!
-myResultsPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/meansignal_outputs/'
-myOutputPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/meansignal_outputs/'
+myResultsPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/E2_meansignal_outputs/'
+myOutputPath = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/E2_meansignal_outputs/'
 
 whichResults = c('LangfROIs_resp_JokesCustom_20170720',
                  'LangfROIs_resp_JokesCustom_Top50Voxels_20170720',
@@ -46,7 +46,7 @@ whichResults = c('LangfROIs_resp_JokesCustom_20170720',
                  'SplitHalf_MDfROIs_resp_Jokes_20170904',
                  'SplitHalf_ToMfROIs_resp_Jokes_20170904');
 
-toSave = 1
+toSave = 0 
 
   ####
   #Leave the rest alone unless you're feeling fancy
