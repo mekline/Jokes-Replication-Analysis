@@ -3,9 +3,21 @@
 
 #Prerequisites to run this file
 #- Set (your) working directory
-setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
+#ALL packages necessary for the analysis pipeline should get loaded here
+rm(list = ls())
+library(bootstrap)
+library(dplyr)
+library(ggplot2)
+library(lme4)
+library(pwr)
+library(stringr)
+library(tidyr)
 
-#Make sure allSigChange is loaded. If it's not, run 2figs_resp_jokes.R to at least line 108
+setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
+mywd = getwd()
+
+#Make sure allSigChange is loaded. If it's not, load it
+load("allSigChange.RData")
 View(allSigChange)
 
 #For the replication, commenting this out, we'll find out in a minute if any localizer-to-localizer
@@ -188,7 +200,15 @@ allTests %>%
 filter(allTests, Group == 'ToM', contrastName == 'joke-lit', sig)
 
 
-################ Exploratory analysis from Study 1: power analysis for Study 2
+#Cloudy
+allTests %>%
+  filter(Group == 'ToM_by_Cloudy', task == 'Jokes', contrastName == 'joke-lit') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
+filter(allTests, Group == 'ToM_by_Cloudy', contrastName == 'joke-lit', sig)
+
+
+
+################ Exploratory analysis from Study 1: doing the power analysis for Study 2
 
 
 #Let's try and do a power analysis on the Jokes results. (Considering a replication

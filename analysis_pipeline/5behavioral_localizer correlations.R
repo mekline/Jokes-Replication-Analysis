@@ -197,7 +197,7 @@ tobootDown = avgResponse %>%
 toPlotResp = merge(toPlotResp, tobootUp)
 toPlotResp = merge(toPlotResp, tobootDown)
 
-setwd(mywd)
+setwd("./figs")
 
 ggplot(data=toPlotRT, aes(y=mean, x=categoryLabel)) + 
   geom_bar(position=position_dodge(), stat="identity") +

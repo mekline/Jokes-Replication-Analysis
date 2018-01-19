@@ -1,10 +1,11 @@
-#This takes the individual-subject contrast values and runs some nifty lmer models.  First #many
-#lines are reading in the contrasts as in localizer_t_tests, fun stuff starts on line 105
+#This takes the individual-subject contrast values and runs some nifty lmer models.
+#It assumes you've just run localizer_t_tests
 
-#Set wd!
+#set wd
 setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
 
-#Make sure the data is loaded in! If not, run 2figs_resp_jokes.R to at least line 121
+#Make sure the data is loaded in!
+#load("allSigChange.RData")
 View(allSigChange)
 
 
@@ -80,6 +81,10 @@ m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|Sub
 m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = ToM)
 anova(m1,m0)
  
+Cloudy <- filter(allSigChange, Group == "ToM_by_Cloudy", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = Cloudy)
+m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = Cloudy)
+anova(m1,m0)
 
 ######
 #Then, do some comparisons between systems: ToM > MDRight and ToM RHLang, plus LHs for completeness
@@ -90,7 +95,7 @@ m0 <- lmer(sigChange ~ contrastName+Group + (contrastName|ROIName) + (contrastNa
 anova(m1,m0)
  
 
-#hypothesis: large between-system differences eat most of the variance.  Use joke-lit contrast value instead
+#hypothesis: large between-system differences eat most of the variance.  Use joke-lit contrast value instead for the remainder
 #(note this decision was made after E1, before E2)
 ToM_MDRight_cont <- filter(allSigChange, Group == "ToM" | Group == "MDRight", task == 'Jokes', contrastName == 'joke-lit')
 m1 <- lmer(sigChange ~ Group + (1|ROIName) + (Group|SubjectNumber), data = ToM_MDRight_cont)
@@ -115,7 +120,12 @@ m1 <- lmer(sigChange ~ Group + (1|ROIName) + (Group|SubjectNumber), data = ToM_L
 m0 <- lmer(sigChange ~ 1 + (1|ROIName) + (Group|SubjectNumber), data = ToM_LHLang_cont)
 anova(m1,m0)
  
-
+#Compare activations localized by classic (verbal) ToM localizer vs. Cloudy
+#For this model only, initial raneff structure failed to converge, so remove slopes...
+ToM_Cloudy_cont <- filter(allSigChange, Group == "ToM" | Group == "ToM_by_Cloudy", task == 'Jokes', contrastName == 'joke-lit')
+m1 <- lmer(sigChange ~ Group + (1|ROIName) + (1|SubjectNumber), data = ToM_Cloudy_cont)
+m0 <- lmer(sigChange ~ 1 + (1|ROIName) + (1|SubjectNumber), data = ToM_Cloudy_cont)
+anova(m1,m0)
 
 #####
 #Finally, remodel ToM activations with funniness ratings
