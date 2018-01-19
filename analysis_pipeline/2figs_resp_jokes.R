@@ -35,7 +35,7 @@ allSigChange = filter(allSigChange, !filename %in% c('SplitHalf_RHLfROIs_resp_Jo
                                                      'SplitHalf_LangfROIs_resp_Jokes_20170904',
                                                      'SplitHalf_MDfROIs_resp_Jokes_20170904',
                                                      'SplitHalf_ToMfROIs_resp_Jokes_20170904'))
-#(This can be changed to 'Top50Voxels' to see results with that fROI selection procedure
+#(This can be changed to 'Top50Voxels' to see all results with that fROI selection procedure
 
 # List contrast and ROI names so it's not just numbers!!!!! (This ordering comes from the 
 # standard ordering produced by the 2nd level analyses; we'll arrange differently in the plots)
@@ -107,17 +107,32 @@ ToM_sigs = allSigChange %>%
 #And stick it all back together!!
 allSigChange = rbind(RHLang_sigs, LHLang_sigs, MD_sigs, ToM_sigs)
 
+
+##RIGHT HERE, read in Cloudy (PL2017 analyses) since they have a totally different file structure :/
+
+#Pick allSigChange columns to match
+allSigChange <- allSigChange %>%
+  dplyr::select(one_of(c('Group', 'task', 'ROIName', 'SubjectNumber', 'contrastName','sigChange'))) %>%
+  transmute(SubjectNumber = as.factor(SubjectNumber))
+
+
+setwd(paste(meansig_outputs_folder, 'CloudyToMfROIS_resp_Jokes_20181101',sep="/"))
+Cloudy_sigs  = read.csv('spm_ss_mROI_data.csv',sep=',', skip=1, header=FALSE)
+names(Cloudy_sigs) = c('ROIName','SubjectNumber','contrastName','nVoxels','sigChange')
+Cloudy_sigs <- Cloudy_sigs %>%
+  select(-nVoxels) %>%
+  mutate(Group = 'ToM_by_Cloudy', task = 'Cloudy') 
+
+allSigChange <- bind_rows(allSigChange, Cloudy_sigs)
+
 #In addition to the by-region signal changes, we are going to give each person an average signal change value for each localizer, each task
 avgSigChange = aggregate(allSigChange$sigChange, by=list(allSigChange$Group,allSigChange$task, allSigChange$SubjectNumber,allSigChange$contrastName), mean)
 names(avgSigChange) = c('Group', 'task', 'SubjectNumber', 'contrastName','sigChange')
 avgSigChange$ROIName = 'LocalizerAverage'
-avgSigChange$ROI = 0
 
-allSigChange <- allSigChange %>%
-  dplyr::select(one_of(c('Group', 'task', 'ROIName', 'ROI','SubjectNumber', 'contrastName','sigChange')))
 
-allSigChange <- rbind(allSigChange, avgSigChange)
-
+allSigChange <- bind_rows(allSigChange, avgSigChange)
+allSigChange[c('Group', 'task', 'ROIName', 'SubjectNumber', 'contrastName')] <- lapply(allSigChange[c('Group', 'task', 'ROIName', 'SubjectNumber', 'contrastName')], factor)#fixing factor assignment!
 #NOTE: Later scripts require this allSigChange object to be loaded into memory, run this script to here if it's missing
 
 #########

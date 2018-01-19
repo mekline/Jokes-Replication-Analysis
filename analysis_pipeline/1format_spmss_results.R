@@ -46,6 +46,9 @@ whichResults = c('LangfROIs_resp_JokesCustom_20170720',
                  'SplitHalf_MDfROIs_resp_Jokes_20170904',
                  'SplitHalf_ToMfROIs_resp_Jokes_20170904');
 
+PL2017Results = c('CloudyToMfROIS_resp_Jokes_20181101');
+#BIG NOTE: These can't be loaded here, bc PL2017 loads in signal change with actual ROI names! It will get loaded in 2figs...
+
 toSave = 0 
 
   ####
