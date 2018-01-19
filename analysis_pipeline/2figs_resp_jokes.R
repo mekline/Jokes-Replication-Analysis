@@ -15,8 +15,8 @@ library(pwr)
 library(stringr)
 library(tidyr)
 
-
 setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
+mywd = getwd()
 meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/E2_meansignal_outputs/'
 
 ########
@@ -110,31 +110,46 @@ allSigChange = rbind(RHLang_sigs, LHLang_sigs, MD_sigs, ToM_sigs)
 
 ##RIGHT HERE, read in Cloudy (PL2017 analyses) since they have a totally different file structure :/
 
-#Pick allSigChange columns to match
+#Pick allSigChange columns to match (removing columns with arbitrary numbering systems. Names are better!)
 allSigChange <- allSigChange %>%
-  dplyr::select(one_of(c('Group', 'task', 'ROIName', 'SubjectNumber', 'contrastName','sigChange'))) %>%
-  transmute(SubjectNumber = as.factor(SubjectNumber))
+  select(-one_of("ROI.size","average.localizer.mask.size","inter.subject.overlap","Contrast"))
 
+allSigChange$SubjectNumber <- as.factor(allSigChange$SubjectNumber)
 
 setwd(paste(meansig_outputs_folder, 'CloudyToMfROIS_resp_Jokes_20181101',sep="/"))
 Cloudy_sigs  = read.csv('spm_ss_mROI_data.csv',sep=',', skip=1, header=FALSE)
 names(Cloudy_sigs) = c('ROIName','SubjectNumber','contrastName','nVoxels','sigChange')
 Cloudy_sigs <- Cloudy_sigs %>%
   select(-nVoxels) %>%
-  mutate(Group = 'ToM_by_Cloudy', task = 'Cloudy') 
+  mutate(Group = 'ToM_by_Cloudy', task = 'Jokes', 
+         filename='CloudyToMfROIS_resp_Jokes_20181101', 
+         fROIs='ToMfROIS', ind_selection_method='Top10Percent') 
+
+#Add ROI numbers and reconcile names!
+ToMNamer = data.frame(ROI=1:7)
+ToMNamer$NewROIName = ToMROI.Names
+ToMNamer$ROIName = unique(Cloudy_sigs$ROIName) #Check this worked right!
+Cloudy_sigs = merge(Cloudy_sigs, ToMNamer)
+Cloudy_sigs <- Cloudy_sigs %>%
+  select(-ROIName) %>%
+  mutate(ROIName = NewROIName) %>%
+  select(-NewROIName)
 
 allSigChange <- bind_rows(allSigChange, Cloudy_sigs)
 
 #In addition to the by-region signal changes, we are going to give each person an average signal change value for each localizer, each task
 avgSigChange = aggregate(allSigChange$sigChange, by=list(allSigChange$Group,allSigChange$task, allSigChange$SubjectNumber,allSigChange$contrastName), mean)
 names(avgSigChange) = c('Group', 'task', 'SubjectNumber', 'contrastName','sigChange')
-avgSigChange$ROIName = 'LocalizerAverage'
+avgSigChange <- avgSigChange %>%
+  mutate(ROIName = 'LocalizerAverage', ROI = 0, filename = "", fROIs = "", ind_selection_method = "")
 
 
 allSigChange <- bind_rows(allSigChange, avgSigChange)
-allSigChange[c('Group', 'task', 'ROIName', 'SubjectNumber', 'contrastName')] <- lapply(allSigChange[c('Group', 'task', 'ROIName', 'SubjectNumber', 'contrastName')], factor)#fixing factor assignment!
 #NOTE: Later scripts require this allSigChange object to be loaded into memory, run this script to here if it's missing
 
+#New plan 1/18/18 - save this df to avoid messy rerunning. 
+setwd(mywd)
+save(allSigChange, file = "allSigChange.RData")
 #########
 # GRAPHING
 #########
@@ -184,9 +199,9 @@ mystats = merge(mystats,mybootdown)
 #For the main analysis in the paper (signal change jokes>nonjokes) we'll report  a simple measure of effect size: the
 #mean signal change in each system. Here they are:
 eff <- mystats %>%
-  filter(ROIName == 'LocalizerAverage') %>%
+  filter(ROIName == "LocalizerAverage") %>%
   filter(contrastName == 'joke' | contrastName == 'lit') %>%
-  dplyr::select(Group, contrastName,themean) %>%
+  select(c("Group", "contrastName", "themean")) %>%
   spread(contrastName, themean) %>%
   mutate(sigChange = joke-lit)
   
@@ -287,7 +302,11 @@ ToMCustom$PresOrder = c(1,2,3,4,5,6,13,14,15,7,8,9,10,11,12,16,17,18,19,20,21, 2
 ToMCustom <- ToMCustom[order(ToMCustom$PresOrder),]
 ToMCustom = arrange(ToMCustom, desc(ROIGroup))
 
-
+Cloudy = filter(mystats, Group == 'ToM_by_Cloudy', Task == 'Jokes')
+Cloudy <- Cloudy[order(Cloudy$ROI),]
+Cloudy$PresOrder = c(1,2,3,4,9,10,5,6,7,8,11,12,13,14,15,16) #This is for all contrasts
+Cloudy <- Cloudy[order(Cloudy$PresOrder),]
+Cloudy = arrange(Cloudy, desc(ROIGroup))
 #Graphing function!
 
 makeBar = function(plotData,ylow=-0.5,yhigh=2.5, mycolors = c("gray35", "gray60")) {
@@ -326,6 +345,7 @@ makeBar(RHLang)
 makeBar(MDLeft)
 makeBar(MDRight)
 makeBar(ToM, -0.5, 1)
+makeBar(Cloudy, -0.5, 1)
 
 makeBar(ToMCustom, -0.5, 1, c("high\n  "= "gray35", "med\n   "= "gray50", "low\n  "= "gray65"))
 makeBar(RHLangCustom, mycolors = c("high\n  "= "gray35", "med\n   "= "gray50", "low\n  "= "gray65"))
