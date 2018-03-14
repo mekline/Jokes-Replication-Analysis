@@ -29,11 +29,11 @@ MyOutputFolder = [MyOutputPath 'CloudyToMfROIS_mentpain_resp_JokesCustom_PL2017_
 
 
 firstlevel_loc = 'firstlevel_Cloudy'; % path to the first-level analysis directory for the lang localizer or whatever
-firstlevel_crit = 'firstlevel_Jokes'; %path to 1st-level analysis directory for the critical task
+firstlevel_crit = 'firstlevel_Jokes_Custom'; %path to 1st-level analysis directory for the critical task
 
 
 loc_cons = {{'ment-pain'}}; %Which contrast used to localize issROIs?
-crit_cons = {{'joke','lit','joke-lit'}}; %Effect of interest contrasts: cons of the crit. experiment do we want to measure there? It could be the same as the loc! In that case SPM will make ur data independent for you :)
+crit_cons = {{'low','med','high','other','paramfun'}}; %Effect of interest contrasts: cons of the crit. experiment do we want to measure there? It could be the same as the loc! In that case SPM will make ur data independent for you :)
 
 what_parcels = '/users/evelina9/fMRI_PROJECTS/ROIS/ToMparcels.img'; %specify the full path to the *img or *nii file that will constrain the search for top voxels
 
