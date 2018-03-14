@@ -1,7 +1,4 @@
 # Pipeline README
 
-An explanation of what's up with the analysis pipeline for experiment 2 (and comparisons with E1.)  
+This folder contains all code necessary to get the results and figures presented in Kline et al (PREPRINT) from (1) behavioral data collected during the study and (2) the output of all second-level analyses (which are lab-standardized and unmodified for this experiment, though see note on transition from old to new PL2017 preprocessing pipeline) 
 
-Flagging this file now as I get ready to move all the exploratory analyses to the end in their own script...
-
-Note where you DON"T need to run things and can load nicely formatted data!!!!
