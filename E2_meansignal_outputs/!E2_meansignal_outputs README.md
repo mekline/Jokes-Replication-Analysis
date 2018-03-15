@@ -4,7 +4,7 @@ This folder contains all the finalized data used to run ROI-based mean-signal an
 
 ## Most important files
 
-The most important file is `all_mean_signal_outputs.csv`, which collates the by-subject, by-condition, and by-fROI mean signal activation results into a single tabular format. This is the rawest tabular form of the data, but recommend you use the RData generated over in the analysis pipeline as it adds significantly more human-readable information!
+The most important file is `all_mean_signal_outputs.csv`, which collates the by-subject, by-condition, and by-fROI mean signal activation results into a single tabular format. This is the rawest tabular form of the data, but recommend you use the RData generated over in the analysis pipeline (and copied here for convenience as it adds significantly more human-readable information!
 
 `all_mean_signal_outputs_CODEBOOK.csv` explains the columns in that file. 
 

@@ -3,8 +3,6 @@
 # Those %-signal-change calculations are produced by the awesome toolbox analyses, and represent a single overall calculation
 #derived for the whole parcel region (not individual voxels, as mk sometimes forgets)
 
-#Here we just print out the figs for regions responding to Jokes/Jokes custom, because that's the main result
-
 #ALL packages necessary for the analysis pipeline should get loaded here
 rm(list = ls())
 library(bootstrap)
@@ -15,27 +13,34 @@ library(pwr)
 library(stringr)
 library(tidyr)
 
-setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
-mywd = getwd()
-meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/E2_meansignal_outputs/'
+#Set your working directory here
+repodir = "/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/"
+analysis_folder = paste(repodir, 'analysis_pipeline/', sep='')
+meansig_outputs_folder = paste(repodir, 'E2_meansignal_outputs/', sep='')
+setwd(analysis_folder)
+
 
 ########
-#READ IN DATA
+#READ IN DATA - OR SKIP TO FILE XXXXXX TO PROCEED FROM CLEANED AND LABELED DATA
 ########
-#New method: Read in the raw data from all_meansignal, that's much easier! Then condition on the
-#column labeled fROIs to assign names appropriately. NOTE that this now takes care of reading
-#in the localizer-to-localizer ones too, to facilitate making the supplemental materials. 
 
 allSigChange = read.csv(paste(meansig_outputs_folder, 'all_mean_signal_outputs.csv', sep=''))
 
 #FOR NOW: Make a choice whether to do all analyses with top 50 voxels or top 10% voxels 
+#(This can be changed to 'Top50Voxels' to see all results with that fROI selection procedure
 allSigChange = filter(allSigChange, ind_selection_method == 'Top10Percent')
-#NEW: Also, screen out the split-half analyses, we'll treat those in their own file since exploratory
+
+#NEW: Also, screen out the split-half analyses for now; we'll treat those in their own file since they are exploratory
 allSigChange = filter(allSigChange, !filename %in% c('SplitHalf_RHLfROIs_resp_Jokes_20170904', 
                                                      'SplitHalf_LangfROIs_resp_Jokes_20170904',
                                                      'SplitHalf_MDfROIs_resp_Jokes_20170904',
                                                      'SplitHalf_ToMfROIs_resp_Jokes_20170904'))
-#(This can be changed to 'Top50Voxels' to see all results with that fROI selection procedure
+
+
+#CHECKSUM - The number of rows in allSigChange should be the same 
+#after the below naming procedure (see line 136)
+nrow(allSigChange) #8489
+
 
 # List contrast and ROI names so it's not just numbers!!!!! (This ordering comes from the 
 # standard ordering produced by the 2nd level analyses; we'll arrange differently in the plots)
@@ -51,107 +56,132 @@ MDROI.Names = c('LIFG op',  'RIFG op', 'LMFG',    'RMFG',    'LMFG orb',
 ToMROI.Names = c('DM PFC', 'LTPJ',  'MM PFC', 'PC',
                       'RTPJ',  'VM PFC', 'RSTS');
 
-normal.contrasts = c('joke', 'lit', 'joke-lit')
-custom.contrasts = c('low','med','high', 'linear') #Bug solved! I didn't record 'other' (no response) in the toolbox output this time. NBD. 
+joke.contrasts = c('joke', 'lit', 'joke-lit')
+jokecustom.contrasts = c('low','med','high', 'linear') #Bug solved! I didn't record 'other' (no response) in the toolbox output this time. NBD. 
+jokecustom.forcloudy.contrasts = c('low','med','high','other','paramfun') #Apparently used different cond names for these ones.
 lang.contrasts = c('S','N','S-N')
 MD.contrasts = c('H','E','H-E')
 ToM.contrasts = c('bel','pho','bel-pho')
+Cloudy.contrasts = c('ment','pain','phys','reln')
 
-#Split the data into groups by fROIs, and rename them as appropriate
+#Small fix to make the splitting work right - standardize capitalization!
+allSigChange <- allSigChange %>%
+  mutate(correctedFROIs = as.factor(str_c(str_sub(fROIs, 1, -2), 's')))%>%
+  mutate(fROIs = correctedFROIs)%>% #(dropping the old fROIs column)
+  select(-correctedFROIs)
+
+#Split the data into groups by fROI sets, and rename them as appropriate (messy, but done separately to deal with various
+#inconsistencies in the data organization)
+#(Within each, we check which task applies, and add the crit-contrasts that way)
 RHLang_sigs = data.frame(NULL)
 LHLang_sigs = data.frame(NULL)
 MD_sigs = data.frame(NULL)
 ToM_sigs = data.frame(NULL)
+CloudyToM_sigs = data.frame(NULL)
 
 
 RHLang_sigs = allSigChange %>%
   filter(fROIs == 'RHLfROIs')%>%
   mutate(ROIName = RHLangROI.Names[ROI]) %>%
   group_by(task)%>%
-  mutate(contrastName = ifelse(task == 'Jokes', normal.contrasts[Contrast], 
-                               ifelse(task == 'JokesCustom', custom.contrasts[Contrast], 
+  mutate(contrastName = ifelse(task == 'Jokes', joke.contrasts[Contrast], 
+                               ifelse(task == 'JokesCustom', jokecustom.contrasts[Contrast], 
                                lang.contrasts[Contrast]))) %>%
-  mutate(Group = 'RHLang') %>%
+  mutate(ROIMask = 'RHLang') %>%
+  mutate(localizer = 'Lang') %>%
   ungroup()
 
 LHLang_sigs = allSigChange %>%
   filter(fROIs == 'LangfROIs')%>%
   mutate(ROIName = LangROI.Names[ROI]) %>%
   group_by(task)%>%
-  mutate(contrastName = ifelse(task == 'Jokes', normal.contrasts[Contrast], 
-                               ifelse(task == 'JokesCustom', custom.contrasts[Contrast], 
+  mutate(contrastName = ifelse(task == 'Jokes', joke.contrasts[Contrast], 
+                               ifelse(task == 'JokesCustom', jokecustom.contrasts[Contrast], 
                                lang.contrasts[Contrast]))) %>%
-  mutate(Group = 'LHLang') %>%
+  mutate(ROIMask = 'LHLang') %>%
+  mutate(localizer = 'Lang') %>%
   ungroup()
 
 MD_sigs = allSigChange %>%
   filter(fROIs == 'MDfROIs')%>%
   mutate(ROIName = MDROI.Names[ROI]) %>%
   group_by(task)%>%
-  mutate(contrastName = ifelse(task == 'Jokes', normal.contrasts[Contrast], 
-                               ifelse(task == 'JokesCustom', custom.contrasts[Contrast], 
+  mutate(contrastName = ifelse(task == 'Jokes', joke.contrasts[Contrast], 
+                               ifelse(task == 'JokesCustom', jokecustom.contrasts[Contrast], 
                                MD.contrasts[Contrast]))) %>%
-  mutate(Group = ifelse(ROI %%2 == 1, 'MDLeft','MDRight')) %>%
+  mutate(ROIMask = ifelse(ROI %%2 == 1, 'MDLeft','MDRight')) %>%
+  mutate(localizer = 'MD') %>%
   ungroup()
 
 ToM_sigs = allSigChange %>%
-  filter(fROIs == 'ToMfROIS')%>% ##Typo in all the filenames!
+  filter(fROIs == 'ToMfROIs')%>%
   mutate(ROIName = ToMROI.Names[ROI]) %>%
   group_by(task)%>%
-  mutate(contrastName = ifelse(task == 'Jokes', normal.contrasts[Contrast], 
-                               ifelse(task == 'JokesCustom', custom.contrasts[Contrast], 
-                               ToM.contrasts[Contrast]))) %>%
-  mutate(Group = 'ToM') %>%
+  mutate(contrastName = ifelse(task == 'Jokes', joke.contrasts[Contrast], 
+                               ifelse(task == 'JokesCustom', jokecustom.contrasts[Contrast], 
+                               ifelse(task == 'Cloudy', Cloudy.contrasts[Contrast],
+                               ToM.contrasts[Contrast])))) %>%
+  mutate(ROIMask = 'ToM') %>%
+  mutate(localizer = 'ToM') %>%
   ungroup()
 
+CloudyToM_sigs = allSigChange %>%
+  filter(fROIs == 'CloudyToMfROIs')%>%
+  mutate(ROIName = ToMROI.Names[ROI]) %>%
+  group_by(task) %>%
+  mutate(contrastName = ifelse(task == 'Jokes', joke.contrasts[Contrast], 
+                               ifelse(task == 'JokesCustom', jokecustom.forcloudy.contrasts[Contrast], 
+                               Cloudy.contrasts[Contrast]))) %>%
+  mutate(ROIMask = 'ToM') %>%
+  mutate(localizer = 'Cloudy') %>%
+  ungroup()
+
+
 #And stick it all back together!!
-allSigChange = rbind(RHLang_sigs, LHLang_sigs, MD_sigs, ToM_sigs)
+allSigChange = rbind(RHLang_sigs, LHLang_sigs, MD_sigs, ToM_sigs, CloudyToM_sigs)
 
+#CHECKSUM - make sure no analyses were lost and that name matching went correctly!
+nrow(allSigChange) #Should be 8489
+aggregate(allSigChange$average.localizer.mask.size, by=list(allSigChange$ROIName, allSigChange$ROI.size), mean) #Checks that ROINames were applied correctly!
 
-##RIGHT HERE, read in Cloudy (PL2017 analyses) since they have a totally different file structure :/
-
-#Pick allSigChange columns to match (removing columns with arbitrary numbering systems. Names are better!)
+#Arrange and factorize columns
+#Pick allSigChange columns to retain (removing columns with arbitrary numbering systems. Names are better!)
 allSigChange <- allSigChange %>%
-  select(-one_of("ROI.size","average.localizer.mask.size","inter.subject.overlap","Contrast"))
+  select(-one_of("ROI", "ROI.size","average.localizer.mask.size","inter.subject.overlap","Contrast", "fROIs"))
 
 allSigChange$SubjectNumber <- as.factor(allSigChange$SubjectNumber)
+allSigChange$task <- as.factor(allSigChange$task)
+allSigChange$localizer <- as.factor(allSigChange$localizer)
+allSigChange$ROIMask <- as.factor(allSigChange$ROIMask)
+allSigChange$ROIName <- as.factor(allSigChange$ROIName)
+allSigChange$contrastName <- as.factor(allSigChange$contrastName)
 
-setwd(paste(meansig_outputs_folder, 'CloudyToMfROIS_resp_Jokes_20181101',sep="/"))
-Cloudy_sigs  = read.csv('spm_ss_mROI_data.csv',sep=',', skip=1, header=FALSE)
-names(Cloudy_sigs) = c('ROIName','SubjectNumber','contrastName','nVoxels','sigChange')
-Cloudy_sigs <- Cloudy_sigs %>%
-  select(-nVoxels) %>%
-  mutate(Group = 'ToM_by_Cloudy', task = 'Jokes', 
-         filename='CloudyToMfROIS_resp_Jokes_20181101', 
-         fROIs='ToMfROIS', ind_selection_method='Top10Percent') 
-
-#Add ROI numbers and reconcile names!
-ToMNamer = data.frame(ROI=1:7)
-ToMNamer$NewROIName = ToMROI.Names
-ToMNamer$ROIName = unique(Cloudy_sigs$ROIName) #Check this worked right!
-Cloudy_sigs = merge(Cloudy_sigs, ToMNamer)
-Cloudy_sigs <- Cloudy_sigs %>%
-  select(-ROIName) %>%
-  mutate(ROIName = NewROIName) %>%
-  select(-NewROIName)
-
-allSigChange <- bind_rows(allSigChange, Cloudy_sigs)
-
+#Add average signal change by ROIMask
 #In addition to the by-region signal changes, we are going to give each person an average signal change value for each localizer, each task
-avgSigChange = aggregate(allSigChange$sigChange, by=list(allSigChange$Group,allSigChange$task, allSigChange$SubjectNumber,allSigChange$contrastName), mean)
-names(avgSigChange) = c('Group', 'task', 'SubjectNumber', 'contrastName','sigChange')
+avgSigChange = aggregate(allSigChange$sigChange, by=list(allSigChange$ROIMask, allSigChange$localizer, allSigChange$task, allSigChange$SubjectNumber,allSigChange$contrastName), mean)
+names(avgSigChange) = c('ROIMask', 'localizer', 'task', 'SubjectNumber', 'contrastName','sigChange')
 avgSigChange <- avgSigChange %>%
-  mutate(ROIName = 'LocalizerAverage', ROI = 0, filename = "", fROIs = "", ind_selection_method = "")
+  mutate(ROIName = 'LocalizerAverage')
+
+avgSigChange <- allSigChange %>%
+  group_by(ROIMask, localizer, task, contrastName, SubjectNumber)%>%
+  summarize(sigChange = mean(sigChange), 
+            filename = first(filename), 
+            ind_selection_method=first(ind_selection_method),
+            pipeline = first(pipeline),
+            ROIName = 'LocalizerAverage')
 
 
 allSigChange <- bind_rows(allSigChange, avgSigChange)
-#NOTE: Later scripts require this allSigChange object to be loaded into memory, run this script to here if it's missing
 
 #New plan 1/18/18 - save this df to avoid messy rerunning. 
-setwd(mywd)
+setwd(meansig_outputs_folder)
 save(allSigChange, file = "allSigChange.RData")
+setwd(analysis_folder)
+save(allSigChange, file = "allSigChange.RData")
+
 #########
-# GRAPHING
+# Get summary stats for the Jokes & JokesCustom tasks (used for graphing & reporting effect size measures)
 #########
 
 #Drop the contrasts (localizer results) we're not interested in for graphing...
