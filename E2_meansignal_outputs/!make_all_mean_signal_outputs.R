@@ -150,5 +150,9 @@ for (result in PL2017Results){
   
 }
 
+#A new thing - get analysis-specific lists of who the subjects are! 
+nrow(all_mean_signal)
+participant_converter <- read.csv('participants_to_SubjectNumber.csv')
+all_mean_signal <- merge(all_mean_signal, participant_converter, by=c('filename','SubjectNumber'),all.x=TRUE)
 setwd(myOutputPath)
 write.csv(all_mean_signal, 'all_mean_signal_outputs.csv', row.names = FALSE)

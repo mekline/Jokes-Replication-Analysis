@@ -39,7 +39,7 @@ allSigChange = filter(allSigChange, !filename %in% c('SplitHalf_RHLfROIs_resp_Jo
 
 #CHECKSUM - The number of rows in allSigChange should be the same 
 #after the below naming procedure (see line 136)
-nrow(allSigChange) #8489
+nrow(allSigChange) #8629 (what was missing before?)
 
 
 # List contrast and ROI names so it's not just numbers!!!!! (This ordering comes from the 
