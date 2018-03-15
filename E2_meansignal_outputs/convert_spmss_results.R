@@ -4,9 +4,9 @@
 
 ####
 #Stuff to change!
-myResultsFolder = paste(getwd(),'/CloudyToMfROIS_mentpain_resp_JokesCustom_PL2017_20180314',sep='')
+myResultsFolder = paste(getwd(),'/ToMfROIS_resp_Cloudy_PL2017_20180312',sep='')
 myOutputFolder = getwd()
-myFilename = 'CloudyToMfROIS_mentpain_resp_JokesCustom_PL2017_20180314.csv'
+myFilename = 'ToMfROIS_resp_Cloudy_PL2017_20180312.csv'
 toSave = 1
 
 nRowsToKeep = 7 #Needed for the newest version, corresponds to the number of regions/fROIs in your mask

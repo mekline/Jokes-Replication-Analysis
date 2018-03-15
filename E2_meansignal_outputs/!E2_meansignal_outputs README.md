@@ -1,14 +1,16 @@
 # E2_meansignal_outputs README
 
-This folder contains all the finalized analyses run for the Jokes project (including both preregistered and exploratory analyses.) 
+This folder contains all the finalized data used to run ROI-based mean-signal analyses replorted the Jokes project (including both preregistered and exploratory analyses.) 
 
 ## Most important files
 
-The most important file is `all_mean_signal_outputs.csv`, which collates the by-subject, by-condition, and by-fROI mean signal activation results into a single tabular format. We recommend you use this if you wish to run other analyses on the Jokes dataset!  
+The most important file is `all_mean_signal_outputs.csv`, which collates the by-subject, by-condition, and by-fROI mean signal activation results into a single tabular format. This is the rawest tabular form of the data, but recommend you use the RData generated over in the analysis pipeline as it adds significantly more human-readable information!
 
 `all_mean_signal_outputs_CODEBOOK.csv` explains the columns in that file. 
 
-The `all_mean_signal_outputs.csv` document can be re-created from the raw by first using `convert_spmmss_results.R` to format individual analyses into tidy format, then by running XXXFILL IN to compile to a single document. 
+The `all_mean_signal_outputs.csv` document can be re-created from the raw spmss outputs by running `!make_all_mean_signal_outputs.R`
+
+If necessary, use `convert_spmmss_results.R` to format an individual analysis set into tidy format. (Need to do this for PL2017, as the maker uses the csv instead of digging into the original files directly.)
 
 ## Toolbox output files
 

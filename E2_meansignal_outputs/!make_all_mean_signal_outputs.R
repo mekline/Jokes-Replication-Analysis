@@ -1,14 +1,14 @@
-#load_spmss_results
+#As of 3/14, moving this to the meansignals file where it belongs!
 #
 # This does not need to be run to reproduce the analyses in the Jokes paper, unless you want to recapitulate
-# the transformation from SPM_SS output folders to raw csv. Start with 2figs_resp_jokes.R for loading in of
-# the data used for all subsequent analyses...
+# the transformation from SPM_SS output folders to raw csv. 
 #
 #This file loads the output of one of the results.csv files produced by the (mean signal) toolbox scripts into R.
 #If I knew more about the mat file produced you could probably get all of this stuff out of
 #there too.  But anyway this gets the mROI_data.csv file, sorts out its structure
-#and reorganizes the data into proper longform. Take your analysis from there or save the result in a csv.
-#Here, the csvs get saved back to the mean_signal folder for tidyness
+#and reorganizes the data into proper longform, and makes a big csv.  Note the different procedure for the
+#PL2017 pipeline ones, we have to use a slightly differnt process!
+
 
 
 library(dplyr)
@@ -46,10 +46,12 @@ whichResults = c('LangfROIs_resp_JokesCustom_20170720',
                  'SplitHalf_MDfROIs_resp_Jokes_20170904',
                  'SplitHalf_ToMfROIs_resp_Jokes_20170904');
 
-PL2017Results = c('CloudyToMfROIS_resp_Jokes_20181101');
-#BIG NOTE: These can't be loaded here, bc PL2017 loads in signal change with actual ROI names! It will get loaded in 2figs...
+PL2017Results = c('ToMfROIs_resp_Cloudy_PL2017_20180312',
+                  'CloudyToMfROIS_mentpain_resp_JokesCustom_PL2017_20180314',
+                  'CloudyToMfROIS_mentpain_resp_Jokes_PL2017_20180314');
 
-toSave = 0 
+
+toSave = 1 
 
   ####
   #Leave the rest alone unless you're feeling fancy
@@ -98,15 +100,7 @@ for (result in whichResults){
     plyr::rename(replace = c(average.ROI.size="ROI.size"), warn_missing = FALSE)
   
   
-  
-  #if string contains 'Top50'
-  #'LangFrois' etc.
-  #(rename critical)
-  #'Jokes'
-  #'JokesCustom'
-  
-    
-  
+  myfile$pipeline = 'Old_evlab_pipeline'
   #Optional: print back out a nice file with a more informative name.
   if(toSave){
     setwd(myOutputPath)
@@ -121,6 +115,37 @@ for (result in whichResults){
     all_mean_signal = myfile
   }else{
   all_mean_signal = rbind(all_mean_signal, myfile)
+  }
+}
+
+#Now do the PL2017 ones...
+for (result in PL2017Results){
+  #Get the csv produced by convert_spmss_results.
+  setwd(myResultsPath)
+  mycsvfile = read.csv(paste(myResultsPath, result, '.csv', sep=""))
+  mycsvfile$filename = result
+  result = str_replace(result, 'mentpain_','')#Small fix to remove ment-pain string from Cloudy filenames
+  mydetails = str_split_fixed(result, '_', 4)
+  mycsvfile$fROIs <- mydetails[[1]] 
+  mycsvfile$task <- mydetails[[3]] 
+  mycsvfile$ind_selection_method <- 'Top10Percent' #All use standard voxel selection
+  
+  mycsvfile$pipeline = 'PL2017'
+
+  #Optional: print back out a nice file (replaces convert_spmss_results, with added extra columns)
+  if(toSave){
+    setwd(myOutputPath)
+    myFileName = paste(result,'.csv', sep="")
+    zz <- file(myFileName, "w")
+    write.csv(myfile, zz, row.names=FALSE)
+    close(zz)
+  }
+  
+  #And add it to the giant dataframe
+  if (nrow(all_mean_signal) == 0){
+    all_mean_signal = mycsvfile
+  }else{
+    all_mean_signal = rbind(all_mean_signal, mycsvfile)
   }
   
 }
