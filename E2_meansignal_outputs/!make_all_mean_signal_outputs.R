@@ -150,4 +150,5 @@ for (result in PL2017Results){
   
 }
 
+setwd(myOutputPath)
 write.csv(all_mean_signal, 'all_mean_signal_outputs.csv', row.names = FALSE)

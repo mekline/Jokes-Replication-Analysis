@@ -1,20 +1,11 @@
 #This takes the individual-subject contrast values and runs some nifty lmer models.
-#It assumes you've just run localizer_t_tests
 
 #set wd
 setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
 
 #Make sure the data is loaded in!
-#load("allSigChange.RData")
-View(allSigChange)
-
-
-#########
-
-
-#EFFECT SIZE CALCULATION! Requested by the journal.  There is no standard way to report effect sizes for linear mixed
-#models, so the approach we'll take is to report mean signal change values at the system level.  This is calculated
-#over in the figure script (2figs_resp_jokes) since we generated those values there. 
+load("allSigChange.RData")
+#View(allSigChange)
 
 # Linear mixed Models!
 #Plan: Within each system (localizers, and jokes), test for basic localizer condition differences, then do some

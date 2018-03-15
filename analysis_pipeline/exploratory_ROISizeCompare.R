@@ -1,7 +1,5 @@
-#(You don't need to run this for the rest of the analysis, it just compares the sizes of the parcels (and hence
-#fROIs, since we use top 10% selection in the 3 systems))
+#A fully autonomous analysis of the sizes of the ROI masks used in these studies!
 
-#Set wd!
 setwd("~/Dropbox/_Projects/Jokes - fMRI/Jokes-Analysis Repository/Analyses_paper/reproducible analyses")
 rois <- read.csv("roi sizes.csv")
 

@@ -12,6 +12,8 @@ The `all_mean_signal_outputs.csv` document can be re-created from the raw spmss 
 
 If necessary, use `convert_spmmss_results.R` to format an individual analysis set into tidy format. (Need to do this for PL2017, as the maker uses the csv instead of digging into the original files directly.)
 
+`participants_to_SubjectNumber.csv` is a hand compiled translation of the orderings in the m files to the (just numbered) subject IDs in the output.
+
 ## Toolbox output files
 
 The majority of rest of the files in this folder are triples of a subfolder, matlab script, and CSV with the same name, e.g. LangfROIs_resp_Jokes_20170703. The matlab script, when run from mindhive with access to the preprocessed nifti-format brain data, produces the output folder. We then use `convert_smpss_results.R` to produce the corresponding CSV file. The naming scheme used is as follows:

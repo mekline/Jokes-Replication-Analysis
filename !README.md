@@ -1,6 +1,6 @@
 # Jokes-Replication-Analysis
 
-This is the repo that contains all analysis of the 'Jokes' replication reported in **PAPER TITLE**, which is a preregistered replication of this experiment (link to repo and preprint.) Read the preprint for details, but essentially this experiment is identical except that we use a sample size based on power analysis from the previous round of results (see LINK for these calculations), and add an additional, exploratory Theory-of-Mind localizer designed to test how/whether joke-specific activation in ToM regions is dependent on the particular localizer task used. 
+This is the repo that contains all analysis of the 'Jokes' replication (E2) reported in **PAPER TITLE**, which is a preregistered replication of this experiment (link to repo and preprint.) Read the preprint for details, but essentially this experiment is identical except that we use a sample size based on power analysis from the previous round of results (see LINK for these calculations), and add an additional, exploratory Theory-of-Mind localizer designed to test how/whether joke-specific activation in ToM regions is dependent on the particular localizer task used. 
 
 
 ## Repository Contents
@@ -15,7 +15,7 @@ Running the scripts in this folder in order should produce all statistics and fi
 
 ### Folder E1_tabular_data_outputs/
 
-Contains both behavioral & neural data (just the well-formatted CSVs) from the original version of this study; full documentation of that project is available at [https://github.com/mekline/Jokes-Analysis](https://github.com/mekline/Jokes-Analysis), but all reported valued from that study are calculated in *this* pipeline to ensure everything is parallel. 
+Contains both behavioral & neural data (just the well-formatted CSVs) from the original version of this study; full documentation of that project is available at [https://github.com/mekline/Jokes-Analysis](https://github.com/mekline/Jokes-Analysis), they're copied here to produce nice parallel graphs. 
 
 ### Folder E2_meansignal_outputs/
 

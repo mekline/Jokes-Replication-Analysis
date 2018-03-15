@@ -4,6 +4,7 @@
 
 ####
 #Stuff to change!
+
 myResultsFolder = paste(getwd(),'/ToMfROIS_resp_Cloudy_PL2017_20180312',sep='')
 myOutputFolder = getwd()
 myFilename = 'ToMfROIS_resp_Cloudy_PL2017_20180312.csv'

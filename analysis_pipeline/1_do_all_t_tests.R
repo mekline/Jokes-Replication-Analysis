@@ -1,6 +1,3 @@
-#This rebuilds the t tests that spmss spits out from the individual signal change values (reproduced here from ind. 
-#signal change values so mk can track how those are done/feed into other analyses)
-
 #Prerequisites to run this file
 #- Set (your) working directory
 #ALL packages necessary for the analysis pipeline should get loaded here
@@ -20,14 +17,9 @@ mywd = getwd()
 load("allSigChange.RData")
 View(allSigChange)
 
-#For the replication, commenting this out, we'll find out in a minute if any localizer-to-localizer
-#measurements are not robust enough
-#Result 10/12: Localizer analysis shows that VMPFC localizer DOESN'T come out in this dataset (replication/study 2), so DONT remove it from
-#the joke-lit tests for ToM and ToM custom 
-
-#allSigChange = allSigChange %>%
-#  filter(!(Group == 'ToM' & ROIName =='VMPFC')) %>%
-#  filter(!(Group == 'ToMCustom' & ROIName =='VMPFC'))
+#NOTE: Result 10/12: Localizer analysis shows that VMPFC localizer DOESN'T fail 
+#in this dataset (replication/study 2), so DONT remove it from
+#the joke-lit tests for ToM and ToM custom analysis (this is diff from E1)
 
 
 #######
@@ -47,7 +39,7 @@ allTests <- allSigChange %>%
   ungroup()
 
 View(allTests)
-zz = file('localizer_t_tests_all.csv', 'w')
+zz = file('jokes_t_tests_all.csv', 'w')
 write.csv(allTests, zz, row.names=FALSE)
 close(zz)
 
@@ -208,7 +200,7 @@ filter(allTests, Group == 'ToM_by_Cloudy', contrastName == 'joke-lit', sig)
 
 
 
-################ Exploratory analysis from Study 1: doing the power analysis for Study 2
+################ Exploratory analysis from Study 1: doing the power analysis to design Study 2
 
 
 #Let's try and do a power analysis on the Jokes results. (Considering a replication
@@ -228,25 +220,25 @@ cohens_d <- function(x, y) {
 }
 
 forPower <- allSigChange %>%
-  filter(Group == 'ToM', contrastName == 'joke-lit') %>%
+  filter(ROIMask == 'ToM', localizer == 'ToM', contrastName == 'joke-lit') %>%
   filter(ROIName %in% c('RTPJ','LTPJ','PC','MM PFC') ) %>%
   group_by(ROIName)%>%
   summarise(m = mean(sigChange), sd = sd(sigChange), t = t.test(sigChange, mu=0,alt='greater')$statistic, 
             p = t.test(sigChange, mu=0,alt='greater')$p.value)
 
-forPower$n <- 12
+forPower$n <- 21 #FOR E2
 forPower$cohens_d <- forPower$m / forPower$sd
 
 ptests <- mapply(pwr.t.test, n=forPower$n, d=forPower$cohens_d, sig.level=0.05, alternative='greater')
 
-#These effects are powered okay: range 0.587 - 0.856
+#For E1, These effects are powered okay: range 0.587 - 0.856
 #UPDATE: Study 2, the effects are powered VERY well, RTPJ, LTPJ, PC are at .92 or higher, MM PFC is at .62
 
 
+#(From E1)
 #Assume the smallest effect in ToM regions is the true effect size
-effect_est <- min(forPower$cohens_d)
+#effect_est <- min(forPower$cohens_d)
 
 #How many participants do we need for 80% power at p=0.05?
-pwr.t.test(d=effect_est, sig.level=0.05, power = 0.80, alternative='greater')
-
+#pwr.t.test(d=effect_est, sig.level=0.05, power = 0.80, alternative='greater')
 #21 participants!
