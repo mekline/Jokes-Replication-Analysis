@@ -125,6 +125,7 @@ ToM_sigs = allSigChange %>%
   mutate(localizer = 'ToM') %>%
   ungroup()
 
+
 CloudyToM_sigs = allSigChange %>%
   filter(fROIs == 'CloudyToMfROIs')%>%
   mutate(ROIName = ToMROI.Names[ROI]) %>%
@@ -157,14 +158,11 @@ allSigChange$ROIName <- as.factor(allSigChange$ROIName)
 allSigChange$contrastName <- as.factor(allSigChange$contrastName)
 
 #Add average signal change by ROIMask
-#In addition to the by-region signal changes, we are going to give each person an average signal change value for each localizer, each task
-avgSigChange = aggregate(allSigChange$sigChange, by=list(allSigChange$ROIMask, allSigChange$localizer, allSigChange$task, allSigChange$SubjectNumber,allSigChange$contrastName), mean)
-names(avgSigChange) = c('ROIMask', 'localizer', 'task', 'SubjectNumber', 'contrastName','sigChange')
-avgSigChange <- avgSigChange %>%
-  mutate(ROIName = 'LocalizerAverage')
+#In addition to the by-region signal changes, we are going to give each person 
+#an average signal change value for each localizer, each task
 
 avgSigChange <- allSigChange %>%
-  group_by(ROIMask, localizer, task, contrastName, SubjectNumber)%>%
+  group_by(ROIMask, localizer, task, contrastName, SubjectNumber, participantID, Evlab_SubNo)%>%
   summarize(sigChange = mean(sigChange), 
             filename = first(filename), 
             ind_selection_method=first(ind_selection_method),

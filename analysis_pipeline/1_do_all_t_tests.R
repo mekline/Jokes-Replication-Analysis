@@ -21,21 +21,33 @@ View(allSigChange)
 #in this dataset (replication/study 2), so DONT remove it from
 #the joke-lit tests for ToM and ToM custom analysis (this is diff from E1)
 
+#Quirk to fix - below, we'll want Cloudy's ment-pain contrast, and we 
+#didn't calculate that directly in the secondary (for no good reason.)  Fix/add it here:
 
+CloudyinToM <- allSigChange%>%
+  filter(ROIMask == 'ToM', localizer == 'ToM', task == 'Cloudy') %>%
+  filter(contrastName == 'ment' | contrastName == 'pain') %>%
+  spread(contrastName, sigChange) %>%
+  mutate(sigChange = ment-pain) %>%
+  select(-c(ment, pain)) %>%
+  mutate(contrastName = 'ment-pain')
+
+allSigChange <- bind_rows(allSigChange, CloudyinToM)
 #######
 # Calculate T Tests
 #######
 
 allTests <- allSigChange %>%
-  group_by(Group, task)%>%
-  summarize(familySize = length(unique(ROI))) %>%
+  group_by(ROIMask, localizer, task)%>%
+  summarize(familySize = length(unique(ROIName))) %>%
   merge(allSigChange) %>%
-  group_by(Group, task, ROI, ROIName, contrastName, familySize) %>%
+  group_by(ROIMask, localizer, task, ROIName, contrastName, familySize) %>%
   summarise(t = t.test(sigChange, mu=0,alt='greater')$statistic, 
             p = t.test(sigChange, mu=0,alt='greater')$p.value) %>%
   ungroup()%>%
-  group_by(Group, contrastName)%>%
-  mutate(p.adj = p.adjust(p, method="fdr", n=familySize[1]))%>%
+  group_by(ROIMask, localizer, task, contrastName)%>%
+  mutate(p.adj = p.adjust(p, method="fdr"))%>%
+  mutate(howmany = length(p)) %>%
   ungroup()
 
 View(allTests)
@@ -72,25 +84,30 @@ reportTests <- function(ts, ps){
 ###
 #RESP LOCALIZER
 allTests %>%
-  filter(Group == 'LHLang', task == 'Lang', contrastName == 'S-N') %>%
+  filter(ROIMask == 'LHLang', localizer == 'Lang', task == 'Lang', contrastName == 'S-N') %>%
   summarise(n(), sum(sig), reportTests(t,p)) #Convention: when all significant, report the largest p
 
 allTests %>%
-  filter(Group == 'RHLang', task == 'Lang', contrastName == 'S-N') %>%
+  filter(ROIMask == 'RHLang', localizer == 'Lang', task == 'Lang', contrastName == 'S-N') %>%
   summarise(n(), sum(sig), reportTests(t,p)) 
 
 allTests %>%
-  filter(Group == 'MDLeft', task == 'MD', contrastName == 'H-E') %>%
+  filter(ROIMask == 'MDLeft', localizer == 'MD', task == 'MD', contrastName == 'H-E') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'MDRight', task == 'MD', contrastName == 'H-E') %>%
+  filter(ROIMask == 'MDRight', localizer == 'MD', task == 'MD', contrastName == 'H-E') %>%
   summarise(n(), sum(sig), reportTests(t,p)) #Orig found a surprise nonsig, but not in the replication
 
 #(Note, in the orig we evaluated MD localizer with non-sent, but now we have participants with 2 localizer sessions!)
 
 allTests %>%
-  filter(Group == 'ToM', task == 'ToM', contrastName == 'bel-pho') %>%
+  filter(ROIMask == 'ToM', localizer == 'ToM', task == 'ToM', contrastName == 'bel-pho') %>%
+  summarise(n(), sum(sig), reportTests(t,p)) 
+
+#NEW: Cloudy localizer!
+allTests %>%
+  filter(ROIMask == 'ToM', localizer == 'ToM', task == 'Cloudy', contrastName == 'ment-pain') %>%
   summarise(n(), sum(sig), reportTests(t,p)) 
 
 ###
@@ -100,21 +117,21 @@ allTests %>%
 #Jokes and Nonjokes both activate, and this time differences! RAngG is nonsignificant
 
 allTests %>%
-  filter(Group == 'RHLang', task == 'Jokes', contrastName == 'joke') %>%
+  filter(ROIMask == 'RHLang', localizer == 'Lang', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'RHLang', contrastName == 'joke', !sig)
-filter(allTests, Group == 'RHLang', contrastName == 'joke', sig) %>%
-  summarise(n(), sum(sig), reportTests(t,p))
-
-allTests %>%
-  filter(Group == 'RHLang', task == 'Jokes', contrastName == 'lit') %>%
-  summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'RHLang', contrastName == 'lit', !sig)
-filter(allTests, Group == 'RHLang', contrastName == 'lit', sig) %>%
+filter(allTests, ROIMask == 'RHLang', localizer == 'Lang', contrastName == 'joke', !sig)
+filter(allTests, ROIMask == 'RHLang', localizer == 'Lang', contrastName == 'joke', sig) %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'RHLang', task == 'Jokes', contrastName == 'joke-lit') %>%
+  filter(ROIMask == 'RHLang', localizer == 'Lang', task == 'Jokes', contrastName == 'lit') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
+filter(allTests, ROIMask == 'RHLang', localizer == 'Lang', contrastName == 'lit', !sig)
+filter(allTests, ROIMask == 'RHLang', localizer == 'Lang', contrastName == 'lit', sig) %>%
+  summarise(n(), sum(sig), reportTests(t,p))
+
+allTests %>%
+  filter(ROIMask == 'RHLang', localizer == 'Lang', task == 'Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p)) 
 
 
@@ -122,82 +139,94 @@ allTests %>%
 #Jokes and Nonjokes both activate, and this time there's differences?! 
 
 allTests %>%
-  filter(Group == 'LHLang', task == 'Jokes', contrastName == 'joke') %>%
+  filter(ROIMask == 'LHLang', localizer == 'Lang', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'LHLang', task == 'Jokes', contrastName == 'lit') %>%
+  filter(ROIMask == 'LHLang', localizer == 'Lang', task == 'Jokes', contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'LHLang', task == 'Jokes', contrastName == 'joke-lit') %>%
+  filter(ROIMask == 'LHLang', localizer == 'Lang', task == 'Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 ### RHMD
 
 allTests %>%
-  filter(Group == 'MDRight', task == 'Jokes', contrastName == 'joke') %>%
+  filter(ROIMask == 'MDRight', localizer == 'MD', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'MDRight', contrastName == 'joke', !sig)
+filter(allTests, ROIMask == 'MDRight', contrastName == 'joke', !sig)
 
 allTests %>%
-  filter(Group == 'MDRight', task == 'Jokes',  contrastName == 'lit') %>%
+  filter(ROIMask == 'MDRight', localizer == 'MD', task == 'Jokes',  contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'MDRight', contrastName == 'lit', !sig)
+filter(allTests, ROIMask == 'MDRight', contrastName == 'lit', !sig)
 
 allTests %>%
-  filter(Group == 'MDRight', task == 'Jokes', contrastName == 'joke-lit') %>%
+  filter(ROIMask == 'MDRight', localizer == 'MD', task == 'Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'MDRight', contrastName == 'joke-lit', !sig)
-filter(allTests, Group == 'MDRight', contrastName == 'joke-lit', sig) %>%
+filter(allTests, ROIMask == 'MDRight', localizer == 'MD', contrastName == 'joke-lit', !sig)
+filter(allTests, ROIMask == 'MDRight', localizer == 'MD', contrastName == 'joke-lit', sig) %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 
 ###LHMD
 
 allTests %>%
-  filter(Group == 'MDLeft', task == 'Jokes', contrastName == 'joke') %>%
+  filter(ROIMask == 'MDLeft', localizer == 'MD', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'MDLeft', task == 'Jokes', contrastName == 'lit') %>%
+  filter(ROIMask == 'MDLeft', localizer == 'MD', task == 'Jokes', contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'MDLeft', contrastName == 'lit', !sig)
+filter(allTests, ROIMask == 'MDLeft', contrastName == 'lit', !sig)
 
 allTests %>%
-  filter(Group == 'MDLeft', contrastName == 'joke-lit') %>%
+  filter(ROIMask == 'MDLeft', localizer == 'MD', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 
 ### ToM
 # Interesting activations!
 allTests %>%
-  filter(Group == 'ToM', task =='Jokes', contrastName == 'joke') %>%
+  filter(ROIMask == 'ToM', localizer == 'ToM', task =='Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'ToM', contrastName == 'joke', sig)
+filter(allTests, ROIMask == 'ToM', contrastName == 'joke', sig)
 
 allTests %>%
-  filter(Group == 'ToM', task =='Jokes', contrastName == 'lit') %>%
+  filter(ROIMask == 'ToM', localizer == 'ToM', task =='Jokes', contrastName == 'lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'ToM', contrastName == 'lit', sig)
+filter(allTests, ROIMask == 'ToM', contrastName == 'lit', sig)
 
 allTests %>%
-  filter(Group == 'ToM', task =='Jokes', contrastName == 'joke-lit') %>%
+  filter(ROIMask == 'ToM', localizer == 'ToM', task =='Jokes', contrastName == 'joke-lit') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 #Paramfun t test (jokesCustom parametric)
 allTests %>%
- filter(Group == 'ToM', task == 'JokesCustom', contrastName == 'linear') %>%
+ filter(ROIMask == 'ToM', localizer == 'ToM', task == 'JokesCustom', contrastName == 'linear') %>%
  summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'ToM', contrastName == 'joke-lit', sig)
 
 
-#Cloudy
+#Cloudy (New!) - All significant on the key contrast
 allTests %>%
-  filter(Group == 'ToM_by_Cloudy', task == 'Jokes', contrastName == 'joke-lit') %>%
+  filter(ROIMask == 'ToM', localizer == 'Cloudy', task == 'Jokes', contrastName == 'joke') %>%
   summarise(n(), sum(sig), reportTests(t,p))
-filter(allTests, Group == 'ToM_by_Cloudy', contrastName == 'joke-lit', sig)
+filter(allTests, ROIMask == 'ToM', localizer == 'Cloudy', contrastName == 'joke', sig)
 
+allTests %>%
+  filter(ROIMask == 'ToM', localizer == 'Cloudy', task == 'Jokes', contrastName == 'lit') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
+#all significantly *negative*, fascinating. 
+
+allTests %>%
+  filter(ROIMask == 'ToM', localizer == 'Cloudy', task == 'Jokes', contrastName == 'joke-lit') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
+
+#And Cloudy on the parametric analysis for Custom assignments, noting that we weirdly named it 'paramfun' this time
+allTests %>%
+  filter(ROIMask == 'ToM', localizer == 'Cloudy', task == 'JokesCustom', contrastName == 'paramfun') %>%
+  summarise(n(), sum(sig), reportTests(t,p))
 
 
 ################ Exploratory analysis from Study 1: doing the power analysis to design Study 2
