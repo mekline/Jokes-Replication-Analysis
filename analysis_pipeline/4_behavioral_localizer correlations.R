@@ -67,11 +67,10 @@ ggplot(data=bb, aes(y=sigChange, x=meanResponseChange)) +
 ggsave(filename="behav_activation_E2.jpg", width=3, height=3)
   
 #Calculate and save a version of the E2 behavdata so we can make composite graphs in that script!
-
-
+nrow(behavdata)
 behavdata <- filter(behavdata, !is.na(RT)) %>%
   filter(!is.na(response))
-
+nrow(behavdata)
 ####
 # RT
 ####

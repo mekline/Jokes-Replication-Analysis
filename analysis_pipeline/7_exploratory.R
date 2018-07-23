@@ -1,10 +1,6 @@
 #EXPLORATORY ANALYSES LIVE HERE.  
 
-#We recapitulate the cleaning/processing code here just to avoid infecting the main scripts with e.g. 
-#the split-half parts of the data. Interesting stuff starts on line 93.
-
 #Load libraries
-rm(list = ls())
 library(bootstrap)
 library(dplyr)
 library(lme4)
@@ -22,11 +18,19 @@ bootdown <- function(mylist){
   return(quantile(foo$thetastar, 0.025)[1])
 }
 
-setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline")
-meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/E2_meansignal_outputs/'
+repodir = "/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis"
+analysisfolder = paste(repodir, "/analysis_pipeline", sep="")
+figfolder = paste(repodir, "/analysis_pipeline/figs", sep="")
+E1folder = paste(repodir, "/E1_tabular_data", sep="")
+behavfolder = paste(repodir, "/E2_behavioral_data/Jokes", sep="")
+
+setwd(analysisfolder)
+#(set your own wd first)
+
+
 
 ###########
-#(((EXPLORATORY A - Extend the high-med-low individual joke rating tests to the other systems. Appears in Supplemental E2)))
+#(((EXPLORATORY A - Extend the high-med-low individual joke rating tests to the other systems. Appears in Supplemental 2)))
 ##########
 #after powering the study up for the replication, we now detect (probably smaller) significant effects
 #in all systems for jokes > nonjokes. The ToM ones are > RHLang and RMD (good!) but not significantly different in magnitude to 
@@ -36,13 +40,17 @@ meansig_outputs_folder = '/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Re
 #(In fact, funniness ratings do correlate with activations in these regions as well)
 
 #Load all the t tests (from E2)
-allTests <- read.csv('localizer_t_tests_all.csv')
+allTests <- read.csv('jokes_t_tests_all.csv')
 allTests <- allTests %>%
   mutate(sig = p < 0.05) %>%
   mutate(sigCor = p.adj < 0.05) %>%
   mutate(mismatch = sig != sigCor)
 
-#STOP HAMMER TIME Load the full result set for all signal changes (by running file 2 thru 121)
+filter(allTests,mismatch)
+#(Note this gives only differences from fixation, no critical condition-condition contrasts)
+
+#STOP HAMMER TIME Load the full result set for all signal changes
+load('allSigChange.RData')
 View(allSigChange)
 
 #Convention: when all tests go one way, report them together as follows:
@@ -58,46 +66,46 @@ reportTests <- function(ts, ps){
 
 #Extend the paramfun contrasts of the critical task to measure them in lang and in MD!
 allTests %>%
-  filter(Group == 'RHLang', task == 'JokesCustom', contrastName == 'linear') %>%
+  filter(ROIMask == 'RHLang', task == 'JokesCustom', contrastName == 'linear') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'LHLang', task == 'JokesCustom', contrastName == 'linear') %>%
+  filter(ROIMask == 'LHLang', task == 'JokesCustom', contrastName == 'linear') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'MDRight', task == 'JokesCustom', contrastName == 'linear') %>%
+  filter(ROIMask == 'MDRight', task == 'JokesCustom', contrastName == 'linear') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 allTests %>%
-  filter(Group == 'MDLeft', task == 'JokesCustom', contrastName == 'linear') %>%
+  filter(ROIMask == 'MDLeft', task == 'JokesCustom', contrastName == 'linear') %>%
   summarise(n(), sum(sig), reportTests(t,p))
 
 #Now the same, with LME for all parcels in the localizers
 
 
-RHLCustom <- filter(allSigChange, Group == "RHLang", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
+RHLCustom <- filter(allSigChange, ROIMask == "RHLang", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
 #Make sure those factors are ordered....
 RHLCustom$contrastName <- as.factor(RHLCustom$contrastName)
 m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = RHLCustom)
 m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = RHLCustom)
 anova(m1,m0)
 
-LHLCustom <- filter(allSigChange, Group == "LHLang", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
+LHLCustom <- filter(allSigChange, ROIMask == "LHLang", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
 #Make sure those factors are ordered....
 LHLCustom$contrastName <- as.factor(LHLCustom$contrastName)
 m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = LHLCustom)
 m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = LHLCustom)
 anova(m1,m0)
 
-MDRCustom <- filter(allSigChange, Group == "MDRight", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
+MDRCustom <- filter(allSigChange, ROIMask == "MDRight", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
 #Make sure those factors are ordered....
 MDRCustom$contrastName <- as.factor(MDRCustom$contrastName)
 m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDRCustom)
 m0 <- lmer(sigChange ~ 1 + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDRCustom)
 anova(m1,m0)
 
-MDLCustom <- filter(allSigChange, Group == "MDLeft", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
+MDLCustom <- filter(allSigChange, ROIMask == "MDLeft", task == 'JokesCustom', contrastName == 'low' | contrastName == 'med' | contrastName == 'high')
 #Make sure those factors are ordered....
 MDLCustom$contrastName <- as.factor(MDLCustom$contrastName)
 m1 <- lmer(sigChange ~ contrastName + (contrastName|ROIName) + (contrastName|SubjectNumber), data = MDLCustom)
@@ -106,7 +114,7 @@ anova(m1,m0)
 
 
 ###########
-#(((EXPLORATORY B - Checking for behaviorally 'oddball' subjects. Supplemental 5)))
+#(((EXPLORATORY B - Checking for behaviorally 'oddball' subjects. Supplemental 6)))
 ##########
 
 # There are some differences between studies 1 and 2! In particular, we see overall 
@@ -116,11 +124,12 @@ anova(m1,m0)
 # to try and calculate a value for each person, which is: "how far away from the mean
 # response is this person's average answer"
 
-#Prereq: run script 5behavioral to reload behavioral data and 2figs to load the signal-change data!
-View(behavdata)
-View(allSigChange)
 
-#(((EXPLORATORY D, C is below now)))
+#New  - read in the nicely formatted behavioral data we made!
+behavdata = read.csv(paste(behavfolder, '/all_behavioral_output.csv', sep=''))
+
+
+
 # Make a table that aggregates responses by *item* (not person)
 avgItemResponse <- behavdata %>%
   group_by(item, category) %>%
@@ -152,7 +161,7 @@ ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) +
 #(This is about half the observed effect size, jokes are about 1 point funnier than nonjokes over the whole dataset)
 
 #########
-# (((EXPLORATORY C - Appears in Supplemental section E4)))
+# (((EXPLORATORY C - Appears in Supplemental section 6)))
 #########
 
 #FROM EV:
@@ -165,28 +174,31 @@ ggplot(data=oddballSubj, aes(y=myMeanDistance, x=category)) +
 #This would give us a sense of how consistent the relative sizes of the 
 #effects across systems and fROIs are across studies.
 
-#NOTE view mystats and check you have the version with Experiment 1 values in it too. If not, run the script with the composite graphs (7composite..., requires 5) to get it)
+#Load big matrix of stats from E1 and E2 used to make the main graphs
+setwd(analysisfolder)
+load('figs/mystats.RData')
 
 jokelits <- mystats %>%
+  ungroup() %>%
   filter(contrastName == 'joke-lit') %>%
-  select(c(GroupLabel, ROIName, Experiment, themean)) %>%
+  select(c(ROIMask, localizer, ROIName, Experiment, themean)) %>%
   filter(ROIName != "average\nacross\nfROIs") %>%
+  filter(localizer != 'Cloudy')%>%
   mutate(Experiment = ifelse(Experiment == "Experiment 1", 'Experiment1', 'Experiment2')) %>%
   spread(Experiment, themean) %>%
-  filter(ROIName != "VM\nPFC") %>% #VMPFC was dropped from E1 therefore from these comparisons 
+  filter(ROIName != "VMPFC") %>% #VMPFC was dropped from E1 therefore from these comparisons 
   mutate(ROIName_noN = gsub("\n","", ROIName))
 
 cor_labels <- jokelits %>%
-  group_by(GroupLabel) %>%
+  group_by(ROIMask) %>%
   summarize(group_cor = cor(Experiment1, Experiment2, method="spearman")) %>%
   mutate(my_cor_label = paste("\u03C1=", round(group_cor, 3)))
 
 
-setwd("/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/analysis_pipeline/figs")
 #A Graph
 library(ggrepel)
-ggplot(data=jokelits, aes(y=Experiment2, x=Experiment1, color = GroupLabel)) + 
-  facet_wrap(~ GroupLabel, ncol=3, scales = "free") +
+ggplot(data=jokelits, aes(y=Experiment2, x=Experiment1, color = ROIMask)) + 
+  facet_wrap(~ ROIMask, ncol=3, scales = "free") +
   geom_smooth(method="lm", se=FALSE) + 
   geom_point() +
   expand_limits(x = 0, y = 0) +
@@ -202,7 +214,7 @@ ggplot(data=jokelits, aes(y=Experiment2, x=Experiment1, color = GroupLabel)) +
        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
   ggsave(filename="figs/exploratory_compare_activation_E1_E2.jpg", width=9, height=6)
 
-# START HERE, PUT R VALUES ON GRAPH!!!! 
+
 
 cor(jokelits$Experiment1, jokelits$Experiment2, method="spearman")
 
@@ -212,92 +224,87 @@ cor(jokelits$Experiment1, jokelits$Experiment2, method="spearman")
 #Accompanying statistical analysis! Experiment 1 finds NO CHANGE in RHLang and MDRight, while Experiment 2 finds a change. 
 #But, can we actually measure that difference, or are we underpowered? Compare values to each other....
 
-View(all_allSignalChange) #Comes from #7, should be prsent if the graph worked)
+View(all_allSignalChange) #Comes from #5, run that file to line 120)
 
-#Wait! Make sure we don't accidentally treat E2 subjects as re-measurements of E1 ones.  
+#Wait! Make double sure we don't accidentally treat E2 subjects as re-measurements of E1 ones.  
 
-allSignalChange_Exploratory <- all_allSignalChange %>%
-  mutate(realSubjN = paste(Experiment, SubjectNumber)) %>%
-  select(-SubjectNumber)
+allSignalChange_Exploratory <- all_allSigChange %>%
+  mutate(realSubjN = paste(Experiment, participantID)) %>%
+  select(-participantID)
 
 #Model comparison time! 
 
-RHLang <- filter(allSignalChange_Exploratory, Group == "RHLang", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+RHLang <- filter(allSignalChange_Exploratory, ROIMask == "RHLang", localizer == "Lang", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
 m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = RHLang)
 m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = RHLang)
 anova(m1,m0)
 
 
-MDRight <- filter(allSignalChange_Exploratory,  Group == "MDRight", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+MDRight <- filter(allSignalChange_Exploratory,  ROIMask == "MDRight", localizer == "MD", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
 m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = MDRight)
 m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = MDRight)
 anova(m1,m0)
 
-ToM <- filter(allSignalChange_Exploratory,  Group == "ToM", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+ToM <- filter(allSignalChange_Exploratory,  ROIMask == "ToM", localizer == 'ToM', task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
 m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = ToM)
 m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = ToM)
 anova(m1,m0)
 
-LHLang <- filter(allSignalChange_Exploratory, Group == "LHLang", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+LHLang <- filter(allSignalChange_Exploratory, ROIMask == "LHLang", localizer =='Lang', task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
 m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = LHLang)
 m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = LHLang)
 anova(m1,m0)
 
 
-MDLeft <- filter(allSignalChange_Exploratory,  Group == "MDLeft", task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
+MDLeft <- filter(allSignalChange_Exploratory,  ROIMask == "MDLeft", localizer == 'MD', task == 'Jokes', contrastName == 'joke' | contrastName == 'lit')
 m1 <- lmer(sigChange ~ contrastName*Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = MDLeft)
 m0 <- lmer(sigChange ~ contrastName+Experiment + (contrastName|ROIName) + (contrastName|realSubjN), data = MDLeft)
 anova(m1,m0)
 
 #########
-#EXPLORATORY E
+#EXPLORATORY E - reported in Supplemental 6
 #########
 
 #Exploratory analysis: How do the signal changes for Joke > NonJoke compare to the localizer signal change in each 
-#ROI? Are these *proportions* different for the different signals? 
+#ROI? Are these *proportions* different for the different signals?  (Looking at just E2)
 
 localizer2task <- allSigChange %>%
   filter(contrastName %in% c('joke-lit','H-E','S-N','bel-pho')) %>%
   filter(task != 'JokesCustom') %>%
+  filter(localizer != 'Cloudy')%>%
   filter(ROIName != 'LocalizerAverage') %>%
   mutate(taskType = ifelse(task == 'Jokes', 'Critical', 'Localizer')) 
-
-  #select(-c(contrastName, task)) #%>% #so the spreads/groups work
-#spread(taskType, sigChange) %>%
-#mutate(sigDiff = Localizer - Critical)
 
 #Okay, so what do we want to know? we want to know if the localizer effect is 
 #bigger than the jokes effect in each region.
 
-m1 <- lmer(sigChange ~ taskType*Group + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','RHLang','MDRight')))
-m0 <- lmer(sigChange ~ taskType+Group + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','RHLang','MDRight')))
+m1 <- lmer(sigChange ~ taskType*ROIMask + (taskType|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask %in% c('ToM','RHLang','MDRight')))
+m0 <- lmer(sigChange ~ taskType+ROIMask + (taskType|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask %in% c('ToM','RHLang','MDRight')))
 anova(m1, m0)
 
 #Answer: the interaction matters! But we want more specifics. How about a graph
 
-loctaskstats <- aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
+loctaskstats <- aggregate(localizer2task$sigChange, by=list(localizer2task$ROIMask, 
                                                             localizer2task$taskType, 
-                                                            localizer2task$ROIName, 
-                                                            localizer2task$ROI), mean)
-names(loctaskstats) = c('Group','taskType', 'ROIName', 'ROI','themean')
+                                                            localizer2task$ROIName), mean)
+
+names(loctaskstats) = c('ROIMask','taskType', 'ROIName', 'themean')
 
 
-mybootup = aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
+mybootup = aggregate(localizer2task$sigChange, by=list(localizer2task$ROIMask, 
                                                        localizer2task$taskType, 
-                                                       localizer2task$ROIName, 
-                                                       localizer2task$ROI), bootup)
-names(mybootup) = c('Group','taskType', 'ROIName', 'ROI', 'bootup')
-mybootdown = aggregate(localizer2task$sigChange, by=list(localizer2task$Group, 
+                                                       localizer2task$ROIName), bootup)
+names(mybootup) = c('Group','taskType', 'ROIName',  'bootup')
+mybootdown = aggregate(localizer2task$sigChange, by=list(localizer2task$ROIMask, 
                                                          localizer2task$taskType, 
-                                                         localizer2task$ROIName, 
-                                                         localizer2task$ROI), bootdown)
-names(mybootdown) = c('Group','taskType', 'ROIName', 'ROI', 'bootdown')
+                                                         localizer2task$ROIName), bootdown)
+names(mybootdown) = c('Group','taskType', 'ROIName',  'bootdown')
 
 loctaskstats = merge(loctaskstats,mybootup)
 loctaskstats = merge(loctaskstats,mybootdown)
 
 
-
+setwd(analysisfolder)
 ggplot(data=loctaskstats, aes(x=ROIName, y=themean, fill=taskType)) + 
   geom_bar(position=position_dodge(), stat="identity") +
   geom_errorbar(aes(ymin=bootdown, ymax=bootup), colour="black", width=.1, position=position_dodge(.9)) +
@@ -312,41 +319,41 @@ ggplot(data=loctaskstats, aes(x=ROIName, y=themean, fill=taskType)) +
 
 
 #For each region, ask whether there's a difference. There is. This is not a very interesting analysis.  
-ToMmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'ToM'))
-ToMmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'ToM'))
+ToMmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|participantID), data = filter(localizer2task, ROIMask == 'ToM'))
+ToMmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|participantID), data = filter(localizer2task, ROIMask == 'ToM'))
 anova(ToMmodel, ToMmodel0)  
 
 #Note dropped slopes, didn't converge
-MDRmodel <- lmer(sigChange ~ taskType + (1|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group == 'MDRight'))
-MDRmodel0 <- lmer(sigChange ~ 1 + (1|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group == 'MDRight'))
+MDRmodel <- lmer(sigChange ~ taskType + (1|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask == 'MDRight'))
+MDRmodel0 <- lmer(sigChange ~ 1 + (1|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask == 'MDRight'))
 anova(MDRmodel, MDRmodel0)  
 
-MDLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDLeft'))
-MDLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'MDLeft'))
+MDLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|participantID), data = filter(localizer2task, ROIMask == 'MDLeft'))
+MDLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|participantID), data = filter(localizer2task, ROIMask == 'MDLeft'))
 anova(MDLmodel, MDLmodel0)  
 
-RHLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'RHLang'))
-RHLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|SubjectNumber), data = filter(localizer2task, Group == 'RHLang'))
+RHLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (taskType|participantID), data = filter(localizer2task, ROIMask == 'RHLang'))
+RHLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (taskType|participantID), data = filter(localizer2task, ROIMask == 'RHLang'))
 anova(RHLmodel, RHLmodel0)  
 
 #Note, dropped subject slope for this model, didn't converge
-LHLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group == 'LHLang'))
-LHLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group == 'LHLang'))
+LHLmodel <- lmer(sigChange ~ taskType + (taskType|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask == 'LHLang'))
+LHLmodel0 <- lmer(sigChange ~ 1 + (taskType|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask == 'LHLang'))
 anova(LHLmodel, LHLmodel0)  
 
 
 #Ask whether there is a difference between ToM and the other right-hemisphere systems, using same randoms as above
-m1 <- lmer(sigChange ~ taskType*Group + (1|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','MDRight', 'RHLang')))
-m0 <- lmer(sigChange ~ taskType+Group + (1|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','MDRight', 'RHLang')))
+m1 <- lmer(sigChange ~ taskType*ROIMask + (1|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask %in% c('ToM','MDRight', 'RHLang')))
+m0 <- lmer(sigChange ~ taskType+ROIMask + (1|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask %in% c('ToM','MDRight', 'RHLang')))
 anova(m1, m0)
 
 #Followup with ToM over each of the others
-m1 <- lmer(sigChange ~ taskType*Group + (1|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','MDRight')))
-m0 <- lmer(sigChange ~ taskType+Group + (1|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','MDRight')))
+m1 <- lmer(sigChange ~ taskType*ROIMask + (1|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask %in% c('ToM','MDRight')))
+m0 <- lmer(sigChange ~ taskType+ROIMask + (1|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask %in% c('ToM','MDRight')))
 anova(m1, m0)
 
-m1 <- lmer(sigChange ~ taskType*Group + (1|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','RHLang')))
-m0 <- lmer(sigChange ~ taskType+Group + (1|ROIName) + (1|SubjectNumber), data = filter(localizer2task, Group %in% c('ToM','RHLang')))
+m1 <- lmer(sigChange ~ taskType*ROIMask + (1|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask %in% c('ToM','RHLang')))
+m0 <- lmer(sigChange ~ taskType+ROIMask + (1|ROIName) + (1|participantID), data = filter(localizer2task, ROIMask %in% c('ToM','RHLang')))
 anova(m1, m0)
 
 ###################################
@@ -355,16 +362,18 @@ anova(m1, m0)
 systemAvgs <- allSigChange %>%
   filter(contrastName %in% c('joke-lit','H-E','S-N','bel-pho')) %>%
   filter(task == 'Jokes') %>%
-  filter(ROI ==0) %>%
-  filter(Group %in% c("ToM", "MDRight","RHLang")) %>%
-  spread(Group, sigChange) %>%
+  filter(localizer != 'Cloudy')%>%
+  filter(ROIName =="LocalizerAverage") %>%
+  filter(ROIMask %in% c("ToM", "MDRight","RHLang")) %>%
+  select(c(ROIMask, participantID, sigChange))%>% #to make the spread work right
+  spread(ROIMask, sigChange) %>%
   gather("OtherSystem", "OthersigChange", c("MDRight", "RHLang")) %>%
   mutate("ROILabel" = ifelse(OtherSystem=="MDRight", "RH Multiple Demand fROIs", "RH Language fROIs"))
   
   
-#Remove an oddball subject for stats only!
+#Remove an oddball subject for stats  & multi-lines on graph
 systemAvgs_noout <- systemAvgs%>%
-  filter(SubjectNumber != 3)
+  filter(participantID != '301_FED_20161217b_3T2')
 
 #Let's graph, I'm confused how to compare these. 
 ggplot(data=systemAvgs, aes(x=OthersigChange, y=ToM, color=ROILabel)) +
@@ -392,7 +401,7 @@ langtoMD <- systemAvgs %>%
   spread(OtherSystem, OthersigChange)
 
 langtoMD_noout <- langtoMD %>%
-  filter(SubjectNumber != 3)
+  filter(participantID != '301_FED_20161217b_3T2')
   
 
 ggplot(data=langtoMD, aes(x=MDRight, y=RHLang)) +
@@ -410,6 +419,9 @@ ggplot(data=langtoMD, aes(x=MDRight, y=RHLang)) +
 
 
 #Neither is very correlated! Let's quantify that with simple correlation tests. 
+#(On rerun - melissa thinks these are pretty decent correlations? WHy did I say they were
+#'not very correlated?')
+#'#OH LOOK I didn't replicate the results from the last time I ran these scripts. What happened?
 
 cor.test(systemAvgs[systemAvgs$OtherSystem == "RHLang",]$ToM, 
          systemAvgs[systemAvgs$OtherSystem == "RHLang",]$OthersigChange, use='pairwise.complete.obs', method = 'pearson')
@@ -431,6 +443,36 @@ cor.test(systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$ToM,
 
 cor.test(systemAvgs_noout[systemAvgs_noout$OtherSystem == "RHLang",]$OthersigChange, 
          systemAvgs_noout[systemAvgs_noout$OtherSystem == "MDRight",]$OthersigChange, use='pairwise.complete.obs', method = 'pearson')
+
+
+
+
+
+
+
+#Let's do a series of Wilcoxon rank sum (unpaired!) tests to see if systems have different sized ROIs
+
+MD <- filter(rois, System == "MD")
+TM <- filter(rois, System == "ToM")
+LA <- filter(rois, System == "Language") #RH and LH are same bc RH is just the reflection
+MDL <- filter(MD, ROI.number %% 2 == 1)
+MDR <- filter(MD, ROI.number %% 2 == 0)
+
+wilcox.test(TM$Size.in.voxels, LA$Size.in.voxels, paired=FALSE)
+wilcox.test(MDR$Size.in.voxels, TM$Size.in.voxels, paired=FALSE)
+wilcox.test(MDR$Size.in.voxels, LA$Size.in.voxels, paired=FALSE)
+
+summarise(MDR, mean(Size.in.voxels))
+summarise(TM, mean(Size.in.voxels))
+summarise(LA, mean(Size.in.voxels))
+
+
+
+
+
+
+
+
 
 # #OLD EXPLORATORY F - I MISUNDERSTOOD EV.  - CONFLATED 2 EXPS SHE WANTED
 # ########

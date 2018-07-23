@@ -1,8 +1,11 @@
-#Composite graphs! Warning, this assumes you've run the Exp 2 pipeline up to this point - run all View() funs at the top to
-#make sure necessary data is loaded. 
+#Composite graphs! Make sure necessary E2 data is loaded (lines 9-12)
+library(dplyr)
+library(stringr)
+library(bootstrap)
+library(ggplot2)
 
 #(set your own wd first)
-repodir = "/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis/"
+repodir = "/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis"
 analysisfolder = paste(repodir, "/analysis_pipeline", sep="")
 figfolder = paste(repodir, "/analysis_pipeline/figs", sep="")
 E1folder = paste(repodir, "/E1_tabular_data", sep="")
@@ -19,6 +22,7 @@ load('allSigChange.RData')
 
 #avg_RT dataframe
 
+setwd(E1folder)
 avgRT_E1 = read.csv('avgRT_Behavioral_Exp1.csv')
 avgResponse_E1 = read.csv('avgResponse_Behavioral_Exp1.csv')
 allSigChange_E1 = read.csv('allSigChange_Exp1.csv')
@@ -241,7 +245,7 @@ load('mystats.RData')
 
 #Pretty ROI names
 mystats$ROIName = as.character(mystats$ROIName)
-mystats[mystats$ROIName=="LocalizerAverage",]$ROIName <- "average across fROIs"
+#mystats[mystats$ROIName=="LocalizerAverage",]$ROIName <- "average across fROIs"
 mystats$ROIName <- str_wrap(mystats$ROIName, width = 4)
 
 #Pretty Condition labels
@@ -250,14 +254,16 @@ mystats[mystats$contrastName == "joke",]$contrastLabel <- "Jokes\n  "
 mystats[mystats$contrastName == "lit",]$contrastLabel <- "Non-Jokes\n   "
 
 #Pretty System naming, achieved ugli-ly
-mystats <- mutate(mystats, localizerLabel = ifelse(localizer == "ToM", "Theory of mind network,\nRight hemisphere",
+mystats <- mutate(mystats, localizerLabel = ifelse(localizer == "ToM", "Theory of mind network,\n(Language-based localizer task)",
+                                               ifelse((localizer == "Cloudy" & ROIMask == "ToM"), "Theory of mind network,\n('Cloudy' localizer task)",
                                                ifelse((localizer == "Lang" & ROIMask == "RHLang"), "Language network, \nRight hemisphere",
                                                ifelse((localizer == "MD" & ROIMask == "MDRight"), "Multiple demand network,\nRight hemisphere",
                                                ifelse((localizer == "Lang" & ROIMask == "LHLang"), "Language network,\nLeft hemisphere",
                                                ifelse((localizer == "MD" & ROIMask == "MDLeft"), "Multiple demand network,\nLeft hemisphere","ToMCustom")
-                                                                    )))))
+                                                                    ))))))
 
-mystats$localizerLabel <- factor(mystats$localizerLabel, levels=c("Theory of mind network,\nRight hemisphere", 
+mystats$localizerLabel <- factor(mystats$localizerLabel, levels=c("Theory of mind network,\n(Language-based localizer task)", 
+                                                                  "Theory of mind network,\n('Cloudy' localizer task)",
                                                           "Language network, \nRight hemisphere",
                                                           "Multiple demand network,\nRight hemisphere",
                                                           "Language network,\nLeft hemisphere",
@@ -293,7 +299,7 @@ makeCompositeBar = function(plotData,ylow=-0.4,yhigh=3, mycolors = c("gray35", "
   # + theme(legend.position="none")
   
   
-  ggsave(filename=myfi, width=10, height=4)
+  ggsave(filename=myfi, width=11, height=4)
   
 }
 
@@ -337,7 +343,7 @@ makeCompositeLine = function(plotData,ylow=-0.1,yhigh=0.6, mycolors = c("gray35"
   #+ theme(legend.position="none")
   
   
-  ggsave(filename=myfi, width=9, height=2)
+  ggsave(filename=myfi, width=11, height=2)
   
 }
 
