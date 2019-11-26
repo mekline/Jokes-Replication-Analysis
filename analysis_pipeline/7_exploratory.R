@@ -215,8 +215,10 @@ ggplot(data=jokelits, aes(y=Experiment2, x=Experiment1, color = ROIMask)) +
   ggsave(filename="figs/exploratory_compare_activation_E1_E2.jpg", width=9, height=6)
 
 
-
-cor(jokelits$Experiment1, jokelits$Experiment2, method="spearman")
+# Error caught here; removing from paper: This is not a true average correlation of the 
+# across all regions; instead, it implements a classic Simpsons-paradox error. Rely instead
+# on the correlations-per-region reported above.
+#cor(jokelits$Experiment1, jokelits$Experiment2, method="spearman")
 
 
 #Takehome: activations within each system are relatively well correlated with 1 another. 
