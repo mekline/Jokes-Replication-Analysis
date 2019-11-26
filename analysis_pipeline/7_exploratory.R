@@ -18,7 +18,7 @@ bootdown <- function(mylist){
   return(quantile(foo$thetastar, 0.025)[1])
 }
 
-repodir = "/Users/mekline/Dropbox/_Projects/Jokes - fMRI/Jokes-Replication-Analysis"
+repodir = "/Users/mekline/Dropbox/_DB_Projects/Jokes - fMRI/Jokes-Replication-Analysis"
 analysisfolder = paste(repodir, "/analysis_pipeline", sep="")
 figfolder = paste(repodir, "/analysis_pipeline/figs", sep="")
 E1folder = paste(repodir, "/E1_tabular_data", sep="")
